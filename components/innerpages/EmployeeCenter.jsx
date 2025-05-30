@@ -24,7 +24,7 @@ export default function VideoComponent() {
                         <div className="panel vstack justify-center items-center gap-4 sm:gap-6 xl:gap-8 mx-auto">
 
                             <h2
-                                className="h4 sm:h1 m-0 text-center"
+                                className=" sm:h1 m-0 text-center"
                                 data-anime="onview: -100; translateY: [48, 0]; opacity: [0, 1]; easing: spring(1, 80, 10, 0); duration: 450; delay: 100;"
                             >
                                 Life at Spacenos
@@ -50,7 +50,7 @@ export default function VideoComponent() {
                                     </a>
                                 </div>
                             </div>
-                            <p className=" h5 text-center text-gray-600 dark:text-gray-400 mt-4">
+                            <p className=" h6 md:h5 text-center text-gray-600 dark:text-gray-400 mt-4">
                                 From our intern to CTO of a $1Mn startup.
                                 Know more about the leadership skills Aryaman learnt at Spacenos and how it is helping him in his startup.
                             </p>
