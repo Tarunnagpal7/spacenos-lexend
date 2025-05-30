@@ -6,7 +6,7 @@ export const panelsDataCareers = [
     altText: "impact-icon",
     title: "You deserve flexible work hours",
     description:
-      "Spacenos values smart work over long hours. Enjoy flexible schedules that fit your needs, focusing on impactful output. We trust our developers to manage their workload efficiently."
+      "Spacenos values you deserve flexible work hours. Enjoy flexible schedules that fit your needs, focusing on impactful output. We trust our developers to manage their workload efficiently."
   },
   {
     id: 2,
@@ -15,7 +15,7 @@ export const panelsDataCareers = [
     altText: "crown-icon",
     title: "You have complete ownership",
     description:
-      "Your opinion truly matters. We empower you to creatively tweak projects with your unique vision and skills. Build what you believe in; we always have your back."
+      "Your opinion truly matters. We empower you to creatively tweak projects with your unique vision and skills. You have complete ownership."
   },
   {
     id: 3,
@@ -24,7 +24,7 @@ export const panelsDataCareers = [
     altText: "fun-icon",
     title: "You are smartly rewarded",
     description:
-      "Earn smartly with monthly bonuses and incentives. Boost your future prospects while learning and adding value. We reward extra effort to motivate your continuous growth."
+      "You are smartly rewarded with monthly bonuses and incentives. Boost your future prospects while learning and adding value. We reward extra effort to motivate your continuous growth."
   },
   {
     id: 4,

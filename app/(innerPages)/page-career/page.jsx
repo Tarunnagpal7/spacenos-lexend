@@ -33,6 +33,7 @@ export default function CareerPage() {
           <CareerButton />
           <EmployeeCenter />
           <Testimonials />
+          {/* <Blogs /> */}
           <Brands />
           <Faq faqData={accordionItemsCareer} /> 
           <CareerNewsletter />

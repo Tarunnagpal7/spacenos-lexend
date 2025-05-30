@@ -47,13 +47,13 @@ export default function VideoComponent() {
         className="how-it-works section panel scrollSpysection"
       >
         <div
-          className="section-outer panel pb-10"
+          className="section-outer panel pb-10 bg-secondary dark:bg-gray-800"
           data-anime="onscroll: .how-it-works; onscroll-trigger: 1; translateY: [80, 0]; scale: [0.8, 1]; opacity: [0, 1]; easing: linear;"
         >
           <div className="container xl:max-w-6xl">
             <div className="panel vstack justify-center items-center gap-4 sm:gap-6 xl:gap-8 mx-auto">
               <h2
-                className="h4 sm:h1 m-0 text-center"
+                className="h4 sm:h1 m-0 text-center pt-6 rounded-xl"
                 data-anime="onview: -100; translateY: [48, 0]; opacity: [0, 1]; easing: spring(1, 80, 10, 0); duration: 450; delay: 100;"
               >
                 Testimonials
@@ -62,7 +62,7 @@ export default function VideoComponent() {
                   {videoData.map((video, index) => (
                     <div
                       key={index}
-                      className="w-full sm:w-[calc(50%-12px)] lg:w-[calc(25%-18px)]" 
+                      className="w-full sm:w-1/2" 
                     >
                       <div className="overflow-hidden rounded-lg w-full aspect-video border-2 border-white dark:border-gray-700">
                         <video
@@ -76,7 +76,7 @@ export default function VideoComponent() {
                           className="cursor-pointer w-full h-full object-cover hover:scale-105 transition-transform"
                         />
                       </div>
-                      <p className="mt-2 text-sm text-center px-2">{video.title}</p>
+                      <p className=" h5 mt-2 text-center p-2 ">{video.title}</p>
                     </div>
                   ))}
                 </div>
