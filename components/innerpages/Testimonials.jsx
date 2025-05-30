@@ -56,7 +56,7 @@ export default function VideoComponent() {
                 className="h4 sm:h1 m-0 text-center"
                 data-anime="onview: -100; translateY: [48, 0]; opacity: [0, 1]; easing: spring(1, 80, 10, 0); duration: 450; delay: 100;"
               >
-                Testimonails
+                Testimonials
               </h2>
              <div className="flex flex-wrap  gap-6 px-4"> 
                   {videoData.map((video, index) => (
