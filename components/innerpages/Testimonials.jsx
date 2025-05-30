@@ -77,9 +77,9 @@ export default function VideoComponent() {
               }}
             />
           </div>
-          <p style={{ marginTop: "0.5rem", padding: "0.5rem" }}>
+          <h4 style={{ marginTop: "0.5rem", padding: "0.5rem" , }}>
             {video.title}
-          </p>
+          </h4>
         </div>
       ))}
     </div>
