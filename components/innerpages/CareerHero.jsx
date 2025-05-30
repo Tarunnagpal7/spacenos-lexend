@@ -40,7 +40,6 @@ export default function CareerHero() {
                       Build. Learn. Launch!
                     </span>
                     <br />
-                     Your real-world startup journey starts here
                   </h1>
                 
                 </div>
