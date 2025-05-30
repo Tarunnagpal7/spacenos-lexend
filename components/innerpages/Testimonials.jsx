@@ -4,7 +4,7 @@ import { useState } from "react";
 import ModalVideo from "@/components/common/ModalVideo";
 import { useParallax } from "react-scroll-parallax";
 
-const videoData = [
+const videoData1 = [
   {
     title: "You know he got an offer in 3 hours.",
     thumbnail: "/assets/images/media/lexend_vid_home-6.jpg",
@@ -15,6 +15,9 @@ const videoData = [
     thumbnail: "/assets/images/media/lexend_vid_home-6.jpg",
     videoSrc: "/assets/images/media/lexend_vid_home-6.webm",
   },
+];
+
+const videoData2 = [
   {
     title: "You won't believe what he has to say on our remote culture & flexible hours.",
     thumbnail: "/assets/images/media/lexend_vid_home-6.jpg",
@@ -30,14 +33,57 @@ const videoData = [
 export default function VideoComponent() {
   const [isOpen, setOpen] = useState(false);
   const [currentVideo, setCurrentVideo] = useState("");
-  const parallax = useParallax({
-    scale: [0.8, 1],
-  });
+  const parallax = useParallax({ scale: [0.8, 1] });
 
   const openModal = (src) => {
     setCurrentVideo(src);
     setOpen(true);
   };
+
+  const renderRow = (videos) => (
+    <div style={{ textAlign: "center", marginTop: "1rem" }}>
+      {videos.map((video, index) => (
+        <div
+          key={index}
+          style={{
+            display: "inline-block",
+            width: "50%",
+            verticalAlign: "top",
+            padding: "0.5rem",
+            boxSizing: "border-box",
+          }}
+        >
+          <div
+            style={{
+              overflow: "hidden",
+              borderRadius: "8px",
+              aspectRatio: "16/9",
+              border: "2px solid white",
+            }}
+          >
+            <video
+              src={video.videoSrc}
+              muted
+              loop
+              autoPlay
+              preload="none"
+              poster={video.thumbnail}
+              onClick={() => openModal(video.videoSrc)}
+              style={{
+                width: "100%",
+                height: "100%",
+                objectFit: "cover",
+                cursor: "pointer",
+              }}
+            />
+          </div>
+          <p style={{ marginTop: "0.5rem", padding: "0.5rem" }}>
+            {video.title}
+          </p>
+        </div>
+      ))}
+    </div>
+  );
 
   return (
     <>
@@ -46,45 +92,15 @@ export default function VideoComponent() {
         ref={parallax.ref}
         className="how-it-works section panel scrollSpysection"
       >
-        <div
-          className="section-outer panel pb-10 bg-secondary dark:bg-gray-800"
-          data-anime="onscroll: .how-it-works; onscroll-trigger: 1; translateY: [80, 0]; scale: [0.8, 1]; opacity: [0, 1]; easing: linear;"
-        >
-          <div className="container xl:max-w-6xl">
-            <div className="panel vstack justify-center items-center gap-4 sm:gap-6 xl:gap-8 mx-auto">
-              <h2
-                className="h4 sm:h1 m-0 text-center pt-6 rounded-xl"
-                data-anime="onview: -100; translateY: [48, 0]; opacity: [0, 1]; easing: spring(1, 80, 10, 0); duration: 450; delay: 100;"
-              >
-                Testimonials
-              </h2>
-             <div className="flex flex-wrap  gap-6 px-4"> 
-                  {videoData.map((video, index) => (
-                    <div
-                      key={index}
-                      className="w-full sm:w-1/2" 
-                    >
-                      <div className="overflow-hidden rounded-lg w-full aspect-video border-2 border-white dark:border-gray-700">
-                        <video
-                          src={video.videoSrc}
-                          preload="none"
-                          muted
-                          loop
-                          autoPlay
-                          poster={video.thumbnail}
-                          onClick={() => openModal(video.videoSrc)}
-                          className="cursor-pointer w-full h-full object-cover hover:scale-105 transition-transform"
-                        />
-                      </div>
-                      <p className=" h5 mt-2 text-center p-2 ">{video.title}</p>
-                    </div>
-                  ))}
-                </div>
-            </div>
+        <div className="section-outer panel pb-10 bg-secondary dark:bg-gray-800">
+          <div className="container xl:max-w-6xl mx-auto text-center">
+            <h2 className="h4 sm:h1 pt-6 rounded-xl">Testimonials</h2>
+
+            {renderRow(videoData1)}
+            {renderRow(videoData2)}
           </div>
         </div>
       </div>
-
 
       <ModalVideo
         isOpen={isOpen}
