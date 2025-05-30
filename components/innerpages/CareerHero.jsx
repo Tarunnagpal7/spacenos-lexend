@@ -5,7 +5,7 @@ export default function CareerHero() {
   return (
      <div
       id="her"
-      className="overview section panel overflow-hidden uc-dark lg:m-2 lg:rounded-3 scrollSpysection"
+      className="overview section panel overflow-hidden uc-dark m-1 lg:rounded-3 scrollSpysection"
     >
       <div className="position-cover bg-white dark:bg-gray-900" />
       <div
