@@ -1,4 +1,4 @@
-import { teamMembers4 } from "@/data/team";
+import { teamMembers6 } from "@/data/team";
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
@@ -9,7 +9,7 @@ export default function ArchitectureTeam() {
       id="team"
       className="team section panel overflow-hidden  scrollSpysection"
     >
-      <div className="section-outer panel m-4 py-6 xl:py-10 bg-secondary dark:bg-gray-800 rounded-2 lg:rounded-3 mx-2">
+      <div className="section-outer panel m-4  py-3 bg-secondary dark:bg-gray-800 rounded-2 lg:rounded-3 mx-2">
         <div className="container xl:max-w-lg">
           <div className="section-inner panel">
             <div
@@ -36,7 +36,7 @@ export default function ArchitectureTeam() {
                   className="row child-cols-6 sm:child-cols-4 col-match g-2 lg:g-4"
                   data-anime="onview: -100; targets: >*; translateY: [48, 0]; opacity: [0, 1]; easing: easeOutCubic; duration: 500; delay: anime.stagger(100, {start: 200});"
                 >
-                  {teamMembers4.map((member, index) => (
+                  {teamMembers6.map((member, index) => (
                     <div key={index}>
                       <div className="panel vstack items-center gap-2 text-center p-3 lg:p-5 rounded-1-5 bg-white dark:bg-gray-700">
                         <Image
@@ -66,19 +66,6 @@ export default function ArchitectureTeam() {
                       </div>
                     </div>
                   ))}
-                  <div>
-                    <div className="cstack gap-2 flex-column">
-                      <Link
-                        href={`/page-career`}
-                        className="uc-link cstack w-40px md:w-48px lg:w-80px h-40px md:h-48px lg:h-80px rounded-circle bg-white dark:bg-gray-700 text-primary dark:text-secondary duration-150 transition-all"
-                      >
-                        <i className="icon icon-narrow md:icon-1 unicon-arrow-up-right fw-bold rtl:-rotate-90" />
-                      </Link>
-                      <span className="fs-7 md:fs-6 fw-medium">
-                        We’re hiring
-                      </span>
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>

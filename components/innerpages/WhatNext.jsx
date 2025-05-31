@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function WhatNext() {
   return (
     <div id="features" className="features section panel  scrollSpysection">
-      <div className="section-outer panel pt-6 lg:pt-8 xl:pt-10">
+      <div className="section-outer panel pt-6 pb-8 lg:pt-8 xl:pt-10">
         <div className="container xl:max-w-xl">
           <div className="section-inner panel">
             <div
@@ -27,7 +27,7 @@ export default function WhatNext() {
                   >
                      <h4 className="h4 m-0"> Growing our empire </h4>
                     <a href="#" className="btn btn-sm btn-primary px-2 mt-2">
-                      <span>Try it now</span>
+                      <span>Learn More!</span>
                       <i className="icon icon-narrow unicon-arrow-right fw-bold rtl:rotate-180" />
                     </a>
                   </div>
@@ -69,12 +69,12 @@ export default function WhatNext() {
                     data-anime="onview: -100; targets: >*; translateY: [16, 0]; opacity: [0, 1]; easing: easeOutCubic; duration: 500; delay: anime.stagger(100, {start: 500});"
                   >
                     <div className="content vstack items-start ">
-                      <h4 className="h4 pb-4"> Empowering more businesses </h4>
+                      <h4 className="h4 pb-2"> Empowering more businesses </h4>
                     <a
                       href="#"
                       className="btn btn-sm btn-secondary text-primary px-2 "
                     >
-                      <span>Let's find out</span>
+                      <span>Learn More!</span>
                       <i className="icon icon-narrow unicon-arrow-right fw-bold rtl:rotate-180" />
                     </a>
                     </div>
@@ -107,20 +107,20 @@ export default function WhatNext() {
                     className="panel vstack items-start justify-between gap-2 p- lg:p-4 xl:p-6"
                     data-anime="onview: -100; targets: >*; translateY: [16, 0]; opacity: [0, 1]; easing: easeOutCubic; duration: 500; delay: anime.stagger(100, {start: 500});"
                   >
-                    <div className="content vstack items-start ">
-                      <h4 className="h4 m-0">Invent new tech for the future</h4>
-                    </div>
+                    <div className="content vstack items-start m-2 ">
+                      <h4 className="h4 pb-2 m-0">Invent new tech for the future</h4>
                     <a
                       href="#"
                       className="btn btn-sm btn-secondary text-primary px-2 mt-2"
-                    >
-                      <span>Let's find out</span>
+                      >
+                      <span>Learn More!</span>
                       <i className="icon icon-narrow unicon-arrow-right fw-bold rtl:rotate-180" />
                     </a>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div className="lg:col-7">
+              <div className="lg:col-7 ">
                 <div
                   className="panel vstack items-start overflow-hidden bg-secondary text-gray-900 dark:bg-gray-800 dark:text-white rounded-2 lg:rounded-3"
                   data-anime="onview: -100; translateY: [80, 0]; opacity: [0, 1]; easing: easeOutCubic; duration: 500; delay: 300;"
@@ -129,8 +129,19 @@ export default function WhatNext() {
                     className="panel vstack items-center gap-2 p-3 lg:p-4 xl:p-6"
                     data-anime="onview: -100; targets: >*; translateY: [16, 0]; opacity: [0, 1]; easing: easeOutCubic; duration: 500; delay: anime.stagger(100, {start: 500});"
                   >
-                    <h4 className="h4 m-0">Cultivating a network of visionary builders</h4>
-                   
+
+                     <div className="content vstack items-start m-2 ">
+                      <h4 className="h4 pb-2 m-0">Cultivating a network of visionary builders</h4>
+                    <a
+                      href="#"
+                      className="btn btn-sm btn-primary  px-2 mt-2"
+                      >
+                      <span>Learn More!</span>
+                      <i className="icon icon-narrow unicon-arrow-right fw-bold rtl:rotate-180" />
+                    </a>
+                    </div>
+                    
+                      
                   </div>
                   <div className="panel px-3 lg:px-4 xl:px-6 mb-2 lg:mb-5">
                     <Image

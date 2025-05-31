@@ -271,3 +271,29 @@ export const teamMembers5 = [
     position: "Customer Success",
   },
 ];
+
+
+
+export const teamMembers6 = [
+  {
+    id: 25,
+    name: "Nilson Laurent",
+    role: "Founder",
+    imgSrc: "/assets/images/team/01.png",
+    alt: "Nilson Laurent",
+  },
+  {
+    id: 26,
+    name: "Jason Chedjou",
+    role: "Developer",
+    imgSrc: "/assets/images/team/04.png",
+    alt: "Jason Chedjou",
+  },
+  {
+    id: 27,
+    name: "Zouhir Naji",
+    role: "Developer",
+    imgSrc: "/assets/images/team/05.png",
+    alt: "Zouhir Naji",
+  },
+];

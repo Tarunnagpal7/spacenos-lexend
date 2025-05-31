@@ -43,7 +43,7 @@ export default function About() {
           >
             <div className="vstack items-center gap-4 mb-4 sm:mb-6 lg:mb-8 max-w-850px mx-auto text-center">
               <h1 className="h2 sm:h1 lg:display-6 xl:display-5 m-0">
-                Our Story.
+                Our Story
               </h1>
               <p className="fs-6 md:fs-5 text-dark dark:text-white text-opacity-70">
                 Spacenos began as a wild idea in 2015 — no funding, no backing. Just a laptop and relentless execution. Today, we help founders across the world turn raw ideas into real products — with AI, speed, and soul.
