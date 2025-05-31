@@ -11,16 +11,16 @@ export default function Timeline() {
       <div className="section-outer panel py-6 xl:py-9">
         <div className="container max-w-lg">
           <div className="section-inner panel">
-            <div className="panel vstack justify-center items-center gap-4 sm:gap-6 xl:gap-8">
+            <div className="panel  justify-center items-center gap-4 ">
               <h2
                 className="h4 sm:h3 lg:h2 m-0 text-center"
                 data-anime="onview: -100; translateY: [48, 0]; opacity: [0, 1]; easing: spring(1, 80, 10, 0); duration: 450; delay: 100;"
               >
-                How we got here
+                Our Journey
               </h2>
               <div
                 style={{ width: "fit-content", maxWidth: "330px" }}
-                className="panel swiper-parent"
+                className="panel swiper-parent p-5"
               >
                 <Swiper
                   className="swiper-timeline swiper swiper-container overflow-unset"

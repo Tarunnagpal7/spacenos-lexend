@@ -1,40 +1,46 @@
 export const timelineData = [
   {
     src: "/assets/images/template/timeline-01.png",
-    alt: "Where the idea come up of Lexend :)",
-    year: "2014",
-    description: "Where the idea come up of Lexend :)",
+    alt: "Started with just $100",
+    year: "2015",
+    description: "Started with just $100.",
   },
   {
     src: "/assets/images/template/timeline-02.png",
-    alt: "Launched our first business that can be created in minutes, build meaningful relationships.",
-    year: "2015",
+    alt: "Built & Sold $$$",
+    year: "2016",
     description:
-      "Launched our first business that can be created in minutes, build meaningful relationships.",
+      "Built & Sold $$$.",
   },
   {
     src: "/assets/images/template/timeline-03.png",
-    alt: "Opened our new office in Toronto, CA",
-    year: "2016",
-    description: "Opened our new office in Toronto, CA",
+    alt: "Top Mobile & Web App Development Company.",
+    year: "2017",
+    description: "Top Mobile & Web App Development Company.",
   },
   {
     src: "/assets/images/template/timeline-04.png",
-    alt: "Moved to Silicon Valley whereas now we can focus on building out to help our employees.",
+    alt: "Experts in Fintech & AI.",
     year: "2019",
     description:
-      "Moved to Silicon Valley whereas now we can focus on building out to help our employees.",
+      "Experts in Fintech & AI.",
   },
   {
     src: "/assets/images/template/timeline-05.png",
-    alt: "Opened a new office in London, UK.",
-    year: "2020",
-    description: "Opened a new office in London, UK.",
+    alt: "Made $1M In A Year.",
+    year: "2022",
+    description: "Made $1M In A Year.",
   },
   {
     src: "/assets/images/template/timeline-06.png",
-    alt: "Top-rated software solution for service suppliers.",
-    year: "Today",
-    description: "Top-rated software solution for service suppliers.",
+    alt: "Spacenos expands its base to USA.",
+    year: "2023",
+    description: "Spacenos expands its base to USA.",
+  },
+  {
+    src: "/assets/images/template/timeline-06.png",
+    alt: "Today.",
+    year: "2025",
+    description: "Today",
   },
 ];

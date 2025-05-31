@@ -10,6 +10,7 @@ import Timeline from "@/components/homes/home-1/Timeline";
 import Team from "@/components/homes/home-1/Team";
 import Cta from "@/components/innerpages/Cta";
 import { panelsData } from "@/data/plans";
+import WhatNext from "@/components/innerpages/WhatNext";
 export const metadata = {
   title:
     "About || Lexend - Full-featured, professional-looking software, saas and startup nextjs template.",
@@ -42,10 +43,11 @@ export default function AboutPage() {
               </div>
             </div>
           </div>
-          <About2 />
-          <AboutValues data={panelsData}/>
-          <Feedback />
+          {/* <About2 />
+          <AboutValues data={panelsData}/> */}
+          {/* <Feedback /> */}
           <Timeline />
+          <WhatNext />
           <Team />
           <Cta />
         </div>
