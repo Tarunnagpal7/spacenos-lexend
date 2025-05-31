@@ -28,8 +28,8 @@ export default function CareerPage() {
         <div id="wrapper" className="wrap">
           <CareerHero />
           <AboutValues data={panelsDataCareers}/>
-          <CareerOpenings />
           <CareerButton />
+          <CareerOpenings />
           <EmployeeCenter />
           <Testimonials />
           {/* <Blogs /> */}

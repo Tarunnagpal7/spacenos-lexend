@@ -87,9 +87,6 @@ export default function Cta() {
               <h2 className="h3 sm:h1 m-0">
                 The future isn’t just coming - WE ARE BUILDING IT!
               </h2>
-              <p className="fs-5 xl:fs-4 text-dark dark:text-white text-opacity-70">
-                Have what it takes to be one of us.
-              </p>
               <Link
                 href={`/page-career`}
                 className="btn btn-md lg:btn-lg btn-primary text-white mt-1 xl:mt-2"

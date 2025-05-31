@@ -40,7 +40,7 @@ export default function Timeline() {
   return (
     <div
       id="about-timeline"
-      className="about-timeline section panel overflow-hidden bg-secondary dark:bg-gray-800"
+      className="about-timeline section panel rounded sm:rounded-2 m-4 overflow-hidden bg-secondary dark:bg-gray-800"
     >
       <style jsx>{`
         .timeline-container {
@@ -226,7 +226,7 @@ export default function Timeline() {
         }
       `}</style>
 
-      <div className="section-outer panel p-6">
+      <div className="section-outer panel p-6  ">
         <div className="container max-w-lg">
           <div className="section-inner panel">
             <div className="panel justify-center items-center gap-4">
@@ -234,13 +234,13 @@ export default function Timeline() {
                 className={`h4 sm:h3 lg:h2 m-0 text-center ${isVisible ? 'title-animation' : ''}`}
                 data-anime="onview: -100; translateY: [48, 0]; opacity: [0, 1]; easing: spring(1, 80, 10, 0); duration: 450; delay: 100;"
               >
-                Our Journey.
+                Our Journey
               </h2>
               
               <div className="timeline-container panel p-2 " >
                 <div className={`timeline-slide ${animationPhase}`}>
                   <div className="timeline-box panel vstack items-center gap-9 text-center ">
-                    <div className="image-wrap panel overflow-hidden w-200px">
+                    <div className="image-wrap panel p-2 overflow-hidden w-200px">
                       <img
                         className="image w-100 origin-bottom"
                         src={currentItem.src}
@@ -249,8 +249,8 @@ export default function Timeline() {
                         alt={currentItem.alt}
                       />
                     </div>
-                    <div className="content panel vstack items-center ">
-                      <h3 className="title h4 sm:h3 dark:text-white">
+                    <div className="content panel w-100 p-2  vstack items-center ">
+                      <h3 className="title h5 sm:h3 dark:text-white">
                         {currentItem.year}
                       </h3>
                       <p className="desc fs-6 xl:fs-5 opacity-70 dark:text-white">

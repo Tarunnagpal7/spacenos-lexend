@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function WhatNext() {
   return (
     <div id="features" className="features section panel  scrollSpysection">
-      <div className="section-outer panel pt-6 pb-8 lg:pt-8 xl:pt-10">
+      <div className="section-outer panel pt-6 pb-10 lg:pt-8 xl:pt-10">
         <div className="container xl:max-w-xl">
           <div className="section-inner panel">
             <div

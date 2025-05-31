@@ -9,7 +9,7 @@ export default function ArchitectureTeam() {
       id="team"
       className="team section panel overflow-hidden  scrollSpysection"
     >
-      <div className="section-outer panel m-4  py-3 bg-secondary dark:bg-gray-800 rounded-2 lg:rounded-3 mx-2">
+      <div className="section-outer panel m-4  py-9 bg-secondary dark:bg-gray-800 rounded-2 lg:rounded-3 mx-2">
         <div className="container xl:max-w-lg">
           <div className="section-inner panel">
             <div

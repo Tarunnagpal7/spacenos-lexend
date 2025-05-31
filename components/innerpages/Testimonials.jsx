@@ -92,9 +92,9 @@ export default function VideoComponent() {
         ref={parallax.ref}
         className="how-it-works section panel scrollSpysection"
       >
-        <div className="section-outer panel pb-10 bg-secondary dark:bg-gray-800">
-          <div className="container xl:max-w-6xl mx-auto text-center">
+        <div className="section-outer panel pb-10 text-center p-2 sm:p-4 bg-secondary dark:bg-gray-800">
             <h2 className="h4 sm:h1 pt-6 rounded-xl">Testimonials</h2>
+          <div className="container p-2 m-2 sm:p-4  xl:max-w-6xl mx-auto text-center">
 
             {renderRow(videoData1)}
             {renderRow(videoData2)}
