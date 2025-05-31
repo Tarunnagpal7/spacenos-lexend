@@ -1,3 +1,4 @@
+import Newsletter from "@/components/blog/Newsletter";
 import Footer5 from "@/components/footers/Footer5";
 import Header5 from "@/components/headers/Header5";
 import Blogs from "@/components/homes/home-6/Blogs";
@@ -6,6 +7,7 @@ import Cta from "@/components/homes/home-6/Cta";
 import Elements from "@/components/homes/home-6/Elements";
 import Faq from "@/components/homes/home-6/Faq";
 import Features from "@/components/homes/home-6/Features";
+import Features2 from "@/components/homes/home-6/Features2";
 import Hero from "@/components/homes/home-6/Hero";
 import KeyFeatures from "@/components/homes/home-6/KeyFeatures";
 import Pricing from "@/components/homes/home-6/Pricing";
@@ -31,16 +33,13 @@ export default function HomePage6() {
         <div id="wrapper" className="wrap">
           <Hero />
           <Features />
+          <Features2 />
           <Brands />
-          <VideoComponent />
           <KeyFeatures />
-          <Elements />
-          <Pricing />
+          <VideoComponent />
           <Testimonials />
-          <Faq faqData={accordionItems} />
-          <Team />
-          <Blogs />
           <Cta />
+          <Newsletter />
         </div>
         <Footer5 />
       </div>

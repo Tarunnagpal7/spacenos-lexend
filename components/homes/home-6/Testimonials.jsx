@@ -26,11 +26,10 @@ export default function Testimonials() {
                 </span>
               </div>
               <p className="h3 lg:h2 xl:h1 m-0 px-2 text-black">
-                Don't{" "}
+                YOU DREAM.
                 <span className="d-inline-flex px-1 bg-primary text-secondary -rotate-1 lg:-rotate-2 rounded-1 lg:rounded-1-5">
-                  just take our words
+                   WE BUILD. 
                 </span>{" "}
-                for it!
               </p>
             </div>
             <div className="panel w-100 mask-x">

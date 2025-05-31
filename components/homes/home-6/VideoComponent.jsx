@@ -20,6 +20,9 @@ export default function VideoComponent() {
           className="section-outer panel"
           data-anime="onscroll: .how-it-works; onscroll-trigger: 1; translateY: [80, 0]; scale: [0.8, 1]; opacity: [0, 1]; easing: linear;"
         >
+          <h1 className="h3 lg:h2 xl:h1 m-0 text-center mb-4 lg:mb-6 xl:mb-8">
+            Meet our CEO: A Visionary Briefing
+          </h1>
           <div className="container xl:max-w-xl">
             <div className="panel overflow-hidden ratio ratio-16x9 rounded-2 lg:rounded-3 border border-2 border-white dark:border-gray-700">
               <video
@@ -43,6 +46,17 @@ export default function VideoComponent() {
               </div>
             </div>
           </div>
+          <div className="panel vstack items-center gap-2 mt-4 lg:mt-6 xl:mt-8">
+            <p className="fs-6 xl:fs-5 text-black dark:text-white text-opacity-70">
+              Our CEO, a visionary leader, is here to share insights on the future of our company and the industry.
+            </p>
+            <button
+              onClick={() => setOpen(true)}
+              className="btn btn-primary px-3 mt-2"
+            >
+              See How He’s Helped Founders Like You
+            </button>
+            </div>
         </div>
       </div>
       <ModalVideo

@@ -39,8 +39,8 @@ export default function Hero() {
                 >
                   <div
                     className="position-absolute z-2"
-                    style={{ top: "40%", right: "10%" }}
-                  >
+                    style={{ top: "40%", right: "2%" }}
+                    >
                     <Image
                       className="w-48px lg:w-80px me-4"
                       alt="user-cursor"
@@ -63,30 +63,27 @@ export default function Hero() {
                       height="108"
                     />
                   </div>
-                  <div className="cstack gap-1 py-1 px-2 border rounded-pill">
+                  {/* <div className="cstack gap-1 py-1 px-2 border rounded-pill">
                     <span className="d-inline-block w-4px h-4px rounded-circle bg-primary-400" />
                     <span className="fs-8 fw-bold text-uppercase text-white">
                       Beta 2.0 Available Now
                     </span>
-                  </div>
+                  </div> */}
                   <h1 className="h1 sm:display-6 md:display-5 lg:display-4 xl:display-3 m-0 text-white">
-                    Build websites
+                    Building Empires Powered By 
                     <span className="d-inline-flex px-1 bg-secondary text-primary -rotate-1 lg:-rotate-2 rounded-1 lg:rounded-1-5">
-                      effortlessly
+                       Space-Age tech
                     </span>
-                    <br />
-                    now or never!
                   </h1>
                   <p className="fs-5 xl:fs-4 text-black dark:text-white d-none md:d-block">
-                    Easy-to-use and powerful page builder, your gateway to
-                    intuitive tools and expansive customization options that
-                    transform how you build websites.
+                 You bring the vision. We bring the tech stack — from product to launch, our AI-powered startup solutions handle the rest.
+
                   </p>
                   <Link
                     href={`/page-pricing`}
                     className="btn btn-md lg:btn-lg btn-primary min-w-150px mt-2"
                   >
-                    <span>Get started</span>
+                    <span>Book a Roadmap Call</span>
                     <i className="icon icon-narrow unicon-arrow-right fw-bold ltr:ms-narrow rtl:rotate-180 rtl:me-narrow" />
                   </Link>
                   <p className="fs-7 text-black dark:text-white">

@@ -6,7 +6,7 @@ export default function Newsletter() {
       id="blog_newsletter"
       className="blog-newsletter section panel overflow-hidden"
     >
-      <div className="section-outer panel pb-4 lg:pb-6 xl:pb-9">
+      <div className="section-outer panel pb-6 pt-6">
         <div className="container max-w-xl">
           <div className="section-inner panel p-3 py-6 lg:p-6 xl:p-8 rounded-2 bg-secondary dark:bg-gray-800 overflow-hidden">
             <div

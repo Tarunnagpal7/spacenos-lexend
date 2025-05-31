@@ -621,3 +621,32 @@ export const features13 = [
     title: "Customizable Privacy",
   },
 ];
+
+
+export const features14 = [
+  {
+    iconSrc: "/assets/images/common/icons/zap.svg",
+    alt: "feature-icon",
+    title: "Darkbase",
+    slug: "#"
+  },
+  {
+    iconSrc: "/assets/images/common/icons/database.svg",
+    alt: "feature-icon",
+    title: "Astro360",
+    slug: "#"
+  },
+  {
+    iconSrc: "/assets/images/common/icons/puzzle.svg",
+    alt: "feature-icon",
+    title: "Dominus",
+    slug: "#"
+  },
+  {
+    iconSrc: "/assets/images/common/icons/target.svg",
+    alt: "feature-icon",
+    title: "AI Tools",
+    slug: "#"
+  },
+ 
+];
