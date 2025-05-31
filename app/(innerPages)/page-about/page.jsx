@@ -6,11 +6,13 @@ import Brands from "@/components/common/Brands2";
 import About2 from "@/components/innerpages/About2";
 import AboutValues from "@/components/innerpages/AboutValues";
 import Feedback from "@/components/homes/home-2/Feedback";
-import Timeline from "@/components/homes/home-1/Timeline";
-import Team from "@/components/homes/home-1/Team";
+// import Timeline from "@/components/homes/home-1/Timeline";
+import Timeline from "@/components/innerpages/Timeline";
+import Team from "@/components/innerpages/Team";
 import Cta from "@/components/innerpages/Cta";
 import { panelsData } from "@/data/plans";
 import WhatNext from "@/components/innerpages/WhatNext";
+import ArchitectureTeam from "@/components/innerpages/ArchitectureTeam";
 export const metadata = {
   title:
     "About || Lexend - Full-featured, professional-looking software, saas and startup nextjs template.",
@@ -24,7 +26,7 @@ export default function AboutPage() {
         <Header2 />
         <div id="wrapper" className="wrap">
           <About />
-          <div
+          {/* <div
             id="clients_brands"
             className="clients-brands section panel overflow-hidden"
           >
@@ -42,12 +44,13 @@ export default function AboutPage() {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
           {/* <About2 />
           <AboutValues data={panelsData}/> */}
           {/* <Feedback /> */}
           <Timeline />
           <WhatNext />
+          <ArchitectureTeam />
           <Team />
           <Cta />
         </div>

@@ -16,6 +16,7 @@ export default function Team() {
               <h2 className="h4 sm:h3 lg:h2 m-0 text-center">
                 Our Executive Team
               </h2>
+              
               <div
                 className="row child-cols-6 sm:child-cols-4 lg:child-cols-3 col-match gx-2 lg:gx-4 gy-4 lg:gy-6"
                 data-anime="onview: -100; targets: >*; translateY: [48, 0]; opacity: [0, 1]; easing: spring(1, 80, 10, 0); duration: 450; delay: anime.stagger(100, {start: 200});"

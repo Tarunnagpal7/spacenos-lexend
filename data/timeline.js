@@ -1,46 +1,46 @@
 export const timelineData = [
   {
     src: "/assets/images/template/timeline-01.png",
-    alt: "Started with just $100",
+    alt: "Founded with $100, Venkatesh Devale won 12+ hackathons in 30 days to raise $50K in capital.",
     year: "2015",
-    description: "Started with just $100.",
+    description: "Founded with $100, Venkatesh Devale won 12+ hackathons in 30 days to raise $50K in capital.",
   },
   {
     src: "/assets/images/template/timeline-02.png",
-    alt: "Built & Sold $$$",
+    alt: "We built and sold our first social media marketing product in 5 months, boosting our capital.",
     year: "2016",
     description:
-      "Built & Sold $$$.",
+      "We built and sold our first social media marketing product in 5 months, boosting our capital.",
   },
   {
     src: "/assets/images/template/timeline-03.png",
-    alt: "Top Mobile & Web App Development Company.",
+    alt: "Spacenos partnered with top enterprises to deliver cutting-edge mobile and web app solutions.",
     year: "2017",
-    description: "Top Mobile & Web App Development Company.",
+    description: "Spacenos partnered with top enterprises to deliver cutting-edge mobile and web app solutions.",
   },
   {
     src: "/assets/images/template/timeline-04.png",
-    alt: "Experts in Fintech & AI.",
+    alt: " Our AI-powered fintech and cybersecurity innovations earned global recognition and government grants.",
     year: "2019",
     description:
-      "Experts in Fintech & AI.",
+      " Our AI-powered fintech and cybersecurity innovations earned global recognition and government grants.",
   },
   {
     src: "/assets/images/template/timeline-05.png",
-    alt: "Made $1M In A Year.",
+    alt: "Spacenos Developers - Beta generated $1M in revenue and saved users over $450K.",
     year: "2022",
-    description: "Made $1M In A Year.",
+    description: "Spacenos Developers - Beta generated $1M in revenue and saved users over $450K.",
   },
   {
     src: "/assets/images/template/timeline-06.png",
-    alt: "Spacenos expands its base to USA.",
+    alt: " Spacenos expanded to the USA for strategic benefits and government-backed partnerships.",
     year: "2023",
-    description: "Spacenos expands its base to USA.",
+    description: " Spacenos expanded to the USA for strategic benefits and government-backed partnerships.",
   },
   {
     src: "/assets/images/template/timeline-06.png",
     alt: "Today.",
     year: "2025",
-    description: "Today",
+    description: "Today - Spacenos is a global leader in AI-driven product development, empowering startups and enterprises worldwide.",
   },
 ];

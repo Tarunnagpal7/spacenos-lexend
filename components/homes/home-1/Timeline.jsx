@@ -20,7 +20,7 @@ export default function Timeline() {
               </h2>
               <div
                 style={{ width: "fit-content", maxWidth: "330px" }}
-                className="panel swiper-parent p-5"
+                className="panel swiper-parent p-6"
               >
                 <Swiper
                   className="swiper-timeline swiper swiper-container overflow-unset"
