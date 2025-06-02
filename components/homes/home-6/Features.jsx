@@ -27,7 +27,7 @@ export default function Features() {
               <p className="fs-6 xl:fs-5 text-black dark:text-white text-opacity-70">
                 Focus purely on strategy while we handle technical complexities.
               </p>
-            </div>
+            </div> 
           </div>
         </div>
       </div>

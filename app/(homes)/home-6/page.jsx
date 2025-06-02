@@ -34,11 +34,10 @@ export default function HomePage6() {
         <div id="wrapper" className="wrap">
           <Hero />
           <Features />
-          <GlobalFootprint />
           <Features2 />
-          <Brands />
-          <KeyFeatures />
+          <GlobalFootprint />
           <VideoComponent />
+          <KeyFeatures />
           <Testimonials />
           <Cta />
           <Newsletter />

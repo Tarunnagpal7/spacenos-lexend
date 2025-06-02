@@ -4,16 +4,13 @@ import Image from "next/image";
 export default function Features2() {
   return (
     <div id="features" className="features section panel  scrollSpysection">
-      <div className="section-outer panel pt-6  ">
+      <div className="section-outer panel   ">
         <div className="container xl:max-w-xl">
           <div className="section-inner panel">
             <div
               className="panel vstack items-center gap-2 xl:gap-3 mb-4 lg:mb-8 max-w-650px mx-auto text-center"
               data-anime="onview: -100; targets: >*; translateY: [48, 0]; opacity: [0, 1]; easing: easeOutCubic; duration: 500; delay: anime.stagger(100, {start: 200});"
             >
-                  <h2 className="h2 m-0 p-3 lg:p-4 xl:p-6">
-                    Why Spacenos?
-                  </h2>
             </div>
             <div className="row child-cols-12 lg:child-cols-5 col-match g-2">
               <div className="lg:col-7">

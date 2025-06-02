@@ -17,10 +17,10 @@ export default function VideoComponent() {
         className="how-it-works section panel  scrollSpysection"
       >
         <div
-          className="section-outer panel"
+          className="section-outer panel bg-secondary dark:bg-gray-800 p-2 xl:p-6 rounded-2 lg:rounded-3"
           data-anime="onscroll: .how-it-works; onscroll-trigger: 1; translateY: [80, 0]; scale: [0.8, 1]; opacity: [0, 1]; easing: linear;"
         >
-          <h1 className="h3 lg:h2 xl:h1 m-0 text-center mb-4 lg:mb-6 xl:mb-8">
+          <h1 className="h3 lg:h2 xl:h1 m-0  text-center mb-4 lg:mb-6 xl:mb-8">
             Meet our CEO: A Visionary Briefing
           </h1>
           <div className="container xl:max-w-xl">

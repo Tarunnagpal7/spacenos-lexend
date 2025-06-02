@@ -16,9 +16,9 @@ export default function KeyFeatures() {
               className="panel vstack items-center gap-2 xl:gap-3 text-center"
               data-anime="onview: -100; targets: >*; translateY: [-48, 0]; opacity: [0, 1]; easing: easeOutCubic; duration: 500; delay: anime.stagger(100, {start: 200});"
             >
-              <p className="h2 fs-4 lg:fs-3 xl:fs-2  max-w-lg mx-auto m-0">
-               Our Ventures
-              </p>
+              <h1 className="h3 lg:h2 xl:h1 m-0 px-2">
+                Our Ventures
+              </h1>
             </div>
             <div
               className="panel"
