@@ -332,38 +332,37 @@ export const features6 = [
   {
     id: 1,
     imgSrc: "/assets/images/template/feature-01.svg",
-    imgAlt: "Share tools quickly and confidently in minutes",
-    title: "Share tools quickly and confidently in minutes",
+    imgAlt: "India-based tech pods for global clients",
+    title: "India-based tech pods for global clients",
     description:
-      "This powerful tool eliminates the need to leave Salesforce to get things done as I can create a custom proposal with dynamic pricing tables. You can also customize your own dynamic versions.",
-    link: null,
+      "Learn about our pricing, client testimonials, and more.",
+    link: {text: "Learn More",href:"/darkbase"},
   },
   {
     id: 2,
     imgSrc: "/assets/images/template/feature-02.svg",
-    imgAlt: "Connect every part of your entire business",
-    title: "Connect every part of your entire business",
+    imgAlt: "Spiritual x startup transformation",
+    title: "Spiritual x startup transformation",
     description:
-      "Keep data consistent, with native CRM integrations that streamline your entire Tool workflow.",
-    link: { text: "See all integrations", href: "#" },
+      "Discover eBooks, take a quiz, and access consultation pathways.",
+    link: { text: "Learn More", href: "/astro360" },
   },
   {
     id: 3,
     imgSrc: "/assets/images/template/feature-03.svg",
-    imgAlt: "Maintain compliance and control your apps",
-    title: "Maintain compliance and control your apps",
-    description:
-      "Improve security and trust with built-in legally binding e-Signatures. Create pre-approved templates, content blocks, and lock all legal information to prevent costly mistakes.",
-    link: null,
+    imgAlt: "Fertility healthcare brand",
+    title: "Fertility healthcare brand",
+    description : "Discover fertility healthcare products, groundbreaking research, and inspiring testimonials.",
+    link: {text: "Learn More", href: "/dominus"},
   },
   {
     id: 4,
     imgSrc: "/assets/images/template/feature-04.svg",
-    imgAlt: "Review quickly and confidently",
-    title: "Review quickly and confidently",
+    imgAlt: "Experimental AI tools with limited access",
+    title: "Experimental AI tools with limited access",
     description:
-      "Get real-time access to approvals, comments, and version tracking. Smart features like variables and conditional logic help you eliminate Tool errors.",
-    link: null,
+      "Explore our groundbreaking experimental AI tools and learn how to secure your limited access.",
+    link: { text: "Learn More", href: "/ai-tools" },
   },
 ];
 
