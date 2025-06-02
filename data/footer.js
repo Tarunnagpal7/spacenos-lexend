@@ -169,36 +169,34 @@ export const footerLinks3 = [
 
 export const footerLinks4 = [
   {
-    title: "Product",
-    links: [
-      { text: "How it works", href: "#how_it_works" },
-      { text: "Features", href: "#features" },
-      { text: "Key Goods", href: "#key_features" },
-      { text: "Pro Elements", href: "#builder_elements" },
-      { text: "Pricing", href: "#pricing" },
-      { text: "Changelog", href: "#" },
-    ],
-  },
-  {
     title: "Company",
     links: [
-      { text: "About us", href: "/page-about", isLink: true },
-      { text: "Careers", href: "/page-career", isLink: true },
-      { text: "Press", href: "#" },
-      { text: "News", href: "/blog", isLink: true },
-      { text: "Media kit", href: "#" },
-      { text: "Contact", href: "/page-contacct", isLink: true },
+      { text: "About Us", href: "/about-us" },
+      { text: "Careers", href: "/career" },
+      { text: "Awards", href: "/awards" },
+      { text: "Our History", href: "/our-history" },
+      { text: "Ventures", href: "/ventures" },
+      { text: "Contact Us", href: "/contact-us" },
     ],
   },
   {
     title: "Resources",
     links: [
-      { text: "Blog", href: "/blog", isLink: true },
-      { text: "Newsletter", href: "#" },
-      { text: "Events", href: "#" },
-      { text: "Help center", href: "#" },
-      { text: "Tutorials", href: "#" },
-      { text: "Support", href: "#" },
+      { text: "Case Studies", href: "/case-studies", isLink: true },
+      { text: "Newsletter", href: "/newsletter", isLink: true },
+      { text: "Support", href: "/support" ,isLink: true},
+      { text: "Legal", href: "/legal", isLink: true },
+      { text: "Tutorials", href: "/tutorials" ,isLink: true},
+      { text: "Verify Documents", href: "/verify-doc", isLink: true },
+    ],
+  },
+  {
+    title: "Business",
+    links: [
+      { text: "Spacenos Developers", href: "/spacenos-developers", isLink: true },
+      { text: "Spacenos Labs", href: "/spacenos-Labs", isLink: true },
+      { text: "Spacenos Invest", href: "/spacenos-Invest", isLink: true },
+      
     ],
     extraClass: "d-none lg:d-block",
   },

@@ -538,14 +538,22 @@ export const pagesData = [
     ],
   },
 ];
-
 export const navItems = [
-  { href: "#overview", label: "Overview", active: true },
-  { href: "#features", label: "Features" },
-  { href: "#how_it_works", label: "How it works" },
-  { href: "#pricing", label: "Pricing" },
-  { href: "#clients_feedback", label: "Reviews" },
-  { href: "#insights", label: "Insights" },
+  { href: "#home", label: "Home", active: true },
+  {
+    label: "Ventures",
+    href: "#ventures",
+    children: [
+      { href: "#darkbase", label: "Darkbase" },
+      { href: "#astro360", label: "Astro360" },
+      { href: "#dominus", label: "Dominus" },
+      { href: "#ai-tools", label: "AI Tools" },
+    ],
+  },
+  { href: "#about-us", label: "About Us" },
+  { href: "#career", label: "Career" },
+  { href: "#resources", label: "Resources" },
+  { href: "#contact-us", label: "Contact Us" },
 ];
 
 export const mainPages = [

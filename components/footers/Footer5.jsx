@@ -26,11 +26,9 @@ export default function Footer5() {
                           />
                         </Link>
                         <p className="mt-2">
-                          Design amazing digital experiences that create more
-                          happy in the world.
+                        We build obsessed. Not average.
                         </p>
                       </div>
-                      <LanguageSelect />
                     </div>
                   </div>
                   {footerLinks4.map((section, index) => (
@@ -55,7 +53,7 @@ export default function Footer5() {
               </div>
               <div className="uc-footer-bottom panel vstack lg:hstack gap-4 justify-between text-center pt-4 lg:pt-6 border-top dark:text-white">
                 <p className="opacity-60">
-                  Lexend © {new Date().getFullYear()}, All rights reserved.
+                  Spacenos© {new Date().getFullYear()}, All rights reserved.
                 </p>
                 <ul className="nav-x justify-center gap-2 text-gray-300">
                   {socialLinks.map((link, index) => (

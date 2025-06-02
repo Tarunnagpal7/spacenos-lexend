@@ -32,17 +32,20 @@ export default function Header5() {
       window.removeEventListener("scroll", addScrollspy);
     };
   }, []);
+
   return (
     <header
-      className={`uc-header header-six uc-navbar-sticky-wrap z-999 uc-sticky ${
+      className={`uc-header header-six uc-navbar-sticky-wrap uc-sticky ${
         scrolledPast ? " uc-sticky-below uc-sticky-fixed headerFixed" : ""
       }`}
+      style={{ zIndex: 99999 }}
       data-uc-sticky="start: 1200px; animation: uc-animation-slide-top; sel-target: .uc-navbar-container; cls-active: uc-navbar-sticky; cls-inactive: uc-navbar-transparent; end: !*;"
     >
       <nav
-        className={`uc-navbar-container lg:mt-3 rounded-0 lg:rounded-pill uc-navbar-float ft-tertiary z-1 ${
+        className={`uc-navbar-container lg:mt-3 rounded-0 lg:rounded-pill uc-navbar-float ft-tertiary ${
           scrolledPast ? "uc-navbar-sticky" : "uc-navbar-transparent"
         } `}
+        style={{ zIndex: 99998 }}
         data-anime="translateY: [-40, 0]; opacity: [0, 1]; easing: easeOutExpo; duration: 750; delay: 0;"
       >
         <div className="uc-navbar-main" style={{ "--uc-nav-height": "80px" }}>
@@ -66,24 +69,55 @@ export default function Header5() {
               <div className="uc-navbar-center">
                 <ul className="uc-navbar-nav gap-3 xl:gap-5 d-none lg:d-flex fs-5 fw-medium scrollSpyLinks">
                   {navItems.map((item, index) => (
-                    <li key={index}>
-                      <a
-                        className={item.active ? "uc-active" : ""}
-                        href={item.href}
-                      >
-                        {item.label}
-                      </a>
+                    <li key={index} className={item.children ? "has-dd-menu" : ""}>
+                      {item.children ? (
+                        <>
+                          <a
+                            role="button"
+                            aria-haspopup="true"
+                            className={item.active ? "uc-active" : ""}
+                            href={item.href}
+                          >
+                            {item.label}{" "}
+                            <span
+                              data-uc-navbar-parent-icon=""
+                              className="uc-icon uc-navbar-parent-icon"
+                            >
+                              <svg width={12} height={12} viewBox="0 0 12 12">
+                                <polyline
+                                  fill="none"
+                                  stroke="currentColor"
+                                  strokeWidth="1.1"
+                                  points="1 3.5 6 8.5 11 3.5"
+                                />
+                              </svg>
+                            </span>
+                          </a>
+                          <div className="uc-navbar-dropdown uc-drop" style={{ zIndex: 9999 }}>
+                            <ul className="uc-nav uc-navbar-dropdown-nav">
+                              {item.children.map((child, childIndex) => (
+                                <li key={childIndex}>
+                                  <a href={child.href} className="fs-5 py-2">
+                                    {child.label}
+                                  </a>
+                                </li>
+                              ))}
+                            </ul>
+                          </div>
+                        </>
+                      ) : (
+                        <a
+                          className={item.active ? "uc-active" : ""}
+                          href={item.href}
+                        >
+                          {item.label}
+                        </a>
+                      )}
                     </li>
                   ))}
                 </ul>
               </div>
               <div className="uc-navbar-right">
-                <Link
-                  href={`/page-pricing`}
-                  className="btn btn-sm btn-primary px-3 d-none lg:d-inline-flex"
-                >
-                  <span>See pricing</span>
-                </Link>
                 <a
                   className="d-block lg:d-none uc-icon uc-navbar-toggle-icon"
                   onClick={openMobileMenu}

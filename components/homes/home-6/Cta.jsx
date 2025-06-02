@@ -11,7 +11,7 @@ export default function Cta() {
               className="content panel vstack items-center lg:items-start justify-center gap-2 lg:max-w-3/5 px-4 lg:px-0 "
               data-anime="onview:-100; targets: >*; translateY: [48, 0]; opacity: [0, 1]; easing: easeOutCubic; duration: 500; delay: anime.stagger(100, {start: 200});"
             >
-              <h2 className="h2 xl:display-5 ">
+              <h2 className="h2  xl:display-5 ">
                 Exclusive Founders Round Table
               </h2>
               <p className="fs-5 my-0">
@@ -26,7 +26,7 @@ export default function Cta() {
               </a>
             </div>
             <div
-              className="image-wrap lg:max-w-1/2 mt-2"
+              className="image-wrap lg:max-w-1/2 mt-2  "
               data-anime="onview:-100; translateX: [48, 0]; opacity: [0, 1]; easing: easeOutCubic; duration: 500; delay: 500;"
             >
               <Image
