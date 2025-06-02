@@ -77,9 +77,9 @@ export default function VideoComponent() {
               }}
             />
           </div>
-          <h4 style={{ marginTop: "0.5rem", padding: "0.5rem" , fontSize: "1rem"}}>
+          <p className="fs-6 xl:fs-4 fw-bold text-black dark:text-white text-opacity-70 p-1">
             {video.title}
-          </h4>
+          </p>
         </div>
       ))}
     </div>
@@ -93,7 +93,9 @@ export default function VideoComponent() {
         className="how-it-works section panel scrollSpysection"
       >
         <div className="section-outer panel pb-10 text-center p-2 sm:p-4 bg-secondary dark:bg-gray-800">
-            <h2 className="h4 sm:h1 pt-6 rounded-xl">Testimonials</h2>
+            <h1 className="h3 lg:h2 xl:h1 m-0  text-center mb-4 ">
+            Testimonials
+          </h1>
           <div className="container p-2 m-2 sm:p-4  xl:max-w-6xl mx-auto text-center">
 
             {renderRow(videoData1)}

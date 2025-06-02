@@ -42,7 +42,7 @@ export default function AboutValues({
                         alt={panel.altText}
                       />
                       <h5 className="h5 lg:h4 m-0">{panel.title}</h5>
-                      <p className="fs-6 opacity-70 dark:opacity-80">
+                      <p className="fs-5 fw-bold opacity-70 dark:opacity-80">
                         {panel.description}
                       </p>
                     </div>

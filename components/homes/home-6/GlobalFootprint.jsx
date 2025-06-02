@@ -23,7 +23,7 @@ export default function GlobalFootprint() {
         <h1 className="h3 lg:h2 xl:h1 m-0  text-center mb-4 ">
             Our Global Footprint
           </h1>
-         <p className="fs-6 xl:fs-5 text-black dark:text-white text-opacity-70">
+         <p className="fs-6 xl:fs-4 text-black dark:text-white text-opacity-70">
             Expanding worldwide to serve you better with strategic locations across continents.
             </p>
       </div>

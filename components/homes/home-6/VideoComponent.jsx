@@ -47,7 +47,7 @@ export default function VideoComponent() {
             </div>
           </div>
           <div className="panel vstack items-center gap-2 mt-4 lg:mt-6 xl:mt-8">
-            <p className="fs-6 xl:fs-5 text-black dark:text-white text-opacity-70">
+            <p className="fs-6 xl:fs-4 text-black dark:text-white text-opacity-70">
               Our CEO, a visionary leader, is here to share insights on the future of our company and the industry.
             </p>
             <button
