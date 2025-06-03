@@ -35,7 +35,7 @@ export default function AchievementsHero() {
           />
         </div>
       </div>
-      <div className="section-outer panel pt-9 lg:pt-10 pb-6 sm:pb-8 lg:pb-9">
+      <div className="section-outer panel pt-9 lg:pt-10 pb-8 sm:pb-4">
         <div className="container max-w-xl">
           <div
             className="section-inner panel mt-2 sm:mt-4 lg:mt-0"
@@ -48,6 +48,17 @@ export default function AchievementsHero() {
               <p className="fs-6 sm:fs-5  text-dark dark:text-white text-opacity-70">
               With a vast client base across Australia, the UK, and USA, we're driven to unearth 'gems' and consistently exceed expectations. This page is a testament to our proven skills and the partners who've fueled our achievements.
               </p>
+            </div>
+            <div>
+              <Image 
+                className="img-fluid rounded-3 shadow-lg"
+                width={1200}
+                height={800}
+                alt="hero-image"
+                data-uc-svg=""
+                src="/assets/images/team/09.jpeg"
+              >
+              </Image>
             </div>
           </div>
         </div>

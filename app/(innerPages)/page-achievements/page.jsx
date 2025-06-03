@@ -19,9 +19,8 @@ export default function CareerPage() {
         <Header10 />
         <div id="wrapper" className="wrap">
          <AchievementsHero />
-         <Testimonials />
-          <AchievementsCards />
           <AchievementsTestimonials />
+          <AchievementsCards />
         </div>
         <Footer5 />
       </div>

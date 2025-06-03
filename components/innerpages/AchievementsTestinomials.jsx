@@ -4,100 +4,7 @@ import { Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Image from "next/image";
 import ModalVideo from "../common/ModalVideo";
-
-// Fake video testimonials data
-const videoTestimonials = [
-  {
-    id: 1,
-    name: "Sarah Johnson",
-    title: "CEO",
-    company: "TechNova Solutions",
-    quote: "Working with this team transformed our digital presence completely. Their innovative approach delivered results beyond our expectations.",
-    video: "/assets/images/media/lexend_vid_home-6.webm",
-    poster: "/assets/images/media/lexend_vid_home-6.jpg"
-  },
-  {
-    id: 2,
-    name: "Michael Chen",
-    title: "CTO",
-    company: "DataSphere Inc.",
-    quote: "The technical expertise and attention to detail made all the difference in our complex project. Truly exceptional service.",
-    video: "/assets/images/media/lexend_vid_home-6.webm",
-    poster: "/assets/images/media/lexend_vid_home-6.jpg"
-  },
-  {
-    id: 3,
-    name: "Emma Rodriguez",
-    title: "Marketing Director",
-    company: "Global Brand Partners",
-    quote: "Our engagement metrics improved by 300% after implementing their solutions. A game-changer for our business.",
-    video: "/assets/images/media/lexend_vid_home-6.webm",
-    poster: "/assets/images/media/lexend_vid_home-6.jpg"
-  },
-  {
-    id: 4,
-    name: "David Wilson",
-    title: "Product Manager",
-    company: "InnovateX",
-    quote: "They delivered our product ahead of schedule with flawless execution. The team is simply outstanding.",
-    video: "/assets/images/media/lexend_vid_home-6.webm",
-    poster: "/assets/images/media/lexend_vid_home-6.jpg"
-  },
-  {
-    id: 5,
-    name: "Priya Patel",
-    title: "Founder",
-    company: "GreenTech Ventures",
-    quote: "Their sustainable tech solutions aligned perfectly with our mission. A partnership we truly value.",
-    video: "/assets/images/media/lexend_vid_home-6.webm",
-    poster: "/assets/images/media/lexend_vid_home-6.jpg"
-  },
-  {
-    id: 6,
-    name: "Priya Patel",
-    title: "Founder",
-    company: "GreenTech Ventures",
-    quote: "Their sustainable tech solutions aligned perfectly with our mission. A partnership we truly value.",
-    video: "/assets/images/media/lexend_vid_home-6.webm",
-    poster: "/assets/images/media/lexend_vid_home-6.jpg"
-  },
-  {
-    id: 7,
-    name: "Priya Patel",
-    title: "Founder",
-    company: "GreenTech Ventures",
-    quote: "Their sustainable tech solutions aligned perfectly with our mission. A partnership we truly value.",
-    video: "/assets/images/media/lexend_vid_home-6.webm",
-    poster: "/assets/images/media/lexend_vid_home-6.jpg"
-  },
-  {
-    id: 8,
-    name: "Priya Patel",
-    title: "Founder",
-    company: "GreenTech Ventures",
-    quote: "Their sustainable tech solutions aligned perfectly with our mission. A partnership we truly value.",
-    video: "/assets/images/media/lexend_vid_home-6.webm",
-    poster: "/assets/images/media/lexend_vid_home-6.jpg"
-  },
-  {
-    id: 9,
-    name: "Priya Patel",
-    title: "Founder",
-    company: "GreenTech Ventures",
-    quote: "Their sustainable tech solutions aligned perfectly with our mission. A partnership we truly value.",
-    video: "/assets/images/media/lexend_vid_home-6.webm",
-    poster: "/assets/images/media/lexend_vid_home-6.jpg"
-  },
-  {
-    id: 10,
-    name: "Priya Patel",
-    title: "Founder",
-    company: "GreenTech Ventures",
-    quote: "Their sustainable tech solutions aligned perfectly with our mission. A partnership we truly value.",
-    video: "/assets/images/media/lexend_vid_home-6.webm",
-    poster: "/assets/images/media/lexend_vid_home-6.jpg"
-  },
-];
+import { videoTestimonials } from "@/data/testimonials";
 
 export default function AchievementsTestimonials() {
   const [isOpen, setOpen] = useState(false);
@@ -110,11 +17,11 @@ export default function AchievementsTestimonials() {
 
   return (
     <div id="clients_feedback" className="clients-feedback section panel scrollSpysection">
-      <div className="section-outer panel py-6 lg:py-8 xl:py-10 bg-secondary text-black rounded-2 lg:rounded-3 m-2">
+      <div className="section-outer panel py-6 lg:py-8 xl:py-10 bg-secondary dark:bg-gray-800  text-black rounded-2 lg:rounded-3 m-2">
         <div className="container xl:max-w-xl">
           <div className="section-inner panel vstack items-center gap-4 md:gap-6 lg:gap-8 max-w-100">
             <div className="panel vstack items-center gap-2 xl:gap-3 text-center">
-              <p className="h3 lg:h2 xl:h1 m-0 px-2 text-black">
+              <p className="h3 lg:h2 xl:h1 m-0 px-2 text-black dark:text-white">
                 Voices of Success
               </p>
             </div>

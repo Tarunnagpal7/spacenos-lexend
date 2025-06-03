@@ -1,6 +1,6 @@
-import Header2 from "@/components/headers/Header2";
+import Header10 from "@/components/headers/Header10";
 
-import Footer2 from "@/components/footers/Footer2";
+import Footer5 from "@/components/footers/Footer5";
 import Hero from "@/components/innerpages/features/Hero";
 import KeyFeatures from "@/components/innerpages/features/KeyFeatures";
 import Faq from "@/components/homes/home-2/Faq";
@@ -18,13 +18,13 @@ export default function FeaturesPage() {
   return (
     <>
       <div className="page-wrapper uni-body panel bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-200 overflow-x-hidden bp-xs bp-sm bp-md bp-lg bp-xl bp-xxl dom-ready">
-        <Header2 />
+        <Header10 />
         <div id="wrapper" className="wrap">
           <Hero />
          <VentureOverview />
           <Cta />
         </div>
-        <Footer2 />
+        <Footer5 />
       </div>
     </>
   );

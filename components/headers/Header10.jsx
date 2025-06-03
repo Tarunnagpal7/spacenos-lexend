@@ -30,20 +30,20 @@ export default function Header1() {
     <header
       style={{ "--uc-nav-height": "80px" }}
       className={`uc-header header-default uc-navbar-sticky-wrap z-999 uc-sticky  ${
-        scrollingUp ? "uc-sticky-below uc-sticky-fixed headerFixed" : ""
+        scrollingUp ? "uc-sticky-below uc-sticky-fixed headerFixed " : ""
       }`}
       data-uc-sticky="start: 100vh; show-on-up: true; animation: uc-animation-slide-top; sel-target: .uc-navbar-container; cls-active: uc-navbar-sticky; cls-inactive: uc-navbar-transparent; end: !*;"
     >
       <nav
-        className={`uc-navbar-container uc-navbar-float ft-tertiary z-1   ${
-          scrollingUp ? "uc-navbar-sticky" : "uc-navbar-transparent"
+        className={`uc-navbar-container uc-navbar-float ft-tertiary z-1   
+          uc-navbar-sticky
         } `}
         data-anime="translateY: [-40, 0]; opacity: [0, 1]; easing: easeOutExpo; duration: 750; delay: 0;"
         style={{ transform: "translateY(0px)", opacity: 1 }}
       >
         <div className="container max-w-xl">
           <div
-            className="uc-navbar min-h-64px lg:min-h-80px text-gray-900 dark:text-white"
+            className="uc-navbar min-h-64px lg:min-h-80px text-gray-900 dark:text-white "
             data-uc-navbar="mode: click; animation: uc-animation-slide-top-small; duration: 150;"
           >
             <div className="uc-navbar-left ">
@@ -61,7 +61,7 @@ export default function Header1() {
                     height="40"
                   />
                   <Image
-                    className="d-none dark:d-block"
+                    className="d-none "
                     alt="Lexend"
                     src="/assets/images/common/logo-dark.svg"
                     width="117"
@@ -69,13 +69,13 @@ export default function Header1() {
                   />
                 </Link>
               </div>
-              <ul className="uc-navbar-nav gap-3 xl:gap-4 d-none lg:d-flex fw-medium ms-2">
+              <ul className={`uc-navbar-nav gap-3 xl:gap-4 d-none lg:d-flex fw-medium ms-2 fw-bold `}>
                 <Nav4 />
               </ul>
             </div>
             <div className="uc-navbar-right">
               <div className="d-none lg:d-block">
-                <Link className="text-none fw-medium " href={`#`}>
+                <Link className= {`text-none fw-medium `} href={`/login`}>
                   <span>Log in</span>
                 </Link>
               </div>

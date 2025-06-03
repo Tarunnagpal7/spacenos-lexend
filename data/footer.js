@@ -198,7 +198,6 @@ export const footerLinks4 = [
       { text: "Spacenos Invest", href: "/spacenos-Invest", isLink: true },
       
     ],
-    extraClass: "d-none lg:d-block",
   },
 ];
 

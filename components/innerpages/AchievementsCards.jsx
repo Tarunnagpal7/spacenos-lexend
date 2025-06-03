@@ -5,7 +5,7 @@ import { awards } from '@/data/awards'; // Adjust the import path as necessary
 export default function AchievementsCards() {
   return (
     <div id="hero_header" className="hero-header section panel overflow-hidden">
-      <div className="section-outer panel pt-9 lg:pt-10 pb-6 sm:pb-8 lg:pb-9">
+      <div className="section-outer panel pt-8  pb-6 sm:pb-8 lg:pb-9">
         <div className="container max-w-xl">
           <div
             className="section-inner panel mt-2 sm:mt-4 lg:mt-0"

@@ -10,7 +10,7 @@ export default function Nav4() {
   return (
     <>
       <li>
-        <Link href={`#`}>Home</Link>
+        <Link href={`/`}>Home</Link>
       </li>
       <li className="has-dd-menu">
         <a role="button" aria-haspopup="true">
@@ -62,13 +62,13 @@ export default function Nav4() {
         <Link href={`#`}>Resources</Link>
       </li>
       <li>
-        <Link href={`#`}>Career</Link>
+        <Link href={`/page-career`}>Career</Link>
       </li>
       <li>
-        <Link href={`#`}>About Us</Link>
+        <Link href={`/page-about`}>About Us</Link>
       </li>
       <li>
-        <Link href={`#`}>Contact Us</Link>
+        <Link href={`/page-contact`}>Contact Us</Link>
       </li>
 
       <style jsx>{`
