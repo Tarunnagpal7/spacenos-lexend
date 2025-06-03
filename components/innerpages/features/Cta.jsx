@@ -15,9 +15,9 @@ export default function Cta() {
               <div className="vstack sm:hstack justify-center lg:justify-start gap-1 lg:gap-2 mt-1 lg:mt-2">
                 <Link
                   href={`/page-pricing`}
-                  className="btn btn-md lg:btn-lg btn-primary text-white"
+                  className="btn  btn-primary text-white fs-6 fs-sm-5 fs-md-4"
                 >
-                  Book a call and we’ll guide you through what fits your goals
+                  Book a call 
                 </Link>
               </div>
             </div>

@@ -84,7 +84,7 @@ export default function CareerHero() {
                 Join Our Empire.
               </h1>
               <p className="fs-6 sm:fs-5 text-dark dark:text-white text-opacity-70">
-                We’re not a company that hands out tasks. We hand out real responsibility. At Spacenos, interns ship features. Associates pitch to founders. Designers own products. If you’re smart, hungry, and ready to build things that actually matter — we’ll give you the launchpad. Degrees don’t matter. Output does.
+                We’re not a company that hands out tasks. We hand out real responsibility. At Spacenos, interns ship features. Associates pitch to founders. Designers own products. If you’re smart, hungry, and ready to build things that actually matter — then join our empire!
                </p>
             </div>
             <div className="panel">

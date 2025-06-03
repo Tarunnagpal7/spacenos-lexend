@@ -77,6 +77,7 @@ export default function Hero() {
                           <div className="panel vstack gap-2">
                             <span className="fs-6 fw-bold m-0 text-primary">
                               {feature.id.toString().padStart(2, "0")}.
+                               <span className="fs-2 p-1">{feature.heading}</span>
                             </span>
                             <h3 className="h4 lg:h2 m-0">{feature.title}</h3>
                             <p className="fs-6 lg:fs-5 opacity-70 dark:opacity-80">

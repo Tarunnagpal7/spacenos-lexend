@@ -15,7 +15,7 @@ export const panelsDataCareers = [
     altText: "crown-icon",
     title: "You have complete ownership",
     description:
-      "Your opinion truly matters. We empower you to creatively tweak projects with your unique vision and skills. You have complete ownership."
+      "At Spacenos, we believe in smart work over hard work. Manage your schedule to fit your needs, focusing on impactful output. We trust our developers to be efficient.Your autonomy drives our shared success."
   },
   {
     id: 3,

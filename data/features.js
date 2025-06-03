@@ -333,6 +333,7 @@ export const features6 = [
     id: 1,
     imgSrc: "/assets/images/template/feature-01.svg",
     imgAlt: "India-based tech pods for global clients",
+    heading:"Darkbase",
     title: "India-based tech pods for global clients",
     description:
       "Learn about our pricing, client testimonials, and more.",
@@ -342,6 +343,7 @@ export const features6 = [
     id: 2,
     imgSrc: "/assets/images/template/feature-02.svg",
     imgAlt: "Spiritual x startup transformation",
+    heading : "Astro360",
     title: "Spiritual x startup transformation",
     description:
       "Discover eBooks, take a quiz, and access consultation pathways.",
@@ -351,6 +353,7 @@ export const features6 = [
     id: 3,
     imgSrc: "/assets/images/template/feature-03.svg",
     imgAlt: "Fertility healthcare brand",
+    heading: "Dominus",
     title: "Fertility healthcare brand",
     description : "Discover fertility healthcare products, groundbreaking research, and inspiring testimonials.",
     link: {text: "Learn More", href: "/dominus"},
@@ -359,6 +362,7 @@ export const features6 = [
     id: 4,
     imgSrc: "/assets/images/template/feature-04.svg",
     imgAlt: "Experimental AI tools with limited access",
+    heading: "AI Tools",
     title: "Experimental AI tools with limited access",
     description:
       "Explore our groundbreaking experimental AI tools and learn how to secure your limited access.",

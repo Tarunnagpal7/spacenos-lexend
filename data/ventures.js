@@ -16,7 +16,7 @@ export const ventures = [
           author: "Sarah K., Tech Startup Founder"
         }
       ],
-      cta: "Request Darkbase Quote",
+      cta: "Request Darkbase ",
       ctaLink: "/darkbase",
       image: "/assets/images/template/feature-01.svg"
     },
@@ -37,7 +37,7 @@ export const ventures = [
           author: "Raj P., SaaS Founder"
         }
       ],
-      cta: "Start Astro360 Transformation",
+      cta: "Start Astro360 ",
       ctaLink: "/astro360",
       image: "/assets/images/template/feature-02.svg"
     },
@@ -58,7 +58,7 @@ export const ventures = [
           author: "Emily & James T."
         }
       ],
-      cta: "Explore Dominus Products",
+      cta: "Explore Dominus ",
       ctaLink: "/dominus",
       image: "/assets/images/template/feature-03.svg"
     },
@@ -79,7 +79,7 @@ export const ventures = [
           author: "CTO, Fortune 500 Company"
         }
       ],
-      cta: "Access AI Tools Beta",
+      cta: "Access AI Tools ",
       ctaLink: "/ai-tools",
       image: "/assets/images/template/feature-04.svg"
     }

@@ -51,8 +51,7 @@ export default function VideoComponent() {
                                 </div>
                             </div>
                             <p  className="fs-6 xl:fs-4 fw-bold text-black dark:text-white text-opacity-70" >
-                                From our intern to CTO of a $1Mn startup.
-                                Know more about the leadership skills Aryaman learnt at Spacenos and how it is helping him in his startup.
+                                From Spacenos intern to $1M startup CTO. Discover how Aryaman's leadership journey here shaped his success.
                             </p>
                         </div>
                     </div>
