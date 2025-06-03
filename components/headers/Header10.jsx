@@ -3,8 +3,6 @@ import Nav4 from "./component/Nav4";
 import Link from "next/link";
 import Image from "next/image";
 import { openMobileMenu } from "@/utlis/toggleMobileMenu";
-import { openContactModal } from "@/utlis/toggleContactModal";
-import LanguageSelect2 from "../common/LanguageSelect2";
 import { useEffect, useState } from "react";
 
 export default function Header1() {
@@ -31,7 +29,7 @@ export default function Header1() {
   return (
     <header
       style={{ "--uc-nav-height": "80px" }}
-      className={`uc-header header-default uc-navbar-sticky-wrap z-999 uc-dark uc-sticky  ${
+      className={`uc-header header-default uc-navbar-sticky-wrap z-999 uc-sticky  ${
         scrollingUp ? "uc-sticky-below uc-sticky-fixed headerFixed" : ""
       }`}
       data-uc-sticky="start: 100vh; show-on-up: true; animation: uc-animation-slide-top; sel-target: .uc-navbar-container; cls-active: uc-navbar-sticky; cls-inactive: uc-navbar-transparent; end: !*;"
@@ -77,7 +75,7 @@ export default function Header1() {
             </div>
             <div className="uc-navbar-right">
               <div className="d-none lg:d-block">
-                <Link className="text-none fw-medium" href={`#`}>
+                <Link className="text-none fw-medium " href={`#`}>
                   <span>Log in</span>
                 </Link>
               </div>
