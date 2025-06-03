@@ -1,6 +1,5 @@
 "use client";
 import React, { useState, useEffect } from 'react';
-
 import { timelineData } from '@/data/timeline';
 
 export default function Timeline() {
@@ -46,7 +45,7 @@ export default function Timeline() {
         .timeline-container {
           position: relative;
           width: 100%;
-          max-width: 400px;
+          max-width: 1200px;
           margin: 0 auto;
         }
 
@@ -90,8 +89,9 @@ export default function Timeline() {
           position: relative;
           overflow: hidden;
           border-radius: 12px;
-          width: 200px;
-          height: 200px;
+          width: 100%;
+          max-width: 300px;
+          height: 300px;
           margin: 0 auto;
         }
 
@@ -120,6 +120,8 @@ export default function Timeline() {
 
         .content {
           animation-delay: 0.3s;
+          max-width: 600px;
+          margin: 0 auto;
         }
 
         .timeline-slide.entering .content {
@@ -141,6 +143,7 @@ export default function Timeline() {
           position: relative;
           text-align: center;
           margin-top: 2rem;
+          padding-bottom: 1rem;
         }
 
         .dot {
@@ -198,36 +201,61 @@ export default function Timeline() {
           100% { width: 100%; }
         }
 
-        @media (max-width: 768px) {
-          .timeline-container {
-            max-width: 300px;
-            padding: 0 1rem;
+        /* Improved responsive design */
+        .timeline-box {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 2rem;
+          padding: 1rem;
+        }
+
+        @media (min-width: 768px) {
+          .timeline-box {
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 3rem;
           }
           
           .image-wrap {
-            width: 160px;
-            height: 160px;
+            flex: 0 0 300px;
+            height: 300px;
           }
           
           .content {
+            text-align: left;
+            flex: 1;
+            padding: 0 1rem;
+          }
+        }
+
+        @media (max-width: 767px) {
+          .image-wrap {
+            width: 250px;
+            height: 250px;
+          }
+          
+          .content {
+            text-align: center;
             padding: 0 1rem;
           }
         }
 
         @media (max-width: 480px) {
-          .timeline-container {
-            max-width: 280px;
+          .image-wrap {
+            width: 200px;
+            height: 200px;
           }
           
-          .image-wrap {
-            width: 140px;
-            height: 140px;
+          .timeline-dots {
+            margin-top: 1.5rem;
           }
         }
       `}</style>
 
-      <div className="section-outer panel p-6  ">
-        <div className="container max-w-lg">
+      <div className="section-outer panel p-6">
+        <div className="container max-w-7xl">
           <div className="section-inner panel">
             <div className="panel justify-center items-center gap-4">
               <h2
@@ -237,10 +265,10 @@ export default function Timeline() {
                 Our Journey
               </h2>
               
-              <div className="timeline-container panel p-2 " >
+              <div className="timeline-container panel p-4">
                 <div className={`timeline-slide ${animationPhase}`}>
-                  <div className="timeline-box panel vstack items-center gap-9 text-center ">
-                    <div className="image-wrap panel p-2 overflow-hidden w-200px">
+                  <div className="timeline-box">
+                    <div className="image-wrap panel overflow-hidden">
                       <img
                         className="image w-100 origin-bottom"
                         src={currentItem.src}
@@ -249,7 +277,7 @@ export default function Timeline() {
                         alt={currentItem.alt}
                       />
                     </div>
-                    <div className="content panel w-100 p-2  vstack items-center ">
+                    <div className="content panel vstack">
                       <h3 className="title h5 sm:h3 dark:text-white">
                         {currentItem.year}
                       </h3>
@@ -261,7 +289,7 @@ export default function Timeline() {
                 </div>
 
                 {/* Navigation Dots */}
-                <div className="timeline-dots p-2">
+                <div className="timeline-dots">
                   <div className="progress-bar"></div>
                   {timelineData.map((_, index) => (
                     <span
