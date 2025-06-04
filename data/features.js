@@ -1,3 +1,5 @@
+
+import { BadgeCheck, Shield, DollarSign, Zap, Code, Globe } from "lucide-react";
 export const panelData = [
   {
     id: 1,
@@ -189,6 +191,102 @@ export const features4 = [
       "Collect them instantly right from your contract, while increasing your close rate by 36%.",
   },
 ];
+
+ export const pricingFeatures = [
+    {
+      icon: DollarSign,
+      title: "Transparent Pricing",
+      description: "No hidden costs with clear monthly developer rates",
+      highlight: false
+    },
+    {
+      icon: Zap,
+      title: "Flexible Scaling",
+      description: "Easily adjust team size with 30-day notice",
+      highlight: true
+    },
+    {
+      icon: Code,
+      title: "Senior Talent",
+      description: "5+ years average experience per developer",
+      highlight: false
+    }
+  ];
+
+  export const qualityFeatures = [
+    {
+      icon: Shield,
+      title: "Dedicated QA",
+      description: "Separate quality assurance engineers on every project",
+      highlight: false
+    },
+    {
+      icon: BadgeCheck,
+      title: "Code Reviews",
+      description: "Mandatory peer reviews before deployment",
+      highlight: true
+    },
+    {
+      icon: Globe,
+      title: "Global Standards",
+      description: "ISO-certified development processes",
+      highlight: false
+    }
+  ];
+
+export const foreignPodItems = [
+  {
+    imageSrc: "/assets/images/template/home-four-feature-01.png",
+    altText: "Global Remote Development",
+    title: "Foreign Pod",
+    subtitle: "Your Global Development Pod",
+    description: "Welcome to Spacenos Hire – Where our Software Developers Code the Future. We are a team of tech-minded, fast-paced, and experienced software developers, operating from India, ready and open for challenges and work. Our client base is vast, spanning from Australia to the UK and USA.",
+    tagline: "For international clients hiring India-based pods.",
+    reverseOrder: false,
+  },
+  {
+    imageSrc: "/assets/images/template/home-four-feature-01.png",
+    altText: "Why Hire a Spacenos Foreign Pod",
+    title: "Why You Should Hire Our Remote Developers",
+    benefits: [
+      {
+        title: "Cost-Efficiency",
+        description: "With the cost of software development rocketing, a remote team of developers comes in handy and is cost-efficient in nature. A high-quality development project costs hundreds of thousands of dollars. But at Spacenos, our certified professionals aspire to do the same for you at a much lower cost."
+      },
+      {
+        title: "Reduced Burden for Client",
+        description: "It is our developers' job to turn your needs and imagination into the technology you expect to build without having to manage any legalities, train interns, and hustle for probation periods. You are required merely to hire our team and it will take the burden off your shoulders so you can focus on your business while your software is being built by our experienced professionals."
+      }
+    ],
+    reverseOrder: true,
+  },
+  {
+    imageSrc: "/assets/images/template/home-four-feature-01.png",
+    altText: "How a Spacenos Foreign Pod Works",
+    title: "How Your Foreign Pod Works",
+    subtitle: "Our Seamless Engagement Model",
+    processSteps: [
+      {
+        title: "Idea & Requirements Briefing",
+        description: "You brief us about your idea and requirement along with your budget."
+      },
+      {
+        title: "Expert Pod Formation & Costing",
+        description: "Our team of experts will come up with the developers needed for the job and the amount you require to pay."
+      },
+      {
+        title: "Dedicated International Management",
+        description: "The third step is to assign a manager in the USA, the UK, or Australia who will do the conversion of your requirements to tech requirements and get the work done from an elite team of programmers in India."
+      },
+      {
+        title: "Cost Structure Clarity",
+        description: "Own our team for your project for unlimited iteration at the cost of the developers' salaries and our administration fee only."
+      }
+    ],
+    reverseOrder: false,
+  }
+];
+
 
 export const featureItems = [
   {
