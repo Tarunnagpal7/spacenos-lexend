@@ -69,3 +69,25 @@ export const panelsData = [
     suffix: "k",
   },
 ];
+
+export const InvestorData = [
+  {
+    value: 4,
+    text: "Products.",
+    animationData:
+      "onview: -100; textContent: 4; round: 1; easing: linear; duration: 1200;",
+  },
+  {
+    value: 200,
+    text: "Years of advancements.",
+    animationData:
+      "onview: -100; textContent: [0, 50]; round: 1; easing: linear; duration: 1200;",
+  },
+  {
+    value: 850,
+    text: "Lives Changed.",
+    animationData:
+      "onview: -100; textContent: [0, 100]; round: 1; easing: linear; duration: 1200;",
+    suffix: " k+",
+  },
+];
