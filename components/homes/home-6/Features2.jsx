@@ -40,7 +40,7 @@ export default function Features2() {
                     <Image
                       className="ltr:rounded-top-start-1-5 rtl:rounded-top-end-1-5"
                       alt=""
-                      src="/assets/images/template/home-06-main-app.png"
+                      src="/assets/images/template/home4.png"
                       width="1280"
                       height="837"
                     />
@@ -55,7 +55,7 @@ export default function Features2() {
                   <div
                     className="position-cover opacity-70 bg-cover"
                     style={{ backgroundPosition: "50% 85%" }}
-                    data-src="/assets/images/template/feature-06-bg-masked.png"
+                    data-src="/assets/images/template/feature-06-bg.png"
                     data-uc-img=""
                   />
                   <div className="position-cover bg-gradient-to-t from-gray-800 via-transparent to-gray-900" />
@@ -64,7 +64,7 @@ export default function Features2() {
                     <Image
                       className="rounded-bottom-1-5 lg:rounded-bottom-3"
                       alt="dashboard-components"
-                      src="/assets/images/template/home-06-dashboard-components.png"
+                      src="/assets/images/template/home1.jpg"
                       width="664"
                       height="496"
                     />
@@ -161,7 +161,7 @@ export default function Features2() {
                   <div className="panel px-3 lg:px-4 xl:px-6 mb-2 lg:mb-5">
                     <Image
                       alt="builder-tools"
-                      src="/assets/images/template/home-06-builder-tools.png"
+                      src="/assets/images/template/home2.jpg"
                       width="1280"
                       height="800"
                     />

@@ -171,12 +171,12 @@ export const footerLinks4 = [
   {
     title: "Company",
     links: [
-      { text: "About Us", href: "/about-us" },
-      { text: "Careers", href: "/career" },
-      { text: "Awards", href: "/awards" },
+      { text: "About Us", href: "/page-about" },
+      { text: "Careers", href: "/page-career" },
+      { text: "Awards", href: "/page-achievements" },
       { text: "Our History", href: "/our-history" },
-      { text: "Ventures", href: "/ventures" },
-      { text: "Contact Us", href: "/contact-us" },
+      { text: "Ventures", href: "/page-features" },
+      { text: "Contact Us", href: "/page-contact" },
     ],
   },
   {

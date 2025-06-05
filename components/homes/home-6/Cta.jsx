@@ -32,7 +32,7 @@ export default function Cta() {
               <Image
                 className="image w-full h-auto" 
                 alt="builder-tools"
-                src="/assets/images/template/home-06-builder-tools.png"
+                src="/assets/images/template/home3.jpg"
                 width={1280}
                 height={800}
                 style={{

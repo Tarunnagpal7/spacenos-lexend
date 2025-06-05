@@ -3,6 +3,7 @@
 import { useState } from "react";
 import ModalVideo from "@/components/common/ModalVideo";
 import { useParallax } from "react-scroll-parallax";
+import Link from "next/link";
 export default function VideoComponent() {
   const [isOpen, setOpen] = useState(false);
   const parallax = useParallax({
@@ -50,12 +51,13 @@ export default function VideoComponent() {
             <p className="fs-6 xl:fs-4 text-black dark:text-white text-opacity-70">
               Our CEO, a visionary leader, is here to share insights on the future of our company and the industry.
             </p>
+            <Link href={"/meet-the-ceo"}>
             <button
-              onClick={() => setOpen(true)}
               className="btn btn-primary px-3 mt-2"
-            >
+              >
               See How He’s Helped Founders Like You
             </button>
+              </Link>
             </div>
         </div>
       </div>

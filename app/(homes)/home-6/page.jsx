@@ -10,6 +10,7 @@ import Features from "@/components/homes/home-6/Features";
 import Features2 from "@/components/homes/home-6/Features2";
 import GlobalFootprint from "@/components/homes/home-6/GlobalFootprint";
 import Hero from "@/components/homes/home-6/Hero";
+import JoinCirle from "@/components/homes/home-6/JoinCirlce";
 import KeyFeatures from "@/components/homes/home-6/KeyFeatures";
 import Pricing from "@/components/homes/home-6/Pricing";
 import Team from "@/components/homes/home-6/Team";
@@ -40,7 +41,7 @@ export default function HomePage6() {
           <KeyFeatures />
           <Testimonials />
           <Cta />
-          <Newsletter />
+          <JoinCirle />
         </div>
         <Footer5 />
       </div>

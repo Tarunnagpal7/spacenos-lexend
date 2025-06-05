@@ -63,12 +63,6 @@ export default function Hero() {
                       height="108"
                     />
                   </div>
-                  {/* <div className="cstack gap-1 py-1 px-2 border rounded-pill">
-                    <span className="d-inline-block w-4px h-4px rounded-circle bg-primary-400" />
-                    <span className="fs-8 fw-bold text-uppercase text-white">
-                      Beta 2.0 Available Now
-                    </span>
-                  </div> */}
                   <h1 className="h1 sm:display-6 md:display-5 lg:display-4 xl:display-3 m-0 text-white">
                     Building Empires Powered By 
                     <span className="d-inline-flex px-1 bg-secondary text-primary -rotate-1 lg:-rotate-2 rounded-1 lg:rounded-1-5">
@@ -103,45 +97,9 @@ export default function Hero() {
                     <Image
                       className="shadow-md lg:shadow-lg"
                       alt="app-dashboard"
-                      src="/assets/images/template/app-dashboard.png"
+                      src="/assets/images/template/home5.png"
                       width="1280"
                       height="853"
-                    />
-                  </div>
-                  <div className="position-absolute top-50 end-0 translate-middle-y mt-2 lg:me-5">
-                    <Image
-                      className="w-100px text-primary lg:rounded-2 shadow-xl"
-                      alt="app-dashboard-helper-1"
-                      data-anime="scale: [0.5, 1]; opacity: [0, 1]; easing: easeOutCubic; duration: 500; delay: 250;"
-                      src="/assets/images/template/app-dashboard-helper-1.png"
-                      width="306"
-                      height="583"
-                    />
-                  </div>
-                  <div
-                    className="position-absolute"
-                    style={{ top: "74%", right: "7%" }}
-                  >
-                    <Image
-                      className="w-48px lg:w-80px"
-                      alt="user-cursor"
-                      data-anime="loop: true; translateX: [-80,80]; translateY: [-80,80]; easing: easeOutElastic(1, .8); direction: 'alternate'; duration: 8000; delay: 3000;"
-                      src="/assets/images/template/user-cursor-2.svg"
-                      width="96"
-                      height="106"
-                    />
-                  </div>
-                  <div
-                    className="position-absolute"
-                    style={{ top: "64%", left: "26.5%" }}
-                  >
-                    <Image
-                      className="w-48px lg:w-80px"
-                      alt="user-cursor"
-                      data-anime="loop: true; translateX: [-80,80]; translateY: [-80,80]; easing: easeOutElastic(1, .8); direction: 'alternate'; duration: 7000; delay: 2000;"
-                      src="/assets/images/template/user-cursor-4.svg"
-                      width="94"
-                      height="108"
                     />
                   </div>
                 </div>
