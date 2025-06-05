@@ -4,7 +4,7 @@ import RelatedBlogs from "./RelatedBlogs";
 import Image from "next/image";
 import { Gallery, Item } from "react-photoswipe-gallery";
 
-export default function BlogDetails1({ blogItem }) {
+export default function BlogDetails({ blogItem }) {
   const renderContent = (content) => {
     if (Array.isArray(content)) {
       return content.map((item, index) => {
