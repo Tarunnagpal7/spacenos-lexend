@@ -15,8 +15,7 @@ export const metadata = {
 export default async function CareerDetailsPage(props) {
   const params = await props.params;
   const id = params.id;
-  const jobItem =
-    jobListings.filter((elm) => elm.id == id)[0] || jobListings[0];
+  const jobItem = jobListings[id-1]
   return (
     <>
       <div className="page-wrapper uni-body panel bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-200 overflow-x-hidden bp-xs bp-sm bp-md bp-lg bp-xl bp-xxl dom-ready">
@@ -42,7 +41,7 @@ export default async function CareerDetailsPage(props) {
             </div>
           </div>
 
-          <JobDetails />
+          <JobDetails job={jobItem} />
           <CareerOpenings />
           <Feedback />
           <Brands />

@@ -75,13 +75,13 @@ export default function Header1() {
             </div>
             <div className="uc-navbar-right">
               <div className="d-none lg:d-block">
-                <Link className= {`text-none fw-medium `} href={`/login`}>
-                  <span>Log in</span>
+                <Link className= {`text-none fw-medium `} href={`/sign-in`}>
+                  <span>Sign in</span>
                 </Link>
               </div>
               <Link
                 className="btn btn-sm btn-primary text-white text-none d-none lg:d-inline-flex"
-                href={`#`}
+                href={`/sign-up`}
               >
                 Sign Up
               </Link>

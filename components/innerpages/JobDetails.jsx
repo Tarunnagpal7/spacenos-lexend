@@ -1,7 +1,7 @@
 import { benefits, requirement, tasks } from "@/data/jobDetails";
 import React from "react";
 
-export default function JobDetails() {
+export default function JobDetails({job}) {
   return (
     <div id="job_details" className="job-details section panel pb-6 xl:pb-9">
       <div className="section-outer panel">
@@ -12,24 +12,21 @@ export default function JobDetails() {
                 <div className="col-12 md:col-8 md:order-2">
                   <div className="panel fs-5 vstack gap-2">
                     <p>
-                      A Senior Product Designer is a creative and technical
-                      professional dedicated to designing the aesthetics,
-                      functionality, and usability of a product, ensuring it
-                      delivers an exceptional user experience and aligns with
-                      the company’s goals.
+                     {job.description}
                     </p>
                     <h3 className="h5 mt-2 mb-0">Tasks:</h3>
                     <ul className="m-0">
-                      {tasks.map((item, index) => (
+                      {job.tasks.map((item, index) => (
                         <li key={index}>{item}</li>
                       ))}
                     </ul>
                     <h3 className="h5 mt-2 mb-0">Requirements:</h3>
                     <ul className="m-0">
-                      {requirement.map((item, index) => (
+                      {job.requirements.map((item, index) => (
                         <li key={index}>{item}</li>
                       ))}
                     </ul>
+                     <h3 className="h mt-2 mb-0">{job.tagline}</h3>
                     <h3 className="h5 mt-2 mb-0">Benifits:</h3>
                     <div className="row child-cols-6 col-match g-1">
                       {benefits.map((benefit, index) => (
@@ -55,12 +52,11 @@ export default function JobDetails() {
                           <h5 className="h6 m-0">Job type</h5>
                         </div>
                         <div className="hstack gap-narrow fs-7 fw-bold">
-                          <span className="px-1 py-narrow bg-white dark:bg-gray-800 rounded">
-                            Full-time
-                          </span>
-                          <span className="px-1 py-narrow bg-white dark:bg-gray-800 rounded">
-                            Remotly
-                          </span>
+                           {job.type.map((item, index) => (
+                           <span key={item} className="px-1 py-narrow bg-white dark:bg-gray-800 rounded">
+                           {item}
+                            </span>
+                            ))}
                         </div>
                       </div>
                       <div className="vstack gap-1">
@@ -69,7 +65,7 @@ export default function JobDetails() {
                           <h5 className="h6 m-0">Location</h5>
                         </div>
                         <div className="hstack gap-narrow fs-7 fw-bold">
-                          <span>Salé, Morocco</span>
+                          <span>{job.location}</span>
                         </div>
                       </div>
                       <div className="vstack gap-1">
@@ -78,7 +74,7 @@ export default function JobDetails() {
                           <h5 className="h6 m-0">Salary</h5>
                         </div>
                         <div className="hstack gap-narrow fs-7 fw-bold">
-                          <span>$60k – $90k USD</span>
+                          <span>{job.salary} USD</span>
                         </div>
                       </div>
                       <div>
