@@ -35,22 +35,22 @@ export default function Nav4() {
           <div className="dropdown-content m-1 p-1">
             <ul className="uc-nav uc-navbar-dropdown-nav ventures-nav  ">
               <li className="uc-nav-header">
-                <Link href="#" className="venture-link">
+                <Link href="/page-features" className="venture-link">
                   Darkbase
                 </Link>
               </li>
               <li className="uc-nav-header">
-                <Link href="#" className="venture-link">
+                <Link href="/page-features" className="venture-link">
                   Astro360
                 </Link>
               </li>
               <li className="uc-nav-header">
-                <Link href="#" className="venture-link">
+                <Link href="/page-features" className="venture-link">
                   Dominus
                 </Link>
               </li>
               <li className="uc-nav-header">
-                <Link href="#" className="venture-link">
+                <Link href="/page-features" className="venture-link">
                   AI Tools
                 </Link>
               </li>
@@ -59,7 +59,7 @@ export default function Nav4() {
         </div>
       </li>
       <li>
-        <Link href={`#`}>Resources</Link>
+        <Link href={`/resources`}>Resources</Link>
       </li>
       <li>
         <Link href={`/page-career`}>Career</Link>

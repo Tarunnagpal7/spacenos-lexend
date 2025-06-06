@@ -43,7 +43,7 @@ export default function CaseGrid() {
                               src={item.img}
                               width={1400}
                               height={1412}
-                              alt={item.altText}
+                              alt={item.alt}
                             />
                           </figure>
                         </div>

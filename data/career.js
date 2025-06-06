@@ -35,7 +35,7 @@ export const jobListings = [
       ],
       "tagline": "We once promoted a product that gained 100k downloads in 7 days. Can you do that?",
       "type" : ["Remote" , "Full-time"],
-      "location" : "Bengluru,India",
+      "location" : "Bengaluru,India",
       "salary" : "$60k - $90k",
     },
     {
@@ -59,7 +59,7 @@ export const jobListings = [
       ],
       "tagline": "Our intern became a CTO of a $1M company. Could you be next?",
           "type" : ["Remote" , "Full-time"],
-      "location" : "Bengluru,India",
+      "location" : "Bengaluru,India",
       "salary" : "$60k - $90k",
     },
     {
@@ -83,7 +83,7 @@ export const jobListings = [
       ],
       "tagline": "Join our team of world-class designers",
           "type" : ["Remote" , "Full-time"],
-      "location" : "Bengluru,India",
+      "location" : "Bengaluru,India",
       "salary" : "$60k - $90k",
     },
     {
@@ -107,7 +107,7 @@ export const jobListings = [
       ],
       "tagline": "Why wait, hacker? Build amazing apps with us",
           "type" : ["Remote" , "Full-time"],
-      "location" : "Bengluru,India",
+      "location" : "Bengaluru,India",
       "salary" : "$60k - $90k",
     },
     {
@@ -131,7 +131,7 @@ export const jobListings = [
       ],
       "tagline": "Be the CEO of your product",
           "type" : ["Remote" , "Full-time"],
-      "location" : "Bengluru,India",
+      "location" : "Bengaluru,India",
       "salary" : "$60k - $90k",
     }
   ];
