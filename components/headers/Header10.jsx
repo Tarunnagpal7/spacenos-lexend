@@ -27,7 +27,6 @@ export default function Header1() {
   }, [prevScrollPos]);
 
   return (
-    
     <header
       style={{ "--uc-nav-height": "80px" }}
       className={`uc-header header-default uc-navbar-sticky-wrap z-999 uc-sticky  ${
@@ -54,20 +53,20 @@ export default function Header1() {
                   href={`/`}
                   style={{ width: 140 }}
                 >
-                  <Image
-                    className="dark:d-none"
-                    alt="Lexend"
-                    src="/assets/images/common/logo-light.svg"
-                    width="117"
-                    height="40"
-                  />
-                  <Image
-                    className="d-none "
-                    alt="Lexend"
-                    src="/assets/images/common/logo-dark.svg"
-                    width="117"
-                    height="40"
-                  />
+               <Image
+  className="d-block dark:d-none"  // Show in light mode, hide in dark mode
+  alt="Lexend"
+  src="/assets/images/common/logo-light.svg"
+  width="117"
+  height="40"
+/>
+<Image
+  className="d-none dark:d-block"  // Hide in light mode, show in dark mode
+  alt="Lexend"
+  src="/assets/images/common/logo-dark.svg"
+  width="117"
+  height="40"
+/>
                 </Link>
               </div>
               <ul className={`uc-navbar-nav gap-3 xl:gap-4 d-none lg:d-flex fw-medium ms-2 fw-bold `}>

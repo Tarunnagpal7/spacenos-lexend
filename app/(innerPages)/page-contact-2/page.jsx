@@ -6,6 +6,7 @@ import Brands from "@/components/common/Brands2";
 import Blogs from "@/components/homes/home-2/Blogs";
 import Contact2 from "@/components/innerpages/Contact2";
 import ContactLinks2 from "@/components/innerpages/ContactLinks2";
+import WhatNext from "@/components/innerpages/WhatNext";
 export const metadata = {
   title:
     "Contact 2 || Lexend - Full-featured, professional-looking software, saas and startup nextjs template.",

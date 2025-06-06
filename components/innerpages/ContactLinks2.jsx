@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function ContactLinks2() {
   return (
     <div id="helpful-links" className="section panel overflow-hidden">
-      <div className="section-outer panel pb-6 sm:pb-8 lg:pb-9">
+      <div className="section-outer panel pb-6 pt-6">
         <div className="container max-w-lg">
           <div className="section-inner panel">
             <div className="panel vstack gap-4 sm:gap-6 xl:gap-8">

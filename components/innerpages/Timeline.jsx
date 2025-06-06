@@ -262,7 +262,7 @@ export default function Timeline() {
                 className={`h4 sm:h3 lg:h2 m-0 text-center ${isVisible ? 'title-animation' : ''}`}
                 data-anime="onview: -100; translateY: [48, 0]; opacity: [0, 1]; easing: spring(1, 80, 10, 0); duration: 450; delay: 100;"
               >
-                Our Journey
+                How did we get here
               </h2>
               
               <div className="timeline-container panel p-4">

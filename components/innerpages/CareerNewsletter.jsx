@@ -15,50 +15,61 @@ export default function CareerNewsletter() {
               data-uc-grid=""
             >
               <div>
-                <div className="vstack gap-2 max-w-500px xl:max-w-600px">
+                <div className="vstack gap-3 max-w-500px xl:max-w-600px">
                   <h2 className="h4 md:h3 lg:h2 m-0">
                     Join Our Talent Network and be the first to know about our
                     future opportunities
                   </h2>
-                  <form
-                    onSubmit={(e) => e.preventDefault()}
-                    className="row child-cols g-1 mt-1 xl:mt-2"
-                  >
-                    <div className="col-12 sm:col-auto">
-                      <input
-                        className="form-control h-48px xl:h-56px w-full bg-white dark:border-white dark:bg-opacity-10 dark:border-opacity-0 dark:text-white"
-                        type="text"
-                        placeholder="Your name"
-                        required
-                      />
+                  
+                  <form onSubmit={(e) => e.preventDefault()} className="vstack gap-3 mt-1 xl:mt-2">
+                    {/* First row - Name and Phone */}
+                    <div className="row g-3">
+                      <div className="col-md-6">
+                        <input
+                          className="form-control form-control-lg bg-white dark:border-white dark:bg-opacity-10 dark:border-opacity-0 dark:text-white"
+                          type="text"
+                          placeholder="Your name"
+                          required
+                        />
+                      </div>
+                      <div className="col-md-6">
+                        <input
+                          className="form-control form-control-lg bg-white dark:border-white dark:bg-opacity-10 dark:border-opacity-0 dark:text-white"
+                          type="tel"
+                          placeholder="Your phone number"
+                          required
+                        />
+                      </div>
                     </div>
-                    <div className="col-12 sm:col-auto">
-                      <input
-                        className="form-control h-48px xl:h-56px w-full bg-white dark:border-white dark:bg-opacity-10 dark:border-opacity-0 dark:text-white"
-                        type="email"
-                        placeholder="Your email address"
-                        required
-                      />
+                    
+                    {/* Second row - Email only */}
+                    <div className="row">
+                      <div className="col-12">
+                        <input
+                          className="form-control form-control-lg bg-white dark:border-white dark:bg-opacity-10 dark:border-opacity-0 dark:text-white"
+                          type="email"
+                          placeholder="Your email address"
+                          required
+                        />
+                      </div>
                     </div>
-                    <div className="col-12 sm:col-auto">
-                      <input
-                        className="form-control h-48px xl:h-56px w-full bg-white dark:border-white dark:bg-opacity-10 dark:border-opacity-0 dark:text-white"
-                        type="tel"
-                        placeholder="Your phone number"
-                        required
-                      />
-                    </div >
-                    <div className="col-12 sm:col-auto">
-                      <button className="btn btn-md h-48px xl:h-56px w-100 lg:min-w-150px xl:min-w-200px btn-primary text-white">
-                        Subscribe Now
-                      </button>
+                    
+                    {/* Third row - Button */}
+                    <div className="row">
+                      <div className="col-12">
+                        <button className="btn btn-primary btn-lg w-100 text-white">
+                          Subscribe Now
+                        </button>
+                      </div>
                     </div>
                   </form>
-                  <p className="fs-7 text-dark dark:text-white text-opacity-70">
-                    Don't worry we don't spam.
+                  
+                  <p className="fs-7 text-dark dark:text-white text-opacity-70 mb-0">
+                    Don't worry, we don't spam.
                   </p>
                 </div>
               </div>
+              
               <div className="md:col-auto d-none md:d-block">
                 <Image
                   className="w-250px lg:w-300px xl:w-400px d-block dark:d-none"
