@@ -29,67 +29,60 @@ export default function Header1() {
   return (
     <header
       style={{ "--uc-nav-height": "80px" }}
-      className={`uc-header header-default uc-navbar-sticky-wrap z-999 uc-sticky  ${
-        scrollingUp ? "uc-sticky-below uc-sticky-fixed headerFixed " : ""
+      className={`uc-header header-default uc-navbar-sticky-wrap z-999 uc-sticky ${
+        scrollingUp ? "uc-sticky-below uc-sticky-fixed headerFixed" : ""
       }`}
       data-uc-sticky="start: 100vh; show-on-up: true; animation: uc-animation-slide-top; sel-target: .uc-navbar-container; cls-active: uc-navbar-sticky; cls-inactive: uc-navbar-transparent; end: !*;"
     >
       <nav
-        className={`uc-navbar-container uc-navbar-float ft-tertiary z-1   
-          uc-navbar-sticky
-        } `}
+        className={`uc-navbar-container bg-black uc-navbar-float ft-tertiary z-1 ${
+          scrollingUp ? "uc-navbar-sticky" : ""
+        }`}
         data-anime="translateY: [-40, 0]; opacity: [0, 1]; easing: easeOutExpo; duration: 750; delay: 0;"
         style={{ transform: "translateY(0px)", opacity: 1 }}
       >
         <div className="container max-w-xl">
           <div
-            className="uc-navbar min-h-64px lg:min-h-80px text-gray-900 dark:text-white "
+            className="uc-navbar min-h-64px lg:min-h-80px text-white"
             data-uc-navbar="mode: click; animation: uc-animation-slide-top-small; duration: 150;"
           >
-            <div className="uc-navbar-left ">
-              <div className="uc-logo text-dark dark:text-white p-4">
+            <div className="uc-navbar-left">
+              <div className="uc-logo text-white p-4">
                 <Link
                   className="panel text-none"
                   href={`/`}
                   style={{ width: 140 }}
                 >
-               <Image
-  className="d-block dark:d-none"  // Show in light mode, hide in dark mode
-  alt="Lexend"
-  src="/assets/images/common/logo-light.svg"
-  width="117"
-  height="40"
-/>
-<Image
-  className="d-none dark:d-block"  // Hide in light mode, show in dark mode
-  alt="Lexend"
-  src="/assets/images/common/logo-dark.svg"
-  width="117"
-  height="40"
-/>
+                  <Image
+                    className="d-block"
+                    alt="Lexend"
+                    src="/assets/images/common/logo-dark.svg"
+                    width="117"
+                    height="40"
+                  />
                 </Link>
               </div>
-              <ul className={`uc-navbar-nav gap-3 xl:gap-4 d-none lg:d-flex fw-medium ms-2 fw-bold `}>
+              <ul className={`uc-navbar-nav gap-3 xl:gap-4 d-none lg:d-flex fw-medium ms-2 fw-bold`}>
                 <Nav4 />
               </ul>
             </div>
             <div className="uc-navbar-right">
               <div className="d-none lg:d-block">
-                <Link className= {`text-none fw-medium `} href={`/sign-in`}>
+                <Link className={`text-none fw-medium text-white hover:text-gray-300`} href={`/sign-in`}>
                   <span>Sign in</span>
                 </Link>
               </div>
               <Link
-                className="btn btn-sm btn-primary text-white text-none d-none lg:d-inline-flex"
+                className="btn btn-sm btn-primary text-white text-none d-none lg:d-inline-flex ml-4"
                 href={`/sign-up`}
               >
                 Sign Up
               </Link>
               <a
-                className="d-block lg:d-none uc-icon uc-navbar-toggle-icon"
+                className="d-block lg:d-none uc-icon uc-navbar-toggle-icon text-white"
                 onClick={openMobileMenu}
               >
-                <svg width={20} height={20} viewBox="0 0 20 20">
+                <svg width={20} height={20} viewBox="0 0 20 20" fill="currentColor">
                   <style
                     dangerouslySetInnerHTML={{
                       __html:
