@@ -27,6 +27,7 @@ export default function Header1() {
   }, [prevScrollPos]);
 
   return (
+    
     <header
       style={{ "--uc-nav-height": "80px" }}
       className={`uc-header header-default uc-navbar-sticky-wrap z-999 uc-sticky  ${

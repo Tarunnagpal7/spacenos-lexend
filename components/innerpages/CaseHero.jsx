@@ -22,6 +22,14 @@ export default function CaseHero() {
               data-uc-svg=""
               src="/assets/images/template/star-1.svg"
             />
+            <Image
+              className="w-32px text-gray-900 dark:text-white dark:hidden"
+              width={193}
+              height={216}
+              alt="star-1"
+              data-uc-svg=""
+              src="/assets/images/template/dark-star-1.svg"
+            />
           </div>
           <div
             className="position-absolute  rotate-45"
@@ -35,6 +43,14 @@ export default function CaseHero() {
               data-uc-svg=""
               src="/assets/images/template/star-2.svg"
             />
+            <Image
+              className="w-32px text-gray-900 dark:text-white dark:hidden"
+              width={193}
+              height={216}
+              alt="star-1"
+              data-uc-svg=""
+              src="/assets/images/template/dark-star-1.svg"
+            />
           </div>
         </div>
         <div className="container max-w-xl">
@@ -46,10 +62,10 @@ export default function CaseHero() {
               <h1 className="h2 sm:h1 lg:display-6 xl:display-5 m-0">
                 Real challenges. Real results. Real proof.
               </h1>
-               <p className="fs-6 sm:fs-5 text-black fw-bold text-opacity-70 dark:text-white"> 
+              <p className="fs-6 sm:fs-5 text-black fw-bold text-opacity-70 dark:text-white">
                 From solo founders in Australia to scaling startups in the UK and enterprise clients in the USA — we’ve helped transform raw ideas into fully functional products that have impacted over 850K+ users.
-               </p>
-               {/* <p className="fs-6 sm:fs-5 text-black fw-bold text-opacity-70 dark:text-white"> 
+              </p>
+              {/* <p className="fs-6 sm:fs-5 text-black fw-bold text-opacity-70 dark:text-white"> 
                 Whether it’s Android apps, system automation, or full-stack custom solutions — our work speaks through outcomes. These stories highlight how we turn real-world problems into measurable wins.
                </p> */}
             </header>

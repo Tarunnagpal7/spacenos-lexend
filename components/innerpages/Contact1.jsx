@@ -20,6 +20,14 @@ export default function Contact1() {
             data-uc-svg=""
             src="/assets/images/template/star-1.svg"
           />
+          <Image
+            className="w-32px text-gray-900 dark:text-white dark:hidden"
+            width={193}
+            height={216}
+            alt="star-1"
+            data-uc-svg=""
+            src="/assets/images/template/dark-star-1.svg"
+          />
         </div>
         <div
           className="position-absolute  rotate-45"
@@ -32,6 +40,14 @@ export default function Contact1() {
             alt="star-2"
             data-uc-svg=""
             src="/assets/images/template/star-2.svg"
+          />
+          <Image
+            className="w-32px text-gray-900 dark:text-white dark:hidden"
+            width={193}
+            height={216}
+            alt="star-1"
+            data-uc-svg=""
+            src="/assets/images/template/dark-star-1.svg"
           />
         </div>
       </div>
@@ -91,7 +107,7 @@ export default function Contact1() {
                     className="vstack gap-2 p-3 sm:p-6 xl:p-8"
                   >
                     <p className="fs-6 text-dark dark:text-white text-opacity-70 mb-2">
-                     This form connects you directly to Spacenos leadership for AI strategy, investment and partnerships. Expect a confidential and focused response
+                      This form connects you directly to Spacenos leadership for AI strategy, investment and partnerships. Expect a confidential and focused response
                     </p>
                     <div className="row child-cols-12 sm:child-cols-6 g-2">
                       <div>

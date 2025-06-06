@@ -20,6 +20,14 @@ export default function About() {
             data-uc-svg=""
             src="/assets/images/template/star-1.svg"
           />
+          <Image
+            className="w-32px text-gray-900 dark:text-white dark:hidden"
+            width={193}
+            height={216}
+            alt="star-1"
+            data-uc-svg=""
+            src="/assets/images/template/dark-star-1.svg"
+          />
         </div>
         <div
           className="position-absolute  rotate-45"
@@ -32,6 +40,14 @@ export default function About() {
             alt="star-2"
             data-uc-svg=""
             src="/assets/images/template/star-2.svg"
+          />
+          <Image
+            className="w-32px text-gray-900 dark:text-white dark:hidden"
+            width={193}
+            height={216}
+            alt="star-1"
+            data-uc-svg=""
+            src="/assets/images/template/dark-star-1.svg"
           />
         </div>
       </div>
@@ -48,7 +64,7 @@ export default function About() {
               <p className="fs-6 md:fs-5 text-dark dark:text-white text-opacity-70">
                 Spacenos began as a wild idea in 2015 — no funding, no backing. Just a laptop and relentless execution. Today, we help founders across the world turn raw ideas into real products — with AI, speed, and soul.
               </p>
-            </div> 
+            </div>
             <div className="panel row child-cols-12 col-match g-1 sm:g-2">
               <div className="col-4">
                 <figure className="featured-image m-0 rounded ratio ratio-2x3 sm:rounded-2 uc-transition-toggle overflow-hidden">

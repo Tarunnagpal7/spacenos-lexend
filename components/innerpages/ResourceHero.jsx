@@ -15,12 +15,20 @@ export default function ResourceHero() {
             style={{ top: "16%", left: "18%" }}
           >
             <Image
-              className="w-32px text-gray-900 dark:text-white"
+              className="w-32px text-gray-900 dark:text-white dark:hidden"
               width={193}
               height={216}
               alt="star-1"
               data-uc-svg=""
               src="/assets/images/template/star-1.svg"
+            />
+            <Image
+              className="w-32px text-gray-900 dark:text-white dark:hidden"
+              width={193}
+              height={216}
+              alt="star-1"
+              data-uc-svg=""
+              src="/assets/images/template/dark-star-1.svg"
             />
           </div>
           <div
@@ -34,6 +42,14 @@ export default function ResourceHero() {
               alt="star-2"
               data-uc-svg=""
               src="/assets/images/template/star-2.svg"
+            />
+            <Image
+              className="w-24px text-gray-900 dark:text-white"
+              width={69}
+              height={95}
+              alt="star-2"
+              data-uc-svg=""
+              src="/assets/images/template/dark-star-1.svg"
             />
           </div>
         </div>

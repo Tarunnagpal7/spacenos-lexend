@@ -19,26 +19,39 @@ export default function GlobalFootprint() {
   return (
     <div className="container p-2 mt-6">
       <div className="text-center mb-5">
-      
-        <h1 className="h3 lg:h2 xl:h1 m-0  text-center mb-4 ">
-            Our Global Footprint
-          </h1>
-         <p className="fs-6 xl:fs-4 text-black dark:text-white text-opacity-70">
-            Expanding worldwide to serve you better with strategic locations across continents.
-            </p>
+        <h1 className="h3 lg:h2 xl:h1 m-0 text-center mb-4">
+          Our Global Footprint
+        </h1>
+        <p className="fs-6 xl:fs-4 text-black dark:text-white text-opacity-70">
+          Expanding worldwide to serve you better with strategic locations across continents.
+        </p>
       </div>
 
       <div
-        className="mx-auto position-relative rounded-3xl overflow-hidden border border-gray-200 shadow-sm"
+        className="mx-auto position-relative rounded-3xl overflow-hidden shadow-sm"
         style={{ maxWidth: '1000px', width: '100%', aspectRatio: '3 / 2' }}
       >
-        <Image
-          src="/assets/images/features/image.png"
-          alt="World Map"
-          fill
-          className="rounded-2xl"
-          style={{ objectFit: 'contain' }}
-        />
+        {/* Improved image handling with proper dark mode */}
+        <div className='d-block dark:d-none'>
+          <Image
+            src="/assets/images/features/image.png"
+            alt="World Map"
+            fill
+            className="rounded-2xl"
+            style={{ objectFit: 'contain' }}
+            priority
+          />
+        </div>
+        <div className='d-none dark:d-block'>
+          <Image
+            src="/assets/images/features/dark-image.jpg"
+            alt="World Map"
+            fill
+            className="rounded-2xl"
+            style={{ objectFit: 'contain' }}
+            priority
+          />
+        </div>
 
         {locations.map((loc) => (
           <div
@@ -53,24 +66,30 @@ export default function GlobalFootprint() {
             onMouseEnter={() => setHoveredLocation(loc)}
             onMouseLeave={() => setHoveredLocation(null)}
           >
+            {/* Optimized button with better responsive sizing */}
             <button
               type="button"
-              className={`map-marker-btn btn btn-sm rounded-full d-flex align-items-center justify-content-center shadow border-0 ${
+              className={`map-marker-btn btn rounded-full d-flex align-items-center justify-content-center shadow border-0 ${
                 loc.type === 'current' ? 'btn-primary' : 'btn-warning'
               }`}
-              style={{ 
-                width: 'clamp(24px, 3vw, 36px)', 
-                height: 'clamp(24px, 3vw, 36px)' 
+              style={{
+                width: '24px',
+                height: '24px',
+                padding: 0 // Remove default padding
               }}
               onClick={() => setActiveLocation(loc)}
             >
-              <MapPin size="clamp(12px, 1.5vw, 16px)" className="text-white" />
+              <MapPin size={14} className="text-white" />
             </button>
-            
+
             {(hoveredLocation?.id === loc.id || activeLocation?.id === loc.id) && (
-              <div className={`tooltip-info bg-white text-black p-2 rounded-lg shadow-sm ${loc.type === 'current' ? 'border-primary' : 'border-warning'} border-2`}>
+              <div className={`tooltip-info bg-white text-black p-2 rounded-lg shadow-sm ${
+                loc.type === 'current' ? 'border-primary' : 'border-warning'
+              } border-2`}>
                 <div className="fw-bold">{loc.name}</div>
-                <div className={`small ${loc.type === 'current' ? 'text-primary' : 'text-warning'}`}>
+                <div className={`small ${
+                  loc.type === 'current' ? 'text-primary' : 'text-warning'
+                }`}>
                   {loc.type === 'current' ? 'Active Location' : 'Coming Soon'}
                 </div>
               </div>
@@ -79,28 +98,44 @@ export default function GlobalFootprint() {
         ))}
       </div>
 
-      {/* Hover effect styles */}
+      {/* Improved hover effect styles */}
       <style jsx>{`
         .map-marker-btn {
-          transition: transform 0.2s ease, box-shadow 0.2s ease;
+          transition: all 0.2s ease;
+          min-width: 24px;
+          min-height: 24px;
         }
 
         .map-marker-btn:hover {
           transform: scale(1.2);
-          box-shadow: 0 0 10px rgba(0, 123, 255, 0.5); /* Blue glow */
+          box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
         }
         
         .tooltip-info {
           position: absolute;
-          bottom: 100%;
+          bottom: calc(100% + 8px);
           left: 50%;
           transform: translateX(-50%);
-          margin-bottom: 8px;
           min-width: 120px;
           text-align: center;
           white-space: nowrap;
           animation: fadeIn 0.2s ease;
-          font-size: clamp(12px, 1.5vw, 14px);
+          font-size: 12px;
+          z-index: 20;
+        }
+        
+        @media (min-width: 768px) {
+          .map-marker-btn {
+            width: 30px;
+            height: 30px;
+          }
+          .map-marker-btn svg {
+            width: 16px;
+            height: 16px;
+          }
+          .tooltip-info {
+            font-size: 14px;
+          }
         }
         
         @keyframes fadeIn {

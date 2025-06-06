@@ -20,6 +20,14 @@ export default function EntreHero() {
             data-uc-svg=""
             src="/assets/images/template/star-1.svg"
           />
+          <Image
+            className="w-32px text-gray-900 dark:text-white dark:hidden"
+            width={193}
+            height={216}
+            alt="star-1"
+            data-uc-svg=""
+            src="/assets/images/template/dark-star-1.svg"
+          />
         </div>
         <div
           className="position-absolute  rotate-45"
@@ -32,6 +40,14 @@ export default function EntreHero() {
             alt="star-2"
             data-uc-svg=""
             src="/assets/images/template/star-2.svg"
+          />
+          <Image
+            className="w-32px text-gray-900 dark:text-white dark:hidden"
+            width={193}
+            height={216}
+            alt="star-1"
+            data-uc-svg=""
+            src="/assets/images/template/dark-star-1.svg"
           />
         </div>
       </div>
@@ -46,14 +62,14 @@ export default function EntreHero() {
                 Code Your Own Future
               </h1>
               <p className="fs-6 md:fs-5 fw-bold text-dark dark:text-white text-opacity-70">
-               Spacenos is a pool of opportunities for those who want not just to work, but to build a future. Refine your skills with our specialized training and mentorship programs, guided by expert trainers, and propagate your entrepreneurial skills globally to reach your milestones.</p>
-            <div className="d-flex fw-bold text-primary flex-wrap justify-content-center gap-1 xl:gap-3 px-2 ">
+                Spacenos is a pool of opportunities for those who want not just to work, but to build a future. Refine your skills with our specialized training and mentorship programs, guided by expert trainers, and propagate your entrepreneurial skills globally to reach your milestones.</p>
+              <div className="d-flex fw-bold text-primary flex-wrap justify-content-center gap-1 xl:gap-3 px-2 ">
                 <p></p>
                 <p>Curriculum</p>
                 <p>Mentorship Model</p>
                 <p>Skill Enhancement</p>
+              </div>
             </div>
-            </div> 
           </div>
         </div>
       </div>

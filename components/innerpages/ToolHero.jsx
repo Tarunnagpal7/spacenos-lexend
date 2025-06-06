@@ -22,6 +22,14 @@ export default function ToolHero() {
               data-uc-svg=""
               src="/assets/images/template/star-1.svg"
             />
+            <Image
+              className="w-32px text-gray-900 dark:text-white dark:hidden"
+              width={193}
+              height={216}
+              alt="star-1"
+              data-uc-svg=""
+              src="/assets/images/template/dark-star-1.svg"
+            />
           </div>
           <div
             className="position-absolute  rotate-45"
@@ -35,6 +43,14 @@ export default function ToolHero() {
               data-uc-svg=""
               src="/assets/images/template/star-2.svg"
             />
+            <Image
+              className="w-32px text-gray-900 dark:text-white dark:hidden"
+              width={193}
+              height={216}
+              xalt="star-1"
+              data-uc-svg=""
+              src="/assets/images/template/dark-star-1.svg"
+            />
           </div>
         </div>
         <div className="container max-w-xl">
@@ -46,9 +62,9 @@ export default function ToolHero() {
               <h1 className="h2 sm:h1 lg:display-6 xl:display-5 m-0">
                 Build Faster, Smarter: Our Toolkit
               </h1>
-               <p className="fs-6 sm:fs-5 text-black fw-bold text-opacity-70 dark:text-white"> 
-               We’ve worked with hundreds of early-stage founders and built tools to solve their most common roadblocks. Whether you're figuring out your MVP scope, planning a pitch, or organizing your product roadmap, these templates are designed to save you time and help you execute smarter.
-               </p>
+              <p className="fs-6 sm:fs-5 text-black fw-bold text-opacity-70 dark:text-white">
+                We’ve worked with hundreds of early-stage founders and built tools to solve their most common roadblocks. Whether you're figuring out your MVP scope, planning a pitch, or organizing your product roadmap, these templates are designed to save you time and help you execute smarter.
+              </p>
             </header>
           </div>
         </div>

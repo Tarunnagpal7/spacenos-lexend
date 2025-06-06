@@ -3,11 +3,11 @@ import Image from "next/image";
 
 export default function CeoHero() {
   return (
-     <div
+    <div
       id="ceo_hero"
       className="overview section panel overflow-hidden uc-dark m-1 lg:rounded-3 scrollSpysection"
     >
-    <div className="position-cover bg-white dark:bg-gray-900 " />
+      <div className="position-cover bg-white dark:bg-gray-900 " />
       <div
         className="position-cover opacity-70 bg-contain"
         style={{ backgroundPosition: "50% 85%" }}
@@ -40,6 +40,14 @@ export default function CeoHero() {
             data-uc-svg=""
             src="/assets/images/template/star-1.svg"
           />
+          <Image
+            className="w-32px text-gray-900 dark:text-white dark:hidden"
+            width={193}
+            height={216}
+            alt="star-1"
+            data-uc-svg=""
+            src="/assets/images/template/dark-star-1.svg"
+          />
         </div>
         <div
           className="position-absolute  rotate-45"
@@ -53,6 +61,14 @@ export default function CeoHero() {
             data-uc-svg=""
             src="/assets/images/template/star-2.svg"
           />
+          <Image
+            className="w-32px text-gray-900 dark:text-white dark:hidden"
+            width={193}
+            height={216}
+            alt="star-1"
+            data-uc-svg=""
+            src="/assets/images/template/dark-star-1.svg"
+          />
         </div>
       </div>
       <div className="section-outer panel pt-4 pb-4 sm:pb-6 xl:pb-9">
@@ -65,11 +81,11 @@ export default function CeoHero() {
               <h1 className="h2 sm:h1 lg:display-6 xl:display-5 m-0 text-black dark:text-white">
                 The Visionary, our CEO, Mr. Venkatesh Devale
               </h1>
-              <p className="fs-6 sm:fs-5 text-black fw-bold text-opacity-70 dark:text-white"> 
-               From a Hundred Bucks to a Billion-Dollar Dream.
-               Help founders turn ideas into revenue — fast, fearless, and founder-first.
+              <p className="fs-6 sm:fs-5 text-black fw-bold text-opacity-70 dark:text-white">
+                From a Hundred Bucks to a Billion-Dollar Dream.
+                Help founders turn ideas into revenue — fast, fearless, and founder-first.
 
-               </p>
+              </p>
             </div>
             <div className="panel">
               <figure className="featured-image m-0 rounded ratio ratio-2x1 rounded lg:rounded-2 uc-transition-toggle overflow-hidden">
@@ -86,6 +102,6 @@ export default function CeoHero() {
         </div>
       </div>
     </div>
-  
+
   );
 }

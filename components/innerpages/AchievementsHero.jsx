@@ -20,6 +20,14 @@ export default function AchievementsHero() {
             data-uc-svg=""
             src="/assets/images/template/star-1.svg"
           />
+          <Image
+            className="w-32px text-gray-900 dark:text-white dark:hidden"
+            width={193}
+            height={216}
+            alt="star-1"
+            data-uc-svg=""
+            src="/assets/images/template/dark-star-1.svg"
+          />
         </div>
         <div
           className="position-absolute  rotate-45"
@@ -32,6 +40,14 @@ export default function AchievementsHero() {
             alt="star-2"
             data-uc-svg=""
             src="/assets/images/template/star-2.svg"
+          />
+          <Image
+            className="w-32px text-gray-900 dark:text-white dark:hidden"
+            width={193}
+            height={216}
+            alt="star-1"
+            data-uc-svg=""
+            src="/assets/images/template/dark-star-1.svg"
           />
         </div>
       </div>
@@ -46,11 +62,11 @@ export default function AchievementsHero() {
                 Achievements & Testimonials
               </h1>
               <p className="fs-6 sm:fs-5  text-dark dark:text-white text-opacity-70">
-              With a vast client base across Australia, the UK, and USA, we're driven to unearth 'gems' and consistently exceed expectations. This page is a testament to our proven skills and the partners who've fueled our achievements.
+                With a vast client base across Australia, the UK, and USA, we're driven to unearth 'gems' and consistently exceed expectations. This page is a testament to our proven skills and the partners who've fueled our achievements.
               </p>
             </div>
             <div>
-              <Image 
+              <Image
                 className="img-fluid rounded-3 shadow-lg"
                 width={1200}
                 height={800}

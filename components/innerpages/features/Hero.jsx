@@ -24,6 +24,14 @@ export default function Hero() {
             alt="star-1"
             data-uc-svg=""
           />
+          <Image
+            className="w-32px text-gray-900 dark:text-white dark:hidden"
+            width={193}
+            height={216}
+            alt="star-1"
+            data-uc-svg=""
+            src="/assets/images/template/dark-star-1.svg"
+          />
         </div>
         <div
           className="position-absolute rotate-45"
@@ -36,6 +44,14 @@ export default function Hero() {
             height={95}
             alt="star-2"
             data-uc-svg=""
+          />
+          <Image
+            className="w-32px text-gray-900 dark:text-white dark:hidden"
+            width={193}
+            height={216}
+            alt="star-1"
+            data-uc-svg=""
+            src="/assets/images/template/dark-star-1.svg"
           />
         </div>
       </div>
@@ -50,7 +66,7 @@ export default function Hero() {
                 The Pillars of Our Empire, Our Ventures
               </h1>
               <p className="fs-6 sm:fs-5 text-dark dark:text-white text-opacity-70">
-               Spacenos designs innovative custom software. We solve tomorrow's challenges and transform lives, extending beyond AI for diverse business and consumer solutions."
+                Spacenos designs innovative custom software. We solve tomorrow's challenges and transform lives, extending beyond AI for diverse business and consumer solutions."
               </p>
             </div>
             <div className="sticky-scene panel vstack gap-4 sm:gap-6 xl:gap-8">
@@ -77,7 +93,7 @@ export default function Hero() {
                           <div className="panel vstack gap-2">
                             <span className="fs-6 fw-bold m-0 text-primary">
                               {feature.id.toString().padStart(2, "0")}.
-                               <span className="fs-2 p-1">{feature.heading}</span>
+                              <span className="fs-2 p-1">{feature.heading}</span>
                             </span>
                             <h3 className="h4 lg:h2 m-0">{feature.title}</h3>
                             <p className="fs-6 lg:fs-5 opacity-70 dark:opacity-80">
