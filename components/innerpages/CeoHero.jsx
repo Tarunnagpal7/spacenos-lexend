@@ -6,7 +6,7 @@ import React from "react";
 export default function CeoHero() {
   return (
     <div id="hero_header" className="hero-header section panel overflow-hidden">
-      <div className="position-absolute top-0 start-0 end-0 h-screen bg-secondary dark:bg-gray-300 dark:bg-opacity-15 rounded-bottom-2 lg:rounded-bottom-5" />
+      <div className="position-absolute top-0 start-0 end-0 h-screen bg-tertiary-300 dark:bg-primary-700  bg-gradient-to-b from-transparent via-transparent to-white dark:to-black dark:bg-opacity-15 rounded-bottom-2 lg:rounded-bottom-5" />
       <div className="section-outer panel pt-9 pb-8">
         <div className="container">
           <div className="section-inner panel">

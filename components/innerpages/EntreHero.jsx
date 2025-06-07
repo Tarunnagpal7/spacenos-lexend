@@ -5,7 +5,7 @@ export default function EntreHero() {
   return (
     <div id="foreign_header" className="hero-header section panel overflow-hidden">
       <div
-        className="position-absolute top-0 start-0 end-0 min-h-screen mt-4 overflow-hidden d-none lg:d-block"
+        className="position-absolute top-0 start-0 end-0 min-h-screen bg-tertiary-300 dark:bg-primary-700  bg-gradient-to-b from-transparent via-transparent to-white dark:to-black mt-4 overflow-hidden d-none lg:d-block"
         data-anime="targets: >*; scale: [0, 1]; opacity: [0, 1]; easing: spring(1, 80, 10, 0); duration: 450; delay: anime.stagger(100, {start: 750});"
       >
         <div
@@ -63,7 +63,7 @@ export default function EntreHero() {
               </h1>
               <p className="fs-6 md:fs-5 fw-bold text-dark dark:text-white text-opacity-70">
                 Spacenos is a pool of opportunities for those who want not just to work, but to build a future. Refine your skills with our specialized training and mentorship programs, guided by expert trainers, and propagate your entrepreneurial skills globally to reach your milestones.</p>
-              <div className="d-flex fw-bold text-primary flex-wrap justify-content-center gap-1 xl:gap-3 px-2 ">
+              <div className="d-flex fw-bold text-primary dark:text-white flex-wrap justify-content-center gap-1 xl:gap-3 px-2 ">
                 <p></p>
                 <p>Curriculum</p>
                 <p>Mentorship Model</p>

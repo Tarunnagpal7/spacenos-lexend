@@ -93,8 +93,8 @@ export const InvestorData = [
 ];
 export const CareerData = [
   {
-    value: 2014,
-    text: "Lexend Found",
+    value: 2015,
+    text: "Spacenos Found",
     animationData:
       "onview: -100; textContent: 4; round: 1; easing: linear; duration: 1200;",
   },

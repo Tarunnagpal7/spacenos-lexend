@@ -34,9 +34,9 @@ export const jobListings = [
         "Multimedia design or web development background is a plus"
       ],
       "tagline": "We once promoted a product that gained 100k downloads in 7 days. Can you do that?",
-      "type" : ["Remote" , "Full-time"],
-      "location" : "Bengaluru,India",
-      "salary" : "$60k - $90k",
+      "type" : ["Full-time"],
+      "location" : "Remote,India",
+      // "salary" : "$60k - $90k",
     },
     {
       "id": 2,
@@ -58,9 +58,9 @@ export const jobListings = [
         "Video editing and design experience is a plus"
       ],
       "tagline": "Our intern became a CTO of a $1M company. Could you be next?",
-          "type" : ["Remote" , "Full-time"],
-      "location" : "Bengaluru,India",
-      "salary" : "$60k - $90k",
+          "type" : ["Full-time"],
+      "location" : "Remote,India",
+      // "salary" : "$60k - $90k",
     },
     {
       "id": 3,
@@ -82,9 +82,9 @@ export const jobListings = [
         "Video editing/photo retouching skills are a plus"
       ],
       "tagline": "Join our team of world-class designers",
-          "type" : ["Remote" , "Full-time"],
-      "location" : "Bengaluru,India",
-      "salary" : "$60k - $90k",
+          "type" : ["Full-time"],
+      "location" : "Remote,India",
+      // "salary" : "$60k - $90k",
     },
     {
       "id": 4,
@@ -106,9 +106,9 @@ export const jobListings = [
         "Testing and debugging expertise"
       ],
       "tagline": "Why wait, hacker? Build amazing apps with us",
-          "type" : ["Remote" , "Full-time"],
-      "location" : "Bengaluru,India",
-      "salary" : "$60k - $90k",
+          "type" : ["Full-time"],
+      "location" : "Remote,India",
+      // "salary" : "$60k - $90k",
     },
     {
       "id": 5,
@@ -130,8 +130,8 @@ export const jobListings = [
         "HTML/content creation skills are a plus"
       ],
       "tagline": "Be the CEO of your product",
-          "type" : ["Remote" , "Full-time"],
-      "location" : "Bengaluru,India",
-      "salary" : "$60k - $90k",
+          "type" : ["Full-time"],
+      "location" : "Remote,India",
+      // "salary" : "$60k - $90k",
     }
   ];

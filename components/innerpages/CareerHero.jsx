@@ -123,27 +123,12 @@ export default function CareerHero() {
                         strings={["Launch", "launch", "Launch"]}
                       />
                     </span>
-                    <span className="typed-cursor" aria-hidden="true">
-                      |
-                    </span>
                   </h1>
 
                   <p className="fs-6 xl:fs-3 xl:px-6">
                     We’re not a company that hands out tasks. We hand out real responsibility. At Spacenos, internsship features. Associates pitch to founders. Designers own products. If you’re smart, hungry, and ready to build things that actually matter — then 
                     <b className="dark:text-white"> join our empire!</b>
                   </p>
-                  <div
-                    className="vstack md:hstack justify-center gap-2 mt-3"
-                    style={{ transform: "translateY(0px)", opacity: 1 }}
-                  >
-                    <a
-                      href="#"
-                      className="btn btn-md xl:btn-lg btn-alt-dark border-dark px-3 lg:px-5 fw-bold contrast-shadow-sm hover:contrast-shadow"
-                    >
-                      <span>Join Our Empire</span>
-                    </a>
-                  </div>
-
                 </div>
               </div>
               <div

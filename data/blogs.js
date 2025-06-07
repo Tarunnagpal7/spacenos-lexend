@@ -1,91 +1,3 @@
-export const posts = [
-  {
-    id: 1,
-    image: "/assets/images/blog/post-4.jpg",
-    alt: "UX review presentations",
-    title: "UX review presentations",
-    category: "Strategy",
-    excerpt:
-      "How do you create compelling presentations that wow your colleagues and impress your managers?",
-  },
-  {
-    id: 2,
-    image: "/assets/images/blog/post-5.jpg",
-    alt: "Migrating to Linear 101",
-    title: "Migrating to Linear 101",
-    category: "Strategy",
-    excerpt:
-      "Linear helps streamline software projects, sprints, tasks, and bug tracking. Here’s how to get started.",
-  },
-  {
-    id: 3,
-    image: "/assets/images/blog/post-6.jpg",
-    alt: "Building your API stack",
-    title: "Building your API stack",
-    category: "Strategy",
-    excerpt:
-      "The rise of RESTful APIs has been met by a rise in tools for creating, testing, and managing them.",
-  },
-  {
-    id: 4,
-    image: "/assets/images/blog/img-01.jpg",
-    alt: "UX review presentations",
-    title: "UX review presentations",
-    category: "Strategy",
-    excerpt:
-      "Join the thousands of satisfied users and take your business to the next level today and the power.",
-  },
-  {
-    id: 5,
-    image: "/assets/images/blog/img-02.jpg",
-    alt: "Migrating to Linear 101",
-    title: "Migrating to Linear 101",
-    category: "Strategy",
-    excerpt:
-      "Help you keep track of leads, contacts, and deals, making it easier to nurture and convert.",
-  },
-  {
-    id: 6,
-    image: "/assets/images/blog/post-4.jpg",
-    alt: "UX review presentations",
-    title: "UX review presentations",
-    category: "Strategy",
-    excerpt:
-      "How do you create compelling presentations that wow your colleagues and impress your managers?",
-  },
-  {
-    id: 7,
-    image: "/assets/images/blog/post-5.jpg",
-    alt: "Migrating to Linear 101",
-    title: "Migrating to Linear 101",
-    excerpt:
-      "Linear helps streamline software projects, sprints, tasks, and bug tracking. Here’s how to get started.",
-  },
-  {
-    id: 8,
-    image: "/assets/images/blog/post-6.jpg",
-    alt: "Building your API stack",
-    title: "Building your API stack",
-    excerpt:
-      "The rise of RESTful APIs has been met by a rise in tools for creating, testing, and managing them.",
-  },
-  {
-    id: 9,
-    image: "/assets/images/blog/img-01.jpg",
-    alt: "UX review presentations",
-    title: "UX review presentations",
-    excerpt:
-      "Join the thousands of satisfied users and take your business to the next level today and the power.",
-  },
-  {
-    id: 10,
-    image: "/assets/images/blog/img-02.jpg",
-    alt: "Migrating to Linear 101",
-    title: "Migrating to Linear 101",
-    excerpt:
-      "Help you keep track of leads, contacts, and deals, making it easier to nurture and convert.",
-  },
-];
 
 export const articles = [
   {
@@ -161,7 +73,7 @@ export const blogPosts2 = [
     category: "Design",
     title: "UX review presentations",
     excerpt:
-      "Join the thousands of satisfied users and take your business to the next level today and the power of streamlined business operations.",
+    "Join the thousands of satisfied users and take your business to the next level today and the power of streamlined business operations.",
     authorImage: "/assets/images/avatars/02.png",
     authorName: "David",
     date: "Apr 26, 2024",
@@ -186,7 +98,7 @@ export const blogPosts2 = [
     title: "Building your API stack",
     excerpt:
       "You can personalize it to display the most relevant information and metrics for your business, giving you performance.",
-    authorImage: "/assets/images/avatars/04.png",
+      authorImage: "/assets/images/avatars/04.png",
     authorName: "Sarah",
     date: "Apr 22, 2024",
   },
@@ -417,7 +329,7 @@ export const slidesData = [
     title: "Automate as fast as you can type with AI",
     excerpt:
       "Linear helps streamline software projects, sprints, tasks, and bug tracking. Here’s how to get started.",
-  },
+    },
   {
     id: 40,
     imgSrc: "/assets/images/blog/post-6.jpg",
@@ -437,7 +349,7 @@ export const slidesData = [
     imgSrc: "/assets/images/blog/img-02.jpg",
     title: "Leading work from tasks management",
     excerpt:
-      "Help you keep track of leads, contacts, and deals, making it easier to nurture and convert.",
+    "Help you keep track of leads, contacts, and deals, making it easier to nurture and convert.",
   },
 ];
 export const slidesData2 = [
@@ -447,7 +359,7 @@ export const slidesData2 = [
     title: "Unlock productivity potential with AI",
     excerpt:
       "How do you create compelling presentations that wow your colleagues and impress your managers?",
-  },
+    },
   {
     id: 44,
     imgSrc: "/assets/images/blog/post-5.jpg",
@@ -467,14 +379,14 @@ export const slidesData2 = [
     imgSrc: "/assets/images/blog/img-01.jpg",
     title: "Team solve today’s biggest challenges",
     excerpt:
-      "Join the thousands of satisfied users and take your business to the next level today and the power.",
+    "Join the thousands of satisfied users and take your business to the next level today and the power.",
   },
   {
     id: 47,
     imgSrc: "/assets/images/blog/img-02.jpg",
     title: "Leading work from tasks management",
     excerpt:
-      "Help you keep track of leads, contacts, and deals, making it easier to nurture and convert.",
+    "Help you keep track of leads, contacts, and deals, making it easier to nurture and convert.",
   },
 ];
 
@@ -510,8 +422,96 @@ export const blogPosts6 = [
     title: "Leading work from tasks management",
   },
 ];
+export const posts = [
+    {
+      id: 0,
+      image: "/assets/images/blog/post-4.jpg",
+      alt: "UX review presentations",
+      title: "How Spacenos builds MVPs for under $10K?",
+      category: "Strategy",
+      excerpt:
+        "How do you create compelling presentations that wow your colleagues and impress your managers?",
+    },
+    {
+      id: 1,
+      image: "/assets/images/blog/post-5.jpg",
+      alt: "Migrating to Linear ",
+      title: "How to build a business that can grow without you?",
+      category: "Strategy",
+      excerpt:
+        "Linear helps streamline software projects, sprints, tasks, and bug tracking. Here’s how to get started.",
+    },
+    {
+      id: 3,
+      image: "/assets/images/blog/post-6.jpg",
+      alt: "Building your API stack",
+      title: "Building your API stack",
+      category: "Strategy",
+      excerpt:
+        "The rise of RESTful APIs has been met by a rise in tools for creating, testing, and managing them.",
+    },
+    {
+      id: 4,
+      image: "/assets/images/blog/img-01.jpg",
+      alt: "UX review presentations",
+      title: "UX review presentations",
+      category: "Strategy",
+      excerpt:
+        "Join the thousands of satisfied users and take your business to the next level today and the power.",
+    },
+    {
+      id: 5,
+      image: "/assets/images/blog/img-02.jpg",
+      alt: "Migrating to Linear 101",
+      title: "Migrating to Linear 101",
+      category: "Strategy",
+      excerpt:
+        "Help you keep track of leads, contacts, and deals, making it easier to nurture and convert.",
+    },
+    {
+      id: 6,
+      image: "/assets/images/blog/post-4.jpg",
+      alt: "UX review presentations",
+      title: "UX review presentations",
+      category: "Strategy",
+      excerpt:
+        "How do you create compelling presentations that wow your colleagues and impress your managers?",
+    },
+    {
+      id: 7,
+      image: "/assets/images/blog/post-5.jpg",
+      alt: "Migrating to Linear 101",
+      title: "Migrating to Linear 101",
+      excerpt:
+        "Linear helps streamline software projects, sprints, tasks, and bug tracking. Here’s how to get started.",
+    },
+    {
+      id: 8,
+      image: "/assets/images/blog/post-6.jpg",
+      alt: "Building your API stack",
+      title: "How to build a business that can grow without you?",
+      excerpt:
+        "The rise of RESTful APIs has been met by a rise in tools for creating, testing, and managing them.",
+    },
+    {
+      id: 9,
+      image: "/assets/images/blog/img-01.jpg",
+      alt: "UX review presentations",
+      title: "How to build a business that can grow without you?",
+      excerpt:
+        "Join the thousands of satisfied users and take your business to the next level today and the power.",
+    },
+    {
+      id: 10,
+      image: "/assets/images/blog/img-02.jpg",
+      alt: "Migrating to Linear 101",
+      title: "How to build a business that can grow without you?",
+      excerpt:
+        "Help you keep track of leads, contacts, and deals, making it easier to nurture and convert.",
+    },
+  ];
 export const posts2 = [
-   {
+  {
       "id": 0,
       "category": "Strategy",
       "imgSrc": "/assets/images/blog/img-01.jpg",

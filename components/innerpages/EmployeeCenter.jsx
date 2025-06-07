@@ -23,19 +23,19 @@ export default function EmployeeCenter() {
                   data-uc-grid=""
                 >
                   <div>
-                    <div className="panel vstack justify-between gap-3 rounded-2 bg-secondary dark:bg-gray-800 overflow-hidden">
+                    <div className="panel vstack justify-between gap-3 rounded- overflow-hidden">
                       <div
                         className="row child-cols-12 col-match g-0"
                         data-uc-grid=""
                       >
-                        <div className="sm:col-6 lg:col-8">
+                        <h1 className="fs-1 text-center dark:text-white">
+                          Life At Spacenos
+                        </h1>
+                        <div className="sm:col-6 2 bg-secondary dark:bg-gray-800 lg:col-8">
                           <div className="panel vstack justify-between gap-3 px-3 py-4 lg:px-5 lg:py-6">
-                            <h1 className="fs-2">
-                              From Our Intern
-                            </h1>
                             <div className="panel vstack items-start gap-2">
                               <p className="fs-5 lg:fs-4 xl:fs-3 fw-medium text-dark dark:text-white">
-                             From our intern to CTO of a $1Mn startup. Know more about the leadership skills Aryaman learnt at Spacenos and how it is helping him in his startup. 
+                              <b>From our intern to CTO of a $1Mn startup. </b>Know more about the leadership skills Aryaman learnt at Spacenos and how it is helping him in his startup.
                               </p>
                             </div>
                           </div>

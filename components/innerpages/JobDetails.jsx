@@ -68,7 +68,7 @@ export default function JobDetails({job}) {
                           <span>{job.location}</span>
                         </div>
                       </div>
-                      <div className="vstack gap-1">
+                      {/* <div className="vstack gap-1">
                         <div className="hstack gap-1">
                           <i className="icon-1 unicon-money" />
                           <h5 className="h6 m-0">Salary</h5>
@@ -76,7 +76,7 @@ export default function JobDetails({job}) {
                         <div className="hstack gap-narrow fs-7 fw-bold">
                           <span>{job.salary} USD</span>
                         </div>
-                      </div>
+                      </div> */}
                       <div>
                         <a
                           href="#apply"

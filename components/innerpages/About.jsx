@@ -3,13 +3,13 @@ import Image from "next/image";
 
 export default function About() {
   return (
-    <div id="hero_header" className="hero-header section panel overflow-hidden">
+    <div id="hero_header" className="hero-header section panel bg-tertiary-300 dark:bg-primary-700  bg-gradient-to-b from-transparent via-transparent to-white dark:to-black  overflow-hidden">
       <div
-        className="position-absolute top-0 start-0 end-0 min-h-screen overflow-hidden mt-4  d-none lg:d-block"
+        className="position-absolute top-0 start-0 end-0 min-h-screen overflow-hidden mt-4      d-none lg:d-block"
         data-anime="targets: >*; scale: [0, 1]; opacity: [0, 1]; easing: spring(1, 80, 10, 0); duration: 450; delay: anime.stagger(100, {start: 750});"
       >
         <div
-          className="position-absolute  rotate-45"
+          className="position-absolute   rotate-45"
           style={{ top: "20%", left: "18%" }}
         >
           <Image
@@ -51,7 +51,7 @@ export default function About() {
           />
         </div>
       </div>
-      <div className="section-outer panel mt-6 pt-9 lg:pt-10 pb-6 ">
+      <div className="section-outer panel mt-6 pt-9 lg:pt-10 pb-6  ">
         <div className="container max-w-xl">
           <div
             className="section-inner panel mt-2 sm:mt-4 lg:mt-0"

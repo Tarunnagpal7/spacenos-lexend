@@ -9,7 +9,7 @@ export default function EntreTestimonials() {
       id="clients_feedback"
       className="clients-feedback section panel  scrollSpysection"
     >
-      <div className="section-outer panel py-6 lg:py-8 xl:py-10 bg-secondary text-black rounded-2 lg:rounded-3 m-2">
+      <div className="section-outer panel py-6 lg:py-8 xl:py-10 bg-secondary dark:bg-gray-800 text-black rounded-2 lg:rounded-3 m-2">
         <div className="container xl:max-w-xl">
           <div
             className="section-inner panel vstack items-center gap-4 md:gap-6 lg:gap-8 max-w-100"
@@ -19,7 +19,7 @@ export default function EntreTestimonials() {
               className="panel vstack items-center gap-2 xl:gap-3 text-center"
               data-anime="onview: -100; targets: >*; translateY: [-48, 0]; opacity: [0, 1]; easing: easeOutCubic; duration: 500; delay: anime.stagger(100, {start: 200});"
             >
-              <p className="h3 lg:h2 xl:h1 m-0 px-2 text-black">
+              <p className="h3 lg:h2 xl:h1 m-0 px-2 text-black dark:text-white">
                 Your Future, Our Impact
               </p>
             </div>

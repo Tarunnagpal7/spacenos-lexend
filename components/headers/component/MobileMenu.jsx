@@ -231,15 +231,10 @@ export default function MobileMenu() {
             ))}
             <li className="hr opacity-10 my-1" />
             <li>
-              <Link href={`/sign-up`}>Create an account</Link>
+              <Link href={`/sign-up`}>Sign Up</Link>
             </li>
             <li>
-              <Link href={`/sign-in`}>Log in</Link>
-            </li>
-            <li>
-              <a href="https://themeforest.net/user/ib-themes/portfolio">
-                Buy Template
-              </a>
+              <Link href={`/sign-in`}>Sign In</Link>
             </li>
           </ul>
           <ul className="social-icons nav-x mt-4">

@@ -4,8 +4,8 @@ import Image from "next/image";
 
 export default function ResourceHero() {
   return (
-    <div className="section panel overflow-hidden bg-secondary dark:bg-gray-800 rounded-2 pt-4 ">
-      <div className="section-outer panel py-6 lg:py-9">
+    <div className="section panel overflow-hidden bg-tertiary-300 dark:bg-primary-700 rounded-2 pt-4 ">
+      <div className="section-outer  bg-gradient-to-b from-transparent via-transparent to-white dark:to-black panel py-6 lg:py-9">
         <div
           className="position-absolute top-0 start-0 end-0 min-h-screen overflow-hidden d-none lg:d-block"
           data-anime="targets: >*; scale: [0, 1]; opacity: [0, 1]; easing: spring(1, 80, 10, 0); duration: 450; delay: anime.stagger(100, {start: 100});"

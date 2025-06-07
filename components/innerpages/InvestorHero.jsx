@@ -5,7 +5,7 @@ export default function InvestorHero() {
   return (
     <div id="hero_header" className="hero-header section panel overflow-hidden">
  
-      <div className="section-outer panel pt-9 pt-lg-10 pb-6 pb-sm-8 pb-lg-9">
+      <div className="section-outer panel pt-9 pt-lg-10 pb-6 pb-sm-8 bg-tertiary-300 dark:bg-primary-700  bg-gradient-to-b from-transparent via-transparent to-white dark:to-black pb-lg-9">
         <div className="container max-w-xl">
           <div
             className="section-inner panel mt-2 mt-sm-4 mt-lg-0"

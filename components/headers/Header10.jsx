@@ -63,7 +63,7 @@ export default function Header1() {
                 </Link>
               </div>
               <ul className={`uc-navbar-nav gap-3 xl:gap-4 d-none lg:d-flex fw-medium ms-2 fw-bold`}>
-                <Nav4 className="hover:text-gray-300" />
+                <Nav4 className="" />
               </ul>
             </div>
             <div className="uc-navbar-right">

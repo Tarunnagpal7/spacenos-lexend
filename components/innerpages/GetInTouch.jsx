@@ -42,7 +42,7 @@ export default function GetInTouch({ ctaParentClass = "section-outer panel" }) {
                   </div>
                   <Link
                     href={`/page-contact`}
-                    className="btn btn-md btn-primary text-tertiary dark:bg-tertiary dark:text-primary fw-bold rounded-pill px-3 lg:px-5 mt-1 lg:mt-2"
+                    className="btn btn-md  text-tertiary dark:bg-tertiary btn-secondary fw-bold rounded-pill px-3 lg:px-5 mt-1 lg:mt-2"
                   >
                     Get in touch
                   </Link>

@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function VerifyForm() {
   return (
     <div id="entrepreneur_form" className="hero-header section panel overflow-hidden">
-      <div className="position-absolute top-0 start-0 end-0 min-h-600px bg-secondary dark:bg-gray-800  z-0" />
+      <div className="position-absolute top-0 start-0 end-0 min-h-600px  bg-tertiary dark:bg-primary-700  bg-gradient-to-b from-transparent via-transparent to-white dark:to-black  z-0" />
       <div className="section-outer panel pt-9 lg:pt-10 pb-6 sm:pb-8 lg:pb-9">
         <div className="container max-w-xl">
           <div

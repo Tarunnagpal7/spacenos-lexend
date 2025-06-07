@@ -6,27 +6,35 @@ export const panelData = [
     lightIcon: "/assets/images/template/icon-diamond.svg",
     darkIcon: "/assets/images/template/icon-diamond-dark.svg",
     altText: "impact-icon",
-    title: "Make an impact",
-    description:
-      "We’re building something big. Something that has the power to change the trajectory of any sized business for the better.",
+    title: "You deserve flexible work hours",
+    description:"Spacenos values you deserve flexible work hours. Enjoy flexible schedules that fit your needs, focusing on impactful output. We trust our developers to manage their workload efficiently.",
   },
   {
     id: 2,
     lightIcon: "/assets/images/template/icon-trophy.svg",
     darkIcon: "/assets/images/template/icon-trophy-dark.svg",
     altText: "crown-icon",
-    title: "Learn",
+    title: "You have complete ownership",
     description:
-      "Teams are masters of their craft though we’re all experts in our respective fields, we always make time to expand our minds.",
+      "At Spacenos, we believe in smart work over hard work. Manage your schedule to fit your needs, focusing on impactful output. We trust our developers to be efficient.Your autonomy drives our shared success.",
   },
   {
     id: 3,
+    lightIcon: "/assets/images/template/icon-globe.svg",
+    darkIcon: "/assets/images/template/icon-globe-dark.svg",
+    altText: "empathy-icon",
+    title: "You are smartly rewarded",
+    description:
+      "You are smartly rewarded with monthly bonuses and incentives. Boost your future prospects while learning and adding value. We reward extra effort to motivate your continuous growth.",
+  },
+  {
+    id: 4,
     lightIcon: "/assets/images/template/icon-crown.svg",
     darkIcon: "/assets/images/template/icon-crown-dark.svg",
     altText: "empathy-icon",
-    title: "Empathy",
+    title: "You continuously level up",
     description:
-      "We strive to be empathetic to every customer and colleague and by doing so we provide a better experience for all.",
+      "Refine skills through our training and scholarship programs. Reach milestones in your software engineering path, get certified by experts, and propagate your skills globally.",
   },
 ];
 
