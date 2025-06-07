@@ -31,4 +31,13 @@ export const accordionItemsCareer = [
     controls: "uc-accordion-30",
     expanded: false,
   },
+  {
+    id: 4,
+    question: "Where can I find legal information?",
+    answer:"Click Here",
+    link : true,
+    href :"/legal",
+    controls: "uc-accordion-30",
+    expanded: false,
+  },
 ];

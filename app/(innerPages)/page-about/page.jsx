@@ -11,7 +11,7 @@ import Timeline from "@/components/innerpages/Timeline";
 import Team from "@/components/innerpages/Team";
 import Cta from "@/components/innerpages/Cta";
 import { panelsData } from "@/data/plans";
-import WhatNext from "@/components/innerpages/WhatNext";
+import { WhatNext } from "@/components/innerpages/WhatNext";
 import ArchitectureTeam from "@/components/innerpages/ArchitectureTeam";
 export const metadata = {
   title:

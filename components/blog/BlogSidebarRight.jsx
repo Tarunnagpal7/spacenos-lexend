@@ -29,7 +29,7 @@ export default function BlogSidebarRight() {
                                   height="560"
                                 />
                                 <Link
-                                  href={`/blog-details/${elm.id}`}
+                                  href={`/blog-details-4/${elm.id}`}
                                   className="position-cover"
                                   data-caption="Unlock productivity potential with AI"
                                 />
@@ -47,7 +47,7 @@ export default function BlogSidebarRight() {
                               <h3 className="h4 sm:h5 md:h4 lh-lg m-0 xl:max-w-3/4 m-0">
                                 <Link
                                   className="text-none"
-                                  href={`/blog-details/${elm.id}`}
+                                  href={`/blog-details-4/${elm.id}`}
                                 >
                                   {elm.title}
                                 </Link>
@@ -57,7 +57,7 @@ export default function BlogSidebarRight() {
                               </p>
                               <Link
                                 className="btn btn-text text-primary border-bottom d-inline-flex fs-7 md:fs-6 mt-2 md:mt-4 dark:text-tertiary"
-                                href={`/blog-details/${elm.id}`}
+                                href={`/blog-details-4/${elm.id}`}
                               >
                                 Read more
                               </Link>

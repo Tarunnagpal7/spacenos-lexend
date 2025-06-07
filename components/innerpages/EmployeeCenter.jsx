@@ -30,9 +30,12 @@ export default function EmployeeCenter() {
                       >
                         <div className="sm:col-6 lg:col-8">
                           <div className="panel vstack justify-between gap-3 px-3 py-4 lg:px-5 lg:py-6">
+                            <h1 className="fs-2">
+                              From Our Intern
+                            </h1>
                             <div className="panel vstack items-start gap-2">
                               <p className="fs-5 lg:fs-4 xl:fs-3 fw-medium text-dark dark:text-white">
-                                Working as an intern at Spacenos has been an incredible journey. The mentorship and guidance from our CTO have empowered me to learn, innovate, and contribute meaningfully to real projects. I truly appreciate the open culture and the opportunities to grow every day.
+                             From our intern to CTO of a $1Mn startup. Know more about the leadership skills Aryaman learnt at Spacenos and how it is helping him in his startup. 
                               </p>
                             </div>
                           </div>

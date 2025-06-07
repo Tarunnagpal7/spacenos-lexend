@@ -1,7 +1,7 @@
 import BlogSidebarRight from "@/components/blog/BlogSidebarRight";
 import Breadcumb3 from "@/components/blog/Breadcumb3";
-import Footer6 from "@/components/footers/Footer6";
-import Header6 from "@/components/headers/Header6";
+import Footer5 from "@/components/footers/Footer5";
+import Header10 from "@/components/headers/Header10";
 import Topbar from "@/components/headers/Topbar";
 
 import React from "react";
@@ -19,13 +19,12 @@ export default function page() {
           className="bp-xs page-wrapper bp-sm bp-md bp-lg bp-xl dom-ready bp-xxl-max uni-body panel uni-body panel bg-white text-gray-900 dark:bg-black dark:text-gray-200 disable-cursor"
           style={{ overflowX: "clip" }}
         >
-          <Topbar />
-          <Header6 staticPosition />
+          <Header10  />
           <div id="wrapper" className="wrap">
-            <Breadcumb3 pageName="Blog Sidebar" />
+            <Breadcumb3  />
             <BlogSidebarRight />
           </div>
-          <Footer6 />
+          <Footer5 />
         </div>
       </div>
     </>

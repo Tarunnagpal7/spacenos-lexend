@@ -86,7 +86,7 @@ export default function BlogDetails({ blogItem }) {
         style={{ marginTop: "80px" }}
         className="breadcrumbs panel z-1 py-2 bg-secondary dark:bg-gray-100 dark:bg-opacity-5 dark:text-white"
       >
-        <div className="container max-w-xl">
+        <div className="container py-3 max-w-xl">
           <ul className="breadcrumb nav-x justify-center items-center gap-1 fs-7 m-0 fw-bold">
             <li>
               <Image
@@ -121,8 +121,8 @@ export default function BlogDetails({ blogItem }) {
           </ul>
         </div>
       </div>
-      <article className="post type-post single-post py-4 lg:py-6 xl:py-9">
-        <div className="container max-w-xl">
+      <article className="post type-post  single-post py-4 lg:py-6 xl:py-9">
+        <div className="container  max-w-xl">
           <div className="post-header">
             <div className="panel vstack gap-4 md:gap-6 xl:gap-8 text-center">
               <div className="panel vstack items-center max-w-400px sm:max-w-500px xl:max-w-md mx-auto gap-2 md:gap-3">

@@ -24,18 +24,18 @@ export default function Sidebar() {
                 <Link
                   className="position-cover"
                   data-caption={post.imgAlt}
-                  href={`/blog-details/${post.id}`}
+                  href={`/blog-details-4/${post.id}`}
                 />
               </div>
               <h4 className="h5 mt-3">
-                <Link className="text-none" href={`/blog-details/${post.id}`}>
+                <Link className="text-none" href={`/blog-details-4/${post.id}`}>
                   {post.title}
                 </Link>
               </h4>
               <p className="fs-6">{post.description}</p>
               <Link
                 className="btn btn-text text-primary dark:text-tertiary border-bottom mt-3"
-                href={`/blog-details/${post.id}`}
+                href={`/blog-details-4/${post.id}`}
               >
                 Read more
               </Link>
@@ -62,7 +62,7 @@ export default function Sidebar() {
                           <h3 className="post-title h6 m-0">
                             <Link
                               className="text-none"
-                              href={`/blog-details/${post.id}`}
+                              href={`/blog-details-4/${post.id}`}
                             >
                               {post.title}
                             </Link>
@@ -99,7 +99,7 @@ export default function Sidebar() {
       </div>
       <div className="widget social-widget vstack gap-2 text-center p-2 py-3 lg:p-4 lg:py-5 rounded-1-5 lg:rounded-2 bg-gray-25 dark:bg-gray-800">
         <div className="widgt-title">
-          <h4 className="fs-7 m-0">Follow @Lexend</h4>
+          <h4 className="fs-7 m-0">Follow @Spacenos</h4>
         </div>
         <div className="widgt-content">
           <form className="vstack gap-1">

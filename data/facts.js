@@ -91,3 +91,30 @@ export const InvestorData = [
     suffix: " k+",
   },
 ];
+export const CareerData = [
+  {
+    value: 2014,
+    text: "Lexend Found",
+    animationData:
+      "onview: -100; textContent: 4; round: 1; easing: linear; duration: 1200;",
+  },
+  {
+    value: 50,
+    text: "Hardworking group",
+    animationData:
+      "onview: -100; textContent: [0, 50]; round: 1; easing: linear; duration: 1200;",
+  },
+  {
+    value: 4600,
+    text: "Document Workflows",
+    animationData:
+      "onview: -100; textContent: [0, 100]; round: 1; easing: linear; duration: 1200;",
+  },
+  {
+    value: 17,
+    text: "Tax Convertion",
+    animationData:
+      "onview: -100; textContent: [0, 100]; round: 1; easing: linear; duration: 1200;",
+    suffix : "%"
+  },
+];

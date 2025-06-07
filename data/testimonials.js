@@ -277,6 +277,15 @@ export const testimonials3 = [
     name: "Sarah Edrissi",
     position: "Lead Marketing",
   },
+  {
+    brandImgSrc: "/assets/images/brands/brand-08.svg",
+    brandImgAlt: "Brand",
+    text: "“We are based in Europe and the latest Data Protection Regulation forces us to look for service suppliers that comply with this regulation and as we look to create our website and this builder just outstanding!”",
+    avatarImgSrc: "/assets/images/avatars/03.png",
+    avatarImgAlt: "Sarah Edrissi",
+    name: "Sarah Edrissi",
+    position: "Lead Marketing",
+  },
 ];
 
 export const testimonials4 = [

@@ -39,7 +39,7 @@ export default function Timeline() {
   return (
     <div
       id="about-timeline"
-      className="about-timeline section panel rounded sm:rounded-2 m-4 overflow-hidden bg-secondary dark:bg-gray-800"
+      className="about-timeline section panel rounded sm:rounded-2 m-4  overflow-hidden bg-secondary dark:bg-gray-800"
     >
       <style jsx>{`
         .timeline-container {
@@ -122,6 +122,7 @@ export default function Timeline() {
           animation-delay: 0.3s;
           max-width: 600px;
           margin: 0 auto;
+          width: 100%;
         }
 
         .timeline-slide.entering .content {
@@ -208,6 +209,7 @@ export default function Timeline() {
           align-items: center;
           gap: 2rem;
           padding: 1rem;
+          width: 100%;
         }
 
         @media (min-width: 768px) {
@@ -238,6 +240,15 @@ export default function Timeline() {
           
           .content {
             text-align: center;
+            padding: 0;
+            max-width: 100%;
+          }
+
+          .timeline-box {
+            padding: 1rem 0;
+          }
+
+          .desc {
             padding: 0 1rem;
           }
         }
@@ -250,6 +261,15 @@ export default function Timeline() {
           
           .timeline-dots {
             margin-top: 1.5rem;
+          }
+
+          .about-timeline {
+            margin: 0;
+            border-radius: 0;
+          }
+
+          .section-outer {
+            padding: 1.5rem 0;
           }
         }
       `}</style>
@@ -265,12 +285,12 @@ export default function Timeline() {
                 How did we get here
               </h2>
               
-              <div className="timeline-container panel p-4">
+              <div className="timeline-container panel pt-4">
                 <div className={`timeline-slide ${animationPhase}`}>
                   <div className="timeline-box">
                     <div className="image-wrap panel overflow-hidden">
                       <img
-                        className="image w-100 origin-bottom"
+                        className="image w-100 xl:mr-0 origin-bottom"
                         src={currentItem.src}
                         width={400}
                         height={400}

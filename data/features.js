@@ -468,6 +468,49 @@ export const features6 = [
   },
 ];
 
+export const features1 = [
+  {
+    id: 1,
+    imgSrc: "/assets/images/template/feature-01.svg",
+    imgAlt: "Growing our empire",
+    heading: "Empire Growth",
+    title: "Growing our empire",
+    description:
+      "We're strategically expanding our global footprint through innovative ventures and strategic partnerships that create lasting impact across industries.",
+    link: { text: "Explore Expansion", href: "/empire-growth" },
+  },
+  {
+    id: 2,
+    imgSrc: "/assets/images/template/feature-02.svg",
+    imgAlt: "Empowering more businesses",
+    heading: "Business Boost",
+    title: "Empowering more businesses",
+    description:
+      "Our tailored solutions and ecosystem support help entrepreneurs and enterprises scale faster, smarter, and more sustainably in the digital age.",
+    link: { text: "See Success Stories", href: "/business-empowerment" },
+  },
+  {
+    id: 3,
+    imgSrc: "/assets/images/template/feature-03.svg",
+    imgAlt: "Invent new tech for the future",
+    heading: "Future Labs",
+    title: "Invent new tech for the future",
+    description:
+      "Pushing boundaries with cutting-edge R&D, we're developing tomorrow's technologies today through our dedicated innovation labs and think tanks.",
+    link: { text: "View Innovations", href: "/future-tech" },
+  },
+  {
+    id: 4,
+    imgSrc: "/assets/images/template/feature-04.svg",
+    imgAlt: "Network of visionary builders",
+    heading: "Visionary Network",
+    title: "Cultivating a network of visionary builders",
+    description:
+      "Connecting brilliant minds across disciplines to collaborate, create, and accelerate world-changing ideas through our exclusive global community.",
+    link: { text: "Join the Network", href: "/visionary-builders" },
+  },
+];
+
 export const integrations = [
   {
     title: "Mailchimp",

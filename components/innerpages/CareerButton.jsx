@@ -3,7 +3,7 @@
 export default function CareerButton() {
   return (
     <div id="Career-form" className="section panel">
-      <div className="section-outer panel pb-6">
+      <div className="section-outer panel pb-8 pt-8">
         <div className="container max-w-xl">
           <div className="text-center space-y-4">
             <h2

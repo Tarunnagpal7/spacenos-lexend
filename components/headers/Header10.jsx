@@ -63,7 +63,7 @@ export default function Header1() {
                 </Link>
               </div>
               <ul className={`uc-navbar-nav gap-3 xl:gap-4 d-none lg:d-flex fw-medium ms-2 fw-bold`}>
-                <Nav4 />
+                <Nav4 className="hover:text-gray-300" />
               </ul>
             </div>
             <div className="uc-navbar-right">
@@ -73,13 +73,13 @@ export default function Header1() {
                 </Link>
               </div>
               <Link
-                className="btn btn-sm btn-primary text-white text-none d-none lg:d-inline-flex ml-4"
+                className="btn btn-sm btn-primary text-white text-none d-none lg:d-inline-flex ml-4 hover:text-gray-300"
                 href={`/sign-up`}
               >
                 Sign Up
               </Link>
               <a
-                className="d-block lg:d-none uc-icon uc-navbar-toggle-icon text-white"
+                className="d-block lg:d-none uc-icon uc-navbar-toggle-icon text-white hover:text-gray-300"
                 onClick={openMobileMenu}
               >
                 <svg width={20} height={20} viewBox="0 0 20 20" fill="currentColor">

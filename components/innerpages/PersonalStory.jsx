@@ -17,18 +17,18 @@ export default function PersonalStory() {
                 className="how-it-works section panel  scrollSpysection  "
             >
                 <div
-                    className="section-outer panel pb-6"
+                    className="section-outer panel pb-2 xl:pb-6"
                     data-anime="onscroll: .how-it-works; onscroll-trigger: 1; translateY: [80, 0]; scale: [0.8, 1]; opacity: [0, 1]; easing: linear;"
                 >
                     <div className="container xl:max-w-xl">
                         <div className="panel vstack justify-center items-center gap-4 sm:gap-6 xl:gap-8 mx-auto">
 
-                            <h2
-                                  className="h3 lg:h2 xl:h1 m-0  text-center  "
-                                data-anime="onview: -100; translateY: [48, 0]; opacity: [0, 1]; easing: spring(1, 80, 10, 0); duration: 450; delay: 100;"
-                            >
-                                The Saga Begins
-                            </h2>
+                          <h1
+                      className="h2 md:h1 lg:display-5 m-0"
+                      data-anime="translateY: [10, 0]; opacity: [0, 1]; easing: easeOutExpo; duration: 450; delay: 250;"
+                    >
+                       The Saga Begins
+                    </h1>
                             <div className="panel overflow-hidden ratio ratio-16x9 rounded-2 lg:rounded-3 border border-2 border-white dark:border-gray-700">
                                 <video
                                     src="/assets/images/media/lexend_vid_home-6.webm"

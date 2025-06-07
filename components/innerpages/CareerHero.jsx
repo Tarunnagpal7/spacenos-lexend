@@ -1,123 +1,177 @@
-import React from "react";
+"use client";
+
+import TyperComponent from "@/components/common/TyperComponent";
 import Image from "next/image";
+import { useEffect } from "react";
+import { useParallax } from "react-scroll-parallax";
 
 export default function CareerHero() {
+  const parallax = useParallax({
+    scale: [0.85, 1.1],
+  });
   return (
     <div
-      id="her"
-      className="overview section panel mt-4 overflow-hidden uc-dark m-1 lg:rounded-3 scrollSpysection"
+      id="hero_header"
+      className="hero-header hero-seven-scene section panel overflow-hidden"
     >
-      <div className="position-cover bg-white dark:bg-gray-900" />
-      <div
-        className="position-cover opacity-70 bg-contain"
-        style={{ backgroundPosition: "50% 85%" }}
-        data-src="/assets/images/template/pricing-06-bg-masked.png"
-        data-uc-img=""
-      />
-      <div className="position-cover bg-gradient-to-t from-gray-800 via-transparent to-gray-900" />
-      <div
-        className="position-absolute d-inline-block w-500px h-500px rounded-circle bg-gradient-45 from-primary to-white start-50 blur-10 translate-middle blend-color-dodge"
-        style={{ top: "0%" }}
-      />
-      <div
-        className="position-absolute d-inline-block w-250px h-250px rounded-circle bg-gradient-45 from-primary to-white start-0 blur-10 translate-middle blend-color-dodge"
-        style={{ top: "0%" }}
-      />
-      <div
-        className="position-absolute d-inline-block w-250px h-250px rounded-circle bg-gradient-45 from-primary to-white start-100 blur-10 translate-middle blend-color-dodge"
-        style={{ top: "0%" }}
-      />
-      <div className="section-outer panel pt-9 xl:pt-10">
-        <div className="container xl:max-w-xl">
-          <div className="section-inner panel pt-0 lg:pt-4 xl:pt-0">
-            <div>
-              <div
-                className="panel vstack justify-center items-center gap-3 max-w-600px lg:max-w-750px mx-auto px-2 lg:px-0 text-center"
-                data-anime="targets: >*; translateY: [48, 0]; opacity: [0, 1]; easing: easeOutCubic; duration: 500; delay: anime.stagger(100, {start: 200});"
-              >
-                <h1 className="display-6 md:display-5 lg:display-4 xl:display-3 m-0 text- p-3">
-                  <span className="d-inline-flex px-1 bg-secondary text-primary -rotate-1 lg:-rotate-2 rounded-1 lg:rounded-1-5">
-                    Build. Learn. Launch!
-                  </span>
-                  <br />
-                </h1>
-
-              </div>
-            </div>
-          </div>
-        </div>
+      <div className="position-absolute top-0 start-0 end-0 h-screen bg-tertiary-300 dark:bg-primary-700" />
+      <div className="position-absolute top-0 start-0 end-0 h-screen bg-gradient-to-b from-transparent via-transparent to-white dark:to-black" />
+      <div className="section-outer panel pb-6 sm:pb-8 pt-9 xl:pt-10 xl:pb-9">
         <div
-          className="position-absolute  rotate-45"
-          style={{ top: "20%", left: "18%" }}
+          className="d-none lg:d-block"
+          data-anime="targets: >*; scale: [0, 1]; opacity: [0, 1]; easing: easeOutCubic; duration: 750; delay: anime.stagger(150, {start: 500});"
         >
           <Image
-            className="w-24px text-gray-900 dark:text-white"
-            width={193}
-            height={216}
-            alt="star-1"
-            data-uc-svg=""
-            src="/assets/images/template/star-1.svg"
+            alt="Icon"
+            className="d-inline-block position-absolute w-72px dark:d-none"
+            style={{ top: "15%", left: "10%" }}
+            width={85}
+            height={73}
+            src="assets/images/vectors/marketing.svg"
           />
           <Image
-            className="w-32px text-gray-900 dark:text-white dark:hidden"
-            width={193}
-            height={216}
-            alt="star-1"
-            data-uc-svg=""
-            src="/assets/images/template/dark-star-1.svg"
+            alt="Icon"
+            className="d-inline-block position-absolute w-72px dark:d-none"
+            style={{ top: "15%", right: "10%" }}
+            width={73}
+            height={66}
+            src="assets/images/vectors/charts-pc.svg"
           />
-        </div>
-        <div
-          className="position-absolute  rotate-45"
-          style={{ top: "15%", right: "18%" }}
-        >
           <Image
-            className="w-32px text-gray-900 dark:text-white"
+            alt="Icon"
+            className="d-inline-block position-absolute w-64px dark:d-none"
+            style={{ top: "35%", right: "-1%", transform: "rotate(45deg)" }}
             width={69}
-            height={95}
-            alt="star-2"
-            data-uc-svg=""
-            src="/assets/images/template/star-2.svg"
+            height={70}
+            src="assets/images/vectors/group.svg"
           />
           <Image
-            className="w-32px text-gray-900 dark:text-white dark:hidden"
-            width={193}
-            height={216}
-            alt="star-1"
-            data-uc-svg=""
-            src="/assets/images/template/dark-star-1.svg"
+            alt="Icon"
+            className="d-inline-block position-absolute w-48px dark:d-none"
+            style={{ top: "40%", left: "15%" }}
+            width={49}
+            height={60}
+            src="assets/images/vectors/idea.svg"
+          />
+          <Image
+            alt="Icon"
+            className="d-inline-block position-absolute w-64px dark:d-none"
+            style={{ top: "30%", left: "-1%" }}
+            width={69}
+            height={70}
+            src="assets/images/vectors/group.svg"
+          />
+          <Image
+            alt="Icon"
+            className="d-inline-block position-absolute w-72px d-none dark:d-block"
+            style={{ top: "15%", left: "10%" }}
+            width={85}
+            height={73}
+            src="assets/images/vectors/marketing-dark.svg"
+          />
+          <Image
+            alt="Icon"
+            className="d-inline-block position-absolute w-72px d-none dark:d-block"
+            style={{ top: "15%", right: "10%" }}
+            width={73}
+            height={66}
+            src="assets/images/vectors/charts-pc-dark.svg"
+          />
+          <Image
+            alt="Icon"
+            className="d-inline-block position-absolute w-64px d-none dark:d-block"
+            style={{ top: "35%", right: "-1%", transform: "rotate(45deg)" }}
+            width={69}
+            height={70}
+            src="assets/images/vectors/group-dark.svg"
+          />
+          <Image
+            alt="Icon"
+            className="d-inline-block position-absolute w-48px d-none dark:d-block"
+            style={{ top: "40%", left: "15%" }}
+            width={49}
+            height={60}
+            src="assets/images/vectors/idea-dark.svg"
+          />
+          <Image
+            alt="Icon"
+            className="d-inline-block position-absolute w-64px d-none dark:d-block"
+            style={{ top: "30%", left: "-1%" }}
+            width={69}
+            height={70}
+            src="assets/images/vectors/group-dark.svg"
           />
         </div>
-      </div>
-      <div className="section-outer panel pt-4 pb-4 sm:pb-6 xl:pb-9">
         <div className="container max-w-xl">
-          <div
-            className="section-inner panel mt-2 sm:mt-4 lg:mt-0"
-            data-anime="targets: >*; translateY: [48, 0]; opacity: [0, 1]; easing: spring(1, 80, 10, 0); duration: 450; delay: anime.stagger(100, {start: 200});"
-          >
-            <div className="vstack items-center gap-2 lg:gap-4 mb-4 sm:mb-6 lg:mb-8 max-w-850px mx-auto text-center">
-              <h1 className="h2 sm:h1 lg:display-6 xl:display-5 m-0">
-                Join Our Empire.
-              </h1>
-              <p className="fs-6 sm:fs-5 text-dark dark:text-white text-opacity-70">
-                We’re not a company that hands out tasks. We hand out real responsibility. At Spacenos, interns ship features. Associates pitch to founders. Designers own products. If you’re smart, hungry, and ready to build things that actually matter — then join our empire!
-              </p>
-            </div>
-            <div className="panel">
-              <figure className="featured-image m-0 rounded ratio ratio-2x1 rounded lg:rounded-2 uc-transition-toggle overflow-hidden">
-                <Image
-                  className="media-cover image uc-transition-scale-up uc-transition-opaque"
-                  alt="Career"
-                  src="/assets/images/template/career.jpg"
-                  width="1500"
-                  height="1000"
-                />
-              </figure>
+          <div className="section-inner panel">
+            <div className="row child-cols-12 justify-center items-center g-8">
+              <div className="lg:col-8">
+                <div
+                  className="panel vstack items-center gap-2 px-2 text-center"
+                  data-anime="targets: >*; translateY: [48, 0]; opacity: [0, 1]; easing: easeOutCubic; duration: 500; delay: anime.stagger(100, {start: 200});"
+                >
+                  <h1
+                    className="h3 sm:h2 md:h1 lg:display-6 lh-lg mb-1 xl:mb-2 mt-2"
+                    style={{ transform: "translateY(0px)", opacity: 1 }}
+                  >
+                    Build. Learn. 
+                    <span
+                      className="px-1 bg-primary text-tertiary dark:bg-tertiary "
+                      data-uc-typed="typeSpeed: 80; backSpeed: 50; backDelay: 1500; loop: true;"
+                    >
+                      <TyperComponent
+                        strings={["Launch", "launch", "Launch"]}
+                      />
+                    </span>
+                    <span className="typed-cursor" aria-hidden="true">
+                      |
+                    </span>
+                  </h1>
+
+                  <p className="fs-6 xl:fs-3 xl:px-6">
+                    We’re not a company that hands out tasks. We hand out real responsibility. At Spacenos, internsship features. Associates pitch to founders. Designers own products. If you’re smart, hungry, and ready to build things that actually matter — then 
+                    <b className="dark:text-white"> join our empire!</b>
+                  </p>
+                  <div
+                    className="vstack md:hstack justify-center gap-2 mt-3"
+                    style={{ transform: "translateY(0px)", opacity: 1 }}
+                  >
+                    <a
+                      href="#"
+                      className="btn btn-md xl:btn-lg btn-alt-dark border-dark px-3 lg:px-5 fw-bold contrast-shadow-sm hover:contrast-shadow"
+                    >
+                      <span>Join Our Empire</span>
+                    </a>
+                  </div>
+
+                </div>
+              </div>
+              <div
+                className="uc-video-scene"
+                ref={parallax.ref}
+                data-anime="scale: [1.2, 1]; opacity: [0, 1]; easing: easeOutCubic; duration: 750; delay: 500;"
+              >
+                <div
+                  className="panel max-w-1000px mx-auto mt-2 rounded lg:rounded-1-5 xl:rounded-2 border border-dark contrast-shadow-lg overflow-hidden"
+                  data-anime="onscroll: .hero-header; onscroll-trigger: 0.5; translateY: [-80, 0]; scale: [0.8, 1]; easing: linear;"
+                >
+                  <video
+                    preload="auto"
+                    data-uc-video="autoplay: true;"
+                    playsInline
+                    muted
+                    loop
+                    autoPlay
+                    poster="assets/images/media/lexend-home-7.png"
+                    src="/assets/images/media/lexend-home-7.webm"
+                    title="Video title"
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-
   );
 }

@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
 import { accordionItems } from "@/data/faq";
-
+import Link from "next/link";
 export default function Accordion({
   faqData = accordionItems,
   parentClass = "",
@@ -59,7 +59,13 @@ export default function Accordion({
             className="uc-accordion-content"
             ref={(el) => (answerRefs.current[index] = el)}
           >
-            <p>{item.answer}</p>
+            {item.link ?
+               <Link href={item.href}>
+                 <p>{item.answer}</p>
+               </Link>
+               :
+                <p>{item.answer}</p>
+             }
           </div>
         </li>
       ))}
