@@ -29,6 +29,39 @@ export const facts = [
     suffix: "%",
   },
 ];
+export const Stats = [
+  {
+    id: 1,
+    year: 523,
+    description: "Startups Launched",
+    animation:
+      "onview: -100; textContent: 2014; round: 1; easing: linear; duration: 1200;",
+      suffix :"+"
+  },
+  {
+    id: 2,
+    count: 12,
+    description: "Countries Impacted",
+    animation:
+      "onview: -100; textContent: [0, 50]; round: 1; easing: linear; duration: 1200;",
+  },
+  {
+    id: 3,
+    count: 60,
+    description: "Average Dev Cost Saved",
+    animation:
+      "onview: -100; textContent: [0, 4600]; round: 1; easing: linear; duration: 1200;",
+      suffix : "%"
+  },
+  {
+    id: 4,
+    count: "₹22 ",
+    description: "Lifetime Value Delivered",
+    animation:
+      "onview: -100; textContent: [0, 17]; round: 1; easing: linear; duration: 1200;",
+    suffix: "Cr+",
+  },
+];
 
 export const factItems = [
   {

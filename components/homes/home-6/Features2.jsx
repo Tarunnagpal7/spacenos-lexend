@@ -4,11 +4,26 @@ import Image from "next/image";
 export default function Features2() {
   return (
     <div id="features" className="features section panel  scrollSpysection">
-      <div className="section-outer panel   ">
-        <div className="container xl:max-w-xl">
-          <div className="section-inner panel">
-            <div
+      <div className="section-outer py-4 panel bg-tertiary-300 dark:bg-primary-700 bg-gradient-to-b from-transparent via-transparent to-white dark:to-black   ">
+        <div className="container xl:max-w-xl ">
+           <div
               className="panel vstack items-center gap-2 xl:gap-3 mb-4 lg:mb-8 max-w-650px mx-auto text-center"
+              data-anime="onview: -100; targets: >*; translateY: [48, 0]; opacity: [0, 1]; easing: easeOutCubic; duration: 500; delay: anime.stagger(100, {start: 200});"
+            >
+              <h2 className="h3 lg:h2 xl:h1 m-0 px-2">
+                Spacenos 
+                <span className="d-inline-flex px-1 bg-secondary text-primary -rotate-1 lg:-rotate-2 rounded-1 lg:rounded-1-5">
+                   One Brand
+                </span>{" "}
+                 Multiple Missions.
+              </h2>
+              <p className="fs-6 xl:fs-5 text-black dark:text-white text-opacity-70">
+                Focus purely on strategy while we handle technical complexities.
+              </p>
+            </div> 
+          <div className="section-inner panel bg-tertiary-300 ">
+            <div
+              className="panel vstack items-center gap-2 xl:gap-3 mb-4 lg:mb-8   max-w-650px mx-auto text-center"
               data-anime="onview: -100; targets: >*; translateY: [48, 0]; opacity: [0, 1]; easing: easeOutCubic; duration: 500; delay: anime.stagger(100, {start: 200});"
             >
             </div>
@@ -23,13 +38,13 @@ export default function Features2() {
                     data-anime="onview: -100; targets: >*; translateY: [16, 0]; opacity: [0, 1]; easing: easeOutCubic; duration: 500; delay: anime.stagger(100, {start: 500});"
                   >
                     <h1 className="fs-6 md:fs-5 lg:fs-4 m-0">
-                     Future-proof your empire with AI: Launch Faster. Scale Smarter
+                      Spacenos for Startups:
                     </h1>
-                    <p className="fs-6 md:fs-5 lg:fs-4 m-0">
+                    {/* <p className="fs-6 md:fs-5 lg:fs-4 m-0">
                         Hire us as Virtual CTO.
-                    </p>
+                    </p> */}
                     <p className="fs-6 md:fs-5 lg:fs-4 m-0">
-                        Don’t get replaced! Lead with AI-First solutions.
+                       Darkbase AI Teams – Launch remote teams in a click. Build faster, save 60% on dev costs.
                     </p>
                     <a href="#" className="btn btn-sm btn-primary px-2 mt-2">
                       <span>Try it now</span>
@@ -41,8 +56,8 @@ export default function Features2() {
                       className="ltr:rounded-top-start-1-5 rtl:rounded-top-end-1-5"
                       alt=""
                       src="/assets/images/template/home4.png"
-                      width="1280"
-                      height="837"
+                       width="800"
+                      height="620"
                     />
                   </div>
                 </div>
@@ -65,8 +80,8 @@ export default function Features2() {
                       className="rounded-bottom-1-5 lg:rounded-bottom-3"
                       alt="dashboard-components"
                       src="/assets/images/template/home1.jpg"
-                      width="664"
-                      height="496"
+                      width="800"
+                      height="620"
                     />
                   </div>
                    <div
@@ -74,14 +89,13 @@ export default function Features2() {
                     data-anime="onview: -100; targets: >*; translateY: [16, 0]; opacity: [0, 1]; easing: easeOutCubic; duration: 500; delay: anime.stagger(100, {start: 500});"
                   >
                     <h1 className="fs-6 md:fs-5 lg:fs-4 m-0">
-                     Elite network and resources:Work With the Top 1%
+                     Spacenos for Businesses:
                     </h1>
-                    <p className="fs-6 md:fs-5 lg:fs-4 m-0">
+                    {/* <p className="fs-6 md:fs-5 lg:fs-4 m-0">
                        Top 1% Developers.
-                    </p>
+                    </p> */}
                     <p className="fs-6 md:fs-5 lg:fs-4 m-0">
-                        Get your product reviewed by our CEO, the goddamn hackathon king.
-
+                        Automate your operations and marketing with AI – 24/7 productivity without burnout.
                     </p>
                     <a href="#" className="btn btn-sm btn-secondary text-primary px-2 mt-2">
                       <span>Try it now</span>
@@ -117,13 +131,10 @@ export default function Features2() {
                     data-anime="onview: -100; targets: >*; translateY: [16, 0]; opacity: [0, 1]; easing: easeOutCubic; duration: 500; delay: anime.stagger(100, {start: 500});"
                   >
                     <h1 className="fs-6 md:fs-5 lg:fs-4 m-0">
-                     Your Growth, Funded
+                     Spacenos for Fertility & Health:
                     </h1>
                     <p className="fs-6 md:fs-5 lg:fs-4 m-0">
-                       Pay ₹50K/month and we match you with 1L to build and launch your product. 
-                    </p>
-                    <p className="fs-6 md:fs-5 lg:fs-4 m-0">
-                       70% - 30% Revenue Share.
+                       On a mission to eliminate defective childbirth and improve intimacy through science.
                     </p>
                     <a href="#" className="btn btn-sm btn-secondary text-primary px-2 mt-2">
                       <span>Try it now</span>
@@ -142,16 +153,11 @@ export default function Features2() {
                     data-anime="onview: -100; targets: >*; translateY: [16, 0]; opacity: [0, 1]; easing: easeOutCubic; duration: 500; delay: anime.stagger(100, {start: 500});"
                   >
                     <h1 className="fs-6 md:fs-5 lg:fs-4 m-0">
-                    Future Blueprint
+                    Spacenos for Education:
+
                     </h1>
                     <p className="fs-6 md:fs-5 lg:fs-4 m-0">
-                        Defense, healthcare, bio-tech.
-                    </p>
-                    <p className="fs-6 md:fs-5 lg:fs-4 m-0">
-                       AI research and dev center - USA and India. 
-                    </p>
-                    <p className="fs-6 md:fs-5 lg:fs-4 m-0">
-                       Global expansion and partnerships. 
+                        Redesigning education for an AI-first world – intuitive, inclusive, intelligent.
                     </p>
                     <a href="#" className="btn btn-sm btn-primary px-2 mt-2">
                       <span>Try it now</span>
@@ -162,8 +168,8 @@ export default function Features2() {
                     <Image
                       alt="builder-tools"
                       src="/assets/images/template/home2.jpg"
-                      width="1280"
-                      height="800"
+                     width="800"
+                      height="620"
                     />
                   </div>
                 </div>

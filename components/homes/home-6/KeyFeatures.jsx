@@ -1,4 +1,4 @@
-import { features14 } from "@/data/features";
+import { features15 } from "@/data/features";
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
@@ -17,7 +17,7 @@ export default function KeyFeatures() {
               data-anime="onview: -100; targets: >*; translateY: [-48, 0]; opacity: [0, 1]; easing: easeOutCubic; duration: 500; delay: anime.stagger(100, {start: 200});"
             >
               <h1 className="h3 lg:h2 xl:h1 m-0 px-2">
-                Our Ventures
+                You Scrolled This Far,<span className="text-primary "> Let’s Build Your Path Forward.</span>
               </h1>
             </div>
             <div
@@ -25,12 +25,12 @@ export default function KeyFeatures() {
               data-anime="onview: -100; translateY: [48, 0]; opacity: [0, 1]; easing: easeOutCubic; duration: 500; delay: 350;"
             >
               <div
-                className="features-items row child-cols-6 lg:child-cols-3 g-2 md:g-4 col-match"
+                className="features-items row child-cols-8 lg:child-cols-4 g-2  col-match"
                 data-anime="onview: -100; targets: >*; translateY: [48, 0]; opacity: [0, 1]; easing: easeOutCubic; duration: 500; delay: anime.stagger(100, {start: 400});"
               >
-                {features14.map((feature, index) => (
+                {features15.map((feature, index) => (
                   <div key={index}>
-                    <div className="features-item vstack justify-between gap-4 p-2 md:p-4 bg-secondary hover:bg-secondary-300 dark:bg-gray-800 dark:hover:bg-gray-700 hover:scale-105 transition-all duration-150 rounded-1-5 md:min-h-250px">
+                    <div className="features-item vstack justify-between gap-8 p-2 md:p-4 bg-secondary hover:bg-secondary-300 dark:bg-gray-800 dark:hover:bg-gray-700 hover:scale-105 transition-all duration-150 rounded-1-5 md:min-h-250px">
                       <div className="icon-box w-40px md:w-48px h-40px md:h-48px rounded-circle cstack bg-primary dark:bg-secondary">
                         <Image
                           className="w-20px xl:w-24px text-white dark:text-primary image-filter-white dark-image-filter-none"

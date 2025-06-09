@@ -8,7 +8,7 @@ export default function Brands() {
     <div id="trusted_brands" className="trusted-brands py-4 py-md-5 bg-light">
       <div className="container p-5">
         <div className="row justify-content-center mb-4 mb-md-5">
-          <div className="col-12 col-md-10 col-lg-8 text-center">
+          <div className="col-12 col-md-10 col-lg-8 text-black text-center">
             <h2 className=" h3 xl:h2 mb-0">
               Where the Best Come From
             </h2>

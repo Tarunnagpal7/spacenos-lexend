@@ -9,7 +9,7 @@ export default function Testimonials() {
       id="clients_feedback"
       className="clients-feedback section panel  scrollSpysection"
     >
-      <div className="section-outer panel py-6 lg:py-8 xl:py-10 bg-secondary dark:bg-gray-800 text-black rounded-2 lg:rounded-3 m-2">
+      <div className="section-outer panel py-6 lg:py-8 xl:py-10 bg-secondary  text-black rounded-2 lg:rounded-3 m-2">
         <div className="container xl:max-w-xl">
           <div
             className="section-inner panel vstack items-center gap-4 md:gap-6 lg:gap-8 max-w-100"
@@ -21,11 +21,11 @@ export default function Testimonials() {
             >
               <div className="cstack gap-1 py-1 px-3 border rounded-pill">
                 <span className="d-inline-block w-4px h-4px rounded-circle bg-primary dark:bg-secondary" />
-                <span className="fs-8 fw-bold text-uppercase dark:text-secondary">
+                <span className="fs-8 fw-bold text-uppercase ">
                   Clients feedback
                 </span>
               </div>
-              <p className="h3 lg:h2 xl:h1 m-0 px-2 text-black dark:text-secondary">
+              <p className="h3 lg:h2 xl:h1 m-0 px-2 text-black ">
                 YOU DREAM.
                 <span className="d-inline-flex px-1 bg-primary text-secondary -rotate-1 lg:-rotate-2 rounded-1 lg:rounded-1-5">
                    WE BUILD. 

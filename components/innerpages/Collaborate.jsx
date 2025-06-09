@@ -6,8 +6,9 @@ import { Collaborate } from "@/data/Collaborate";
 export default function Integrations() {
   return (
     <div id="hero_header" className="hero-header section panel overflow-hidden">
+      <div className="section-outer panel pt-9 bg-tertiary-300 dark:bg-primary-700   bg-gradient-to-b  from-transparent via-transparent to-white dark:to-black lg:pt-10 pb-6">
       <div
-        className="position-absolute top-0 start-0 end-0 min-h-screen overflow-hidden d-none lg:d-block"
+        className="position-absolute top-0 start-0 end-0 min-h-screen  overflow-hidden d-none lg:d-block"
         data-anime="targets: >*; scale: [0, 1]; opacity: [0, 1]; easing: spring(1, 80, 10, 0); duration: 450; delay: anime.stagger(100, {start: 750});"
       >
         <div
@@ -53,7 +54,6 @@ export default function Integrations() {
           />
         </div>
       </div>
-      <div className="section-outer panel pt-9 lg:pt-10 pb-6">
         <div className="container max-w-lg">
           <div className="section-inner panel mt-2 sm:mt-4 lg:mt-0">
             <div

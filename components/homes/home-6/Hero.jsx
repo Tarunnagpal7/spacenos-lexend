@@ -64,25 +64,27 @@ export default function Hero() {
                     />
                   </div>
                   <h1 className="h1 sm:display-6 md:display-5 lg:display-4 xl:display-3 m-0 text-white">
-                    Building Empires Powered By 
+                    Spacenos Helps
+                    <br /> 
+                    <span className="h1 sm:display-6 md:display-5 lg:display-4 xl:display-3 m-0 text-white">
+                      You Build 
+                    </span>
+                    <br />
                     <span className="d-inline-flex px-1 bg-secondary text-primary -rotate-1 lg:-rotate-2 rounded-1 lg:rounded-1-5">
-                       Space-Age tech
+                       an Empire.
                     </span>
                   </h1>
                   <p className="fs-5 xl:fs-4 text-black dark:text-white d-none md:d-block">
-                 You bring the vision. We bring the tech stack — from product to launch, our AI-powered startup solutions handle the rest.
+                The AI Silo of USA & India — Bridging Innovation with Purpose.
 
                   </p>
                   <Link
                     href={`/page-pricing`}
                     className="btn btn-md lg:btn-lg btn-primary min-w-150px mt-2"
                   >
-                    <span>Book a Roadmap Call</span>
+                    <span>Build Your Empire</span>
                     <i className="icon icon-narrow unicon-arrow-right fw-bold ltr:ms-narrow rtl:rotate-180 rtl:me-narrow" />
                   </Link>
-                  <p className="fs-7 text-black dark:text-white">
-                    No credit cards required - 14 days free trial.
-                  </p>
                 </div>
               </div>
               <div>

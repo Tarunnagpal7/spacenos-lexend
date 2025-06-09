@@ -23,18 +23,18 @@ export default function EmployeeCenter() {
                   data-uc-grid=""
                 >
                   <div>
-                    <div className="panel vstack justify-between gap-3 rounded- overflow-hidden">
+                    <div className="panel vstack justify-between gap-3 rounded-2 overflow-hidden">
                       <div
                         className="row child-cols-12 col-match g-0"
                         data-uc-grid=""
                       >
-                        <h1 className="fs-1 text-center dark:text-white">
+                        <div className="sm:col-6 py-6 px-2 bg-secondary  lg:col-8">
+                          <div className="panel vstack justify-between gap-3 px-3 py-4 lg:px-5 lg:py-6">
+                        <h1 className="fs-1 text-black text-center ">
                           Life At Spacenos
                         </h1>
-                        <div className="sm:col-6 2 bg-secondary dark:bg-gray-800 lg:col-8">
-                          <div className="panel vstack justify-between gap-3 px-3 py-4 lg:px-5 lg:py-6">
                             <div className="panel vstack items-start gap-2">
-                              <p className="fs-5 lg:fs-4 xl:fs-3 fw-medium text-dark dark:text-white">
+                              <p className="fs-5 lg:fs-4 xl:fs-3 fw-medium text-dark ">
                               <b>From our intern to CTO of a $1Mn startup. </b>Know more about the leadership skills Aryaman learnt at Spacenos and how it is helping him in his startup.
                               </p>
                             </div>
@@ -45,7 +45,7 @@ export default function EmployeeCenter() {
                             className="panel overflow-hidden h-100"
                             data-uc-lightbox="video-autoplay: true;"
                           >
-                            <figure className="featured-image m-0 rounded ratio ratio-1x1 h-100 uc-transition-toggle overflow-hidden">
+                            <figure className="featured-image m-0  rounded ratio ratio-1x1 h-100 uc-transition-toggle overflow-hidden">
                               <Image
                                 className="media-cover image uc-transition-scale-up uc-transition-opaque"
                                 alt="image"

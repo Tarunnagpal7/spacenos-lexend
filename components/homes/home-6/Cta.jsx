@@ -15,8 +15,11 @@ export default function Cta() {
                 Founders Round Table
               </h2>
               <p className="fs-5 my-0">
-                Every wednesday, we host a closed-door roundtable with founders, operators, and investors. It's where ideas get challenged, plans get sharper, and next steps get real. Whether you've got a sketch, a prototype, or just a market insight — there's a seat for you. Real strategy, no sales pitch.
-              </p>
+                 I started Spacenos because I was tired of seeing ideas die due to lack of money, mentorship, or courage. I come from humble beginnings, and today, our goal is to make sure no one with a dream is left behind. We’re here to back the underdogs, automate the impossible, and make legacy-building accessible to all.
+                 </p>
+                 <h1 className="fs-6">
+                  – Venkatesh Devale, CEO of Spacenos
+                 </h1>
               <a
                 href="https://themeforest.net/user/elite-themes24"
                 className="btn btn-md btn-primary min-w-150px px-3 mt-4"

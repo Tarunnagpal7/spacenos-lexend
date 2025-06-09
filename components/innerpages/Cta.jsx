@@ -9,39 +9,25 @@ export default function Cta() {
       className="cta section panel overflow-hidden"
       data-anime="onview:-100; opacity: [0, 1]; easing: spring(1, 80, 10, 0); duration: 450; delay: 200;"
     >
-      <div className="section-outer panel py-4 sm:py-6 xl:py-9 bg-secondary dark:bg-gray-800">
+      <div className="section-outer panel py-4 sm:py-6 xl:py-9 bg-secondary">
         <div
           className="d-none lg:d-block"
           data-anime="onview: -100; targets: img; scale: [0.8, 1]; opacity: [0, 1]; easing: spring(1, 80, 10, 0); duration: 450; delay: 350;"
         >
           <div className="position-absolute top-50 start-0 translate-middle-y ms-n6">
             <Image
-              className="w-200px xl:w-250px d-block dark:d-none"
+              className="w-200px xl:w-250px d-block "
               alt="thinking"
               src="/assets/images/template/thinking.svg"
               width="233"
               height="236"
             />
-            <Image
-              className="w-200px xl:w-250px d-none dark:d-block"
-              alt="thinking-dark"
-              src="/assets/images/template/thinking-dark.svg"
-              width="233"
-              height="237"
-            />
           </div>
           <div className="position-absolute top-50 end-0 translate-middle-y me-n6">
             <Image
-              className="w-200px xl:w-250px d-block dark:d-none"
+              className="w-200px xl:w-250px d-block "
               alt="send-message"
               src="/assets/images/template/send-message.svg"
-              width="240"
-              height="215"
-            />
-            <Image
-              className="w-200px xl:w-250px d-none dark:d-block"
-              alt="send-message-dark"
-              src="/assets/images/template/send-message-dark.svg"
               width="240"
               height="215"
             />
@@ -84,7 +70,7 @@ export default function Cta() {
               className="vstack items-center gap-2 sm:gap-3 max-w-550px mx-auto text-center"
               data-anime="onview:-100; targets: >*; translateY: [48, 0]; opacity: [0, 1]; easing: spring(1, 80, 10, 0); duration: 450; delay: anime.stagger(100, {start: 200});"
             >
-              <h2 className="h3 sm:h1 m-0">
+              <h2 className="h3 text-black sm:h1 m-0">
                 The future isn’t just coming - WE ARE BUILDING IT!
               </h2>
               <Link

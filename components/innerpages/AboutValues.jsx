@@ -32,7 +32,7 @@ export default function Facts() {
                   <div className="row child-cols-12 sm:child-cols-6 lg:child-cols-6 col-match g-2 lg:g-4 justify-between text-center">
                     {panelData.map((panel) => (
                       <div key={panel.id}>
-                        <div className="panel vstack items-center gap-2 p-4 lg:py-6 rounded-2 bg-white dark:bg-gray-800">
+                        <div className="panel vstack items-center gap-2 p-4 lg:py-6 rounded-2 border border-white bg-white dark:bg-gray-800 ">
                           <Image
                             className="w-64px lg:w-80px d-block dark:d-none"
                             src={panel.lightIcon}

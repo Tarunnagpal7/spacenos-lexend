@@ -33,9 +33,9 @@ const VentureOverview = () => {
   }, []);
 
   return (
-    <section className="py-5">
+    <section className="py-6">
       <div className="section-outer panel pb-6">
-        <div className="container py-5">
+        <div className="container py-4">
           <h1 
             className="h3 lg:h2 xl:h1 m-0 text-center mb-4 animate-title"
           >
@@ -54,21 +54,21 @@ const VentureOverview = () => {
                   transition: `opacity 0.6s ease-out ${index * 0.1}s, transform 0.6s ease-out ${index * 0.1}s`
                 }}
               >
-                <div className="card shadow-lg h-100 overflow-hidden dark:bg-gray-800 dark:text-white hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                <div className="card shadow-lg h-100 overflow-hidden  hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
                   <div className="row g-0 h-100">
                     <div className="col-md-6 p-4 p-lg-5 d-flex flex-column">
                       <div className="mb-4">
-                        <h3 className="text-black fw-bold fs-1 dark:text-white">{venture.name}</h3>
-                        <p className="lead text-muted fs-3">{venture.tagline}</p>
+                        <h3 className="text-black fw-bold fs-1 ">{venture.name}</h3>
+                        <p className="lead text-black  fs-3">{venture.tagline}</p>
                       </div>
                       
-                      <p className="mb-4">{venture.description}</p>
+                      <p className="mb-4 text-black">{venture.description}</p>
                       
                       <div className="mb-4">
-                        <h4 className="fw-semibold mb-3">Key Features:</h4>
+                        <h4 className="fw-semibold mb-3 text-black">Key Features:</h4>
                         <ul className="list-unstyled">
                           {venture.features.map((feature, idx) => (
-                            <li key={idx} className="mb-2 d-flex align-items-start">
+                            <li key={idx} className="mb-2 d-flex text-black  align-items-start">
                               <span className="badge bg-success me-2 mt-1">
                                 <i className="bi bi-check-lg"></i>
                               </span>
@@ -79,12 +79,12 @@ const VentureOverview = () => {
                       </div>
                       
                       <div className="mt-auto">
-                        <div className="card bg-light mb-4 border-0 dark:bg-gray-800">
+                        <div className="card bg-light mb-4 border-0 ">
                           <div className="card-body p-3">
                             <blockquote className="blockquote mb-0">
-                              <p className="font-italic">"{venture.testimonials[0].quote}"</p>
-                              <footer className="blockquote-footer text-end">
-                                {venture.testimonials[0].author}
+                              <p className="font-italic text-black">"{venture.testimonials[0].quote}"</p>
+                              <footer className="blockquote-footer text-black text-end">
+                              ~ {venture.testimonials[0].author}
                               </footer>
                             </blockquote>
                           </div>

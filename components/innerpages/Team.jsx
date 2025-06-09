@@ -6,7 +6,7 @@ import Image from "next/image";
 export default function Team() {
   return (
     <div id="about-team" className="about-team section panel overflow-hidden">
-      <div className="section-outer panel py-6 xl:py-9">
+      <div className="section-outer panel py-6 xl:py-9 bg-tertiary-300 dark:bg-primary-700 bg-gradient-to-b from-transparent via-transparent to-white dark:to-black dark:bg-opacity-15">
         <div className="container max-w-lg">
           <div className="section-inner panel">
             <div

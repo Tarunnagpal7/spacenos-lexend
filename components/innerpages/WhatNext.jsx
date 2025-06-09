@@ -20,7 +20,7 @@ export  function WhatNext() {
               {features1.map((feature) => (
                 <div
                   key={feature.id}
-                  className="feature-item panel px-3 lg:px-4 py-4 rounded-2 bg-secondary dark:bg-gray-800"
+                  className="feature-item panel px-3 lg:px-4 py-4 rounded-2 bg-secondary "
                   data-anime="onview: -200; translateY: [48, 0]; opacity: [0, 1]; easing: spring(1, 80, 10, 0); duration: 450; delay: 100;"
                 >
                   <div className="row child-cols col-match justify-between g-4 lg:g-8 xl:g-10">
@@ -37,12 +37,12 @@ export  function WhatNext() {
                     <div className="order-1 lg:order-0 col-12 sm:col-5">
                       <div className="panel vstack justify-center gap-4 h-100">
                         <div>
-                          <div className="panel vstack gap-2">
+                          <div className="panel text-black vstack gap-2">
                             <span className="fs-6 fw-bold m-0 text-primary">
                               {feature.id.toString().padStart(2, "0")}.
-                              <span className="fs-2 p-1">{feature.heading}</span>
+                              <span className="fs-2  p-1">{feature.heading}</span>
                             </span>
-                            <h3 className="h4 lg:h2 m-0">{feature.title}</h3>
+                            <h3 className="h4 text-black lg:h2 m-0">{feature.title}</h3>
                             <p className="fs-6 lg:fs-5 opacity-70 dark:opacity-80">
                               {feature.description}
                             </p>

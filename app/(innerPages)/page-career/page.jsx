@@ -12,7 +12,7 @@ import AboutValues from "@/components/innerpages/AboutValues";
 import { panelsDataCareers } from "@/data/plansCareers";
 import CareerNewsletter from "@/components/innerpages/CareerNewsletter";
 import CareerButton from "@/components/innerpages/CareerButton";
-import Header10 from "@/components/headers/Header10";
+import Header5 from "@/components/headers/Header5";
 import CareerFeedback from "../CareerFeedback";
 import Timeline from "@/components/innerpages/Timeline";
 import Brands from "@/components/homes/home-3/Brands";
@@ -27,7 +27,7 @@ export default function CareerPage() {
   return (
     <>
       <div className="page-wrapper  uni-body panel bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-200 overflow-x-hidden bp-xs bp-sm bp-md bp-lg bp-xl bp-xxl dom-ready">
-        <Header10 />
+        <Header5 />
         <div id="wrapper" className="wrap">
           <CareerHero />
           <AboutValues data={panelsDataCareers}/>

@@ -36,6 +36,11 @@ export const menuItems = [
     label: "Career",
   },
   {
+    id: 7,
+    href: "/resources",
+    label: "Resources",
+  },
+  {
     id: 6,
     href: "/page-contact",
     label: "Contact",
@@ -351,21 +356,21 @@ export const pagesData = [
   },
 ];
 export const navItems = [
-  { href: "#home", label: "Home", active: true },
+  { href: "/", label: "Home" },
   {
     label: "Ventures",
-    href: "#ventures",
+    href: "/page-features",
     children: [
-      { href: "#darkbase", label: "Darkbase" },
-      { href: "#astro360", label: "Astro360" },
-      { href: "#dominus", label: "Dominus" },
-      { href: "#ai-tools", label: "AI Tools" },
+      { href: "/page-features", label: "Darkbase" },
+      { href: "/page-features", label: "Astro360" },
+      { href: "/page-features", label: "Dominus" },
+      { href: "/page-features", label: "AI Tools" },
     ],
   },
-  { href: "#about-us", label: "About Us" },
-  { href: "#career", label: "Career" },
-  { href: "#resources", label: "Resources" },
-  { href: "#contact-us", label: "Contact Us" },
+  { href: "/page-about", label: "About Us" },
+  { href: "/page-career", label: "Career" },
+  { href: "/resources", label: "Resources" },
+  { href: "/page-contact", label: "Contact Us" },
 ];
 
 export const mainPages = [

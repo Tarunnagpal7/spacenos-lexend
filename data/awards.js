@@ -48,3 +48,40 @@ export const awards = [
     image: "/assets/images/template/hero-contact.jpg"
   }
 ];
+export const media = [
+  {
+    id: 1,
+    issuer: "TechCrunch",
+    year: "2023",
+    description: "Recognized for outstanding contributions to digital transformation in public services.",
+    image: "/assets/images/template/hero-contact.jpg"
+  },
+  {
+    id: 2,
+    issuer: "Forbes",
+    year: "2022",
+    description: "Awarded for developing cutting-edge AI solutions for enterprise applications.",
+    image: "/assets/images/template/hero-contact.jpg"
+  },
+  {
+    id: 3,
+    issuer: "YourStory",
+    year: "2021",
+    description: "First place in international hackathon for sustainable tech solutions.",
+    image: "/assets/images/template/hero-contact.jpg"
+  },
+  {
+    id: 4,
+    issuer: "Economic Times",
+    year: "2020",
+    description: "Recognized as the most innovative SaaS platform in the region.",
+    image: "/assets/images/template/hero-contact.jpg"
+  },
+  {
+    id: 5,
+    issuer: "IBM Developer Network",
+    year: "2019",
+    description: "Featured in Forbes 30 Under 30 for technology innovation.",
+    image: "/assets/images/template/hero-contact.jpg"
+  },
+];
