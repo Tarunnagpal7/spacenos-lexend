@@ -9,7 +9,7 @@ export default function ResourcesAccess() {
     const [showFullFeatures, setShowFullFeatures] = useState(false);
     return (
         <div id="pricing" className="pricing section panel overflow-hidden">
-            <div className="section-outer panel py-6 xl:py-9 lg:mx-2 mt-2 lg:rounded-2 bg-secondary dark:bg-tertiary-700">
+            <div className="section-outer panel py-6 xl:py-9 lg:mx-2 mt-2 lg:rounded-2">
                 <div className="container">
                     <div className="section-inner panel">
                         <div
@@ -17,7 +17,7 @@ export default function ResourcesAccess() {
                             data-anime="onview: -200; targets: >*; translateY: [48, 0]; opacity: [0, 1]; easing: easeOutCubic; duration: 500; delay: anime.stagger(100, {start: 200});"
                         >
                             <h4
-                                className="h4 text-black m-0"
+                                className="h4 text-black dark:text-white m-0"
                                 style={{ transform: "translateY(0px)", opacity: 1 }}
                             >
                                 Unlock a World of Possibilities.

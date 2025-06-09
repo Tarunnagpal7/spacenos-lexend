@@ -22,7 +22,7 @@ import Stats from "@/components/homes/home-6/Stats";
 import Team from "@/components/homes/home-6/Team";
 import Testimonials from "@/components/homes/home-6/Testimonials";
 import VideoComponent from "@/components/homes/home-6/VideoComponent";
-import ResourcesAccess from "@/components/homes/home-8/ResourcesAccess";
+import ResourcesAccess from "@/components/homes/home-6/ResourcesAccess";
 import AchievementsTestimonials from "@/components/innerpages/AchievementsTestinomials";
 import LeadMagnets from "@/components/innerpages/LeadMagnets";
 import { accordionItems } from "@/data/faq";
