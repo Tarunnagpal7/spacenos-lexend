@@ -9,37 +9,48 @@ import {
   Award, // For recognitions
   Flag // For Government of Karnataka
 } from "lucide-react";
+import Image from "next/image";
 
 export default function Awards() {
   const badges = [
     { 
-      name: "U.S. Government", 
-      icon: <Landmark className="w-12 h-12 text-primary" />,
-      color: "bg-blue-50"
+      name: "awrds 1", 
+      imgsrc : "/assets/images/awards/award1.svg",
+      color: "bg-amber-50" 
     },
     { 
-      name: "IBM Hackathons", 
-      icon: <Cpu className="w-12 h-12 text-blue-600" />,
-      color: "bg-blue-50" 
+      name: "awrds 1", 
+      imgsrc : "/assets/images/awards/award1.svg",
+      color: "bg-amber-50" 
     },
     { 
-      name: "Government of Karnataka", 
-      icon: <Flag className="w-12 h-12 text-green-600" />,
-      color: "bg-green-50" 
+      name: "awrds 1", 
+      imgsrc : "/assets/images/awards/award2.svg",
+      color: "bg-amber-50" 
     },
     { 
-      name: "AI for Good (UN Initiatives)", 
-      icon: <Globe className="w-12 h-12 text-indigo-600" />,
-      color: "bg-indigo-50" 
+      name: "awrds 1", 
+      imgsrc : "/assets/images/awards/award3.svg",
+      color: "bg-amber-50" 
     },
     { 
-      name: "Startup India", 
-      icon: <Rocket className="w-12 h-12 text-purple-600" />,
-      color: "bg-purple-50" 
+      name: "awrds 1", 
+      imgsrc : "/assets/images/awards/award4.svg",
+      color: "bg-amber-50" 
     },
     { 
-      name: "NASSCOM Recognitions", 
-      icon: <Award className="w-12 h-12 text-amber-600" />,
+      name: "awrds 1", 
+      imgsrc : "/assets/images/awards/award5.svg",
+      color: "bg-amber-50" 
+    },
+    { 
+      name: "awrds 1", 
+      imgsrc : "/assets/images/awards/award6.svg",
+      color: "bg-amber-50" 
+    },
+    { 
+      name: "awrds 1", 
+      imgsrc : "/assets/images/awards/award7.svg",
       color: "bg-amber-50" 
     },
   ];
@@ -94,12 +105,18 @@ export default function Awards() {
               >
                 {badges.map((badge, index) => (
                   <SwiperSlide className="swiper-slide" key={index}>
-                    <div className={`panel vstack items-center justify-center p-4 lg:p-5 ${badge.color} text-black rounded-1-5 h-100`}>
+                    <div className={`panel vstack items-center justify-center ${badge.color} text-black rounded-1-5 h-100`}>
                       <div className="panel vstack items-center gap-3">
-                        <div className="icon-container p-3 bg-white rounded-full">
-                          {badge.icon}
+                        <div className="icon-container p-3 rounded-full">
+                          <Image 
+                           className=""
+                           src= {badge.imgsrc}
+                           alt = {badge.name}
+                           width={200}
+                           height={200}
+                          />
                         </div>
-                        <span className="fs-7 text-center font-medium">{badge.name}</span>
+                        {/* <span className="fs-7 text-center font-medium">{badge.name}</span> */}
                       </div>
                     </div>
                   </SwiperSlide>
