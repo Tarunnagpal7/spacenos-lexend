@@ -12,7 +12,7 @@ export default function Cta() {
               data-anime="onview:-100; targets: >*; translateY: [48, 0]; opacity: [0, 1]; easing: easeOutCubic; duration: 500; delay: anime.stagger(100, {start: 200});"
             >
               <h2 className="h2 xl:display-5">
-                Founders Round Table
+                A Letter from the Founder
               </h2>
               <p className="fs-5 my-0">
                  I started Spacenos because I was tired of seeing ideas die due to lack of money, mentorship, or courage. I come from humble beginnings, and today, our goal is to make sure no one with a dream is left behind. We’re here to back the underdogs, automate the impossible, and make legacy-building accessible to all.

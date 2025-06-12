@@ -1,8 +1,8 @@
 export const facts = [
   {
     id: 1,
-    year: 2014,
-    description: "Lexend founded",
+    year: 2015,
+    description: "Spacenos founded",
     animation:
       "onview: -100; textContent: 2014; round: 1; easing: linear; duration: 1200;",
   },
@@ -32,41 +32,30 @@ export const facts = [
 export const Stats = [
   {
     id: 1,
-    year: 523,
+    value: "523+",
     description: "Startups Launched",
-    animation:
-      "onview: -100; textContent: 2014; round: 1; easing: linear; duration: 1200;",
-      suffix :"+"
   },
   {
     id: 2,
-    count: 12,
-    description: "Countries Impacted",
-    animation:
-      "onview: -100; textContent: [0, 50]; round: 1; easing: linear; duration: 1200;",
+    value: "12",
+    description: "Country Impacted",
   },
   {
     id: 3,
-    count: 60,
+    value: "60%",
     description: "Average Dev Cost Saved",
-    animation:
-      "onview: -100; textContent: [0, 4600]; round: 1; easing: linear; duration: 1200;",
-      suffix : "%"
   },
   {
     id: 4,
-    count: "₹22 ",
+    value: "₹22 Cr+",
     description: "Lifetime Value Delivered",
-    animation:
-      "onview: -100; textContent: [0, 17]; round: 1; easing: linear; duration: 1200;",
-    suffix: "Cr+",
   },
 ];
 
 export const factItems = [
   {
     id: 1,
-    value: "280+",
+    value: "280",
     description: "Track of leads",
   },
   {

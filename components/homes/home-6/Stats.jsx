@@ -1,44 +1,44 @@
-import { Stats as stats} from "@/data/facts";
+import { Stats as factItems } from "@/data/facts";
 import React from "react";
-import Image from "next/image";
 
-export default function Stats() {
+export default function Facts() {
   return (
     <div
-      hidden=""
-      id="about_values"
-      className="about-values section panel overflow-hidden"
+      id="facts_numbers"
+      className="facts-numbers section panel overflow-hidden"
     >
-      <div className="section-outer panel py-6 xl:py-9  dark:bg-gray-800">
-        <div className="container max-w-lg">
+      <div className="section-outer panel py-4 md:py-6 xl:py-9">
+        <div className="container sm:max-w-lg xl:max-w-xl">
           <div className="section-inner panel">
-            <div className="panel vstack gap-4 lg:gap-6 xl:gap-8">
+            <div
+              className="panel vstack items-center gap-2 mb-4 lg:mb-8 max-w-800px mx-auto text-center"
+              data-anime="onview: -200; targets: >*; translateY: [48, 0]; opacity: [0, 1]; easing: easeOutCubic; duration: 500; delay: anime.stagger(100, {start: 200});"
+            >
+              <h2 className="h4 md:h3 m-0"> 
+                Big Wins. Real Results.
+              </h2>
+              <p className="fs-6 xl:fs-5 text-dark dark:text-white text-opacity-70">
+                What We’ve Achieved So Far
+              </p>
+            </div>
+            <div
+              className="panel p-6 xl:p-8 rounded-1-5 lg:rounded-2 bg-secondary dark:bg-gray-800"
+              data-anime="onview: -200; translateY: [48, 0]; opacity: [0, 1]; easing: easeOutCubic; duration: 500; delay: 350;"
+            >
               <div
-                className="panel vstack g-2 lg:gap-4"
-                data-anime="onview: -100; targets: >*; translateY: [48, 0]; opacity: [0, 1]; easing: spring(1, 80, 10, 0); duration: 450; delay: anime.stagger(100, {start: 200});"
+                className="row child-cols col-match items-center justify-center text-center gy-4 lg:gy-8"
+                data-anime="onview: -200; targets: >*; translateY: [48, 0]; opacity: [0, 1]; easing: easeOutCubic; duration: 500; delay: anime.stagger(100, {start: 500});"
               >
-                <div
-                  className="panel p-5 lg:py-9 rounded-2 bg-white dark:bg-gray-800"
-                  style={{ transform: "translateY(0px)", opacity: 1 }}
-                >
-                  <div className="row child-cols-6 lg:child-cols-3 col-match g-4 text-center">
-                    {stats.map((item) => (
-                      <div key={item.id}>
-                        <div className="panel vstack gap-1">
-                          <h4 className="h4 xl:h1 m-0">
-                            <span data-anime={item.animation}>
-                              {item.year || item.count}
-                            </span>
-                            {item.suffix && item.suffix}
-                          </h4>
-                          <p className="fs-6 lg:fs-5 text-dark dark:text-white text-opacity-70">
-                            {item.description}
-                          </p>
-                        </div>
-                      </div>
-                    ))}
+                {factItems.map((fact, index) => (
+                  <div key={index}>
+                    <div className="fact-item panel vstack gap-1">
+                      <h5 className="h3 md:h2 lg:h1 xl:display-5 m-0 text-primary dark:text-secondary">
+                        {fact.value}
+                      </h5>
+                      <p className="fw-medium">{fact.description}</p>
+                    </div>
                   </div>
-                </div>
+                ))}
               </div>
             </div>
           </div>
