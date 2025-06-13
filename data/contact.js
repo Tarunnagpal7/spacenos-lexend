@@ -41,6 +41,8 @@ export const panels = [
   },
 ];
 
+
+
 export const horizontalPanels = [
   {
     id: 1,

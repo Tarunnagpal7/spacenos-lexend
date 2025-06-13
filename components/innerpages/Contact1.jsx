@@ -1,11 +1,23 @@
 "use client";
 import Image from "next/image";
+import { useState } from "react";
 
 export default function Contact1() {
+  const [selectedOption, setSelectedOption] = useState("");
+
+  const dropdownOptions = [
+    { value: "", label: "Select a category" },
+    { value: "Careers", label: "Careers" },
+    { value: "Sales", label: "Sales" },
+    { value: "Support", label: "Support" },
+    { value: "Partnership", label: "Partnership" },
+    { value: "Investment", label: "Investment" }
+  ];
+
   return (
     <div id="hero_header" className="hero-header section panel overflow-hidden">
       <div
-        className="position-absolute top-0 start-0 end-0 min-h-screen  bg-tertiary dark:bg-primary-700  bg-gradient-to-b from-transparent via-transparent to-white dark:to-black overflow-hidden  lg:d-block"
+        className="position-absolute top-0 start-0 end-0 min-h-screen  bg-secondary dark:bg-primary-700  bg-gradient-to-b from-transparent via-transparent to-white dark:to-black overflow-hidden  lg:d-block"
         data-anime="targets: >*; scale: [0, 1]; opacity: [0, 1]; easing: spring(1, 80, 10, 0); duration: 450; delay: anime.stagger(100, {start: 750});"
       >
         <div
@@ -59,10 +71,10 @@ export default function Contact1() {
           >
             <div className="vstack items-center gap-2 lg:gap-4 mb-4 sm:mb-6 lg:mb-8 max-w-750px mx-auto text-center">
               <h1 className="h2 sm:h1 lg:display-6 xl:display-5 m-0">
-                Let's Connect!
+                Let's Build, Grow, or Support Together
               </h1>
               <p className="fs-6 sm:fs-5 text-dark dark:text-white text-opacity-70">
-                Ready to say hello? We read every message — and we respond fast. Whether you’re a founder, investor, or just curious, you’ll hear directly from the team that powers Spacenos. Got an idea? A partnership? Let’s explore it
+                We're excited to connect with you — whether you're here to build an empire, explore a career, invest in the future, or just need help. We've built this page to guide you to the right place with minimal waiting.
               </p>
             </div>
             <div className="panel rounded-3 overflow-hidden bg-secondary dark:bg-gray-800">
@@ -84,9 +96,9 @@ export default function Contact1() {
                       <div className="panel z-1">
                         <div className="vstack gap-3">
                           <p className="fs-5 xl:fs-4 fw-medium">
-                            “This software simplifies the website building
+                            "This software simplifies the website building
                             process, making it a breeze to manage our online
-                            presence.”
+                            presence."
                           </p>
                           <div className="vstack gap-0">
                             <p className="fs-6 lg:fs-5 fw-medium">
@@ -132,6 +144,22 @@ export default function Contact1() {
                       type="text"
                       placeholder="Subject"
                     />
+                     <select
+                      className="form-control h-48px w-full  bg-white dark:bg-opacity-10 dark:border-opacity-0 dark:text-white"
+                      value={selectedOption}
+                      onChange={(e) => setSelectedOption(e.target.value)}
+                      required
+                    >
+                      {dropdownOptions.map((option) => (
+                        <option 
+                          key={option.value} 
+                          value={option.value}
+                          className="dark:bg-gray-800 dark:text-white"
+                        >
+                          {option.label}
+                        </option>
+                      ))}
+                    </select>
                     <textarea
                       className="form-control min-h-150px w-full bg-white dark:border-white dark:bg-opacity-10 dark:border-opacity-0 dark:text-white"
                       placeholder="Your message.."
