@@ -413,3 +413,26 @@ export const testimonials5 = [
     imgSrc: "/assets/images/avatars/11.png",
   },
 ];
+
+export const testimonials6 = [
+  {
+    text: "“I joined as an intern. Within 8 months, I was leading a product team that closed a 6-figure US deal.”",
+    name: "Divya",
+    position: "AI Product Team",
+  },
+  {
+    text: "“The exposure here is insane. I built a real-time automation stack that's now being used in 3 countries”",
+    name: "Rahul",
+    position: "Automation Lead",
+  },
+  {
+    text: "“From junior developer to tech architect in 1 year - the accelerated learning here is unmatched in the industry.”",
+    name: "Priya",
+    position: "Solutions Architect",
+  },
+  {
+    text: "“Working with global clients from day one gave me the confidence to launch my own startup while still employed here.”",
+    name: "Arjun",
+    position: "Product Innovation",
+  }
+];

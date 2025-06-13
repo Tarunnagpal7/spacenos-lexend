@@ -57,7 +57,7 @@ export default function HomePage6() {
           <MediaMentions />
           <LeadMagnets />
           <Cta />
-          <JoinCirle />
+          {/* <JoinCirle /> */}
         </div>
         <Footer5 />
       </div>

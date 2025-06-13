@@ -17,10 +17,9 @@ export default function GetInTouch({ ctaParentClass = "section-outer panel" }) {
                 <div className="panel vstack items-center justify-between gap-2 text-center rounded-2 p-3 lg:py-8 bg-primary text-white uc-dark">
                   <div className="panel">
                     <div className="vstack items-center gap-2">
-                      <h2 className="h6 lg:h5 m-0">Still have questions?</h2>
+                      <h2 className="h6 lg:h5 m-0"> Ready to Start?</h2>
                       <p className="lg:fs-5 text-dark dark:text-white text-opacity-70">
-                        Can’t find the answer you’re looking for? <br />
-                        Please chat to our friendly team.
+                        You can build the AI-proof, future-ready career the world needs right now.
                       </p>
                       <div className="hstack justify-center gap-0">
                         <Image
@@ -41,10 +40,10 @@ export default function GetInTouch({ ctaParentClass = "section-outer panel" }) {
                     </div>
                   </div>
                   <Link
-                    href={`/page-contact`}
-                    className="btn btn-md  text-tertiary dark:bg-tertiary btn-secondary fw-bold rounded-pill px-3 lg:px-5 mt-1 lg:mt-2"
+                    href={`#career_openings`}
+                    className="btn btn-md  text-tertiary dark:bg-tertiary btn-secondary scroll-smooth fw-bold rounded-pill px-3 lg:px-5 mt-1 lg:mt-2"
                   >
-                    Get in touch
+                    Explore
                   </Link>
                 </div>
               </div>

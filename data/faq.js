@@ -38,6 +38,43 @@ export const accordionItems = [
     expanded: false,
   },
 ];
+export const accordionItems3 =[
+  {
+    "id": 1,
+    "question": "AI-Proof Career Path",
+    "answer": "We train you in high-impact, decision-making, and creative domains that can't be replaced by AI.",
+    "controls": "uc-accordion-24",
+    "expanded": false
+  },
+  {
+    "id": 2,
+    "question": "Rapid Growth",
+    "answer": "Work on real products. Get real results. Grow 10x faster than traditional jobs.",
+    "controls": "uc-accordion-26",
+    "expanded": false
+  },
+  {
+    "id": 3,
+    "question": "Global Exposure",
+    "answer": "Collaborate with global teams across the USA, Australia, and India.",
+    "controls": "uc-accordion-28",
+    "expanded": false
+  },
+  {
+    "id": 4,
+    "question": "Smart Work Culture",
+    "answer": "Forget rigid hierarchies. We value agility, creativity, and bold thinking.",
+    "controls": "uc-accordion-30",
+    "expanded": false
+  },
+  {
+    "id": 5,
+    "question": "Startup + Enterprise Exposure",
+    "answer": "Get the best of both worlds — startup speed + enterprise impact.",
+    "controls": "uc-accordion-32",
+    "expanded": false
+  }
+]
 
 export const accordionItems2 = [
   {
@@ -65,3 +102,4 @@ export const accordionItems2 = [
     isOpen: true,
   },
 ];
+

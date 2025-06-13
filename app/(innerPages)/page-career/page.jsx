@@ -13,10 +13,13 @@ import { panelsDataCareers } from "@/data/plansCareers";
 import CareerNewsletter from "@/components/innerpages/CareerNewsletter";
 import CareerButton from "@/components/innerpages/CareerButton";
 import Header5 from "@/components/headers/Header5";
-import CareerFeedback from "../CareerFeedback";
+import CareerFeedback from "../../../components/innerpages/CareerFeedback";
 import Timeline from "@/components/innerpages/Timeline";
 import Brands from "@/components/homes/home-3/Brands";
 import GetInTouch from "@/components/innerpages/GetInTouch";
+import CareerFaqs from "@/components/innerpages/CareerFaqs";
+import { accordionItems3 } from "@/data/faq";
+import EcosystemSection from "@/components/innerpages/Ecosystem";
 export const metadata = {
   title:
     "Career || Lexend - Full-featured, professional-looking software, saas and startup nextjs template.",
@@ -30,18 +33,20 @@ export default function CareerPage() {
         <Header5 />
         <div id="wrapper" className="wrap">
           <CareerHero />
-          <AboutValues data={panelsDataCareers}/>
-          <CareerButton />
+          <CareerFaqs faqData={accordionItems3}/>
           <CareerOpenings />
           <EmployeeCenter />
-          {/* <Testimonials /> */}
           <CareerFeedback />
+          <AboutValues data={panelsDataCareers}/>
+          {/* <CareerButton /> */}
+          {/* <Testimonials /> */}
           {/* <Blogs /> */}
-          <Timeline />
+          {/* <Timeline /> */}
           <Brands />
-          <Faq faqData={accordionItemsCareer} /> 
+          {/* <Faq faqData={accordionItemsCareer} />  */}
+          <EcosystemSection />
           <GetInTouch />
-          <CareerNewsletter />
+          {/* <CareerNewsletter /> */}
           
         </div>
         <Footer5 />
