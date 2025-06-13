@@ -6,6 +6,7 @@ import ContactLinks2 from "@/components/innerpages/ContactLinks2";
 import SupportCenter from "@/components/innerpages/SupportCenter";
 import ChooseYourIntent from "@/components/innerpages/ChooseYourIntent";
 import ContactResource from "@/components/innerpages/ContactResource";
+import GlobalFootprint from "@/components/homes/home-6/GlobalFootprint";
 export const metadata = {
   title:
     "Contact 1 || Lexend - Full-featured, professional-looking software, saas and startup nextjs template.",
@@ -22,6 +23,7 @@ export default function ContactPage() {
           <ContactResource />
           <ChooseYourIntent />
           <ContactLinks2 />
+          <GlobalFootprint />
           <SupportCenter />
         </div>
         <Footer5 />
