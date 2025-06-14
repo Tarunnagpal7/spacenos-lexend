@@ -175,6 +175,31 @@ export const teamMembers3 = [
   },
 ];
 
+export const SpacenosTeam = [
+  {
+    imgSrc: "/assets/images/team/01.png",  // Keep this image as-is
+    alt: "Venkatesh Devale",
+    name: "Venkatesh Devale",
+    role: "Founder & Visionary-in-Chief",
+    description: "Once wrote a persuasive grant proposal to a chicken (true story). Speaks four languages fluently; conversational in binary. Believes every problem can be solved in three whiteboard sessions (or fewer)."
+  },
+  {
+    imgSrc: "/assets/images/team/04.png",  // Keep this image as-is
+    alt: "Dr. Ayesha Malik",
+    name: "Dr. Ayesha Malik",
+    role: "Head of AI Ethics",
+    description: "Former Oxford professor turned ethical hacker. Advocates AI with a conscience—and yes, her code has a moral compass flag."
+  },
+  {
+    imgSrc: "/assets/images/team/05.png",  // Keep this image as-is
+    alt: "Miguel Santos",
+    name: "Miguel Santos",
+    role: "VP of Global Partnerships",
+    description: "Closes deals in his sleep—or so they say. Once brokered a multi-million-dollar contract on a beach in Bali (just another Tuesday)."
+  },
+];
+
+
 export const teamMembers4 = [
   {
     id: 25,

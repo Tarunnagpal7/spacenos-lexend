@@ -13,6 +13,7 @@ import Cta from "@/components/innerpages/Cta";
 import { panelsData } from "@/data/plans";
 import { WhatNext } from "@/components/innerpages/WhatNext";
 import ArchitectureTeam from "@/components/innerpages/ArchitectureTeam";
+import Mission from "@/components/innerpages/Mission";
 export const metadata = {
   title:
     "About || Lexend - Full-featured, professional-looking software, saas and startup nextjs template.",
@@ -27,9 +28,10 @@ export default function AboutPage() {
         <div id="wrapper" className="wrap">
           <About />
           <Timeline />
-          <WhatNext />
+          <Mission />
           <ArchitectureTeam />
           <Team />
+          <WhatNext />
           <Cta />
         </div>
         <Footer5 />

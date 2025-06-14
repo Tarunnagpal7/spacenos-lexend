@@ -46,7 +46,7 @@ export  function WhatNext() {
                             <p className="fs-6 lg:fs-5 opacity-70 dark:opacity-80">
                               {feature.description}
                             </p>
-                            {feature.link && (
+                            {/* {feature.link && (
                               <a
                                 href={feature.link.href}
                                 className="uc-link fw-bold hstack gap-narrow"
@@ -54,7 +54,7 @@ export  function WhatNext() {
                                 <span>{feature.link.text}</span>
                                 <i className="position-relative icon icon-1 unicon-arrow-right rtl:rotate-180 translate-y-px" />
                               </a>
-                            )}
+                            )} */}
                           </div>
                         </div>
                       </div>

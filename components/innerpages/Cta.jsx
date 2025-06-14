@@ -71,13 +71,15 @@ export default function Cta() {
               data-anime="onview:-100; targets: >*; translateY: [48, 0]; opacity: [0, 1]; easing: spring(1, 80, 10, 0); duration: 450; delay: anime.stagger(100, {start: 200});"
             >
               <h2 className="h3 text-black sm:h1 m-0">
-                The future isn’t just coming - WE ARE BUILDING IT!
+                Join the Legend
               </h2>
+              <p className="fs-4 text-black">Whether you’re a founder seeking to skyrocket your startup, an investor eyeing the next big leap, or a dreamer ready to shape the future <b>—Spacenos welcomes you.</b>
+                </p>
               <Link
                 href={`/page-career`}
                 className="btn btn-md lg:btn-lg btn-primary text-white mt-1 xl:mt-2"
               >
-                Step into it with us
+                Build With Us
               </Link>
             </div>
           </div>

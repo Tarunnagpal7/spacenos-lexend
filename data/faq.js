@@ -38,6 +38,31 @@ export const accordionItems = [
     expanded: false,
   },
 ];
+export const EntreFaq = [
+  {
+    id: 1,
+    question: "Can I join if my idea is at the concept stage?",
+    answer:
+      "Absolutely — Phases 1 & 2 are designed for early-stage validation.",
+    controls: "uc-accordion-24",
+    expanded: true,
+  },
+  {
+    id: 2,
+    question: "Will this conflict with my full-time job?",
+    answer:
+      "No — program materials are asynchronous; mentorship calls are scheduled at convenient times, including evenings/weekends.",
+    controls: "uc-accordion-26",
+    expanded: false,
+  },
+  {
+    id: 3,
+    question: " What if I can’t complete a phase on time?",
+    answer: " Flexible deadlines and peer accountability ensure you progress at your own pace.",
+    controls: "uc-accordion-28",
+    expanded: false,
+  },
+];
 export const accordionItems3 =[
   {
     "id": 1,
