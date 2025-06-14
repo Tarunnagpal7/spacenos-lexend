@@ -249,44 +249,6 @@ export const testimonials2 = [
   },
 ];
 
-export const testimonials3 = [
-  {
-    brandImgSrc: "/assets/images/brands/brand-07.svg",
-    brandImgAlt: "Brand",
-    text: "“We’re looking for people who share our vision! most of our time used to be taken up by most of alternate administrative work whereas now we can focus on building out to help our employees.”",
-    avatarImgSrc: "/assets/images/avatars/01.png",
-    avatarImgAlt: "Mark Zellers",
-    name: "Mark Zellers",
-    position: "CEO, Co-Founder.",
-  },
-  {
-    brandImgSrc: "/assets/images/brands/brand-06.svg",
-    brandImgAlt: "Brand",
-    text: "“This powerful tool eliminates the need to leave Salesforce to get things done as I can create a custom proposal with dynamic pricing tables, and get approval from my boss all within 36 minutes.”",
-    avatarImgSrc: "/assets/images/avatars/04.png",
-    avatarImgAlt: "Natalia Larsson",
-    name: "Natalia Larsson",
-    position: "Director of Sales",
-  },
-  {
-    brandImgSrc: "/assets/images/brands/brand-08.svg",
-    brandImgAlt: "Brand",
-    text: "“We are based in Europe and the latest Data Protection Regulation forces us to look for service suppliers that comply with this regulation and as we look to create our website and this builder just outstanding!”",
-    avatarImgSrc: "/assets/images/avatars/03.png",
-    avatarImgAlt: "Sarah Edrissi",
-    name: "Sarah Edrissi",
-    position: "Lead Marketing",
-  },
-  {
-    brandImgSrc: "/assets/images/brands/brand-08.svg",
-    brandImgAlt: "Brand",
-    text: "“We are based in Europe and the latest Data Protection Regulation forces us to look for service suppliers that comply with this regulation and as we look to create our website and this builder just outstanding!”",
-    avatarImgSrc: "/assets/images/avatars/03.png",
-    avatarImgAlt: "Sarah Edrissi",
-    name: "Sarah Edrissi",
-    position: "Lead Marketing",
-  },
-];
 
 export const testimonials4 = [
   {
@@ -346,7 +308,7 @@ export const testimonialsData = [
     name: "Natalia Larsson",
     role: "Director of Sales",
     quote:
-      "“This powerful tool eliminates the need to leave Salesforce to get things done as I can create a custom proposal with dynamic pricing tables, and get approval from my boss all within 36 minutes.”",
+    "“This powerful tool eliminates the need to leave Salesforce to get things done as I can create a custom proposal with dynamic pricing tables, and get approval from my boss all within 36 minutes.”",
   },
   {
     id: 3,
@@ -354,7 +316,7 @@ export const testimonialsData = [
     name: "Sarah Edrissi",
     role: "Lead Marketing",
     quote:
-      "“We are based in Europe and the latest Data Protection Regulation forces us to look for service suppliers that comply with this regulation and as we look to create our website, this builder is just outstanding!”",
+    "“We are based in Europe and the latest Data Protection Regulation forces us to look for service suppliers that comply with this regulation and as we look to create our website, this builder is just outstanding!”",
   },
   {
     id: 4,
@@ -362,7 +324,7 @@ export const testimonialsData = [
     name: "Anna Yon",
     role: "Senior UI/UX Designer",
     quote:
-      "“We’re looking for people who share our vision! Most of our time used to be taken up by most of alternate administrative work whereas now we can focus on building out to help our employees.”",
+    "“We’re looking for people who share our vision! Most of our time used to be taken up by most of alternate administrative work whereas now we can focus on building out to help our employees.”",
   },
 ];
 
@@ -414,25 +376,79 @@ export const testimonials5 = [
   },
 ];
 
+export const testimonials3 = [
+  {
+    brandImgSrc: "/assets/images/brands/brand-07.svg",
+    brandImgAlt: "Brand",
+    text: "“We’re looking for people who share our vision! most of our time used to be taken up by most of alternate administrative work whereas now we can focus on building out to help our employees.”",
+    avatarImgSrc: "/assets/images/avatars/01.png",
+    avatarImgAlt: "Mark Zellers",
+    name: "Mark Zellers",
+    position: "CEO, Co-Founder.",
+  },
+  {
+    brandImgSrc: "/assets/images/brands/brand-06.svg",
+    brandImgAlt: "Brand",
+    text: "“This powerful tool eliminates the need to leave Salesforce to get things done as I can create a custom proposal with dynamic pricing tables, and get approval from my boss all within 36 minutes.”",
+    avatarImgSrc: "/assets/images/avatars/04.png",
+    avatarImgAlt: "Natalia Larsson",
+    name: "Natalia Larsson",
+    position: "Director of Sales",
+  },
+  {
+    brandImgSrc: "/assets/images/brands/brand-08.svg",
+    brandImgAlt: "Brand",
+    text: "“We are based in Europe and the latest Data Protection Regulation forces us to look for service suppliers that comply with this regulation and as we look to create our website and this builder just outstanding!”",
+    avatarImgSrc: "/assets/images/avatars/03.png",
+    avatarImgAlt: "Sarah Edrissi",
+    name: "Sarah Edrissi",
+    position: "Lead Marketing",
+  },
+  {
+    brandImgSrc: "/assets/images/brands/brand-08.svg",
+    brandImgAlt: "Brand",
+    text: "“We are based in Europe and the latest Data Protection Regulation forces us to look for service suppliers that comply with this regulation and as we look to create our website and this builder just outstanding!”",
+    avatarImgSrc: "/assets/images/avatars/03.png",
+    avatarImgAlt: "Sarah Edrissi",
+    name: "Sarah Edrissi",
+    position: "Lead Marketing",
+  },
+];
 export const testimonials6 = [
   {
     text: "“I joined as an intern. Within 8 months, I was leading a product team that closed a 6-figure US deal.”",
     name: "Divya",
     position: "AI Product Team",
+    brandImgSrc: "/assets/images/brands/brand-07.svg",
+    brandImgAlt: "Brand",
+        avatarImgSrc: "/assets/images/avatars/03.png",
+    avatarImgAlt: "Sarah Edrissi",
   },
   {
     text: "“The exposure here is insane. I built a real-time automation stack that's now being used in 3 countries”",
     name: "Rahul",
     position: "Automation Lead",
+    brandImgSrc: "/assets/images/brands/brand-07.svg",
+    brandImgAlt: "Brand",
+     avatarImgSrc: "/assets/images/avatars/03.png",
+    avatarImgAlt: "Sarah Edrissi",
   },
   {
     text: "“From junior developer to tech architect in 1 year - the accelerated learning here is unmatched in the industry.”",
     name: "Priya",
     position: "Solutions Architect",
+    brandImgSrc: "/assets/images/brands/brand-07.svg",
+    brandImgAlt: "Brand",
+     avatarImgSrc: "/assets/images/avatars/04.png",
+    avatarImgAlt: "Natalia Larsson",
   },
   {
     text: "“Working with global clients from day one gave me the confidence to launch my own startup while still employed here.”",
     name: "Arjun",
     position: "Product Innovation",
+    brandImgSrc: "/assets/images/brands/brand-07.svg",
+    brandImgAlt: "Brand",
+    avatarImgSrc: "/assets/images/avatars/01.png",
+    avatarImgAlt: "Mark Zellers",
   }
 ];
