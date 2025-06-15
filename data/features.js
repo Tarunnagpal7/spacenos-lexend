@@ -37,7 +37,46 @@ export const panelData = [
       "Refine skills through our training and scholarship programs. Reach milestones in your software engineering path, get certified by experts, and propagate your skills globally.",
   },
 ];
+import { 
+  Image, 
+  FileArchive, 
+  Monitor, 
+  UserCircle, 
+  BookOpen 
+} from 'lucide-react';
 
+export const features20 = [
+  {
+    icon: <Image className="w-16 h-16" />,
+    title: "Press Media Kit",
+    description: "Download high-resolution assets for print and digital use.",
+    backgroundColor: "bg-blue-100 dark:bg-blue-900"
+  },
+  {
+    icon: <FileArchive className="w-16 h-16" />,
+    title: "Company Logos",
+    description: "ZIP file with color and monochrome versions.",
+    backgroundColor: "bg-green-100 dark:bg-green-900"
+  },
+  {
+    icon: <Monitor className="w-16 h-16" />,
+    title: "Product Screenshots",
+    description: "Latest UI/UX previews in PNG and SVG.",
+    backgroundColor: "bg-purple-100 dark:bg-purple-900"
+  },
+  {
+    icon: <UserCircle className="w-16 h-16" />,
+    title: "Executive Headshots",
+    description: "High-resolution photos of our leadership team.",
+    backgroundColor: "bg-yellow-100 dark:bg-yellow-900"
+  },
+  {
+    icon: <BookOpen className="w-16 h-16" />,
+    title: "Brand Guidelines",
+    description: "PDF outlining logo usage, color palette, and typography.",
+    backgroundColor: "bg-red-100 dark:bg-red-900"
+  }
+];
 export const features = [
   {
     id: 4,

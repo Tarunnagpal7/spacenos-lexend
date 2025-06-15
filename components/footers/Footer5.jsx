@@ -20,8 +20,8 @@ export default function Footer5() {
                           <Image
                             className="text-primary"
                             alt="Lexend"
-                            src="/assets/images/common/logo-dark.svg"
-                            width="117"
+                            src="/assets/images/apps/SPACENOS_LOGO_LIGHT.svg"
+                            width="200"
                             height="40"
                           />
                         </Link>

@@ -85,12 +85,24 @@ export default function MobileMenu() {
           <div className="uc-logo">
             <Link
               href={`/`}
-              className="h5 text-none text-gray-900 dark:text-white"
+              className="h5 text-none text-gray-900 dark:text-white d-block dark:d-none"
             >
               <Image
-                className="w-32px"
+                className="w-150px"
                 alt="Lexend"
-                src="/assets/images/common/logo-mark.svg"
+                src="/assets/images/apps/SPACENOS_LOGO_DARK.svg"
+                width="34"
+                height="34"
+              />
+            </Link>
+            <Link
+              href={`/`}
+              className="h5 text-none text-gray-900 dark:text-white d-none dark:d-block" 
+            >
+              <Image
+                className="w-150px"
+                alt="Lexend"
+                src="/assets/images/apps/SPACENOS_LOGO_LIGHT.svg"
                 width="34"
                 height="34"
               />

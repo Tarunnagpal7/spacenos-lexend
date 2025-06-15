@@ -34,7 +34,7 @@ export default function ArchitectureTeam() {
 
               <div className="content panel w-100">
                 <div
-                  className="row child-cols-6 sm:child-cols-4 col-match g-2 lg:g-4"
+                  className="row child-cols-8 sm:child-cols-4 col-match g-2 lg:g-4"
                   data-anime="onview: -100; targets: >*; translateY: [48, 0]; opacity: [0, 1]; easing: easeOutCubic; duration: 500; delay: anime.stagger(100, {start: 200});"
                 >
                   {SpacenosTeam.map((member, index) => (

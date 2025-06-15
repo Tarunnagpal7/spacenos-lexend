@@ -60,15 +60,15 @@ export default function Header5() {
                     <Image
                       className="d-block dark:d-none"  // Show in light mode, hide in dark mode
                       alt="Lexend"
-                      src="/assets/images/common/logo-light.svg"
-                      width="117"
+                      src="/assets/images/apps/SPACENOS_LOGO_DARK.svg"
+                      width="150"
                       height="40"
                     />
                     <Image
                       className="d-none dark:d-block"  // Hide in light mode, show in dark mode
                       alt="Lexend"
-                      src="/assets/images/common/logo-dark.svg"
-                      width="117"
+                      src="/assets/images/apps/SPACENOS_LOGO_LIGHT.svg"
+                      width="150"
                       height="40"
                     />
                   </Link>
