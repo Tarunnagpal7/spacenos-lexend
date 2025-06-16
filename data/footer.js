@@ -174,7 +174,7 @@ export const footerLinks4 = [
       { text: "About Us", href: "/page-about" },
       { text: "Careers", href: "/page-career" },
       { text: "Awards", href: "/page-achievements" },
-      { text: "Our History", href: "/our-history" },
+      { text: "Meet the Ceo", href: "/meet-the-ceo" },
       { text: "Ventures", href: "/page-features" },
       { text: "Contact Us", href: "/page-contact" },
     ],
@@ -184,9 +184,9 @@ export const footerLinks4 = [
     links: [
       { text: "Case Studies", href: "/case-studies", isLink: true },
       { text: "Newsletter", href: "/newsletter", isLink: true },
-      { text: "Support", href: "/support" ,isLink: true},
+      { text: "Tools", href: "/tools" ,isLink: true},
       { text: "Legal", href: "/legal", isLink: true },
-      { text: "Tutorials", href: "/tutorials" ,isLink: true},
+      { text: "Security ", href: "/security" ,isLink: true},
       { text: "Verify Documents", href: "/verify-doc", isLink: true },
     ],
   },
@@ -196,7 +196,15 @@ export const footerLinks4 = [
       { text: "Spacenos Developers", href: "/spacenos-developers", isLink: true },
       { text: "Spacenos Labs", href: "/spacenos-Labs", isLink: true },
       { text: "Spacenos Invest", href: "/spacenos-Invest", isLink: true },
-      
+    ],
+  },
+  {
+    title: "Other",
+    links: [
+      { text: "Investors", href: "/investors", isLink: true },
+      { text: "Be Enterpreneur", href: "/enterpreneur", isLink: true },
+      { text: "Press and Media", href: "/press-media" ,isLink: true},
+      { text: "Read Blogs", href: "/blogs" ,isLink: true},
     ],
   },
 ];

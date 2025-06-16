@@ -9,9 +9,7 @@ import ContactResource from "@/components/innerpages/ContactResource";
 import GlobalFootprint from "@/components/homes/home-6/GlobalFootprint";
 export const metadata = {
   title:
-    "Contact 1 || Lexend - Full-featured, professional-looking software, saas and startup nextjs template.",
-  description:
-    "Lexend - Full-featured, professional-looking software, saas and startup nextjs template.",
+    "Contact  || || Spacenos"
 };
 export default function ContactPage() {
   return (

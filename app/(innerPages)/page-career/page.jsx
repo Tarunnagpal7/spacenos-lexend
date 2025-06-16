@@ -22,9 +22,7 @@ import { accordionItems3 } from "@/data/faq";
 import EcosystemSection from "@/components/innerpages/Ecosystem";
 export const metadata = {
   title:
-    "Career || Lexend - Full-featured, professional-looking software, saas and startup nextjs template.",
-  description:
-    "Lexend - Full-featured, professional-looking software, saas and startup nextjs template.",
+    "Career || || Spacenos"
 };
 export default function CareerPage() {
   return (

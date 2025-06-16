@@ -9,9 +9,7 @@ import Cta from "@/components/innerpages/features/Cta";
 import Integrations from "@/components/innerpages/Collaborate";
 export const metadata = {
   title:
-    "Collaborate || Lexend - Full-featured, professional-looking software, saas and startup nextjs template.",
-  description:
-    "Lexend - Full-featured, professional-looking software, saas and startup nextjs template.",
+    "Collaborate || || Spacenos"
 };
 export default function CollaboratePage() {
   return (

@@ -9,9 +9,7 @@ import CaseHero from "@/components/innerpages/CaseHero";
 import CaseGrid from "@/components/innerpages/CaseGrid";
 export const metadata = {
   title:
-    " Case Studies || Lexend - Full-featured, professional-looking software, saas and startup nextjs template.",
-  description:
-    "Lexend - Full-featured, professional-looking software, saas and startup nextjs template.",
+    " Case Studies || Spacenos"
 };
 export default function BlogPage1() {
   return (

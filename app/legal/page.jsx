@@ -5,9 +5,7 @@ import LegalInformation from "@/components/innerpages/LegalInformation";
 
 export const metadata = {
   title:
-    "Legal Information || Lexend - Full-featured, professional-looking software, saas and startup nextjs template.",
-  description:
-    "Lexend - Full-featured, professional-looking software, saas and startup nextjs template.",
+    "Legal Information || Spacenos"
 };
 export default function Page() {
   return (

@@ -11,9 +11,7 @@ import { EntreFaq as Faq } from "@/data/faq";
 
 export const metadata = {
   title:
-    "Investors || Lexend - Full-featured, professional-looking software, saas and startup nextjs template.",
-  description:
-    "Lexend - Full-featured, professional-looking software, saas and startup nextjs template.",
+    "Investors || Spacenos"
 };
 export default function CollaboratePage() {
   return (
