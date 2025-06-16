@@ -1,14 +1,6 @@
 "use client";
 import { Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { 
-  Landmark, // For Government
-  Cpu, // For IBM/tech
-  Globe, // For UN/global
-  Rocket, // For startups
-  Award, // For recognitions
-  Flag // For Government of Karnataka
-} from "lucide-react";
 import Image from "next/image";
 
 export default function Awards() {
@@ -70,7 +62,7 @@ export default function Awards() {
               className="panel vstack items-center gap-2 xl:gap-3 text-center"
               data-anime="onview: -100; targets: >*; translateY: [-48, 0]; opacity: [0, 1]; easing: easeOutCubic; duration: 500; delay: anime.stagger(100, {start: 200});"
             >
-              <p className="h3 lg:h2 xl:h1 m-0 px-2 text-black">
+              <p className="h4 xl:h3 xl:h1 m-0 px-2 text-black">
                 Globally Recognized. <span className="text-primary">Relentlessly Driven.</span>
               </p>
             </div>
@@ -107,13 +99,13 @@ export default function Awards() {
                   <SwiperSlide className="swiper-slide" key={index}>
                     <div className={`panel vstack items-center justify-center ${badge.color} text-black rounded-1-5 h-100`}>
                       <div className="panel vstack items-center gap-3">
-                        <div className="icon-container p-3 rounded-full">
+                        <div className="icon-container  rounded-full">
                           <Image 
                            className=""
                            src= {badge.imgsrc}
                            alt = {badge.name}
-                           width={200}
-                           height={200}
+                           width={400}
+                           height={400}
                           />
                         </div>
                         {/* <span className="fs-7 text-center font-medium">{badge.name}</span> */}
@@ -123,49 +115,6 @@ export default function Awards() {
                 ))}
               </Swiper>
             </div>
-            
-            {/* Second Slider (reverse direction)
-            <div className="panel w-100 mask-x mt-4">
-              <Swiper
-                className="swiper"
-                slidesPerView={2}
-                spaceBetween={24}
-                loop={true}
-                speed={5000}
-                modules={[Autoplay]}
-                autoplay={{
-                  delay: 0,
-                  disableOnInteraction: true,
-                  pauseOnMouseEnter: true,
-                  reverseDirection: true,
-                }}
-                allowTouchMove={false}
-                breakpoints={{
-                  480: {
-                    slidesPerView: 3,
-                  },
-                  768: {
-                    slidesPerView: 4,
-                  },
-                  1024: {
-                    slidesPerView: 5,
-                  },
-                }}
-              >
-                {[...badges].reverse().map((badge, index) => (
-                  <SwiperSlide className="swiper-slide" key={index}>
-                    <div className={`panel vstack items-center justify-center p-4 lg:p-5 ${badge.color} text-black rounded-1-5 h-100`}>
-                      <div className="panel vstack items-center gap-3">
-                        <div className="icon-container p-3 bg-white rounded-full">
-                          {badge.icon}
-                        </div>
-                        <span className="fs-7 text-center font-medium">{badge.name}</span>
-                      </div>
-                    </div>
-                  </SwiperSlide>
-                ))}
-              </Swiper>
-            </div> */}
           </div>
         </div>
       </div>

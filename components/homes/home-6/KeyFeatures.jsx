@@ -16,8 +16,8 @@ export default function KeyFeatures() {
               className="panel vstack items-center gap-2 xl:gap-3 text-center"
               data-anime="onview: -100; targets: >*; translateY: [-48, 0]; opacity: [0, 1]; easing: easeOutCubic; duration: 500; delay: anime.stagger(100, {start: 200});"
             >
-              <h1 className="h3 lg:h2 xl:h1 m-0 px-2">
-                You Scrolled This Far,<span className="text-primary "> Let’s Build Your Path Forward.</span>
+              <h1 className="h4 xl:h1 m-0 px-2">
+                You Scrolled This Far,<span className="text-primary "><br/> Let’s Build Your Path Forward.</span>
               </h1>
             </div>
             <div

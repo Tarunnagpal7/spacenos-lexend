@@ -34,11 +34,10 @@ export default function Timeline() {
                   spaceBetween={0}
                   centeredSlides={true}
                   centeredSlidesBounds={true}
-                    autoplay={{
+                   autoplay={{
                     delay: 3000, // 3 seconds delay between slides
                     disableOnInteraction: false, // Continue autoplay after user interaction
                   }}
-                  loop={true}
                 >
                   {timelineData.map((item, index) => (
                     <SwiperSlide key={index} className="panel">

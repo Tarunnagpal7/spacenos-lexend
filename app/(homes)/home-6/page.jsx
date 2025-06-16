@@ -50,10 +50,10 @@ export default function HomePage6() {
           <NextFeatures />
           <GlobalFootprint />
           <AchievementsTestimonials/> 
-          <ResourcesAccess />
+          {/* <ResourcesAccess /> */}
+          <LeadMagnets />
           <CareerCta />
           <MediaMentions />
-          <LeadMagnets />
           <Cta />
           {/* <JoinCirle /> */}
         </div>

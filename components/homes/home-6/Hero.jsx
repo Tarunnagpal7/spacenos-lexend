@@ -28,7 +28,7 @@ export default function Hero() {
         className="position-absolute d-inline-block w-250px h-250px rounded-circle bg-gradient-45 from-primary to-white start-100 blur-10 translate-middle blend-color-dodge"
         style={{ top: "0%" }}
       />
-      <div className="section-outer panel pt-9 xl:pt-10">
+      <div className="section-outer panel pt-9 ">
         <div className="container xl:max-w-xl">
           <div className="section-inner panel pt-0 lg:pt-4 xl:pt-0">
             <div className="row child-cols-12 justify-center items-center g-6 xl:g-8">

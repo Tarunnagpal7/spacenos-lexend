@@ -20,9 +20,9 @@ export default function ContactPage() {
         <div id="wrapper" className="wrap">
           <Contact1 />
           {/* <ContactResource /> */}
-          <LeadMagnets />
-          <ChooseYourIntent />
           <ContactLinks2 />
+          <ChooseYourIntent />
+          <LeadMagnets />
           <GlobalFootprint />
           <SupportCenter />
         </div>

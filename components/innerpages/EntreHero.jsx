@@ -5,7 +5,7 @@ export default function EntreHero() {
   return (
     <div id="foreign_header" className="hero-header section panel overflow-hidden">
       <div
-        className="position-absolute top-0 start-0 end-0 min-h-screen bg-tertiary-300 dark:bg-primary-700  bg-gradient-to-b from-transparent via-transparent to-white dark:to-black mt-4 overflow-hidden  lg:d-block"
+        className="position-absolute top-0 start-0 end-0 min-h-screen bg-tertiary-300 dark:bg-primary-700  bg-gradient-to-b from-transparent via-transparent to-white dark:to-black overflow-hidden  lg:d-block"
         data-anime="targets: >*; scale: [0, 1]; opacity: [0, 1]; easing: spring(1, 80, 10, 0); duration: 450; delay: anime.stagger(100, {start: 750});"
       >
         <div

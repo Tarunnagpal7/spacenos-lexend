@@ -39,7 +39,7 @@ const intents = [
 export default function ChooseYourIntent() {
   return (
     <div id="choose-intent" className="section panel overflow-hidden">
-      <div className="section-outer panel pb-6 pt-6">
+      <div className="section-outer panel pt-6">
         <div className="container">
           <div className="section-inner panel">
             <div className="panel vstack gap-4 sm:gap-6 xl:gap-8">
