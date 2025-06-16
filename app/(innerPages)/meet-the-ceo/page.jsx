@@ -6,7 +6,9 @@ import Timeline from "@/components/innerpages/Timeline";
 import CeoCalendly from "@/components/innerpages/CeoCalendly";
 export const metadata = {
   title:
-    "Meet the CEO || Spacenos",
+    "Meet the CEO || Lexend - Full-featured, professional-looking software, saas and startup nextjs template.",
+  description:
+    "Lexend - Full-featured, professional-looking software, saas and startup nextjs template.",
 };
 export default function CollaboratePage() {
   return (

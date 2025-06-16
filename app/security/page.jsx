@@ -5,7 +5,9 @@ import SecurityCompliance from "@/components/innerpages/SecurityCompliance";
 
 export const metadata = {
   title:
-    "Security and Compliance || Spacenos"
+    "Security and Compliance || Lexend - Full-featured, professional-looking software, saas and startup nextjs template.",
+  description:
+    "Lexend - Full-featured, professional-looking software, saas and startup nextjs template.",
 };
 export default function Page() {
   return (

@@ -7,7 +7,9 @@ import VerifyCta from "@/components/innerpages/VerifyCta";
 
 export const metadata = {
   title:
-    " Verify Documents || Spacenos"
+    " Verify Documents || Lexend - Full-featured, professional-looking software, saas and startup nextjs template.",
+  description:
+    "Lexend - Full-featured, professional-looking software, saas and startup nextjs template.",
 };
 export default function age() {
   return (

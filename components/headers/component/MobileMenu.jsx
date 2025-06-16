@@ -242,8 +242,11 @@ export default function MobileMenu() {
               </li>
             ))}
             <li className="hr opacity-10 my-1" />
-            <li className="btn btn-primary ">
-              <Link className="text-white" href={`/sign-in`}>Login </Link>
+            <li>
+              <Link href={`/sign-up`}>Sign Up</Link>
+            </li>
+            <li>
+              <Link href={`/sign-in`}>Sign In</Link>
             </li>
           </ul>
           <ul className="social-icons nav-x mt-4">

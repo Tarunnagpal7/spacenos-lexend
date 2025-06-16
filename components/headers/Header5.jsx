@@ -126,11 +126,16 @@ export default function Header5() {
                 </ul>
               </div>
               <div className="uc-navbar-right">
+                <div className="d-none lg:d-block">
+                  <Link className={`text-none fw-medium text-black dark:text-white hover:text-gray-300 `} href={`/sign-in`}>
+                    <span>Sign In</span>
+                  </Link>
+                </div>
                 <Link
                   className="btn btn-sm btn-primary text-white text-none d-none lg:d-inline-flex ml-4 hover:text-gray-300"
-                  href={`/sign-in`}
+                  href={`/sign-up`}
                 >
-                  Login
+                  Sign Up
                 </Link>
                 <a
                   className="d-block lg:d-none uc-icon uc-navbar-toggle-icon text-white hover:text-gray-300"

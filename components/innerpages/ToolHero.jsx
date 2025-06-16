@@ -47,7 +47,7 @@ export default function ToolHero() {
               className="w-32px text-gray-900 dark:text-white dark:hidden"
               width={193}
               height={216}
-              alt="star-1"
+              xalt="star-1"
               data-uc-svg=""
               src="/assets/images/template/dark-star-1.svg"
             />

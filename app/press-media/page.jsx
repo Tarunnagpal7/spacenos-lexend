@@ -10,7 +10,9 @@ import ContactPRTeam from "@/components/innerpages/ContactPRTeam";
 
 export const metadata = {
   title:
-    "Press and Media || Spacenos"
+    "Press and Media || Lexend - Full-featured, professional-looking software, saas and startup nextjs template.",
+  description:
+    "Lexend - Full-featured, professional-looking software, saas and startup nextjs template.",
 };
 export default function CollaboratePage() {
   return (

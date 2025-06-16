@@ -16,8 +16,10 @@ import ArchitectureTeam from "@/components/innerpages/ArchitectureTeam";
 import Mission from "@/components/innerpages/Mission";
 export const metadata = {
   title:
-    "About || Spacenos",
-}
+    "About || Lexend - Full-featured, professional-looking software, saas and startup nextjs template.",
+  description:
+    "Lexend - Full-featured, professional-looking software, saas and startup nextjs template.",
+};
 export default function AboutPage() {
   return (
     <>

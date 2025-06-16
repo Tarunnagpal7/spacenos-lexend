@@ -8,7 +8,9 @@ import AchievementsHero from "@/components/innerpages/AchievementsHero";
 import AchievementsTestimonials from "@/components/innerpages/AchievementsTestinomials";
 export const metadata = {
   title:
-    "Achievements and Testimonials || Spacenos"
+    "Achievements and Testimonials || Lexend - Full-featured, professional-looking software, saas and startup nextjs template.",
+  description:
+    "Lexend - Full-featured, professional-looking software, saas and startup nextjs template.",
 };
 export default function CareerPage() {
   return (

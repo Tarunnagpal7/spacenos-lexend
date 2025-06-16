@@ -7,7 +7,9 @@ import ResourceHero from "@/components/innerpages/ResourceHero";
 import LeadMagnets from "@/components/innerpages/LeadMagnets";
 export const metadata = {
   title:
-    " Resources || Spacenos"
+    " Resources || Lexend - Full-featured, professional-looking software, saas and startup nextjs template.",
+  description:
+    "Lexend - Full-featured, professional-looking software, saas and startup nextjs template.",
 };
 export default function BlogPage1() {
   return (
