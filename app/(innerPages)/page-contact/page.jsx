@@ -7,6 +7,7 @@ import SupportCenter from "@/components/innerpages/SupportCenter";
 import ChooseYourIntent from "@/components/innerpages/ChooseYourIntent";
 import ContactResource from "@/components/innerpages/ContactResource";
 import GlobalFootprint from "@/components/homes/home-6/GlobalFootprint";
+import LeadMagnets from "@/components/innerpages/LeadMagnets";
 export const metadata = {
   title:
     "Contact  || Spacenos"
@@ -18,7 +19,8 @@ export default function ContactPage() {
         <Header5 />
         <div id="wrapper" className="wrap">
           <Contact1 />
-          <ContactResource />
+          {/* <ContactResource /> */}
+          <LeadMagnets />
           <ChooseYourIntent />
           <ContactLinks2 />
           <GlobalFootprint />
