@@ -2,7 +2,11 @@
 "use client";
 import { timelineData } from "@/data/timeline";
 import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation";
 import Image from "next/image";
+import { Autoplay } from "swiper/modules";
+import { Navigation } from "lucide-react";
 export default function Timeline() {
   return (
     <div
@@ -25,10 +29,16 @@ export default function Timeline() {
               >
                 <Swiper
                   className="swiper-timeline swiper swiper-container overflow-unset"
+                  modules={[Autoplay]}
                   slidesPerView={1}
                   spaceBetween={0}
                   centeredSlides={true}
                   centeredSlidesBounds={true}
+                    autoplay={{
+                    delay: 3000, // 3 seconds delay between slides
+                    disableOnInteraction: false, // Continue autoplay after user interaction
+                  }}
+                  loop={true}
                 >
                   {timelineData.map((item, index) => (
                     <SwiperSlide key={index} className="panel">

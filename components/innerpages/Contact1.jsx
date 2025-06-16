@@ -6,7 +6,7 @@ export default function Contact1() {
   const [selectedOption, setSelectedOption] = useState("");
 
   const dropdownOptions = [
-    { value: "", label: "Select a category" },
+    { value: "", label: "Select a category " },
     { value: "Careers", label: "Careers" },
     { value: "Sales", label: "Sales" },
     { value: "Support", label: "Support" },
@@ -145,7 +145,7 @@ export default function Contact1() {
                       placeholder="Subject"
                     />
                      <select
-                      className="form-control h-48px w-full  bg-white dark:bg-opacity-10 dark:border-opacity-0 dark:text-white"
+                      className="form-control h-50px w-full  bg-white dark:bg-opacity-10 dark:border-opacity-0 dark:text-white"
                       value={selectedOption}
                       onChange={(e) => setSelectedOption(e.target.value)}
                       required
