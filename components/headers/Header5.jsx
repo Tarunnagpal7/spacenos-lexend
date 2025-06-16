@@ -75,7 +75,7 @@ export default function Header5() {
                 </div>
               </div>
               <div className="uc-navbar-center">
-                <ul className="uc-navbar-nav gap-3 xl:gap-5 d-none lg:d-flex fs-5 fw-medium scrollSpyLinks">
+                <ul className="uc-navbar-nav gap-3 xl:gap-5 d-none lg:d-flex fs-6 fw-medium scrollSpyLinks">
                   {navItems.map((item, index) => (
                     <li key={index} className={item.children ? "has-dd-menu" : ""}>
                       {item.children ? (
@@ -105,7 +105,7 @@ export default function Header5() {
                             <ul className="uc-nav uc-navbar-dropdown-nav">
                               {item.children.map((child, childIndex) => (
                                 <li key={childIndex}>
-                                  <a href={child.href} className="fs-5 py-2">
+                                  <a href={child.href} className="fs-6 py-2">
                                     {child.label}
                                   </a>
                                 </li>

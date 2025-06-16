@@ -63,10 +63,10 @@ export default function Hero() {
                       height="108"
                     />
                   </div>
-                  <h1 className="h1 sm:display-6 md:display-5 lg:display-4 xl:display-3 m-0 text-white">
+                  <h1 className="h1   m-0 text-white">
                     Spacenos Helps
                     <br /> 
-                    <span className="h1 sm:display-6 md:display-5 lg:display-4 xl:display-3 m-0 text-white">
+                    <span className="h1  m-0 text-white">
                       You Build 
                     </span>
                     <br />
