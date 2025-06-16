@@ -5,9 +5,7 @@ import ToolHero from "@/components/innerpages/ToolHero";
 import ToolsGrid from "@/components/innerpages/ToolsGrid";
 export const metadata = {
   title:
-    " Tools || Lexend - Full-featured, professional-looking software, saas and startup nextjs template.",
-  description:
-    "Lexend - Full-featured, professional-looking software, saas and startup nextjs template.",
+    " Tools || Spacenos"
 };
 export default function BlogPage1() {
   return (

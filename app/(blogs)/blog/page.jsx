@@ -7,9 +7,7 @@ import BlogAuther from "@/components/blog/BlogAuther";
 import BlogCEO from "@/components/blog/BlogCEO";
 export const metadata = {
   title:
-    "Blog || Lexend - Full-featured, professional-looking software, saas and startup nextjs template.",
-  description:
-    "Lexend - Full-featured, professional-looking software, saas and startup nextjs template.",
+    "Blog || Spacenos"
 };
 export default function BlogPage1() {
   return (

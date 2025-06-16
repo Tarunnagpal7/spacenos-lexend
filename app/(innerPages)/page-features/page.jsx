@@ -10,9 +10,7 @@ import Brands2 from "@/components/common/Brands2";
 import VentureOverview from "@/components/innerpages/features/VenturesOverview";
 export const metadata = {
   title:
-    "Features || Lexend - Full-featured, professional-looking software, saas and startup nextjs template.",
-  description:
-    "Lexend - Full-featured, professional-looking software, saas and startup nextjs template.",
+    "Features || Spacenos"
 };
 export default function FeaturesPage() {
   return (

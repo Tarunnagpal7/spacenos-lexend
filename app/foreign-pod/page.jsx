@@ -6,9 +6,7 @@ import PricingQualitySection from "@/components/innerpages/PricingQualitySection
 
 export const metadata = {
   title:
-    "Foreign Pod|| Lexend - Full-featured, professional-looking software, saas and startup nextjs template.",
-  description:
-    "Lexend - Full-featured, professional-looking software, saas and startup nextjs template.",
+    "Foreign Pod || Spacenos"
 };
 export default function CollaboratePage() {
   return (

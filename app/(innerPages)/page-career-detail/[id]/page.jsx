@@ -8,9 +8,7 @@ import Brands from "@/components/homes/home-3/Brands";
 import { jobListings } from "@/data/career";
 export const metadata = {
   title:
-    "Career Details || Lexend - Full-featured, professional-looking software, saas and startup nextjs template.",
-  description:
-    "Lexend - Full-featured, professional-looking software, saas and startup nextjs template.",
+    "Career Details || Spacenos"
 };
 export default async function CareerDetailsPage(props) {
   const params = await props.params;
