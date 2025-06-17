@@ -84,7 +84,7 @@ export default function BlogDetails({ blogItem }) {
     <>
       <div
         style={{ marginTop: "80px" }}
-        className="breadcrumbs panel z-1 py-2 bg-secondary dark:bg-gray-100 dark:bg-opacity-5 dark:text-white"
+        className="breadcrumbs panel z-1 pt-2 bg-secondary dark:bg-gray-100 dark:bg-opacity-5 dark:text-white"
       >
         <div className="container py-3 max-w-xl">
           <ul className="breadcrumb nav-x justify-center items-center gap-1 fs-7 m-0 fw-bold">

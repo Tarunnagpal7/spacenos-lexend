@@ -110,7 +110,7 @@ export default function Sidebar() {
               required=""
             />
             <button
-              className="btn btn-sm btn-primary dark:bg-tertiary dark:text-primary"
+              className="btn btn-sm btn-primary text-white"
               type="submit"
             >
               Sign up
