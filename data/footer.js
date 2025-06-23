@@ -171,11 +171,11 @@ export const footerLinks4 = [
   {
     title: "Company",
     links: [
-      { text: "About Us", href: "/page-about" },
       { text: "Careers", href: "/page-career" },
+      { text: "Ventures", href: "/page-features" },
       { text: "Awards", href: "/page-achievements" },
       { text: "Meet the Ceo", href: "/meet-the-ceo" },
-      { text: "Ventures", href: "/page-features" },
+      { text: "About Us", href: "/page-about" },
       { text: "Contact Us", href: "/page-contact" },
     ],
   },
@@ -185,8 +185,7 @@ export const footerLinks4 = [
       { text: "Case Studies", href: "/case-studies", isLink: true },
       { text: "Newsletter", href: "/newsletter", isLink: true },
       { text: "Tools", href: "/tools" ,isLink: true},
-      { text: "Legal", href: "/legal", isLink: true },
-      { text: "Security ", href: "/security" ,isLink: true},
+      { text: "Read Blogs", href: "/blogs" ,isLink: true},
       { text: "Verify Documents", href: "/verify-doc", isLink: true },
     ],
   },
@@ -206,7 +205,8 @@ export const footerLinks4 = [
       { text: "Be Enterpreneur", href: "/entrepreneur", isLink: true },
       { text: "Collaborate", href: "/page-collaborate", isLink: true },
       { text: "Press and Media", href: "/press-media" ,isLink: true},
-      { text: "Read Blogs", href: "/blogs" ,isLink: true},
+      { text: "Legal", href: "/legal", isLink: true },
+      { text: "Security ", href: "/security" ,isLink: true},
     ],
   },
 ];

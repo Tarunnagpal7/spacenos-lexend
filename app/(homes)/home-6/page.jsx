@@ -27,6 +27,7 @@ import AchievementsTestimonials from "@/components/innerpages/AchievementsTestin
 import LeadMagnets from "@/components/innerpages/LeadMagnets";
 import { accordionItems } from "@/data/faq";
 import React from "react";
+import AwardsTestimonials from "@/components/homes/home-6/AwardsTestimonials";
 export const metadata = {
   title:
     "Spacenos "
@@ -49,11 +50,13 @@ export default function HomePage6() {
           <KeyFeatures />
           <NextFeatures />
           <GlobalFootprint />
-          <AchievementsTestimonials/> 
+          {/* <AchievementsTestimonials/>  */}
+          <AwardsTestimonials />
           {/* <ResourcesAccess /> */}
           <LeadMagnets />
           <CareerCta />
-          <MediaMentions />
+          {/* <MediaMentions /> */}
+          <Blogs />
           <Cta />
           {/* <JoinCirle /> */}
         </div>

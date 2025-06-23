@@ -123,6 +123,45 @@ export const videoTestimonials = [
     poster: "/assets/images/media/lexend_vid_home-6.jpg"
   },
 ];
+export const awardsTestimonials = [
+  
+  {
+    id: 1,
+    company: "Government of Jharkhand",
+    quote: "Winner of Most Innovative Healthcare Solutions for Rural India.",
+    image: "/assets/images/awards/bb1.jpg"
+  },
+  {
+    id: 2,
+    company: "Bank of Baroda",
+    quote: "Winner of the Most Innovative Banking Solution for the next billion users.",
+    image: "/assets/images/awards/bb2.jpg"
+  },
+  {
+    id: 3,
+    company: "Government of Karnataka",
+    quote: "Top-70 Early Innovative Startups for solving people's financial problems through tech.",
+    image: "/assets/images/awards/bb3.jpg"
+  },
+  {
+    id: 4,
+    company: "Washington DC",
+    quote: "Top-5 from India to partner with OU & United States Department for entrepreneurship development.",
+    image: "/assets/images/awards/bb1.jpg"
+  },
+  {
+    id: 5,
+    company: "Solana Blockchain",
+    quote: "Top-20 out of 4000 developers to collaborate with Solana Blockchain to build DAO apps.",
+    image: "/assets/images/awards/bb5.jpg"
+  },
+  {
+    id: 6,
+    company: "YCombinator",
+    quote: "Finalists for building Tuberculosis Screening Tool using Voice-Biomarkers.",
+    image: "/assets/images/awards/bb6.jpg"
+  },
+];
 export const slidesData = [
   {
     rating: 5,
@@ -416,39 +455,21 @@ export const testimonials3 = [
 ];
 export const testimonials6 = [
   {
-    text: "“I joined as an intern. Within 8 months, I was leading a product team that closed a 6-figure US deal.”",
-    name: "Divya",
-    position: "AI Product Team",
+    text: "“Working on real-time projects initially is hard to get.But in Spacenos I worked on number of SAAS and innovative products.”",
+    name: "Jai Keerthick",
+    position: "Android Developer",
     brandImgSrc: "/assets/images/brands/brand-07.svg",
     brandImgAlt: "Brand",
-        avatarImgSrc: "/assets/images/avatars/03.png",
+        avatarImgSrc: "/assets/images/avatars/team-testimonial-3.png",
     avatarImgAlt: "Sarah Edrissi",
   },
   {
-    text: "“The exposure here is insane. I built a real-time automation stack that's now being used in 3 countries”",
-    name: "Rahul",
-    position: "Automation Lead",
+    text: "“I am able to do my master's here in Canada and at the same time be a consultant at the Spacenos.Theri remote policies are just amazing. ”",
+    name: "Mayursinh",
+    position: "Web Developer",
     brandImgSrc: "/assets/images/brands/brand-07.svg",
     brandImgAlt: "Brand",
-     avatarImgSrc: "/assets/images/avatars/03.png",
+     avatarImgSrc: "/assets/images/avatars/team-testimonial-2.png",
     avatarImgAlt: "Sarah Edrissi",
   },
-  {
-    text: "“From junior developer to tech architect in 1 year - the accelerated learning here is unmatched in the industry.”",
-    name: "Priya",
-    position: "Solutions Architect",
-    brandImgSrc: "/assets/images/brands/brand-07.svg",
-    brandImgAlt: "Brand",
-     avatarImgSrc: "/assets/images/avatars/04.png",
-    avatarImgAlt: "Natalia Larsson",
-  },
-  {
-    text: "“Working with global clients from day one gave me the confidence to launch my own startup while still employed here.”",
-    name: "Arjun",
-    position: "Product Innovation",
-    brandImgSrc: "/assets/images/brands/brand-07.svg",
-    brandImgAlt: "Brand",
-    avatarImgSrc: "/assets/images/avatars/01.png",
-    avatarImgAlt: "Mark Zellers",
-  }
 ];

@@ -3,9 +3,11 @@
 import Footer5 from "@/components/footers/Footer5";
 import Header5 from "@/components/headers/Header5";
 import Testimonials from "@/components/homes/home-3/Testimonials";
+import AwardsTestimonials from "@/components/homes/home-6/AwardsTestimonials";
 import AchievementsCards from "@/components/innerpages/AchievementsCards";
 import AchievementsHero from "@/components/innerpages/AchievementsHero";
 import AchievementsTestimonials from "@/components/innerpages/AchievementsTestinomials";
+import CareerFeedback from "@/components/innerpages/CareerFeedback";
 export const metadata = {
   title:
     "Achievements || Spacenos"
@@ -17,8 +19,10 @@ export default function CareerPage() {
         <Header5 />
         <div id="wrapper" className="wrap">
          <AchievementsHero />
-          <AchievementsTestimonials />
-          <AchievementsCards />
+         <AwardsTestimonials />
+         <CareerFeedback />
+          {/* <AchievementsTestimonials /> */}
+          {/* <AchievementsCards /> */}
         </div>
         <Footer5 />
       </div>

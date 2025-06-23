@@ -5,15 +5,15 @@ export default function Features() {
   const features3 = [
     {
       title: " for Startups",
-      description: "Darkbase AI Teams revolutionizes startup development by allowing you to launch fully functional remote teams in seconds. Our AI-driven platform automates talent matching, project management, and workflow optimization, helping you build MVPs 3x faster while cutting development costs by 60%. With integrated DevOps, real-time collaboration tools, and smart resource allocation, even non-technical founders can scale efficiently without traditional hiring headaches. Perfect for seed-stage companies looking to accelerate growth while maintaining lean operations.",
-      imgSrc: "/assets/images/template/home4.png",
+      description: "Darkbase AI Teams revolutionizes startup development by allowing you to launch fully functional remote teams in seconds. Our AI-driven platform automates talent matching, project management, and workflow optimization, helping you build MVPs 3x faster while cutting development costs by 60%. ",
+      imgSrc: "/assets/images/apps/startup.jpeg",
       imgAlt: "Spacenos for Startups",
       linkText: "Try it now",
       linkHref: "entrepreneur"
     },
     {
       title: " for Businesses",
-      description: "Transform your enterprise operations with our end-to-end AI automation suite. From customer service bots that handle 80% of inquiries to predictive inventory management and AI-powered marketing campaigns, our platform delivers 24/7 productivity without human burnout. Advanced analytics track ROI across departments, while our neural networks continuously optimize processes. Case studies show average efficiency gains of 47% in the first 90 days, with seamless integration into existing ERP and CRM systems. Ideal for mid-sized businesses ready to compete with enterprise-grade tech.",
+      description: "Transform your enterprise operations with our end-to-end AI automation suite. From customer service bots that handle 80% of inquiries to predictive inventory management and AI-powered marketing campaigns, our platform delivers 24/7 productivity without human burnout.",
       imgSrc: "/assets/images/template/home1.jpg",
       imgAlt: "Spacenos for Businesses",
       linkText: "Try it now",
@@ -21,16 +21,16 @@ export default function Features() {
     },
     {
       title: " for Fertility & Health",
-      description: "Pioneering the future of reproductive health with our AI-powered fertility ecosystem. Combining genomic analysis, hormonal tracking, and machine learning, we've developed predictive models that identify potential complications 6-8 months earlier than conventional methods. Our intimacy algorithms personalize therapy plans while maintaining strict HIPAA compliance, with clinical trials showing 68% improvement in outcomes. The platform also offers telemedicine integration, smart device synchronization, and a global network of verified specialists - redefining care from preconception through postpartum.",
-      imgSrc: "/assets/images/template/home-06-components.png",
+      description: "Pioneering the future of reproductive health with our AI-powered fertility ecosystem. Combining genomic analysis, hormonal tracking, and machine learning, we've developed predictive models that identify potential complications 6-8 months earlier than conventional methods.",
+      imgSrc: "/assets/images/apps/health.jpeg",
       imgAlt: "Spacenos for Fertility & Health",
       linkText: "Try it now",
       linkHref: "page-features"
     },
     {
       title: " for Education",
-      description: "Democratizing next-generation learning through our adaptive education platform. Using neuro-linguistic programming and real-time knowledge mapping, we create personalized curricula that evolve with each student's comprehension patterns. Teachers gain AI assistants that automate grading, detect learning gaps, and generate interactive content - reducing administrative workload by 75%. Our system supports 18 languages and integrates with standard LMS platforms, making it ideal for K-12 districts, universities, and corporate training programs seeking measurable improvement in engagement and retention rates.",
-      imgSrc: "/assets/images/template/home2.jpg",
+      description: "Democratizing next-generation learning through our adaptive education platform. Using neuro-linguistic programming and real-time knowledge mapping, we create personalized curricula that evolve with each student's comprehension patterns.",
+      imgSrc: "/assets/images/apps/education.jpeg",
       imgAlt: "Spacenos for Education",
       linkText: "Try it now",
       linkHref: "resources"

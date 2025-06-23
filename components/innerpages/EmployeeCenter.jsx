@@ -81,9 +81,11 @@ export default function EmployeeCenter() {
       </div>
       <ModalVideo
         isOpen={isOpen}
-        src="/assets/images/media/lexend_vid.webm"
+        src="https://player.vimeo.com/video/1095555264?h=da3b0740df"
         setIsOpen={() => setOpen(false)}
       />
     </>
   );
 }
+
+

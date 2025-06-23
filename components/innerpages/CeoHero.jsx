@@ -119,7 +119,7 @@ export default function CeoHero() {
                       <Image
                         className="rounded-default"
                         alt="Hero image"
-                        src="/assets/images/template/home-10-hero.jpg"
+                        src="/assets/images/avatars/venkatesh.jpeg"
                         width={1500}
                         height={1020}
                       />

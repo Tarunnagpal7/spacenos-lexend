@@ -31,7 +31,7 @@ export default function Hero() {
       <div className="section-outer panel pt-9 ">
         <div className="container xl:max-w-xl">
           <div className="section-inner panel pt-0 lg:pt-4 xl:pt-0">
-            <div className="row child-cols-12 justify-center items-center g-6 xl:g-8">
+            <div className="row child-cols-12 justify-center items-center gap-2">
               <div>
                 <div
                   className="panel vstack justify-center items-center gap-3 max-w-600px lg:max-w-750px mx-auto px-2 lg:px-0 text-center"
@@ -99,7 +99,7 @@ export default function Hero() {
                     <Image
                       className="shadow-md lg:shadow-lg"
                       alt="app-dashboard"
-                      src="/assets/images/template/home5.png"
+                      src="/assets/images/apps/hero.jpeg"
                       width="1280"
                       height="853"
                     />

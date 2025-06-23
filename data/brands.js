@@ -62,6 +62,7 @@ export const brands = [
 ];
 
 export const reviewLogos = [
+  
   {
     id: 13,
     lightSrc: "/assets/images/review-logo/01.svg",
@@ -69,8 +70,8 @@ export const reviewLogos = [
   },
   {
     id: 14,
-    lightSrc: "/assets/images/review-logo/02.svg",
-    darkSrc: "/assets/images/review-logo/dark-02.svg",
+    lightSrc: "/assets/images/review-logo/glassdoor.svg",
+    darkSrc: "/assets/images/review-logo/glassdoor.svg",
   },
   {
     id: 15,

@@ -1,11 +1,13 @@
 "use client";
-
+import { useState } from "react";
 import TyperComponent from "@/components/common/TyperComponent";
 import Image from "next/image";
 import { useEffect } from "react";
 import { useParallax } from "react-scroll-parallax";
+import ModalVideo from "@/components/common/ModalVideo";
 
 export default function CareerHero() {
+    const [isOpen, setOpen] = useState(false);
   const parallax = useParallax({
     scale: [0.85, 1.1],
   });
@@ -140,23 +142,42 @@ export default function CareerHero() {
                   className="panel max-w-1000px mx-auto mt-2 rounded lg:rounded-1-5 xl:rounded-2 border border-dark contrast-shadow-lg overflow-hidden"
                   data-anime="onscroll: .hero-header; onscroll-trigger: 0.5; translateY: [-80, 0]; scale: [0.8, 1]; easing: linear;"
                 >
-                  <video
-                    preload="auto"
-                    data-uc-video="autoplay: true;"
-                    playsInline
-                    muted
-                    loop
-                    autoPlay
-                    poster="assets/images/media/lexend-home-7.png"
-                    src="/assets/images/media/lexend-home-7.webm"
-                    title="Video title"
-                  />
+                       <div className="container xl:max-w-xl">
+            <div className="panel overflow-hidden rounded-2 lg:rounded-3 border border-2 border-white dark:border-gray-700 relative">
+              
+              {/* Portrait/Vertical Video Container - Custom aspect ratio for vertical videos */}
+              <div className="relative" style={{ paddingBottom: '75%', height: 0, overflow: 'hidden' }}>
+                <img
+                  src="/assets/images/apps/meet-the-ceo.png"
+                  alt="Powerful Intentions: Unleash Your Entrepreneurial Power Now!"
+                  className="absolute top-0 left-0 w-full h-full object-cover"
+                />
+               
+              </div>
+
+              {/* Overlay Play Button */}
+              <div className="position-cover bg-black bg-opacity-40">
+                <a
+                  onClick={() => setOpen(true)}
+                  className="position-absolute top-50 start-50 translate-middle uc-link w-64px lg:w-100px h-64px lg:h-100px rounded-circle cstack bg-white bg-opacity-70 backdrop-2 text-primary cursor-pointer"
+                >
+                  <i className="icon-3 unicon-play fw-bold"></i>
+                </a>
+              </div>
+            </div>
+          </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+       <ModalVideo
+        isOpen={isOpen}
+        src="https://player.vimeo.com/video/1095551452?h=c11935f447"
+        setIsOpen={() => setOpen(false)}
+      />
     </div>
   );
 }
+

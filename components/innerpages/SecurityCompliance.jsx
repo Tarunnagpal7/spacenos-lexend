@@ -11,44 +11,45 @@ export default function SecurityCompliance() {
     setExpandedIndex(expandedIndex === index ? null : index);
   };
 
-  const securityData = [
-    {
-      name: "Certifications & Standards",
-      shortDescription: "Industry-leading security certifications",
-      fullDescription: "We adhere to the most stringent security frameworks including ISO 27001 Certified comprehensive ISMS, SOC 2 Type II demonstrating ongoing security controls, GDPR & CCPA Compliance for data privacy rights, and PCI DSS Level 1 readiness for payment processing.",
-      icon: "/assets/images/template/tool-slack.svg"
-    },
-    {
-      name: "Data Protection & Privacy",
-      shortDescription: "Multi-layered data safeguards",
-      fullDescription: "We implement AES-256 encryption for stored data and TLS 1.2+ for all communications. Our access controls include role-based permissions and MFA. Choose data residency in India, USA, or Europe. Automated daily backups with geo-redundant storage ensure <24-hour RTO.",
-      icon: "/assets/images/template/tool-slack.svg"
-    },
-    {
-      name: "Infrastructure Security",
-      shortDescription: "Hardened infrastructure protection",
-      fullDescription: "Real-time SIEM monitoring with anomaly detection. Secure SDLC embeds security in every sprint with automated code scans. Kubernetes hardening, network segmentation, and WAF protect against OWASP Top 10 threats with DDoS mitigation.",
-      icon: "/assets/images/template/tool-slack.svg"
-    },
-    {
-      name: "Audits & Reports",
-      shortDescription: "Transparent compliance evidence",
-      fullDescription: "Annual SOC 2 reports available under NDA. Quarterly penetration testing by CREST-accredited firms. Monthly internal scans plus third-party assessments with <30-day patch cycles. Download ISO certificates and policy summaries.",
-      icon: "/assets/images/template/tool-slack.svg"
-    },
-    {
-      name: "Privacy & User Rights",
-      shortDescription: "Complete data control",
-      fullDescription: "Export personal data in machine-readable format. Submit deletion requests fulfilled within 30 days (subject to legal holds). Granular consent management for marketing, analytics, and cookies with easy opt-in/out controls.",
-      icon: "/assets/images/template/tool-slack.svg"
-    },
-    {
-      name: "Continuous Improvement",
-      shortDescription: "Evolving security posture",
-      fullDescription: "Threat intelligence feeds from top vendors. Quarterly security awareness training with phishing simulations. Annual policy reviews incorporating new regulations. Security never sleeps at Spacenos.",
-      icon: "/assets/images/template/tool-slack.svg"
-    }
-  ];
+ const securityData = [
+  {
+    name: "Certifications & Standards",
+    shortDescription: "Industry-leading security certifications",
+    fullDescription: "We adhere to the most stringent security frameworks including ISO 27001 Certified comprehensive ISMS, SOC 2 Type II demonstrating ongoing security controls, GDPR & CCPA Compliance for data privacy rights, and PCI DSS Level 1 readiness for payment processing.",
+    icon: "https://cdn-icons-png.flaticon.com/512/595/595804.png" // Certificate/Shield Icon
+  },
+  {
+    name: "Data Protection & Privacy",
+    shortDescription: "Multi-layered data safeguards",
+    fullDescription: "We implement AES-256 encryption for stored data and TLS 1.2+ for all communications. Our access controls include role-based permissions and MFA. Choose data residency in India, USA, or Europe. Automated daily backups with geo-redundant storage ensure <24-hour RTO.",
+    icon: "https://cdn-icons-png.flaticon.com/512/2910/2910768.png" // Lock/Privacy Icon
+  },
+  {
+    name: "Infrastructure Security",
+    shortDescription: "Hardened infrastructure protection",
+    fullDescription: "Real-time SIEM monitoring with anomaly detection. Secure SDLC embeds security in every sprint with automated code scans. Kubernetes hardening, network segmentation, and WAF protect against OWASP Top 10 threats with DDoS mitigation.",
+    icon: "https://cdn-icons-png.flaticon.com/512/159/159604.png" // Server/Security Icon
+  },
+  {
+    name: "Audits & Reports",
+    shortDescription: "Transparent compliance evidence",
+    fullDescription: "Annual SOC 2 reports available under NDA. Quarterly penetration testing by CREST-accredited firms. Monthly internal scans plus third-party assessments with <30-day patch cycles. Download ISO certificates and policy summaries.",
+    icon: "https://cdn-icons-png.flaticon.com/512/2921/2921222.png" // Report/Checklist Icon
+  },
+  {
+    name: "Privacy & User Rights",
+    shortDescription: "Complete data control",
+    fullDescription: "Export personal data in machine-readable format. Submit deletion requests fulfilled within 30 days (subject to legal holds). Granular consent management for marketing, analytics, and cookies with easy opt-in/out controls.",
+    icon: "https://cdn-icons-png.flaticon.com/512/833/833472.png" // User/Privacy Icon
+  },
+  {
+    name: "Continuous Improvement",
+    shortDescription: "Evolving security posture",
+    fullDescription: "Threat intelligence feeds from top vendors. Quarterly security awareness training with phishing simulations. Annual policy reviews incorporating new regulations. Security never sleeps at Spacenos.",
+    icon: "https://cdn-icons-png.flaticon.com/512/189/189665.png" // Gear/Improvement Icon
+  }
+];
+
 
   return (
     <div id="security_compliance" className="hero-header section panel overflow-hidden">

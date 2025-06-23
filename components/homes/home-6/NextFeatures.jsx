@@ -18,7 +18,7 @@ export default function NextFeatures() {
                     >
                         <div className="panel vstack items-center gap-2 xl:gap-3 mt-4 mb-4 sm:mb-8 xl:mb-9 sm:max-w-600px xl:max-w-700px mx-auto text-center">
                             <h2 className="h3 lg:h2 xl:h1 m-0">
-                                Where We’re Going Next… Join the Movement Early.
+                                Where We're Going Next… Join the Movement Early.
                             </h2>
                             <p className="fs-6 xl:fs-5 text-dark dark:text-white text-opacity-70">
 
@@ -94,13 +94,18 @@ export default function NextFeatures() {
                                                                     <p className="fs-6 lg:fs-5 opacity-70 dark:opacity-80">
                                                                         We're redefining patient care through intelligent diagnostics, personalized treatment plans, and early disease detection. Our AI solutions aim to empower doctors and save lives through real-time, data-driven insights.
                                                                     </p>
-                                                                    <Link
-                                                                        href="/page-features"
-                                                                        className="uc-link fw-bold hstack gap-narrow mt-2 sm:mt-1 lg:mt-2"
-                                                                    >
-                                                                        <span>Let's find out</span>
-                                                                        <i className="position-relative icon icon-1 unicon-arrow-right rtl:rotate-180 translate-y-px" />
-                                                                    </Link>
+                                                                    <div className="hstack gap-2 mt-2 sm:mt-1 lg:mt-2">
+                                                                        <Link href={"/investors"} >
+                                                                        <button className="btn btn-primary">
+                                                                            Invest
+                                                                        </button>
+                                                                        </Link>
+                                                                        <Link href={'/page-collaborate'}>
+                                                                        <button className="btn btn-outline-primary">
+                                                                            Partnership
+                                                                        </button>
+                                                                        </Link>
+                                                                    </div>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -135,15 +140,20 @@ export default function NextFeatures() {
                                                                     </h3>
                                                                     <p className="fs-6 lg:fs-5 opacity-70 dark:opacity-80">
                                                                         Predictive Technologies
-                                                                        Anticipate what’s next — from consumer behavior to supply chain optimization. We're leveraging big data and machine learning to build systems that don’t just react, but predict — enabling smarter decisions across industries.
+                                                                        Anticipate what's next — from consumer behavior to supply chain optimization. We're leveraging big data and machine learning to build systems that don't just react, but predict — enabling smarter decisions across industries.
                                                                     </p>
-                                                                    <a
-                                                                        href="#"
-                                                                        className="uc-link fw-bold hstack gap-narrow mt-2 sm:mt-1 lg:mt-2"
-                                                                    >
-                                                                        <span>See all integrations</span>
-                                                                        <i className="position-relative icon icon-1 unicon-arrow-right rtl:rotate-180 translate-y-px" />
-                                                                    </a>
+                                                                     <div className="hstack gap-2 mt-2 sm:mt-1 lg:mt-2">
+                                                                        <Link href={"/investors"} >
+                                                                        <button className="btn btn-primary">
+                                                                            Invest
+                                                                        </button>
+                                                                        </Link>
+                                                                        <Link href={'/page-collaborate'}>
+                                                                        <button className="btn btn-outline-primary">
+                                                                            Partnership
+                                                                        </button>
+                                                                        </Link>
+                                                                    </div>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -179,13 +189,18 @@ export default function NextFeatures() {
                                                                     <p className="fs-6 lg:fs-5 opacity-70 dark:opacity-80">
                                                                         A new wave of learning is here. With immersive, AI-powered platforms, we're personalizing education at scale — making it more engaging, inclusive, and accessible for all learners, anytime, anywhere.
                                                                     </p>
-                                                                    <Link
-                                                                        href="/page-features"
-                                                                        className="uc-link fw-bold hstack gap-narrow mt-2 sm:mt-1 lg:mt-2"
-                                                                    >
-                                                                        <span>Let's find out</span>
-                                                                        <i className="position-relative icon icon-1 unicon-arrow-right rtl:rotate-180 translate-y-px" />
-                                                                    </Link>
+                                                                      <div className="hstack gap-2 mt-2 sm:mt-1 lg:mt-2">
+                                                                        <Link href={"/investors"} >
+                                                                        <button className="btn btn-primary">
+                                                                            Invest
+                                                                        </button>
+                                                                        </Link>
+                                                                        <Link href={'/page-collaborate'}>
+                                                                        <button className="btn btn-outline-primary">
+                                                                            Partnership
+                                                                        </button>
+                                                                        </Link>
+                                                                    </div>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -219,16 +234,20 @@ export default function NextFeatures() {
                                                                         Defence & Intelligence
                                                                     </h3>
                                                                     <p className="fs-6 lg:fs-5 opacity-70 dark:opacity-80">
-
-                                                                        Next-gen security starts with smart systems. From real-time threat analysis to autonomous surveillance, we’re building powerful tools to support national defense, cyber intelligence, and mission-critical operations.
+                                                                        Next-gen security starts with smart systems. From real-time threat analysis to autonomous surveillance, we're building powerful tools to support national defense, cyber intelligence, and mission-critical operations.
                                                                     </p>
-                                                                    <Link
-                                                                        href="/page-features"
-                                                                        className="uc-link fw-bold hstack gap-narrow mt-2 sm:mt-1 lg:mt-2"
-                                                                    >
-                                                                        <span>Let's find out</span>
-                                                                        <i className="position-relative icon icon-1 unicon-arrow-right rtl:rotate-180 translate-y-px" />
-                                                                    </Link>
+                                                                     <div className="hstack gap-2 mt-2 sm:mt-1 lg:mt-2">
+                                                                        <Link href={"/investors"} >
+                                                                        <button className="btn btn-primary">
+                                                                            Invest
+                                                                        </button>
+                                                                        </Link>
+                                                                        <Link href={'/page-collaborate'}>
+                                                                        <button className="btn btn-outline-primary">
+                                                                            Partnership
+                                                                        </button>
+                                                                        </Link>
+                                                                    </div>
                                                                 </div>
                                                             </div>
                                                         </div>

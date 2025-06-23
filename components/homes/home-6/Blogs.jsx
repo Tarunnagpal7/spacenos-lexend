@@ -1,4 +1,4 @@
-import { blogPosts3, blogPosts5 } from "@/data/blogs";
+import { blogPosts7, blogsPosts8 } from "@/data/blogs";
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
@@ -36,7 +36,7 @@ export default function Blogs() {
                 </div>
                 <div>
                   <Link
-                    href={`/blog`}
+                    href={`/blogs`}
                     className="btn btn-sm lg:btn-md btn-primary px-3"
                   >
                     <span>View all posts</span>
@@ -46,28 +46,28 @@ export default function Blogs() {
               </div>
               <div className="content panel">
                 <div className="row child-cols-12 sm:child-cols-6 lg:child-cols-4 justify-center g-2">
-                  {blogPosts5.map((post) => (
+                  {blogPosts7.map((post) => (
                     <div key={post.id}>
                       <article className="post type-post panel overflow-hidden vstack gap-2 p-2 border rounded-1-5">
                         <figure className="featured-image m-0 rounded ratio ratio-16x9 rounded-1 uc-transition-toggle overflow-hidden">
                           <Image
                             className="media-cover image uc-transition-scale-up uc-transition-opaque"
-                            alt={post.imageAlt}
+                            alt={post.imgAlt}
                             src={post.imgSrc}
                             width="1280"
                             height="853"
                           />
                           <Link
-                            href={`/blog-details/${post.id}`}
+                            href={`/blog-details-4/${post.id}`}
                             className="position-cover"
-                            data-caption={post.imageAlt}
+                            data-caption={post.imgAlt}
                           ></Link>
                         </figure>
                         <div className="panel vstack gap-1">
                           <h3 className="post-title panel h4 m-0">
                             <Link
                               className="text-none"
-                              href={`/blog-details/${post.id}`}
+                              href={`/blog-details-4/${post.id}`}
                             >
                               {post.title}
                             </Link>
@@ -80,7 +80,7 @@ export default function Blogs() {
                               <Image
                                 alt={post.authorName}
                                 className="w-40px h-40px rounded-circle"
-                                src={post.authorImage}
+                                src={post.authorImg}
                                 width="150"
                                 height="150"
                               />
@@ -103,7 +103,7 @@ export default function Blogs() {
                   ))}
                   <div>
                     <div className="row child-cols-12 g-2">
-                      {blogPosts3.slice(0, 3).map((post, index) => (
+                      {blogsPosts8.slice(0, 3).map((post, index) => (
                         <div key={index}>
                           <article className="post type-post panel overflow-hidden p-2 border rounded-1-5">
                             <div className="panel hstack gap-2">
@@ -114,10 +114,10 @@ export default function Blogs() {
                                     src={post.imgSrc}
                                     width={1280}
                                     height={853}
-                                    alt={post.alt}
+                                    alt={post.imgAlt}
                                   />
                                   <Link
-                                    href={`/blog-details/${post.id}`}
+                                    href={`/blog-details-4/${post.id}`}
                                     className="position-cover"
                                     data-caption={post.caption}
                                   ></Link>
@@ -130,7 +130,7 @@ export default function Blogs() {
                                 <h3 className="post-title panel h5 m-0">
                                   <Link
                                     className="text-none"
-                                    href={`/blog-details/${post.id}`}
+                                    href={`/blog-details-4/${post.id}`}
                                   >
                                     {post.title}
                                   </Link>
@@ -144,7 +144,7 @@ export default function Blogs() {
                   </div>
                   <div>
                     <div className="row child-cols-12 g-2">
-                      {blogPosts3.slice(3, 6).map((post, index) => (
+                      {blogsPosts8.slice(3, 6).map((post, index) => (
                         <div key={index}>
                           <article className="post type-post panel overflow-hidden p-2 border rounded-1-5">
                             <div className="panel hstack gap-2">
@@ -155,10 +155,10 @@ export default function Blogs() {
                                     src={post.imgSrc}
                                     width={1280}
                                     height={853}
-                                    alt={post.alt}
+                                    alt={post.imgAlt}
                                   />
                                   <Link
-                                    href={`/blog-details/${post.id}`}
+                                    href={`/blog-details-4/${post.id}`}
                                     className="position-cover"
                                     data-caption={post.caption}
                                   ></Link>
@@ -171,7 +171,7 @@ export default function Blogs() {
                                 <h3 className="post-title panel h5 m-0">
                                   <Link
                                     className="text-none"
-                                    href={`/blog-details/${post.id}`}
+                                    href={`/blog-details-4/${post.id}`}
                                   >
                                     {post.title}
                                   </Link>

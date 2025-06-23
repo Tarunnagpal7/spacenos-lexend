@@ -53,7 +53,7 @@ export default function CareerFeedback() {
               ))}
             </div>
 
-            <div className="text-center mt-5">
+            {/* <div className="text-center mt-5">
                <a
                   href="#"
                   className="uc-link dark:text-secondary fw-bold d-inline-flex items-center gap-narrow"
@@ -61,7 +61,7 @@ export default function CareerFeedback() {
                   <span>See all feedbacks</span>
                   <i className="icon icon-1 unicon-arrow-right rtl:rotate-180" />
                 </a>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
