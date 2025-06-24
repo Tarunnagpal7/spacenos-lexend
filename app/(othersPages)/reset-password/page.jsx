@@ -1,9 +1,7 @@
 import Resetpass1 from "@/components/otherPages/Resetpass1";
 export const metadata = {
   title:
-    "Reset Password || Lexend - Full-featured, professional-looking software, saas and startup nextjs template.",
-  description:
-    "Lexend - Full-featured, professional-looking software, saas and startup nextjs template.",
+    "Reset Password ",
 };
 export default function ResetPasswordPage() {
   return (
