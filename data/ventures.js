@@ -18,7 +18,7 @@ export const ventures = [
       ],
       cta: "Request Darkbase ",
       ctaLink: "/darkbase",
-      image: "/assets/images/template/feature-01.svg"
+      image: "/assets/images/apps/darkbase.png"
     },
     {
       id: 2,
@@ -39,7 +39,7 @@ export const ventures = [
       ],
       cta: "Start Astro360 ",
       ctaLink: "/astro360",
-      image: "/assets/images/template/feature-02.svg"
+      image: "/assets/images/apps/astro.png"
     },
     {
       id: 3,
@@ -60,7 +60,7 @@ export const ventures = [
       ],
       cta: "Explore Dominus ",
       ctaLink: "/dominus",
-      image: "/assets/images/template/feature-03.svg"
+      image: "/assets/images/apps/dominus.png"
     },
     {
       id: 4,
@@ -81,6 +81,6 @@ export const ventures = [
       ],
       cta: "Access AI Tools ",
       ctaLink: "/ai-tools",
-      image: "/assets/images/template/feature-04.svg"
+      image: "/assets/images/apps/aitools.png"
     }
   ];

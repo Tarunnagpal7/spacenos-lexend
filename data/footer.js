@@ -205,6 +205,7 @@ export const footerLinks4 = [
       { text: "Be Enterpreneur", href: "/entrepreneur", isLink: true },
       { text: "Collaborate", href: "/page-collaborate", isLink: true },
       { text: "Press and Media", href: "/press-media" ,isLink: true},
+      { text: "Foreign Pod", href: "/foreign-pod" ,isLink: true},
       { text: "Legal", href: "/legal", isLink: true },
       { text: "Security ", href: "/security" ,isLink: true},
     ],

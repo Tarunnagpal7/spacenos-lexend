@@ -6,7 +6,7 @@ export default function Features() {
     {
       title: " for Startups",
       description: "Darkbase AI Teams revolutionizes startup development by allowing you to launch fully functional remote teams in seconds. Our AI-driven platform automates talent matching, project management, and workflow optimization, helping you build MVPs 3x faster while cutting development costs by 60%. ",
-      imgSrc: "/assets/images/apps/startup.jpeg",
+      imgSrc: "/assets/images/apps/startups.png",
       imgAlt: "Spacenos for Startups",
       linkText: "Try it now",
       linkHref: "entrepreneur"
@@ -14,7 +14,7 @@ export default function Features() {
     {
       title: " for Businesses",
       description: "Transform your enterprise operations with our end-to-end AI automation suite. From customer service bots that handle 80% of inquiries to predictive inventory management and AI-powered marketing campaigns, our platform delivers 24/7 productivity without human burnout.",
-      imgSrc: "/assets/images/template/home1.jpg",
+      imgSrc: "/assets/images/apps/business.png",
       imgAlt: "Spacenos for Businesses",
       linkText: "Try it now",
       linkHref: "entrepreneur"
@@ -22,7 +22,7 @@ export default function Features() {
     {
       title: " for Fertility & Health",
       description: "Pioneering the future of reproductive health with our AI-powered fertility ecosystem. Combining genomic analysis, hormonal tracking, and machine learning, we've developed predictive models that identify potential complications 6-8 months earlier than conventional methods.",
-      imgSrc: "/assets/images/apps/health.jpeg",
+      imgSrc: "/assets/images/apps/health.png",
       imgAlt: "Spacenos for Fertility & Health",
       linkText: "Try it now",
       linkHref: "page-features"
@@ -30,7 +30,7 @@ export default function Features() {
     {
       title: " for Education",
       description: "Democratizing next-generation learning through our adaptive education platform. Using neuro-linguistic programming and real-time knowledge mapping, we create personalized curricula that evolve with each student's comprehension patterns.",
-      imgSrc: "/assets/images/apps/education.jpeg",
+      imgSrc: "/assets/images/apps/education.png",
       imgAlt: "Spacenos for Education",
       linkText: "Try it now",
       linkHref: "resources"

@@ -22,7 +22,7 @@ export default function InvestorHero() {
                 <Image
                   className="w-100 h-100 object-cover"
                   alt="Hero image"
-                  src="/assets/images/template/hero-contact.jpg"
+                  src="/assets/images/avatars/venkatesh.jpeg"
                   width={1500}
                   height={1000}
                   style={{ objectPosition: 'center 30%' }}

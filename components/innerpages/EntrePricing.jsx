@@ -29,8 +29,6 @@ const pricingTiers = [
     ],
     buttonLabel: "Choose Pro",
     popular: true,
-    imageUrl: "/assets/images/template/pricing-badge-light.svg",
-    darkImageUrl: "/assets/images/template/pricing-badge-dark.svg",
   },
   {
     title: "Founders Circle",
@@ -127,17 +125,6 @@ export default function EntrePricing() {
                             ))}
                           </div>
                         </div>
-                        {tier.popular && (
-                          <div className="position-absolute bottom-0 ltr:end-0 rtl:start-0 m-2 d-none md:d-block">
-                            <Image
-                              className="w-100px lg:w-128px d-block dark:d-none"
-                              src={tier.imageUrl}
-                              width={257}
-                              height={187}
-                              alt={tier.description}
-                            />
-                          </div>
-                        )}
                       </div>
                     </div>
                   ))}

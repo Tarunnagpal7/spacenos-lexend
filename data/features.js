@@ -476,7 +476,7 @@ export const features5 = [
 export const features6 = [
   {
     id: 1,
-    imgSrc: "/assets/images/template/feature-01.svg",
+    imgSrc: "/assets/images/apps/darkbase.png",
     imgAlt: "India-based tech pods for global clients",
     heading:"Darkbase",
     title: "India-based tech pods for global clients",
@@ -486,7 +486,7 @@ export const features6 = [
   },
   {
     id: 2,
-    imgSrc: "/assets/images/template/feature-02.svg",
+    imgSrc: "/assets/images/apps/astro.png",
     imgAlt: "Spiritual x startup transformation",
     heading : "Astro360",
     title: "Spiritual x startup transformation",
@@ -496,7 +496,7 @@ export const features6 = [
   },
   {
     id: 3,
-    imgSrc: "/assets/images/template/feature-03.svg",
+    imgSrc: "/assets/images/apps/dominus.png",
     imgAlt: "Fertility healthcare brand",
     heading: "Dominus",
     title: "Fertility healthcare brand",
@@ -505,7 +505,7 @@ export const features6 = [
   },
   {
     id: 4,
-    imgSrc: "/assets/images/template/feature-04.svg",
+    imgSrc: "/assets/images/apps/aitools.png",
     imgAlt: "Experimental AI tools with limited access",
     heading: "AI Tools",
     title: "Experimental AI tools with limited access",
@@ -518,7 +518,7 @@ export const features6 = [
 export const features1 = [
   {
     id: 1,
-    imgSrc: "/assets/images/template/feature-01.svg",
+    imgSrc: "/assets/images/apps/aboutus-growingempire.png",
     imgAlt: "Growing our empire",
     heading: "Empire Growth",
     title: "Growing our empire",
@@ -528,7 +528,7 @@ export const features1 = [
   },
   {
     id: 2,
-    imgSrc: "/assets/images/template/feature-02.svg",
+    imgSrc: "/assets/images/apps/aboutus-empoweringbusiness.png",
     imgAlt: "Empowering more businesses",
     heading: "Business Boost",
     title: "Empowering more businesses",
@@ -538,7 +538,7 @@ export const features1 = [
   },
   {
     id: 3,
-    imgSrc: "/assets/images/template/feature-03.svg",
+    imgSrc: "/assets/images/apps/aboutus-future labs.png",
     imgAlt: "Invent new tech for the future",
     heading: "Future Labs",
     title: "Invent new tech for the future",
@@ -548,7 +548,7 @@ export const features1 = [
   },
   {
     id: 4,
-    imgSrc: "/assets/images/template/feature-04.svg",
+    imgSrc: "/assets/images/apps/aboutus-visionary.png",
     imgAlt: "Network of visionary builders",
     heading: "Visionary Network",
     title: "Cultivating a network of visionary builders",

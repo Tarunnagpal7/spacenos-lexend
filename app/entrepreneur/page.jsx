@@ -8,6 +8,7 @@ import EntreDetails from "@/components/innerpages/EntreDetails";
 import EntrePricing from "@/components/innerpages/EntrePricing";
 import EntreFaq from "@/components/innerpages/EntreFaq";
 import { EntreFaq as Faq } from "@/data/faq";
+import AwardsTestimonials from "@/components/homes/home-6/AwardsTestimonials";
 
 export const metadata = {
   title:
@@ -25,7 +26,8 @@ export default function CollaboratePage() {
          <EntrePricing />
          <EntreForm />
          <EntreFaq faqData={Faq}/>
-         <EntreTestimonials />
+         {/* <EntreTestimonials /> */}
+         <AwardsTestimonials />
         </div>
         <Footer5 />
       </div>

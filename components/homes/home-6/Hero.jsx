@@ -96,12 +96,16 @@ export default function Hero() {
                     className="dashboard-image max-w-lg mx-auto max-h-250px lg:max-h-550px overflow-hidden"
                     data-anime="translateY: [48, 0]; opacity: [0, 1]; easing: easeOutCubic; duration: 500; delay: anime.stagger(100, {start: 200});"
                   >
-                    <Image
-                      className="shadow-md lg:shadow-lg"
-                      alt="app-dashboard"
-                      src="/assets/images/apps/hero.jpeg"
-                      width="1280"
+                    <video 
+                       src="/assets/images/apps/1.home-hero-banner.mp4"
+                        className="w-100 h-100 object-cover rounded-2"
+                       muted
+                       autoPlay
+                       playsInline
+                       loop
+                       width="1280"
                       height="853"
+                    
                     />
                   </div>
                 </div>
@@ -113,3 +117,5 @@ export default function Hero() {
     </div>
   );
 }
+
+{/* <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1095811016?h=c9e05c0abf&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="1.home-hero-banner"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script> */}

@@ -77,7 +77,7 @@ export default function NextFeatures() {
                                                         <Image
                                                             className="media-cover image"
                                                             alt="Share tools quickly and confidently in minutes"
-                                                            src="/assets/images/template/feature-image-02.jpg"
+                                                            src="/assets/images/apps/health-next.png"
                                                             width="1200"
                                                             height="1200"
                                                         />
@@ -124,7 +124,7 @@ export default function NextFeatures() {
                                                         <Image
                                                             className="media-cover image"
                                                             alt="Connect every part of your entire business"
-                                                            src="/assets/images/template/feature-image-03.jpg"
+                                                            src="/assets/images/apps/predictive.png"
                                                             width="1200"
                                                             height="1200"
                                                         />
@@ -172,7 +172,7 @@ export default function NextFeatures() {
                                                         <Image
                                                             className="media-cover image"
                                                             alt="Maintain compliance and control your apps"
-                                                            src="/assets/images/template/feature-image-01.jpg"
+                                                            src="/assets/images/apps/education3.0.png"
                                                             width="1200"
                                                             height="1200"
                                                         />
@@ -219,7 +219,7 @@ export default function NextFeatures() {
                                                         <Image
                                                             className="media-cover image"
                                                             alt="Review quickly and confidently"
-                                                            src="/assets/images/template/feature-image-04.jpg"
+                                                            src="/assets/images/apps/defense.png"
                                                             width="1200"
                                                             height="1200"
                                                         />
