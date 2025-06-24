@@ -75,7 +75,7 @@ export default function Header5() {
                 </div>
               </div>
               <div className="uc-navbar-center">
-                <ul className="uc-navbar-nav gap-3 xl:gap-5 d-none lg:d-flex fs-6 fw-medium scrollSpyLinks">
+                <ul className="uc-navbar-nav gap-3 xl:gap-5 d-none xl:d-flex fs-6 fw-medium scrollSpyLinks">
                   {navItems.map((item, index) => (
                     <li key={index} className={item.children ? "has-dd-menu" : ""}>
                       {item.children ? (
@@ -127,13 +127,13 @@ export default function Header5() {
               </div>
               <div className="uc-navbar-right">
                 <Link
-                  className="btn btn-sm btn-primary text-white text-none d-none lg:d-inline-flex ml-4 hover:text-gray-300"
+                  className="btn btn-sm btn-primary text-white text-none d-none xl:d-inline-flex ml-4 hover:text-gray-300"
                   href={`/sign-in`}
                 >
                  Login
                 </Link>
                 <a
-                  className="d-block lg:d-none uc-icon uc-navbar-toggle-icon text-dark dark:text-white hover:text-gray-300"
+                  className="d-block xl:d-none uc-icon uc-navbar-toggle-icon text-dark dark:text-white hover:text-gray-300"
                   onClick={openMobileMenu}
                 >
                   <svg width={20} height={20} viewBox="0 0 20 20" fill="currentColor">

@@ -359,7 +359,7 @@ export const navItems = [
   { href: "/", label: "Home" },
   {
     label: "Ventures",
-    href: "/page-features",
+    href: "/features",
     children: [
       { href: "/features", label: "Darkbase" },
       { href: "/features", label: "Astro360" },
