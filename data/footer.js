@@ -171,12 +171,12 @@ export const footerLinks4 = [
   {
     title: "Company",
     links: [
-      { text: "Careers", href: "/page-career" },
-      { text: "Ventures", href: "/page-features" },
-      { text: "Awards", href: "/page-achievements" },
+      { text: "Careers", href: "/career" },
+      { text: "Ventures", href: "/features" },
+      { text: "Awards", href: "/achievements" },
       { text: "Meet the Ceo", href: "/meet-the-ceo" },
-      { text: "About Us", href: "/page-about" },
-      { text: "Contact Us", href: "/page-contact" },
+      { text: "About Us", href: "/about" },
+      { text: "Contact Us", href: "/contact" },
     ],
   },
   {
@@ -203,7 +203,7 @@ export const footerLinks4 = [
     links: [
       { text: "Investors", href: "/investors", isLink: true },
       { text: "Be Enterpreneur", href: "/entrepreneur", isLink: true },
-      { text: "Collaborate", href: "/page-collaborate", isLink: true },
+      { text: "Collaborate", href: "/collaborate", isLink: true },
       { text: "Press and Media", href: "/press-media" ,isLink: true},
       { text: "Foreign Pod", href: "/foreign-pod" ,isLink: true},
       { text: "Legal", href: "/legal", isLink: true },

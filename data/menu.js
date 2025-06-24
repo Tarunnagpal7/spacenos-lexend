@@ -8,31 +8,31 @@ export const menuItems = [
     label: "Ventures",
     subItems: [
       {
-        href: "/page-features",
+        href: "/features",
         label: "Darkbase",
       },
       {
-        href: "/page-features",
+        href: "/features",
         label: "Astro360",
       },
       {
-        href: "/page-features",
+        href: "/features",
         label: "Dominus",
       },
       {
-        href: "/page-features",
+        href: "/features",
         label: "AI Tools",
       },
     ],
   },
   {
     id: 4,
-    href: "/page-about",
+    href: "/about",
     label: "About Us",
   },
   {
     id: 5,
-    href: "/page-career",
+    href: "/career",
     label: "Career",
   },
   {
@@ -42,7 +42,7 @@ export const menuItems = [
   },
   {
     id: 6,
-    href: "/page-contact",
+    href: "/contact",
     label: "Contact",
   },
 ];
@@ -361,103 +361,21 @@ export const navItems = [
     label: "Ventures",
     href: "/page-features",
     children: [
-      { href: "/page-features", label: "Darkbase" },
-      { href: "/page-features", label: "Astro360" },
-      { href: "/page-features", label: "Dominus" },
-      { href: "/page-features", label: "AI Tools" },
+      { href: "/features", label: "Darkbase" },
+      { href: "/features", label: "Astro360" },
+      { href: "/features", label: "Dominus" },
+      { href: "/features", label: "AI Tools" },
     ],
   },
-  { href: "/page-about", label: "About Us" },
-  { href: "/page-career", label: "Career" },
+  { href: "/about", label: "About Us" },
+  { href: "/career", label: "Career" },
   { href: "/resources", label: "Resources" },
-  { href: "/page-contact", label: "Contact Us" },
+  { href: "/contact", label: "Contact Us" },
 ];
 
-export const mainPages = [
-  {
-    href: "/",
-    alt: "Home - 01",
-    src: "/assets/images/demos/screenshots/index.jpg",
-    title: "Home 1",
-  },
-  {
-    href: "/home-2",
-    alt: "Home - 02",
-    src: "/assets/images/demos/screenshots/index-2.jpg",
-    title: "Home 2",
-  },
-  {
-    href: "/home-3",
-    alt: "Home - 03",
-    src: "/assets/images/demos/screenshots/index-3.jpg",
-    title: "Home 3",
-  },
-  {
-    href: "/home-4",
-    alt: "Home - 04",
-    src: "/assets/images/demos/screenshots/index-4.jpg",
-    title: "Home 4",
-  },
-  {
-    href: "/page-features",
-    alt: "Features",
-    src: "/assets/images/demos/screenshots/page-features.jpg",
-    title: "Features",
-  },
-  {
-    href: "/page-pricing",
-    alt: "Pricing",
-    src: "/assets/images/demos/screenshots/page-pricing.jpg",
-    title: "Pricing",
-  },
-  {
-    href: "/page-integrations",
-    alt: "Integrations",
-    src: "/assets/images/demos/screenshots/page-integrations.jpg",
-    title: "Integrations",
-  },
-  {
-    href: "/page-about",
-    alt: "About",
-    src: "/assets/images/demos/screenshots/page-about.jpg",
-    title: "About",
-  },
-];
 
-export const othermenuItems = [
-  { href: "/page-career", icon: "unicon-wikis", title: "Career" },
-  { href: "/page-career-detail/2", icon: "unicon-wikis", title: "Job details" },
-  { href: "/page-contact", icon: "unicon-wikis", title: "Contact" },
-  { href: "/page-contact-2", icon: "unicon-wikis", title: "Contact v2" },
-  { href: "/blog", icon: "unicon-course", title: "Blog" },
-  { href: "/blog-details/1", icon: "unicon-course", title: "Blog details" },
-  {
-    href: "/blog-details-2/2",
-    icon: "unicon-course",
-    title: "Blog details v2",
-  },
-  {
-    href: "/blog-details-3/2",
-    icon: "unicon-course",
-    title: "Blog details v3",
-  },
-  { href: "/home-2", icon: "unicon-unlocked", title: "Sign up" },
-  { href: "/home-3", icon: "unicon-unlocked", title: "Sign in" },
-  { href: "/home-4", icon: "unicon-unlocked", title: "Reset Password" },
-  { href: "/shop", icon: "unicon-shopping-cart", title: "Shop" },
-  { href: "/shop-cart", icon: "unicon-shopping-cart", title: "Cart" },
-  { href: "/shop-checkout", icon: "unicon-shopping-cart", title: "Checkout" },
-  {
-    href: "/shop-product-detail/2",
-    icon: "unicon-shopping-cart",
-    title: "Product detail",
-  },
-  {
-    href: "/shop-order",
-    icon: "unicon-shopping-cart",
-    title: "Order confirmation",
-  },
-];
+
+
 export const icons = [
   { href: "#", iconClass: "unicon-logo-medium icon-2" },
   { href: "#", iconClass: "unicon-logo-x-filled icon-2" },

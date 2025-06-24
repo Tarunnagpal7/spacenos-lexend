@@ -7,7 +7,7 @@ export default function Facts() {
       id="facts_numbers"
       className="facts-numbers section panel overflow-hidden"
     >
-      <div className="section-outer panel py-4 md:py-6 xl:py-9">
+      <div className="section-outer panel py-4 ">
         <div className="container sm:max-w-lg xl:max-w-xl">
           <div className="section-inner panel">
             <div

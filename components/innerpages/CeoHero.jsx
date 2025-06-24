@@ -101,7 +101,7 @@ export default function CeoHero() {
                       className="h2 md:h1 lg:display-5 m-0"
                       data-anime="translateY: [10, 0]; opacity: [0, 1]; easing: easeOutExpo; duration: 450; delay: 250;"
                     >
-                       The Visionary, our CEO, Mr. Venkatesh Devale
+                       The Visionary, our CEO,<br/> <span className="text-primary"> Mr. Venkatesh Devale</span>
                     </h1>
                     <p
                       className="fs-6 xl:fs-4 xl:px-10 dark:text-white text-opacity-70"

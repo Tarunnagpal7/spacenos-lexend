@@ -109,7 +109,7 @@ export default function CareerHero() {
             <div className="row child-cols-12 justify-center items-center g-8">
               <div className="lg:col-8">
                 <div
-                  className="panel vstack items-center gap-2 px-2 text-center"
+                  className="panel vstack items-center gap- px-2 text-center"
                   data-anime="targets: >*; translateY: [48, 0]; opacity: [0, 1]; easing: easeOutCubic; duration: 500; delay: anime.stagger(100, {start: 200});"
                 >
                   <h1
@@ -128,7 +128,7 @@ export default function CareerHero() {
                   </h1>
 
                   <p className="fs-6 xl:fs-3 xl:px-6">
-                    We’re not a company that hands out tasks. We hand out real responsibility. At Spacenos, internsship features. Associates pitch to founders. Designers own products. If you’re smart, hungry, and ready to build things that actually matter — then 
+                    We're not a company that hands out tasks. We hand out real responsibility. At Spacenos, internsship features. Associates pitch to founders. Designers own products. If you're smart, hungry, and ready to build things that actually matter — then 
                     <b className="dark:text-white"> join our empire!</b>
                   </p>
                 </div>
@@ -139,40 +139,56 @@ export default function CareerHero() {
                 data-anime="scale: [1.2, 1]; opacity: [0, 1]; easing: easeOutCubic; duration: 750; delay: 500;"
               >
                 <div
-                  className="panel max-w-1000px mx-auto mt-2 rounded lg:rounded-1-5 xl:rounded-2 border border-dark contrast-shadow-lg overflow-hidden"
+                  className="panel max-w-1000px mx-auto overflow-hidden"
                   data-anime="onscroll: .hero-header; onscroll-trigger: 0.5; translateY: [-80, 0]; scale: [0.8, 1]; easing: linear;"
                 >
-                       <div className="container xl:max-w-xl">
-            <div className="panel overflow-hidden rounded-2 lg:rounded-3 border border-2 border-white dark:border-gray-700 relative">
-              
-              {/* Portrait/Vertical Video Container - Custom aspect ratio for vertical videos */}
-              <div className="relative" style={{ paddingBottom: '75%', height: 0, overflow: 'hidden' }}>
-                <img
-                  src="/assets/images/apps/meet-the-ceo.png"
-                  alt="Powerful Intentions: Unleash Your Entrepreneurial Power Now!"
-                  className="absolute top-0 left-0 w-full h-full object-cover"
-                />
-               
-              </div>
-
-              {/* Overlay Play Button */}
-              <div className="position-cover bg-black bg-opacity-40">
-                <a
-                  onClick={() => setOpen(true)}
-                  className="position-absolute top-50 start-50 translate-middle uc-link w-64px lg:w-100px h-64px lg:h-100px rounded-circle cstack bg-white bg-opacity-70 backdrop-2 text-primary cursor-pointer"
-                >
-                  <i className="icon-3 unicon-play fw-bold"></i>
-                </a>
-              </div>
-            </div>
-          </div>
+                  {/* Reel-style video container - matches your first example */}
+                  <div className="container d-flex  justify-content-center">
+                    <div style={{ width: '250px', maxWidth: '90vw' }} className="mx-auto rounded lg:rounded-1-5 xl:rounded-2 border border-dark contrast-shadow-lg">
+                      <div className="position-relative  overflow-hidden rounded-2 rounded-lg-3 border border-2 border-white dark:border-gray-700">
+                        {/* Video Thumbnail with 9:16 aspect ratio */}
+                        <div className="position-relative" style={{ paddingBottom: '177.78%' }}>
+                          <img
+                            src="/assets/images/apps/meet-the-ceo.png"
+                            alt="Powerful Intentions: Unleash Your Entrepreneurial Power Now!"
+                            className="position-absolute top-0 start-0 w-100 h-100"
+                            style={{ objectFit: 'cover' }}
+                          />
+                          
+                          {/* Overlay Play Button */}
+                          <div className="position-absolute w-100 h-100" style={{ backgroundColor: 'rgba(0,0,0,0.4)', top: '0', left: '0' }}>
+                            <a
+                              onClick={() => setOpen(true)}
+                              className="position-absolute top-50 start-50 translate-middle rounded-circle"
+                              style={{ 
+                                width: '64px', 
+                                height: '64px', 
+                                backgroundColor: 'white',
+                                color: 'var(--bs-primary)',
+                                cursor: 'pointer',
+                                transition: 'all 0.3s ease',
+                                display: 'flex',
+                                alignItems: 'center',
+                                justifyContent: 'center',
+                                lineHeight: '1'
+                              }}
+                              onMouseEnter={(e) => e.target.style.opacity = '0.8'}
+                              onMouseLeave={(e) => e.target.style.opacity = '1'}
+                            >
+                              <i className="icon-3 unicon-play fw-bold" style={{ fontSize: '24px', paddingLeft: '3px' }}></i>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-       <ModalVideo
+      <ModalVideo
         isOpen={isOpen}
         src="https://player.vimeo.com/video/1095551452?h=c11935f447"
         setIsOpen={() => setOpen(false)}
@@ -180,4 +196,3 @@ export default function CareerHero() {
     </div>
   );
 }
-

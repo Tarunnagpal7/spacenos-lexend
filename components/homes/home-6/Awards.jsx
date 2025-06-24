@@ -52,14 +52,14 @@ export default function Awards() {
       id="global_recognition"
       className="global-recognition section panel scrollSpysection"
     >
-      <div className="section-outer panel py-6 lg:py-8 xl:py-10 bg-secondary text-black rounded-2 lg:rounded-3 m-2">
+      <div className="section-outer panel py-3 lg:py-4 xl:py-5 bg-secondary text-black rounded-2 lg:rounded-3 m-2">
         <div className="container xl:max-w-6xl">
           <div
-            className="section-inner panel vstack items-center gap-4 md:gap-6 lg:gap-8 max-w-100"
+            className="section-inner panel vstack items-center gap-2 md:gap-3 lg:gap-4 max-w-100"
             data-anime="onview: -100; targets: >*; translateY: [-40, 0]; opacity: [0, 1]; easing: easeOutCubic; duration: 500; delay: anime.stagger(200);"
           >
             <div
-              className="panel vstack items-center gap-2 xl:gap-3 text-center"
+              className="panel vstack items-center p-3 text-center"
               data-anime="onview: -100; targets: >*; translateY: [-48, 0]; opacity: [0, 1]; easing: easeOutCubic; duration: 500; delay: anime.stagger(100, {start: 200});"
             >
               <p className="h4 xl:h3 xl:h1 m-0 px-2 text-black">
@@ -97,9 +97,9 @@ export default function Awards() {
               >
                 {badges.map((badge, index) => (
                   <SwiperSlide className="swiper-slide" key={index}>
-                    <div className={`panel vstack items-center justify-center ${badge.color} text-black rounded-1-5 h-100`}>
+                    <div className={`panel vstack items-center justify-center ${badge.color} text-black rounded-1-5 h-100`} style={{ minHeight: '120px' }}>
                       <div className="panel vstack items-center gap-3">
-                        <div className="icon-container  rounded-full">
+                        <div className="icon-container rounded-full">
                           <Image 
                            className=""
                            src= {badge.imgsrc}

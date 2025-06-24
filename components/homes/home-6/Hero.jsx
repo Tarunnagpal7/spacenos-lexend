@@ -88,27 +88,27 @@ export default function Hero() {
                 </div>
               </div>
               <div>
-                <div
-                  className="panel"
-                  data-anime="targets: >*:not(.dashboard-image); scale: [0.5, 1]; opacity: [0, 1]; easing: easeOutCubic; duration: 500; delay: anime.stagger(100, {start: 200});"
-                >
-                  <div
-                    className="dashboard-image max-w-lg mx-auto max-h-250px lg:max-h-550px overflow-hidden"
-                    data-anime="translateY: [48, 0]; opacity: [0, 1]; easing: easeOutCubic; duration: 500; delay: anime.stagger(100, {start: 200});"
-                  >
-                    <video 
-                       src="/assets/images/apps/1.home-hero-banner.mp4"
-                        className="w-100 h-100 object-cover rounded-2"
-                       muted
-                       autoPlay
-                       playsInline
-                       loop
-                       width="1280"
-                      height="853"
-                    
-                    />
-                  </div>
-                </div>
+                <div className="panel">
+  <div
+    className="dashboard-image mx-auto relative flex justify-center items-center w-full"
+    style={{
+      maxWidth: "850px",
+      width: "90%",
+      aspectRatio: "16/9",
+    }}
+    data-anime="translateY: [48, 0]; opacity: [0, 1]; easing: easeOutCubic; duration: 500; delay: anime.stagger(100, {start: 200});"
+  >
+    <video
+      src="/assets/images/apps/1.home-hero-banner.mp4"
+      className="w-full h-full object-cover rounded-2"
+      muted
+      autoPlay
+      playsInline
+      loop
+    />
+  </div>
+</div>
+
               </div>
             </div>
           </div>

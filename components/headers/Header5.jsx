@@ -133,7 +133,7 @@ export default function Header5() {
                  Login
                 </Link>
                 <a
-                  className="d-block lg:d-none uc-icon uc-navbar-toggle-icon text-white hover:text-gray-300"
+                  className="d-block lg:d-none uc-icon uc-navbar-toggle-icon text-dark dark:text-white hover:text-gray-300"
                   onClick={openMobileMenu}
                 >
                   <svg width={20} height={20} viewBox="0 0 20 20" fill="currentColor">
