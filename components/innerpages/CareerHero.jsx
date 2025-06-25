@@ -109,6 +109,7 @@ export default function CareerHero() {
                             frameBorder="0"
                             allow="autoplay; fullscreen; picture-in-picture"
                             allowFullScreen
+                            loading="Lazy"
                           ></iframe>
 
                           <button

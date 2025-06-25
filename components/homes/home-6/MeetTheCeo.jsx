@@ -65,10 +65,15 @@ export default function MeetTheCeo() {
           </div>
 
           <div className="container d-flex justify-content-center">
-            <div style={{ width: "250px", maxWidth: "90vw" }} className="mx-auto">
-              <div className="position-relative overflow-hidden rounded-2 lg:rounded-3 border border-2 border-white">
+            <div
+              style={{ width: "250px", maxWidth: "90vw" }}
+              className="mx-auto rounded lg:rounded-1-5 xl:rounded-2 border border-dark contrast-shadow-lg"
+            >
+              <div className="position-relative overflow-hidden rounded-2 rounded-lg-3 border border-2 border-white dark:border-gray-700">
                 <div className="position-relative" style={{ paddingBottom: "177.78%" }}>
+
                   <iframe
+
                     ref={iframeRef}
                     src="https://player.vimeo.com/video/1095508409?autoplay=1&muted=1&loop=1&background=1"
                     className="position-absolute top-0 start-0 w-100 h-100"
@@ -76,6 +81,7 @@ export default function MeetTheCeo() {
                     frameBorder="0"
                     allow="autoplay; fullscreen; picture-in-picture"
                     allowFullScreen
+                    loading="lazy"
                   ></iframe>
 
                   {/* Mute/Unmute Button */}

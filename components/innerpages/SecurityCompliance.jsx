@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import SecurityFeatures from "./SecurityFeatures";
-import { ShieldCheck, Lock, Server, FileText, UserCheck, RefreshCcw } from "lucide-react";
+import { ShieldBan, GlobeLock, UserCheck, StepForward, Shredder, Group } from "lucide-react";
 
 export default function SecurityCompliance() {
   const [expandedIndex, setExpandedIndex] = useState(null);
@@ -17,37 +17,37 @@ export default function SecurityCompliance() {
       name: "Certifications & Standards",
       shortDescription: "Industry-leading security certifications",
       fullDescription: "We adhere to the most stringent security frameworks including ISO 27001 Certified comprehensive ISMS, SOC 2 Type II demonstrating ongoing security controls, GDPR & CCPA Compliance for data privacy rights, and PCI DSS Level 1 readiness for payment processing.",
-      icon: <ShieldCheck color="#12715B" size={40} />,
+      icon: <ShieldBan color="#FFFFFF" size={40} />,
     },
     {
       name: "Data Protection & Privacy",
       shortDescription: "Multi-layered data safeguards",
       fullDescription: "We implement AES-256 encryption for stored data and TLS 1.2+ for all communications. Our access controls include role-based permissions and MFA. Choose data residency in India, USA, or Europe. Automated daily backups with geo-redundant storage ensure <24-hour RTO.",
-      icon: <Lock color="#12715B" size={40} />,
+      icon: <GlobeLock  size={40} />,
     },
     {
       name: "Infrastructure Security",
       shortDescription: "Hardened infrastructure protection",
       fullDescription: "Real-time SIEM monitoring with anomaly detection. Secure SDLC embeds security in every sprint with automated code scans. Kubernetes hardening, network segmentation, and WAF protect against OWASP Top 10 threats with DDoS mitigation.",
-      icon: <Server color="#12715B" size={40} />,
+      icon: <Shredder  size={40} />,
     },
     {
       name: "Audits & Reports",
       shortDescription: "Transparent compliance evidence",
       fullDescription: "Annual SOC 2 reports available under NDA. Quarterly penetration testing by CREST-accredited firms. Monthly internal scans plus third-party assessments with <30-day patch cycles. Download ISO certificates and policy summaries.",
-      icon: <FileText color="#12715B" size={40} />,
+      icon: <Group   size={40} />,
     },
     {
       name: "Privacy & User Rights",
       shortDescription: "Complete data control",
       fullDescription: "Export personal data in machine-readable format. Submit deletion requests fulfilled within 30 days (subject to legal holds). Granular consent management for marketing, analytics, and cookies with easy opt-in/out controls.",
-      icon: <UserCheck color="#12715B" size={40} />,
+      icon: <UserCheck size={40} />,
     },
     {
       name: "Continuous Improvement",
       shortDescription: "Evolving security posture",
       fullDescription: "Threat intelligence feeds from top vendors. Quarterly security awareness training with phishing simulations. Annual policy reviews incorporating new regulations. Security never sleeps at Spacenos.",
-      icon: <RefreshCcw color="#12715B" size={40} />,
+      icon: <StepForward  size={40} />,
     },
   ];
 

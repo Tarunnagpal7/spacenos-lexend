@@ -76,11 +76,10 @@ export const navItems = [
   },
   {
     label: "Company",
-    href: "/",
     children: [
       { href: "/about", label: "About Us" },
       { href: "/meet-the-ceo", label: "Meet The CEO" },
-      { href: "/awards", label: "Awards" },
+      { href: "/achievements", label: "Awards" },
       { href: "/investors", label: "Investors" },
       { href: "/collaborate", label: "Collab With US" },
       { href: "/case-studies", label: "Case Studies" },
@@ -89,7 +88,6 @@ export const navItems = [
   },
   {
     label: "Resources",
-    href: "/",
     children: [
       { href: "/resources", label: "Company Resources" },
       { href: "/blogs", label: "Blogs" },

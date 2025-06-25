@@ -47,10 +47,10 @@ export default function EmployeeCenter() {
               data-anime="onview: -100; targets: >*; translateY: [48, 0]; opacity: [0, 1]; easing: easeOutCubic; duration: 500; delay: anime.stagger(100, { start: 200 });"
             >
               <div className="row child-cols-12 justify-center col-match g-2 ">
-                
+
                 <div className="panel vstack justify-between gap-3 rounded-2 overflow-hidden">
                   <div className="row child-cols-12 col-match g-0">
-                    
+
                     {/* Text Block */}
                     <div className="sm:col-6 py-6 px-2 bg-secondary lg:col-8">
                       <div className="panel vstack justify-between gap-3 px-3 lg:px-5 lg:py-6 h-100">
@@ -66,42 +66,46 @@ export default function EmployeeCenter() {
 
                     {/* Video Block with Seamless Rounded Borders */}
                     <div className="sm:col-6 lg:col-4 bg-secondary d-flex align-items-center justify-content-center p-2">
-                      <div 
-                        className="position-relative w-100 h-100 overflow-hidden rounded-2" 
-                        style={{ maxWidth: "220px", margin: "0 auto", aspectRatio: "9 / 16", backgroundColor: "#000" }}
+                      <div
+                        style={{ width: "250px", maxWidth: "90vw" }}
+                        className="mx-auto rounded lg:rounded-1-5 xl:rounded-2 border border-dark contrast-shadow-lg"
                       >
-                        <iframe
-                          ref={iframeRef}
-                          src="https://player.vimeo.com/video/1095555264?autoplay=1&muted=1&loop=1&background=1"
-                          className="position-absolute top-0 start-0 w-100 h-100"
-                          style={{ border: "none" }}
-                          frameBorder="0"
-                          allow="autoplay; fullscreen; picture-in-picture"
-                          allowFullScreen
-                        ></iframe>
+                        <div className="position-relative overflow-hidden rounded-2 rounded-lg-3 border border-2 border-white dark:border-gray-700">
+                          <div className="position-relative" style={{ paddingBottom: "177.78%" }}>
 
-                        {/* Mute Toggle Button */}
-                        <button
-                          onClick={toggleMute}
-                          style={{
-                            position: "absolute",
-                            top: "10px",
-                            right: "10px",
-                            zIndex: 10,
-                            background: "rgba(0,0,0,0.6)",
-                            color: "#fff",
-                            border: "none",
-                            padding: "6px 10px",
-                            borderRadius: "4px",
-                            cursor: "pointer",
-                            fontSize: "12px",
-                          }}
-                        >
-                          {isMuted ? "Unmute" : "Mute"}
-                        </button>
+                            <iframe
+                              ref={iframeRef}
+                              src="https://player.vimeo.com/video/1095555264?autoplay=1&muted=1&loop=1&background=1"
+                              className="position-absolute top-0 start-0 w-100 h-100"
+                              style={{ border: "none" }}
+                              frameBorder="0"
+                              allow="autoplay; fullscreen; picture-in-picture"
+                              allowFullScreen
+                            ></iframe>
+
+                            {/* Mute Toggle Button */}
+                            <button
+                              onClick={toggleMute}
+                              style={{
+                                position: "absolute",
+                                top: "10px",
+                                right: "10px",
+                                zIndex: 10,
+                                background: "rgba(0,0,0,0.6)",
+                                color: "#fff",
+                                border: "none",
+                                padding: "6px 10px",
+                                borderRadius: "4px",
+                                cursor: "pointer",
+                                fontSize: "12px",
+                              }}
+                            >
+                              {isMuted ? "Unmute" : "Mute"}
+                            </button>
+                          </div>
+                        </div>
                       </div>
                     </div>
-
                   </div>
                 </div>
               </div>

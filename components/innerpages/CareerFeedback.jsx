@@ -7,26 +7,26 @@ export default function CareerFeedback() {
     <div id="clients_feedbacks" className="py-8">
       <div className="container">
         <div className="row justify-content-center">
-          <div className="col-12 col-lg-10"> 
-            <div className="text-center mb-5"> 
+          <div className="col-12 col-lg-10">
+            <div className="text-center mb-5">
               <h2 className="h3 h2-lg mb-4">Don't Just Take Our Words</h2>
             </div>
 
-            <div className="row g-4 justify-content-center"> 
+            <div className="row g-4 justify-content-center">
               {testimonials6.map((testimonial, index) => (
-                <div key={index} className="col-12 col-md-6"> 
-                  <div className="h-100 p-4 border rounded-3"> 
+                <div key={index} className="col-12 col-md-6">
+                  <div className="h-100 p-4 border rounded-3">
                     <div className="d-flex flex-column h-100">
                       <div className="mb-3">
-                        <div className="d-flex align-items-center mb-3" style={{height: '48px'}}>
-                          <Image
-                            className="img-fluid"
-                            src={testimonial?.brandImgSrc}
-                            width={170}
-                            height={48}
-                            alt={testimonial?.brandImgAlt}
-                            style={{maxWidth: '128px'}}
-                          />
+                        <div
+                          className="d-flex text-primary fw-bold align-items-center mb-1"
+                          style={{
+                            height: "48px",
+                            textShadow: "1px 1px 2px rgba(0, 0, 0, 0.6)", // subtle black shadow
+                            fontSize: "1.1rem", // optional for better visibility
+                          }}
+                        >
+                          SpaceBase
                         </div>
                         <p className="fs-6 fw-bold text-muted mb-0"> {/* Compact text */}
                           {testimonial.text}
