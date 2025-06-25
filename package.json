@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@vimeo/player": "^2.29.0",
     "animejs": "^3.2.2",
     "imagesloaded": "^5.0.0",
     "isotope-layout": "^3.0.6",

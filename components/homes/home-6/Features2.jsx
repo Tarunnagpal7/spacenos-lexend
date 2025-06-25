@@ -32,18 +32,18 @@ export default function Features() {
                     data-anime="onview: -200; translateY: [48, 0]; opacity: [0, 1]; easing: spring(1, 80, 10, 0); duration: 450; delay: 100;"
                   >
                     <div className="row child-cols col-match justify-between g-4 lg:g-8 xl:g-10">
-                      <div className="col-12 sm:col-6 order-0 lg:order-1">
+                      <div className="col-12 lg:col-6 order-0 lg:order-1">
                         <div className="panel w-100">
                           <Image
                             src={feature.imgSrc}
-                            width={780}
-                            height={728}
+                            width={450}
+                            height={400}
                             alt={feature.altText}
                             className="rounded-2"
                           />
                         </div>
                       </div>
-                      <div className="col-12 sm:col-6 order-1 lg:order-0">
+                      <div className="col-12 lg:col-6 order-1 lg:order-0">
                         <div className="panel vstack justify-between gap-4 sm:gap-6 h-100">
                           <div>
                             <div className="panel vstack gap-2">

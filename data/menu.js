@@ -26,335 +26,42 @@ export const menuItems = [
     ],
   },
   {
-    id: 4,
-    href: "/about",
-    label: "About Us",
+    id: 9,
+    label: "Company",
+    subItems: [
+       { href: "/about", label: "About Us" },
+      { href: "/meet-the-ceo", label: "Meet The CEO" },
+      { href: "/awards", label: "Awards" },
+      { href: "/investors", label: "Investors" },
+      { href: "/collaborate", label: "Collab With US" },
+      { href: "/case-studies", label: "Case Studies" },
+      { href: "/press-media", label: "Press And Media" },
+    ],
   },
+  {
+    id: 10,
+    label: "Resources",
+    subItems: [
+      { href: "/resources", label: "Company Resources" },
+      { href: "/blogs", label: "Blogs" },
+      { href: "/tools", label: "Tools" },
+      { href: "/verify-doc", label: "verify Document" },
+    ],
+  },
+  
   {
     id: 5,
     href: "/career",
     label: "Career",
   },
-  {
-    id: 7,
-    href: "/resources",
-    label: "Resources",
-  },
+
   {
     id: 6,
     href: "/contact",
-    label: "Contact",
+    label: "Contact Us",
   },
 ];
 
-export const pagesData = [
-  {
-    id: 1,
-    header: "Main Pages",
-    items: [
-      {
-        href: "/",
-        label: "Home 01",
-      },
-      {
-        href: "/home-2",
-        label: "Home 02",
-      },
-      {
-        href: "/home-3",
-        label: "Home 03",
-      },
-      {
-        href: "/home-4",
-        label: "Home 04",
-        // badge: {
-        //   text: "New",
-        //   className: "text-primary",
-        // },
-      },
-      {
-        href: "/home-5",
-        label: "Home 05",
-        // badge: {
-        //   text: "New",
-        //   className: "text-primary",
-        // },
-      },
-      {
-        href: "/home-6",
-        label: "Home 06",
-        // badge: {
-        //   text: "New",
-        //   className: "text-primary",
-        // },
-      },
-      {
-        href: "/rtl",
-        label: "Home RTL",
-        // badge: {
-        //   text: "New",
-        //   className: "text-primary",
-        // },
-      },
-      {
-        href: "/home-7",
-        label: "Home 07",
-        badge: {
-          text: "New",
-          className: "text-primary",
-        },
-      },
-      {
-        href: "/home-8",
-        label: "Home 08",
-        badge: {
-          text: "New",
-          className: "text-primary",
-        },
-      },
-      {
-        href: "/home-9",
-        label: "Home 09",
-        badge: {
-          text: "New",
-          className: "text-primary",
-        },
-      },
-      {
-        href: "/home-10",
-        label: "Home 10",
-        badge: {
-          text: "New",
-          className: "text-primary",
-        },
-      },
-    ],
-  },
-  {
-    id: 2,
-    header: "Inner Pages",
-    items: [
-      {
-        href: "/page-features",
-        label: "Features",
-      },
-      {
-        href: "/page-pricing",
-        label: "Pricing",
-      },
-      {
-        href: "/page-pricing-2",
-        label: "Pricing 2",
-        badge: {
-          text: "New",
-          className: "text-primary",
-        },
-      },
-      {
-        href: "/page-integrations",
-        label: "Integrations",
-      },
-      {
-        href: "/page-about",
-        label: "About",
-      },
-      {
-        href: "/page-career",
-        label: "Career",
-      },
-      {
-        href: "/page-team",
-        label: "Team",
-        badge: {
-          text: "New",
-          className: "text-primary",
-        },
-      },
-      {
-        href: "/page-career-detail/2",
-        label: "Job details",
-      },
-      {
-        href: "/page-contact",
-        label: "Contact",
-      },
-      {
-        href: "/page-contact-2",
-        label: "Contact v2",
-      },
-      {
-        href: "#",
-        label: "Services",
-        badge: {
-          text: "Soon",
-          className: "text-gray-400",
-        },
-      },
-    ],
-  },
-  {
-    id: 3,
-    header: "CMS Pages",
-    items: [
-      {
-        href: "/blog",
-        label: "Modern",
-      },
-      {
-        href: "/blog-classic",
-        label: "Classic",
-      },
-      {
-        href: "/blog-sidebar",
-        label: "Sidebar",
-        badge: {
-          text: "New",
-          className: "text-primary",
-        },
-      },
-      {
-        href: "/blog-sidebar-left",
-        label: "Sidebar Left",
-        badge: {
-          text: "New",
-          className: "text-primary",
-        },
-      },
-      {
-        href: "/blog-2cols",
-        label: "Grid 2 cols",
-      },
-      {
-        href: "/blog-3cols",
-        label: "Grid 3 cols",
-      },
-      {
-        href: "/blog-4cols",
-        label: "Grid 4 cols",
-      },
-      {
-        href: "/blog-category/Stratgy",
-        label: "Category",
-      },
-      {
-        href: "/blog-author/Amir Khan",
-        label: "Author",
-      },
-      {
-        href: "/blog-details/1",
-        label: "Blog single",
-      },
-      {
-        href: "/blog-details-2/2",
-        label: "Blog single v2",
-      },
-      {
-        href: "/blog-details-3/2",
-        label: "Blog single v3",
-      },
-    ],
-  },
-  {
-    id: 4,
-    header: "Shop Pages",
-    items: [
-      {
-        href: "/shop",
-        label: "Grid 4 cols",
-      },
-      {
-        href: "/shop-3",
-        label: "Grid 3 cols",
-      },
-      {
-        href: "/shop-2",
-        label: "Grid 2 cols",
-      },
-      {
-        href: "/shop-sidebar",
-        label: "Grid with sidebar",
-        badge: {
-          text: "New",
-          className: "text-primary",
-        },
-      },
-      {
-        href: "/shop-product-detail/2",
-        label: "Product detail",
-      },
-      {
-        href: "/shop-product-detail-2/2",
-        label: "Product detail v2",
-      },
-      {
-        href: "/shop-cart",
-        label: "Cart",
-      },
-      {
-        href: "/shop-cart-2",
-        label: "Cart v2",
-      },
-      {
-        href: "/shop-checkout",
-        label: "Checkout",
-      },
-      {
-        href: "/shop-checkout-2",
-        label: "Checkout v2",
-      },
-      {
-        href: "/shop-order",
-        label: "Order confirmation",
-      },
-    ],
-  },
-  {
-    id: 5,
-    header: "Other pages",
-    items: [
-      {
-        href: "/sign-in",
-        label: "Sign in",
-      },
-      {
-        href: "/sign-in-2",
-        label: "Sign in v2",
-      },
-      {
-        href: "/sign-up",
-        label: "Sign up",
-      },
-      {
-        href: "/sign-up-2",
-        label: "Sign up v2",
-      },
-      {
-        href: "/reset-password",
-        label: "Reset password",
-      },
-      {
-        href: "/reset-password-2",
-        label: "Reset password v2",
-      },
-      {
-        href: "/page-not-found",
-        label: "404",
-      },
-      {
-        href: "/coming-soon",
-        label: "Coming Soon",
-      },
-      {
-        href: "/page-terms",
-        label: "Terms of service",
-      },
-      {
-        href: "/page-privacy",
-        label: "Privacy policy",
-      },
-    ],
-  },
-];
 export const navItems = [
   { href: "/", label: "Home" },
   {
@@ -367,9 +74,30 @@ export const navItems = [
       { href: "/features", label: "AI Tools" },
     ],
   },
-  { href: "/about", label: "About Us" },
+  {
+    label: "Company",
+    href: "/",
+    children: [
+      { href: "/about", label: "About Us" },
+      { href: "/meet-the-ceo", label: "Meet The CEO" },
+      { href: "/awards", label: "Awards" },
+      { href: "/investors", label: "Investors" },
+      { href: "/collaborate", label: "Collab With US" },
+      { href: "/case-studies", label: "Case Studies" },
+      { href: "/press-media", label: "Press And Media" },
+    ],
+  },
+  {
+    label: "Resources",
+    href: "/",
+    children: [
+      { href: "/resources", label: "Company Resources" },
+      { href: "/blogs", label: "Blogs" },
+      { href: "/tools", label: "Tools" },
+      { href: "/verify-doc", label: "verify Document" },
+    ],
+  },
   { href: "/career", label: "Career" },
-  { href: "/resources", label: "Resources" },
   { href: "/contact", label: "Contact Us" },
 ];
 

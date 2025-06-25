@@ -1,15 +1,49 @@
 "use client";
-
-import { useState } from "react";
-import ModalVideo from "@/components/common/ModalVideo";
 import { useParallax } from "react-scroll-parallax";
-import Link from "next/link";
+import { useEffect, useRef, useState } from "react";
+import Player from "@vimeo/player";
 
 export default function VideoComponent() {
-  const [isOpen, setOpen] = useState(false);
   const parallax = useParallax({
     scale: [0.8, 1],
   });
+
+  const iframeRef = useRef(null);
+  const playerRef = useRef(null);
+  const [isMuted, setIsMuted] = useState(true);
+
+  useEffect(() => {
+    if (iframeRef.current) {
+      const player = new Player(iframeRef.current);
+
+      player.setVolume(0); // Start muted
+      setIsMuted(true);
+
+      player.on("loaded", () => {
+        console.log("Video is ready");
+      });
+
+      playerRef.current = player;
+    }
+
+    return () => {
+      if (playerRef.current) {
+        playerRef.current.destroy();
+      }
+    };
+  }, []);
+
+  const toggleMute = () => {
+    if (playerRef.current) {
+      if (isMuted) {
+        playerRef.current.setVolume(1); // Unmute
+        setIsMuted(false);
+      } else {
+        playerRef.current.setVolume(0); // Mute
+        setIsMuted(true);
+      }
+    }
+  };
 
   return (
     <>
@@ -27,65 +61,54 @@ export default function VideoComponent() {
           </h1>
 
           <div className="container d-flex justify-content-center">
-            {/* Responsive container for reel-style video */}
-            <div style={{ width: '250px', maxWidth: '90vw' }} className="mx-auto">
+            <div style={{ width: "250px", maxWidth: "90vw" }} className="mx-auto">
               <div className="position-relative overflow-hidden rounded-2 rounded-lg-3 border border-2 border-white">
-                {/* Video Thumbnail with 9:16 aspect ratio */}
-                <div className="position-relative" style={{ paddingBottom: '177.78%' }}>
-                  <img
-                    src="/assets/images/apps/rocket-launching.jpg"
-                    alt="Why We Exist Video Thumbnail"
+                <div className="position-relative" style={{ paddingBottom: "177.78%" }}>
+                  <iframe
+                    ref={iframeRef}
+                    src="https://player.vimeo.com/video/1095499997?autoplay=1&muted=1&loop=1&background=1"
                     className="position-absolute top-0 start-0 w-100 h-100"
-                    style={{ objectFit: 'cover' }}
-                  />
-                  
-                  {/* Overlay Play Button */}
-                  <div className="position-absolute w-100 h-100" style={{ backgroundColor: 'rgba(0,0,0,0.4)', top: '0', left: '0' }}>
-                    <a
-                      onClick={() => setOpen(true)}
-                      className="position-absolute top-50 start-50 translate-middle rounded-circle"
-                      style={{ 
-                        width: '64px', 
-                        height: '64px', 
-                        backgroundColor: 'white',
-                        color: 'var(--bs-primary)',
-                        cursor: 'pointer',
-                        transition: 'all 0.3s ease',
-                        display: 'flex',
-                        alignItems: 'center',
-                        justifyContent: 'center',
-                        lineHeight: '1'
-                      }}
-                      onMouseEnter={(e) => e.target.style.opacity = '0.8'}
-                      onMouseLeave={(e) => e.target.style.opacity = '1'}
-                    >
-                      <i className="icon-3 unicon-play fw-bold" style={{ fontSize: '24px', paddingLeft: '3px' }}></i>
-                    </a>
-                  </div>
+                    style={{ objectFit: "cover" }}
+                    frameBorder="0"
+                    allow="autoplay; fullscreen; picture-in-picture"
+                    allowFullScreen
+                  ></iframe>
+
+                  <button
+                    onClick={toggleMute}
+                    style={{
+                      position: "absolute",
+                      top: "10px",
+                      right: "10px",
+                      zIndex: 10,
+                      background: "rgba(0, 0, 0, 0.6)",
+                      color: "#fff",
+                      border: "none",
+                      padding: "6px 10px",
+                      borderRadius: "4px",
+                      cursor: "pointer",
+                      fontSize: "12px",
+                    }}
+                  >
+                    {isMuted ? "Unmute" : "Mute"}
+                  </button>
                 </div>
               </div>
             </div>
           </div>
-
-          <div className="panel d-flex flex-column align-items-center gap-2 mt-4 mt-lg-6 mt-xl-8">
-            <p className="fs-6 fs-xl-4 text-black fw-bold text-center mx-auto" style={{ opacity: '0.7', maxWidth: '800px' }}>
-              Spacenos was born not in a boardroom, but on the battlefield of ideas — where we lost deals, hacked systems, and outworked giants to help those without capital build billion-dollar dreams.
-            </p>
-            {/* <Link href={"/meet-the-ceo"}>
-              <button className="btn btn-primary px-3 mt-2">
-                See How He's Helped Founders Like You
-              </button>
-            </Link> */}
-          </div>
+        <div className="panel d-flex flex-column align-items-center gap-2 mt-4 mt-lg-6 mt-xl-8">
+          <p
+            className="fs-6 fs-xl-4 text-black fw-bold text-center mx-auto"
+            style={{ opacity: "0.7", maxWidth: "800px" }}
+          >
+            Spacenos was born not in a boardroom, but on the battlefield of ideas — where we lost
+            deals, hacked systems, and outworked giants to help those without capital build
+            billion-dollar dreams.
+          </p>
         </div>
-      </div>
+        </div>
 
-      {/* Modal Video */}
-      <ModalVideo
-        isOpen={isOpen}
-        src="https://player.vimeo.com/video/1095499997"
-        setIsOpen={() => setOpen(false)}
-      />
+      </div>
     </>
   );
 }

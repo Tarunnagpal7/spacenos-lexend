@@ -40,7 +40,7 @@ export default function Hero() {
                   <div
                     className="position-absolute z-2"
                     style={{ top: "40%", right: "2%" }}
-                    >
+                  >
                     <Image
                       className="w-48px lg:w-80px me-4"
                       alt="user-cursor"
@@ -65,17 +65,17 @@ export default function Hero() {
                   </div>
                   <h1 className="h1   m-0 text-white">
                     Spacenos Helps
-                    <br /> 
+                    <br />
                     <span className="h1  m-0 text-white">
-                      You Build 
+                      You Build
                     </span>
                     <br />
                     <span className="d-inline-flex px-1 bg-secondary text-primary -rotate-1 lg:-rotate-2 rounded-1 lg:rounded-1-5">
-                       an Empire.
+                      an Empire.
                     </span>
                   </h1>
                   <p className="fs-5 xl:fs-4 text-black dark:text-white d-none md:d-block">
-                The AI Silo of USA & India — Bridging Innovation with Purpose.
+                    The AI Silo of USA & India — Bridging Innovation with Purpose.
 
                   </p>
                   <Link
@@ -89,25 +89,25 @@ export default function Hero() {
               </div>
               <div>
                 <div className="panel">
-  <div
-    className="dashboard-image mx-auto relative flex justify-center items-center w-full"
-    style={{
-      maxWidth: "850px",
-      width: "90%",
-      aspectRatio: "16/9",
-    }}
-    data-anime="translateY: [48, 0]; opacity: [0, 1]; easing: easeOutCubic; duration: 500; delay: anime.stagger(100, {start: 200});"
-  >
-    <video
-      src="/assets/images/apps/1.home-hero-banner.mp4"
-      className="w-full h-full object-cover rounded-2"
-      muted
-      autoPlay
-      playsInline
-      loop
-    />
-  </div>
-</div>
+                  <div
+                    className="dashboard-image mx-auto relative flex justify-center items-center w-full"
+                    style={{
+                      maxWidth: "650px",
+                      width: "90%",
+                      aspectRatio: "16/9",
+                    }}
+                    data-anime="translateY: [48, 0]; opacity: [0, 1]; easing: easeOutCubic; duration: 500; delay: anime.stagger(100, {start: 200});"
+                  >
+                    <video
+                      src="/assets/images/apps/1.home-hero-banner.mp4"
+                      className="w-full h-full object-cover rounded-2"
+                      muted
+                      autoPlay
+                      playsInline
+                      loop
+                    />
+                  </div>
+                </div>
 
               </div>
             </div>
@@ -118,4 +118,4 @@ export default function Hero() {
   );
 }
 
-{/* <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1095811016?h=c9e05c0abf&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="1.home-hero-banner"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script> */}
+{/* <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1095811016?h=c9e05c0abf&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="1.home-hero-banner"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script> */ }

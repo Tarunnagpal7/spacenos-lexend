@@ -68,53 +68,48 @@ export default function NextFeatures() {
                                 role="presentation"
                                 style={{ touchAction: "pan-y pinch-zoom" }}
                             >
-                                {activeTab == 1 && (
-                                    <div className="uc-active">
-                                        <div className="feature-item panel">
-                                            <div className="row child-cols col-match justify-between g-4">
-                                                <div className="col-12 sm:col-6">
-                                                    <figure className="featured-image m-0 rounded ratio ratio-1x1 rounded-2 overflow-hidden">
-                                                        <Image
-                                                            className="media-cover image"
-                                                            alt="Share tools quickly and confidently in minutes"
-                                                            src="/assets/images/apps/health-next.png"
-                                                            width="1200"
-                                                            height="1200"
-                                                        />
-                                                    </figure>
-                                                </div>
-                                                <div className="col-12 sm:col-6">
-                                                    <div className="panel">
-                                                        <div className="panel vstack justify-center gap-4 h-100 sm:p-3 lg:p-4">
-                                                            <div>
-                                                                <div className="panel vstack gap-2">
-                                                                    <h3 className="h4 sm:h3 lg:h2 m-0">
-                                                                        Healthcare AI
-                                                                    </h3>
-                                                                    <p className="fs-6 lg:fs-5 opacity-70 dark:opacity-80">
-                                                                        We're redefining patient care through intelligent diagnostics, personalized treatment plans, and early disease detection. Our AI solutions aim to empower doctors and save lives through real-time, data-driven insights.
-                                                                    </p>
-                                                                    <div className="hstack gap-2 mt-2 sm:mt-1 lg:mt-2">
-                                                                        <Link href={"/investors"} >
-                                                                        <button className="btn btn-primary">
-                                                                            Invest
-                                                                        </button>
-                                                                        </Link>
-                                                                        <Link href={'/page-collaborate'}>
-                                                                        <button className="btn btn-outline-primary">
-                                                                            Partnership
-                                                                        </button>
-                                                                        </Link>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                )}
+                               {activeTab == 1 && (
+  <div className="uc-active">
+    <div className="feature-item panel">
+      <div className="row child-cols col-match justify-between g-4">
+
+        <div className="col-12 sm:col-6 d-flex justify-center items-center">
+          <div className="overflow-hidden rounded-2" style={{ width: '100%', maxWidth: '450px' }}>
+            <Image
+              src="/assets/images/apps/health-next.png"
+              width={1200}
+              height={1200}
+              alt="Share tools quickly and confidently in minutes"
+              className="w-100 h-auto rounded-2"
+              style={{ objectFit: "contain" }}
+            />
+          </div>
+        </div>
+
+        <div className="col-12 sm:col-6">
+          <div className="panel vstack justify-center gap-4 h-100 sm:p-3 lg:p-4">
+            <div className="panel vstack gap-2">
+              <h3 className="h4 sm:h3 lg:h2 m-0">Healthcare AI</h3>
+              <p className="fs-6 lg:fs-5 opacity-70 dark:opacity-80">
+                We're redefining patient care through intelligent diagnostics, personalized treatment plans, and early disease detection. Our AI solutions aim to empower doctors and save lives through real-time, data-driven insights.
+              </p>
+              <div className="hstack gap-2 mt-2 sm:mt-1 lg:mt-2">
+                <Link href={"/investors"}>
+                  <button className="btn btn-primary">Invest</button>
+                </Link>
+                <Link href={"/page-collaborate"}>
+                  <button className="btn btn-outline-primary">Partnership</button>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+)}
+
                                 {activeTab == 2 && (
                                     <div className="uc-active">
                                         <div className="feature-item panel">
@@ -122,7 +117,7 @@ export default function NextFeatures() {
                                                 <div className="col-12 sm:col-6">
                                                     <figure className="featured-image m-0 rounded ratio ratio-1x1 rounded-2 overflow-hidden">
                                                         <Image
-                                                            className="media-cover image"
+                                                            className="media-cover object-full image"
                                                             alt="Connect every part of your entire business"
                                                             src="/assets/images/apps/predictive.png"
                                                             width="1200"

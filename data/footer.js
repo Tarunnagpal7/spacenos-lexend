@@ -169,43 +169,43 @@ export const footerLinks3 = [
 
 export const footerLinks4 = [
   {
+    title: "Business",
+    links: [
+      { text: "Spacenos Developers", href: "/spacenos-developers", isLink: true },
+      { text: "Spacenos Labs", href: "/spacenos-Labs", isLink: true },
+      { text: "Spacenos Invest", href: "/spacenos-Invest", isLink: true },
+      { text: "Be Enterpreneur", href: "/entrepreneur", isLink: true },
+      { text: "Collaborate", href: "/collaborate", isLink: true },
+      { text: "Foreign Pod", href: "/foreign-pod" ,isLink: true},
+      
+    ],
+  },
+  {
     title: "Company",
     links: [
-      { text: "Careers", href: "/career" },
-      { text: "Ventures", href: "/features" },
-      { text: "Awards", href: "/achievements" },
-      { text: "Meet the Ceo", href: "/meet-the-ceo" },
       { text: "About Us", href: "/about" },
+      { text: "Awards", href: "/achievements" },
+      { text: "Careers", href: "/career" },
+      { text: "Case Studies", href: "/case-studies", isLink: true },
+      { text: "Meet The CEO", href: "/meet-the-ceo" },
+      { text: "Ventures", href: "/features" },
+      { text: "Investors", href: "/investors", isLink: true },
       { text: "Contact Us", href: "/contact" },
     ],
   },
   {
     title: "Resources",
     links: [
-      { text: "Case Studies", href: "/case-studies", isLink: true },
-      { text: "Newsletter", href: "/newsletter", isLink: true },
+      { text: "Company Resources", href: "/resources" ,isLink: true},
       { text: "Tools", href: "/tools" ,isLink: true},
       { text: "Read Blogs", href: "/blogs" ,isLink: true},
       { text: "Verify Documents", href: "/verify-doc", isLink: true },
     ],
   },
   {
-    title: "Business",
-    links: [
-      { text: "Spacenos Developers", href: "/spacenos-developers", isLink: true },
-      { text: "Spacenos Labs", href: "/spacenos-Labs", isLink: true },
-      { text: "Spacenos Invest", href: "/spacenos-Invest", isLink: true },
-      
-    ],
-  },
-  {
     title: "Other",
     links: [
-      { text: "Investors", href: "/investors", isLink: true },
-      { text: "Be Enterpreneur", href: "/entrepreneur", isLink: true },
-      { text: "Collaborate", href: "/collaborate", isLink: true },
       { text: "Press and Media", href: "/press-media" ,isLink: true},
-      { text: "Foreign Pod", href: "/foreign-pod" ,isLink: true},
       { text: "Legal", href: "/legal", isLink: true },
       { text: "Security ", href: "/security" ,isLink: true},
     ],
