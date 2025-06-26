@@ -7,11 +7,10 @@ import Player from "@vimeo/player";
 
 export default function MeetTheCeo() {
   const [isMuted, setIsMuted] = useState(true);
+  const [isFloating, setIsFloating] = useState(false);
   const iframeRef = useRef(null);
   const playerRef = useRef(null);
-  const parallax = useParallax({
-    scale: [0.8, 1],
-  });
+  const sectionRef = useRef(null);
 
   useEffect(() => {
     if (iframeRef.current) {
@@ -31,6 +30,44 @@ export default function MeetTheCeo() {
     };
   }, []);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if (!sectionRef.current) return;
+
+      const sectionRect = sectionRef.current.getBoundingClientRect();
+      
+      // Float when the entire section has scrolled past the top of the viewport
+      // Add some buffer to prevent glitching
+      const shouldFloat = sectionRect.bottom < -50;
+
+      if (shouldFloat !== isFloating) {
+        setIsFloating(shouldFloat);
+        
+        // Only auto-mute when stopping floating (not when starting to float)
+        if (!shouldFloat && !isMuted && playerRef.current) {
+          playerRef.current.setVolume(0);
+          setIsMuted(true);
+        }
+      }
+    };
+
+    // Throttle scroll events to prevent excessive calls
+    let ticking = false;
+    const throttledHandleScroll = () => {
+      if (!ticking) {
+        requestAnimationFrame(() => {
+          handleScroll();
+          ticking = false;
+        });
+        ticking = true;
+      }
+    };
+
+    window.addEventListener("scroll", throttledHandleScroll, { passive: true });
+    handleScroll(); // Initial call
+    return () => window.removeEventListener("scroll", throttledHandleScroll);
+  }, [isFloating, isMuted]);
+
   const toggleMute = () => {
     if (playerRef.current) {
       if (isMuted) {
@@ -47,7 +84,7 @@ export default function MeetTheCeo() {
     <>
       <div
         id="how_it_works"
-        ref={parallax.ref}
+        ref={sectionRef}
         className="how-it-works section panel scrollSpysection"
       >
         <div
@@ -67,13 +104,12 @@ export default function MeetTheCeo() {
           <div className="container d-flex justify-content-center">
             <div
               style={{ width: "250px", maxWidth: "90vw" }}
-              className="mx-auto rounded lg:rounded-1-5 xl:rounded-2 border border-dark contrast-shadow-lg"
+              className={`mx-auto rounded lg:rounded-1-5 xl:rounded-2 border border-dark contrast-shadow-lg video-wrapper ${isFloating ? "floating-video" : ""}`}
             >
               <div className="position-relative overflow-hidden rounded-2 rounded-lg-3 border border-2 border-white dark:border-gray-700">
                 <div className="position-relative" style={{ paddingBottom: "177.78%" }}>
 
                   <iframe
-
                     ref={iframeRef}
                     src="https://player.vimeo.com/video/1095508409?autoplay=1&muted=1&loop=1&background=1"
                     className="position-absolute top-0 start-0 w-100 h-100"
@@ -117,6 +153,24 @@ export default function MeetTheCeo() {
           </div>
         </div>
       </div>
+
+      <style jsx>{`
+        .floating-video {
+          position: fixed !important;
+          top: 70px;
+          right: 20px;
+          z-index: 9999;
+          width: 180px !important;
+          max-width: 90vw;
+          box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+          transform: translateY(0);
+          transition: transform 0.4s ease, opacity 0.4s ease;
+        }
+
+        .video-wrapper {
+          transition: all 0.4s ease;
+        }
+      `}</style>
     </>
   );
 }
