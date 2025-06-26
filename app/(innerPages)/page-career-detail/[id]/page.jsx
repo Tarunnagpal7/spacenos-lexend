@@ -4,7 +4,7 @@ import Footer5 from "@/components/footers/Footer5";
 import JobDetails from "@/components/innerpages/JobDetails";
 import CareerOpenings from "@/components/innerpages/CareerOpenings";
 import Feedback from "@/components/homes/home-2/Feedback";
-import Brands from "@/components/homes/home-3/Brands";
+import Brands from "@/components/innerpages/Brands";
 import { jobListings } from "@/data/career";
 
 export const metadata = {
