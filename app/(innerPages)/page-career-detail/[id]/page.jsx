@@ -3,7 +3,7 @@ import Header5 from "@/components/headers/Header5";
 import Footer5 from "@/components/footers/Footer5";
 import JobDetails from "@/components/innerpages/JobDetails";
 import CareerOpenings from "@/components/innerpages/CareerOpenings";
-import Feedback from "@/components/homes/home-2/Feedback";
+import CareerFeedback from "@/components/innerpages/CareerFeedback";
 import Brands from "@/components/innerpages/Brands";
 import { jobListings } from "@/data/career";
 
@@ -59,7 +59,7 @@ export default async function CareerDetailsPage(props) {
 
           <JobDetails job={jobItem} />
           <CareerOpenings />
-          <Feedback />
+          <CareerFeedback />
           <Brands />
         </div>
         <Footer5 />
