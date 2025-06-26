@@ -90,7 +90,7 @@ export default function Contact1() {
             <div className="panel rounded-3 overflow-hidden bg-secondary dark:bg-gray-800">
               <div className="panel row child-cols-12 lg:child-cols-6 g-0">
                 
-                <div className="order-1 lg:order-0">
+                <div className="order-0 lg:order-0">
                   <div className="panel overflow-hidden rounded-3 h-100 min-h-350px">
                     <figure className="panel h-100 m-0 rounded">
                       <canvas className="h-100 w-100" />
@@ -114,7 +114,7 @@ export default function Contact1() {
                 </div>
 
                 {/* Form */}
-                <div className="order-0 lg:order-1">
+                <div className="order-1 lg:order-1">
                   <form onSubmit={handleSubmit(onSubmit)} className="vstack gap-2 p-3 sm:p-6 xl:p-8">
                     
                     <p className="fs-6 text-dark dark:text-white text-opacity-70 mb-2">

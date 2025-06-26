@@ -79,7 +79,7 @@ export default function Hero() {
 
                   </p>
                   <Link
-                    href={`/page-pricing`}
+                    href={`/sign-in`}
                     className="btn btn-md lg:btn-lg btn-primary min-w-150px mt-2"
                   >
                     <span>Build Your Empire</span>
