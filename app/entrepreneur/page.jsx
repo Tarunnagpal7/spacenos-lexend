@@ -11,9 +11,25 @@ import { EntreFaq as Faq } from "@/data/faq";
 import AwardsTestimonials from "@/components/homes/home-6/AwardsTestimonials";
 
 export const metadata = {
-  title:
-    "Investors || Spacenos"
+  title: "Be Entrepreneurs || Spacenos",
+  description:
+    "Spacenos empowers entrepreneurs to turn ideas into reality with AI-driven innovation, expert development teams, and scalable digital products.",
+  keywords:
+    "entrepreneurs, startup support, Spacenos for founders, AI for startups, product development, business scaling, tech for entrepreneurs",
+  alternates: {
+    canonical: "https://spacenos.com/entrepreneur",
+  },
+  openGraph: {
+    title: "Entrepreneurs We Help You || Spacenos",
+    description:
+      "Spacenos helps entrepreneurs bring bold ideas to life with AI-powered solutions, product development, and global growth support.",
+    url: "https://spacenos.com/entrepreneur",
+    siteName: "Spacenos",
+    locale: "en_US",
+    type: "website",
+  },
 };
+
 export default function CollaboratePage() {
   return (
     <>

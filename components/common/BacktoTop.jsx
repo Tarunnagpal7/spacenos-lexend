@@ -34,12 +34,26 @@ export default function BacktoTop() {
     });
   };
 
+   const openResourceForm = () => {
+       window.open("https://docs.google.com/forms/d/e/1FAIpQLSe_tki-JoZdZAv6FRHZ5YREJMqt9dVZ4Pha2hYeNInVAnHOwA/viewform?usp=header", "_blank");
+
+  };
+
   return (
     <div
       className={`backtotop-wrap position-fixed bottom-0 end-0 z-99 m-2 vstack  ${
         isVisible ? "uc-active" : ""
       }`}
     >
+
+      <button
+        onClick={openResourceForm}
+        className="btn btn-sm bg-primary text-white w-40px h-40px rounded-circle animate-bounce"
+        style={{ animationDuration: "2s", animationIterationCount: "infinite" }}
+      >
+        <i className="icon-2 unicon-download"></i>
+      </button>
+
       <div
         className="darkmode-trigger cstack w-40px h-40px rounded-circle text-none bg-gray-100 dark:bg-gray-700 dark:text-white"
         data-darkmode-toggle=""

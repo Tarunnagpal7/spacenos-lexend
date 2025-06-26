@@ -1,17 +1,29 @@
 import Header5 from "@/components/headers/Header5";
-
 import Footer5 from "@/components/footers/Footer5";
 import Hero from "@/components/innerpages/features/Hero";
-import KeyFeatures from "@/components/innerpages/features/KeyFeatures";
-import Faq from "@/components/homes/home-2/Faq";
-import Testimonials from "@/components/homes/home-3/Testimonials";
 import Cta from "@/components/innerpages/features/Cta";
-import Brands2 from "@/components/common/Brands2";
 import VentureOverview from "@/components/innerpages/features/VenturesOverview";
+
 export const metadata = {
-  title:
-    "Features || Spacenos"
+  title: "Features || Spacenos",
+  description:
+    "Discover the powerful features of Spacenos designed to accelerate your startup growth, automate business processes, and harness AI innovation.",
+  keywords:
+    "Spacenos features, AI tools, business automation, startup growth, AI solutions, remote development, digital products",
+  alternates: {
+    canonical: "https://spacenos.com/features",
+  },
+  openGraph: {
+    title: "Features || Spacenos",
+    description:
+      "Explore Spacenos' AI-driven features built to automate, scale, and future-proof businesses globally.",
+    url: "https://spacenos.com/features",
+    siteName: "Spacenos",
+    locale: "en_US",
+    type: "website",
+  },
 };
+
 export default function FeaturesPage() {
   return (
     <>

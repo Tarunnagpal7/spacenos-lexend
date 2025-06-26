@@ -16,9 +16,6 @@ import { usePathname } from "next/navigation";
 import MobileMenu from "@/components/headers/component/MobileMenu";
 import BacktoTop from "@/components/common/BacktoTop";
 import { ParallaxProvider } from "react-scroll-parallax";
-import ContactModal from "@/components/modals/ContactModal";
-import NewsletterModal from "@/components/modals/NewsletterModal";
-import SearchModal from "@/components/modals/SearchModal";
 
 export default function RootLayout({ children }) {
   const pathname = usePathname();
@@ -110,10 +107,6 @@ export default function RootLayout({ children }) {
         <Context>
           <ParallaxProvider>{children}</ParallaxProvider>
           <MobileMenu />
-          <ContactModal />
-          <NewsletterModal />
-          <SearchModal />
-          <Cart />
           <BacktoTop />
         </Context>
       </body>

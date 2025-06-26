@@ -6,10 +6,28 @@ import CareerOpenings from "@/components/innerpages/CareerOpenings";
 import Feedback from "@/components/homes/home-2/Feedback";
 import Brands from "@/components/homes/home-3/Brands";
 import { jobListings } from "@/data/career";
+
 export const metadata = {
-  title:
-    "Career Details || Spacenos"
+  title: "Career Details || Spacenos",
+  description:
+    "Explore detailed job openings at Spacenos. Find the right role, learn about responsibilities, requirements, and how you can build your future with AI-driven innovation.",
+  keywords:
+    "Spacenos jobs, career details, job descriptions, AI career, startup roles, tech jobs, work at Spacenos, job requirements",
+  alternates: {
+    canonical: "https://spacenos.com/page-career-detail",
+  },
+  openGraph: {
+    title: "Career Details || Spacenos",
+    description:
+      "Discover detailed information about open positions at Spacenos. Learn how you can grow your career with our AI-powered mission.",
+    url: "https://spacenos.com/page-career-detail",
+    siteName: "Spacenos",
+    locale: "en_US",
+    type: "website",
+  },
+
 };
+
 export default async function CareerDetailsPage(props) {
   const params = await props.params;
   const id = params.id;

@@ -1,8 +1,25 @@
 import Signup from "@/components/otherPages/Signup";
 export const metadata = {
-  title:
-    "Signup || Spacenos"
+  title: "Signup || Spacenos",
+  description:
+    "Create your Spacenos account and unlock access to cutting-edge AI solutions, expert development teams, and business growth tools.",
+  keywords:
+    "Spacenos signup, create account, AI platform access, join Spacenos, startup solutions, tech signup, AI products",
+  alternates: {
+    canonical: "https://spacenos.com/sign-up",
+  },
+  openGraph: {
+    title: "Signup || Spacenos",
+    description:
+      "Sign up to access Spacenos' AI-powered solutions and start your journey towards innovation and business growth.",
+    url: "https://spacenos.com/sign-up",
+    siteName: "Spacenos",
+    
+    locale: "en_US",
+    type: "website",
+  },
 };
+
 export default function SignupPage1() {
   return (
     <>

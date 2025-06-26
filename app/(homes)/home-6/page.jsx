@@ -1,37 +1,51 @@
-import Newsletter from "@/components/blog/Newsletter";
+
 import Footer5 from "@/components/footers/Footer5";
 import Header5 from "@/components/headers/Header5";
 import Awards from "@/components/homes/home-6/Awards";
 import Blogs from "@/components/homes/home-6/Blogs";
-import Brands from "@/components/homes/home-6/Brands";
 import CareerCta from "@/components/homes/home-6/CareerCta";
 import Cta from "@/components/homes/home-6/Cta";
-import Elements from "@/components/homes/home-6/Elements";
-import Faq from "@/components/homes/home-6/Faq";
-import Features from "@/components/homes/home-6/Features";
 import Features2 from "@/components/homes/home-6/Features2";
 import GlobalFootprint from "@/components/homes/home-6/GlobalFootprint";
 import Hero from "@/components/homes/home-6/Hero";
-import JoinCirle from "@/components/homes/home-6/JoinCirlce";
 import KeyFeatures from "@/components/homes/home-6/KeyFeatures";
-import MediaMentions from "@/components/homes/home-6/MediaMention";
 import MeetTheCeo from "@/components/homes/home-6/MeetTheCeo";
 import NextFeatures from "@/components/homes/home-6/NextFeatures";
-import Pricing from "@/components/homes/home-6/Pricing";
 import Stats from "@/components/homes/home-6/Stats";
-import Team from "@/components/homes/home-6/Team";
-import Testimonials from "@/components/homes/home-6/Testimonials";
 import VideoComponent from "@/components/homes/home-6/VideoComponent";
-import ResourcesAccess from "@/components/homes/home-6/ResourcesAccess";
-import AchievementsTestimonials from "@/components/innerpages/AchievementsTestinomials";
 import LeadMagnets from "@/components/innerpages/LeadMagnets";
-import { accordionItems } from "@/data/faq";
 import React from "react";
 import AwardsTestimonials from "@/components/homes/home-6/AwardsTestimonials";
+
 export const metadata = {
-  title:
-    "Spacenos "
+  title: "Spacenos – Build Your Empire with AI-Powered Innovation",
+  description:
+    "Spacenos empowers startups, businesses, and visionaries with world-class AI solutions, remote development teams, and future-proof digital products. Join the AI powerhouse of USA and India.",
+  keywords:
+    "AI for startups, remote dev teams, Spacenos, build MVP, business automation, tech startup India, AI products, empire building",
+  alternates: {
+    canonical: "https://spacenos.com/",
+  },
+  openGraph: {
+    title: "Spacenos – Build Your Empire with AI",
+    description:
+      "Empowering startups & businesses with AI development, automation, and global growth tools.",
+    url: "https://spacenos.com/",
+    siteName: "Spacenos",
+    images: [
+      {
+        url: "https://spacenos.com/assets/images/apps/hero.jpeg", // Ensure this image is publicly accessible
+        width: 1200,
+        height: 630,
+        alt: "Spacenos AI-Powered Innovation",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
 };
+
+
 export default function HomePage6() {
   return (
     <>
@@ -50,15 +64,11 @@ export default function HomePage6() {
           <KeyFeatures />
           <NextFeatures />
           <GlobalFootprint />
-          {/* <AchievementsTestimonials/>  */}
           <AwardsTestimonials />
-          {/* <ResourcesAccess /> */}
           <LeadMagnets />
           <CareerCta />
-          {/* <MediaMentions /> */}
           <Blogs />
           <Cta />
-          {/* <JoinCirle /> */}
         </div>
         <Footer5 />
       </div>

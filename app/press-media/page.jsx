@@ -9,9 +9,26 @@ import ContactPRTeam from "@/components/innerpages/ContactPRTeam";
 
 
 export const metadata = {
-  title:
-    "Press and Media || Spacenos"
+  title: "Press and Media || Spacenos",
+  description:
+    "Explore Spacenos' latest news, press releases, and media coverage. Stay informed about how we are driving global AI innovation and technology leadership.",
+  keywords:
+    "Spacenos press, media coverage, news, AI innovation news, startup press, Spacenos announcements, media resources",
+  alternates: {
+    canonical: "https://spacenos.com/press-media",
+  },
+  openGraph: {
+    title: "Press and Media || Spacenos",
+    description:
+      "Stay updated with Spacenos' latest press releases, media features, and announcements showcasing our global AI-driven impact.",
+    url: "https://spacenos.com/press-media",
+    siteName: "Spacenos",
+    locale: "en_US",
+    type: "website",
+  },
 };
+
+
 export default function CollaboratePage() {
   return (
     <>

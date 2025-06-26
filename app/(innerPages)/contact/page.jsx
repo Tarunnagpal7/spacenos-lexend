@@ -1,17 +1,34 @@
 import Header5 from "@/components/headers/Header5";
-
 import Footer5 from "@/components/footers/Footer5";
 import Contact1 from "@/components/innerpages/Contact1";
 import ContactLinks2 from "@/components/innerpages/ContactLinks2";
 import SupportCenter from "@/components/innerpages/SupportCenter";
 import ChooseYourIntent from "@/components/innerpages/ChooseYourIntent";
-import ContactResource from "@/components/innerpages/ContactResource";
 import GlobalFootprint from "@/components/homes/home-6/GlobalFootprint";
 import LeadMagnets from "@/components/innerpages/LeadMagnets";
+
 export const metadata = {
-  title:
-    "Contact  || Spacenos"
+  title: "Contact Spacenos – Support for Clients, Investors & Applicants",
+  description:
+    "Reach out to Spacenos for business inquiries, partnerships, support, or to pitch your idea. We’re here to support your journey.",
+  keywords:
+    "Contact Spacenos, tech support, investor relations, startup inquiry, partnership",
+  alternates: {
+    canonical: "https://spacenos.com/contact",
+  },
+  openGraph: {
+    title: "Contact Spacenos – Support for Clients, Investors & Applicants",
+    description:
+      "Reach out to Spacenos for business inquiries, partnerships, support, or to pitch your idea. We’re here to support your journey.",
+    url: "https://spacenos.com/contact",
+    siteName: "Spacenos",
+    locale: "en_US",
+    type: "website",
+  },
+
 };
+
+
 export default function ContactPage() {
   return (
     <>

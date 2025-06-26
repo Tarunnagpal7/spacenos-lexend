@@ -1,23 +1,34 @@
 import Header5 from "@/components/headers/Header5";
-
 import Footer5 from "@/components/footers/Footer5";
 import About from "@/components/innerpages/About";
-import Brands from "@/components/common/Brands2";
-import About2 from "@/components/innerpages/About2";
-import AboutValues from "@/components/innerpages/AboutValues";
-import Feedback from "@/components/homes/home-2/Feedback";
-// import Timeline from "@/components/homes/home-1/Timeline";
 import Timeline from "@/components/innerpages/Timeline";
 import Team from "@/components/innerpages/Team";
 import Cta from "@/components/innerpages/Cta";
-import { panelsData } from "@/data/plans";
 import { WhatNext } from "@/components/innerpages/WhatNext";
 import ArchitectureTeam from "@/components/innerpages/ArchitectureTeam";
 import Mission from "@/components/innerpages/Mission";
+
 export const metadata = {
-  title:
-    "About || Spacenos"
+  title: "About || Spacenos",
+  description:
+    "Learn about Spacenos' mission, global presence, and how we empower startups and businesses through AI innovation, remote teams, and cutting-edge technology.",
+  keywords:
+    "About Spacenos, AI company, startup support, global presence, AI innovation, tech leadership, remote development teams, Spacenos mission",
+  alternates: {
+    canonical: "https://spacenos.com/about",
+  },
+  openGraph: {
+    title: "About || Spacenos",
+    description:
+      "Discover Spacenos' vision, values, and how we help businesses leverage AI-driven solutions and global tech expertise.",
+    url: "https://spacenos.com/about",
+    siteName: "Spacenos",
+    locale: "en_US",
+    type: "website",
+  },
 };
+
+
 export default function AboutPage() {
   return (
     <>

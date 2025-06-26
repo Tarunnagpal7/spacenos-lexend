@@ -20,10 +20,27 @@ import GetInTouch from "@/components/innerpages/GetInTouch";
 import CareerFaqs from "@/components/innerpages/CareerFaqs";
 import { accordionItems3 } from "@/data/faq";
 import EcosystemSection from "@/components/innerpages/Ecosystem";
+import CareerMessage from "@/components/innerpages/CareerMessage";
+
 export const metadata = {
-  title:
-    "Career || Spacenos"
+  title: "Careers at Spacenos – Build an AI-Proof Future",
+  description:
+    "Join Spacenos and future-proof your career. Work on cutting-edge AI projects, grow fast, and become part of a mission to change the world.",
+  keywords:
+    "Spacenos jobs, AI career, tech jobs India, future of work, startup hiring, AI-proof career",
+  alternates: {
+    canonical: "https://spacenos.com/career",
+  },
+  openGraph: {
+    title: "Careers at Spacenos – Build an AI-Proof Future",
+    description:
+      "Join Spacenos and future-proof your career. Work on cutting-edge AI projects, grow fast, and become part of a mission to change the world.",
+    url: "https://spacenos.com/career",
+    siteName: "Spacenos",
+  },
+ 
 };
+
 export default function CareerPage() {
   return (
     <>
@@ -31,20 +48,15 @@ export default function CareerPage() {
         <Header5 />
         <div id="wrapper" className="wrap">
           <CareerHero />
+          <CareerMessage />
           <CareerFaqs faqData={accordionItems3}/>
           <CareerOpenings />
           <EmployeeCenter />
           <CareerFeedback />
           <AboutValues data={panelsDataCareers}/>
-          {/* <CareerButton /> */}
-          {/* <Testimonials /> */}
-          {/* <Blogs /> */}
-          {/* <Timeline /> */}
           <Brands />
-          {/* <Faq faqData={accordionItemsCareer} />  */}
           <EcosystemSection />
           <GetInTouch />
-          {/* <CareerNewsletter /> */}
           
         </div>
         <Footer5 />

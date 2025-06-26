@@ -1,16 +1,30 @@
 import Header5 from "@/components/headers/Header5";
 
 import Footer5 from "@/components/footers/Footer5";
-
-import Faq from "@/components/homes/home-2/Faq";
-import Testimonials from "@/components/homes/home-3/Testimonials";
-import Brands from "@/components/common/Brands2";
 import Cta from "@/components/innerpages/features/Cta";
 import Integrations from "@/components/innerpages/Collaborate";
+
 export const metadata = {
   title:
-    "Collaborate || Spacenos"
+    "Collaborate || Spacenos",
+  description:
+    "Discover how Spacenos fosters collaboration between startups and enterprises through AI-driven solutions and expert support.",
+  keywords:
+    "Spacenos collaboration, AI partnerships, startup support, enterprise solutions, tech collaboration, business growth",
+  alternates: {
+    canonical: "https://spacenos.com/collaborate",
+  },
+  openGraph: {
+    title: "Collaborate || Spacenos",
+    description:
+      "Explore how Spacenos enables seamless collaboration between startups and enterprises with AI-powered tools and resources.",
+    url: "https://spacenos.com/collaborate",
+    siteName: "Spacenos",
+    locale: "en_US",
+    type: "website",
+  },
 };
+
 export default function CollaboratePage() {
   return (
     <>

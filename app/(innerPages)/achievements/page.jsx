@@ -2,15 +2,28 @@
 
 import Footer5 from "@/components/footers/Footer5";
 import Header5 from "@/components/headers/Header5";
-import Testimonials from "@/components/homes/home-3/Testimonials";
 import AwardsTestimonials from "@/components/homes/home-6/AwardsTestimonials";
-import AchievementsCards from "@/components/innerpages/AchievementsCards";
 import AchievementsHero from "@/components/innerpages/AchievementsHero";
-import AchievementsTestimonials from "@/components/innerpages/AchievementsTestinomials";
 import CareerFeedback from "@/components/innerpages/CareerFeedback";
+
 export const metadata = {
-  title:
-    "Achievements || Spacenos"
+  title: "Achievements || Spacenos",
+  description:
+    "Explore Spacenos' achievements, global impact, and milestones in AI innovation, startup growth, and technology leadership.",
+  keywords:
+    "Spacenos achievements, milestones, awards, AI success, startup accomplishments, technology innovation, global recognition",
+  alternates: {
+    canonical: "https://spacenos.com/achievements",
+  },
+  openGraph: {
+    title: "Achievements || Spacenos",
+    description:
+      "Discover Spacenos' journey of achievements, global milestones, and contributions to AI innovation and business success.",
+    url: "https://spacenos.com/achievements",
+    siteName: "Spacenos",
+    locale: "en_US",
+    type: "website",
+  },
 };
 export default function CareerPage() {
   return (
@@ -21,8 +34,6 @@ export default function CareerPage() {
          <AchievementsHero />
          <AwardsTestimonials />
          <CareerFeedback />
-          {/* <AchievementsTestimonials /> */}
-          {/* <AchievementsCards /> */}
         </div>
         <Footer5 />
       </div>

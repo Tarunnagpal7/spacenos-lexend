@@ -6,9 +6,26 @@ import InvestorPdf from "@/components/innerpages/InvestorPdf";
 import RequestingCV from "@/components/innerpages/RequestingCV";
 
 export const metadata = {
-  title:
-    "Investors || Spacenos"
+  title: "Investors || Spacenos",
+  description:
+    "Discover how Spacenos is creating value for investors by building scalable AI solutions, empowering global businesses, and driving digital transformation.",
+  keywords:
+    "Spacenos investors, investment opportunities, AI startup, tech investments, AI innovation, scalable business, investor relations",
+  alternates: {
+    canonical: "https://spacenos.com/investors",
+  },
+  openGraph: {
+    title: "Investors || Spacenos",
+    description:
+      "Explore how Spacenos delivers scalable AI innovation and creates long-term value for investors and global partners.",
+    url: "https://spacenos.com/investors",
+    siteName: "Spacenos",
+    locale: "en_US",
+    type: "website",
+  },
+
 };
+
 export default function CollaboratePage() {
   return (
     <>

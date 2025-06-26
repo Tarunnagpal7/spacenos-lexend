@@ -1,14 +1,27 @@
 import Header5 from "@/components/headers/Header5";
-
 import Footer5 from "@/components/footers/Footer5";
-import ToolHero from "@/components/innerpages/ToolHero";
-import ToolsGrid from "@/components/innerpages/ToolsGrid";
 import ResourceHero from "@/components/innerpages/ResourceHero";
 import LeadMagnets from "@/components/innerpages/LeadMagnets";
 export const metadata = {
-  title:
-    " Resources || Spacenos"
+  title: "Resources || Spacenos",
+  description:
+    "Access expert resources from Spacenos, including guides, whitepapers, and insights to help startups and businesses harness AI innovation effectively.",
+  keywords:
+    "Spacenos resources, AI guides, business insights, whitepapers, startup resources, tech knowledge base, AI tools",
+  alternates: {
+    canonical: "https://spacenos.com/resources",
+  },
+  openGraph: {
+    title: "Resources || Spacenos",
+    description:
+      "Explore Spacenos' library of resources designed to empower businesses and entrepreneurs with AI knowledge, tools, and insights.",
+    url: "https://spacenos.com/resources",
+    siteName: "Spacenos",
+    locale: "en_US",
+    type: "website",
+  },
 };
+
 export default function BlogPage1() {
   return (
     <>
