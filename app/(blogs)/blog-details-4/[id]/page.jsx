@@ -3,10 +3,17 @@ import Newsletter from "@/components/blog/Newsletter";
 import Footer5 from "@/components/footers/Footer5";
 import BlogDetails from "@/components/blog/BlogDetails";
 import { blogsPosts8 } from "@/data/blogs";
+
 export const metadata = {
-  title:
-    "Blog Details || Spacenos"
+  title: " Read Blogs || Spacenos",
+  description:
+    "Explore blogs and insights from Spacenos' expert authors on AI, startup growth, business automation, and global technology trends.",
+  keywords:
+    "Spacenos blogs, blog author, AI articles, startup insights, technology blogs, business growth, expert opinions",
 };
+
+
+
 export default async function BlogDetailsPage1(props) {
   const params = await props.params;
   const id = params.id;

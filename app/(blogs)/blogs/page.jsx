@@ -2,15 +2,30 @@ import BlogSidebarRight from "@/components/blog/BlogSidebarRight";
 import Breadcumb3 from "@/components/blog/Breadcumb3";
 import Footer5 from "@/components/footers/Footer5";
 import Header5 from "@/components/headers/Header5";
-import Topbar from "@/components/headers/Topbar";
 
 import React from "react";
+
 export const metadata = {
-  title:
-    "Blog || Lexend - Full-featured, professional-looking software, saas and startup nextjs template.",
+  title: "Blog || Spacenos – AI, Startups, Innovation Insights",
   description:
-    "Lexend - Full-featured, professional-looking software, saas and startup nextjs template.",
+    "Stay updated with Spacenos blogs covering AI, startup growth, business automation, and global tech innovations. Learn from experts and industry leaders.",
+  keywords:
+    "Spacenos blogs, AI articles, startup growth, business automation, technology insights, innovation blogs, Spacenos news",
+  alternates: {
+    canonical: "https://spacenos.com/blogs",
+  },
+  openGraph: {
+    title: "Blog || Spacenos – AI, Startups, Innovation Insights",
+    description:
+      "Explore Spacenos blogs with expert insights on AI, business growth, technology trends, and innovation for startups and enterprises.",
+    url: "https://spacenos.com/blogs",
+    siteName: "Spacenos",
+    locale: "en_US",
+    type: "website",
+  },
 };
+
+
 export default function page() {
   return (
     <>

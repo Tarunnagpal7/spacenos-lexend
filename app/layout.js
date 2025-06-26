@@ -16,19 +16,19 @@ import { usePathname } from "next/navigation";
 import MobileMenu from "@/components/headers/component/MobileMenu";
 import BacktoTop from "@/components/common/BacktoTop";
 import { ParallaxProvider } from "react-scroll-parallax";
+import Head from "next/head";
 
 export default function RootLayout({ children }) {
   const pathname = usePathname();
+
   useEffect(() => {
     const elements = document.querySelectorAll("[data-anime]");
 
-    // Intersection Observer callback function
     const handleIntersection = (entries, observer) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           const element = entry.target;
           const dataAnime = element.getAttribute("data-anime");
-
           const modifieddataAnime = dataAnime.replace(
             /anime\.stagger\((\d+),\s*\{start:\s*(\d+)\}\)/,
             "$1,$2"
@@ -56,16 +56,13 @@ export default function RootLayout({ children }) {
             } else {
               targets = element?.querySelectorAll(animeSettings.targets);
             }
-            // console.log(animeSettings);
 
-            // Apply Anime.js animation
             anime({
               loop: animeSettings.loop ? true : false,
               targets: targets,
               translateX: JSON.parse(animeSettings.translateX || "[0, 0]"),
               translateY: JSON.parse(animeSettings.translateY || "[48, 0]"),
               opacity: [0, 1],
-              // direction: "alternate",
               easing: animeSettings.easing || "spring(1, 80, 10, 0)",
               duration: Number(animeSettings.duration) || 450,
               delay: animeSettings.delay
@@ -77,7 +74,6 @@ export default function RootLayout({ children }) {
                 : 0,
             });
 
-            // Unobserve the element after animation triggers
             observer.unobserve(element);
           }
         }
@@ -85,7 +81,7 @@ export default function RootLayout({ children }) {
     };
 
     const observer = new IntersectionObserver(handleIntersection, {
-      threshold: 0, // Trigger when 10% of the element is in view
+      threshold: 0,
     });
 
     elements.forEach((element) => {
@@ -93,7 +89,6 @@ export default function RootLayout({ children }) {
     });
 
     return () => {
-      // Clean up the observer on component unmount
       elements.forEach((element) => {
         observer.unobserve(element);
       });
@@ -102,8 +97,49 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="en" dir="ltr">
+      <Head>
+        <meta charSet="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+          name="description"
+          content="Spacenos empowers startups and businesses with AI-driven innovation, remote teams, and scalable digital products."
+        />
+        <meta
+          name="keywords"
+          content="Spacenos, AI solutions, business automation, startup growth, tech teams, AI development, remote teams"
+        />
+        <link rel="icon" href="/favicon.ico" />
+        <meta property="og:title" content="Spacenos – AI-Powered Innovation" />
+        <meta
+          property="og:description"
+          content="Join Spacenos to unlock AI innovation, build scalable products, and drive global growth."
+        />
+        <meta property="og:url" content="https://spacenos.com" />
+        <meta
+          property="og:image"
+          content="https://spacenos.com/assets/images/apps/1.home-hero-banner.mp4"
+        />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Spacenos",
+            "url": "https://spacenos.com",
+            "logo": "https://spacenos.com/logo.png",
+            "sameAs": [
+              "https://www.linkedin.com/company/spacenos",
+              "https://twitter.com/spacenos",
+              "https://github.com/spacenos"
+            ],
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "telephone": "+91-XXXXXXXXXX",
+              "contactType": "Customer Support"
+            }
+          })}
+        </script>
+      </Head>
       <body>
-        {" "}
         <Context>
           <ParallaxProvider>{children}</ParallaxProvider>
           <MobileMenu />

@@ -5,9 +5,14 @@ import Newsletter from "@/components/blog/Newsletter";
 import BreadCumb from "@/components/blog/BreadCumb";
 import Blogs3 from "@/components/blog/Blogs3";
 export const metadata = {
-  title:
-    "Blog Category || Spacenos "
+  title: "Blog Category || Spacenos",
+  description:
+    "Explore blogs and insights from Spacenos' expert authors on AI, startup growth, business automation, and global technology trends.",
+  keywords:
+    "Spacenos blogs, blog author, AI articles, startup insights, technology blogs, business growth, expert opinions",
 };
+
+
 export default async function BlogCategoryPage(props) {
   const params = await props.params;
   const category = params.category.split("%20").join(" ");
