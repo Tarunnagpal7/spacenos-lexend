@@ -102,7 +102,7 @@ export default function RootLayout({ children }) {
     <html lang="en" dir="ltr">
       <Head>
         <meta charSet="UTF-8" />
-        <meta name="google-site-verification" content="e1ULjGIFFtgpFAJ4l2N9yIF1Pb5VAfNBdmU_6SXZUGg" />
+      {/* <meta name="google-site-verification" content="e1ULjGIFFtgpFAJ4l2N9yIF1Pb5VAfNBdmU_6SXZUGg" /> for DNS VERIFICATION */}
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta
           name="description"
