@@ -1,11 +1,11 @@
-// components/MapComponent.jsx
 "use client";
 
 import React, { useState } from "react";
-import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
+import { MapContainer, TileLayer, Marker, Popup, useMap } from "react-leaflet";
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
 
+// Setup default marker icons
 delete L.Icon.Default.prototype._getIconUrl;
 L.Icon.Default.mergeOptions({
   iconRetinaUrl: "/leaflet/marker-icon-2x.png",
@@ -22,25 +22,54 @@ const locations = [
   { id: 6, name: "Sweden (Stockholm)", type: "future", position: [59.3293, 18.0686] }
 ];
 
+function ResetMapView() {
+  const map = useMap();
+  useState(() => {
+    map.setView([20, 0], 2);
+  }, [map]);
+  return null;
+}
+
 export default function MapComponent() {
   const [activeLocation, setActiveLocation] = useState(null);
 
+  const tileUrl = "https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png";
+  const tileAttribution = '&copy; <a href="https://carto.com/">CARTO</a> & OpenStreetMap contributors';
+
   return (
-    <MapContainer center={[20, 0]} zoom={2} scrollWheelZoom={false} style={{ height: "600px", width: "100%" }}>
-      <TileLayer
-        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-        attribution='&copy; OpenStreetMap contributors'
-      />
+    <MapContainer
+      center={[20, 0]}
+      zoom={2}
+      scrollWheelZoom={false}
+      style={{
+        height: "600px",
+        width: "100%",
+        borderRadius: "12px",
+        overflow: "hidden",
+        boxShadow: "0 0 20px rgba(0,0,0,0.15)"
+      }}
+    >
+      <TileLayer url={tileUrl} attribution={tileAttribution} />
+
       {locations.map((loc) => (
-        <Marker key={loc.id} position={loc.position} eventHandlers={{ click: () => setActiveLocation(loc) }}>
+        <Marker
+          key={loc.id}
+          position={loc.position}
+          eventHandlers={{ click: () => setActiveLocation(loc) }}
+        >
           <Popup>
-            <strong>{loc.name}</strong><br />
-            <span className={`text-${loc.type === "current" ? "primary" : "warning"}`}>
-              {loc.type === "current" ? "Active Location" : "Coming Soon"}
-            </span>
+            <div className="text-sm leading-5">
+              <strong>{loc.name}</strong>
+              <br />
+              <span className={`font-semibold ${loc.type === "current" ? "text-green-600" : "text-orange-500"}`}>
+                {loc.type === "current" ? "Active Location" : "Coming Soon"}
+              </span>
+            </div>
           </Popup>
         </Marker>
       ))}
+
+      <ResetMapView />
     </MapContainer>
   );
 }
