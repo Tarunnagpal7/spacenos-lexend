@@ -19,8 +19,20 @@ import { ParallaxProvider } from "react-scroll-parallax";
 import Head from "next/head";
 import Script from "next/script";
 
+
+
 export default function RootLayout({ children }) {
   const pathname = usePathname();
+
+  useEffect(() => {
+  window.addEventListener("unmuteRequest", (e) => {
+    const { source } = e.detail;
+
+    window.dispatchEvent(new CustomEvent("controlVideo", {
+      detail: { source, action: "muteOthers" }
+    }));
+  });
+  }, []);
 
   useEffect(() => {
     const elements = document.querySelectorAll("[data-anime]");
@@ -96,6 +108,8 @@ export default function RootLayout({ children }) {
 
   const GA_ID = process.env.NEXT_PUBLIC_GA_ID;
   const CLARITY_ID = process.env.NEXT_PUBLIC_CLARITY_ID;
+
+
 
 
   return (
