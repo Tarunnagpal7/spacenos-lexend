@@ -33,7 +33,7 @@ export default function Contact1() {
   setButtonState("default");
 
   try {
-    await addDoc(collection(db, "contacts"), {
+    await addDoc(collection(db, "v5", process.env.NEXT_PUBLIC_DOC_ID,"contacts"), {
       ...data,
       category: selectedOption,
       timestamp: Timestamp.now(),
