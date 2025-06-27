@@ -8,27 +8,21 @@ import Player from "@vimeo/player";
 
 export default function CareerHero() {
   const [isMuted, setIsMuted] = useState(true);
+  const [isPaused, setIsPaused] = useState(false);
+
   const iframeRef = useRef(null);
   const playerRef = useRef(null);
-  const parallax = useParallax({
-    scale: [0.85, 1.1],
-  });
+  const parallax = useParallax({ scale: [0.85, 1.1] });
 
   useEffect(() => {
     if (iframeRef.current) {
       const player = new Player(iframeRef.current);
-      player.setVolume(0); 
+      player.setVolume(0);
+      setIsMuted(true);
       playerRef.current = player;
-
-      player.on("loaded", () => {
-        console.log("Career video ready");
-      });
     }
-
     return () => {
-      if (playerRef.current) {
-        playerRef.current.destroy();
-      }
+      if (playerRef.current) playerRef.current.destroy();
     };
   }, []);
 
@@ -44,25 +38,31 @@ export default function CareerHero() {
     }
   };
 
+  const togglePause = () => {
+    if (playerRef.current) {
+      if (isPaused) {
+        playerRef.current.play();
+        setIsPaused(false);
+      } else {
+        playerRef.current.pause();
+        setIsPaused(true);
+      }
+    }
+  };
+
   return (
-    <div
-      id="hero_header"
-      className="hero-header hero-seven-scene section panel overflow-hidden"
-    >
+    <div id="hero_header" className="hero-header hero-seven-scene section panel overflow-hidden">
       <div className="position-absolute top-0 start-0 end-0 h-screen bg-tertiary-300 dark:bg-primary-700" />
       <div className="position-absolute top-0 start-0 end-0 h-screen bg-gradient-to-b from-transparent via-transparent to-white dark:to-black" />
 
-      {/* Your floating SVG Icons stay intact */}
-      <div
-        className="d-none lg:d-block"
-        data-anime="targets: >*; scale: [0, 1]; opacity: [0, 1]; easing: easeOutCubic; duration: 750; delay: anime.stagger(150, { start: 500 });"
-      >
+      {/* Floating SVG Icons */}
+      <div className="d-none lg:d-block" data-anime="targets: >*; scale: [0, 1]; opacity: [0, 1]; easing: easeOutCubic; duration: 750; delay: anime.stagger(150, { start: 500 });">
         <Image alt="Icon" className="d-inline-block position-absolute w-72px dark:d-none" style={{ top: "15%", left: "10%" }} width={85} height={73} src="assets/images/vectors/marketing.svg" />
         <Image alt="Icon" className="d-inline-block position-absolute w-72px dark:d-none" style={{ top: "15%", right: "10%" }} width={73} height={66} src="assets/images/vectors/charts-pc.svg" />
         <Image alt="Icon" className="d-inline-block position-absolute w-64px dark:d-none" style={{ top: "35%", right: "-1%", transform: "rotate(45deg)" }} width={69} height={70} src="assets/images/vectors/group.svg" />
         <Image alt="Icon" className="d-inline-block position-absolute w-48px dark:d-none" style={{ top: "40%", left: "15%" }} width={49} height={60} src="assets/images/vectors/idea.svg" />
         <Image alt="Icon" className="d-inline-block position-absolute w-64px dark:d-none" style={{ top: "30%", left: "-1%" }} width={69} height={70} src="assets/images/vectors/group.svg" />
-
+        
         {/* Dark mode icons */}
         <Image alt="Icon" className="d-inline-block position-absolute w-72px d-none dark:d-block" style={{ top: "15%", left: "10%" }} width={85} height={73} src="assets/images/vectors/marketing-dark.svg" />
         <Image alt="Icon" className="d-inline-block position-absolute w-72px d-none dark:d-block" style={{ top: "15%", right: "10%" }} width={73} height={66} src="assets/images/vectors/charts-pc-dark.svg" />
@@ -95,7 +95,6 @@ export default function CareerHero() {
               <div className="uc-video-scene" ref={parallax.ref}>
                 <div className="panel max-w-1000px mx-auto overflow-hidden">
                   
-                  {/* Reel Video Layout */}
                   <div className="container d-flex justify-content-center">
                     <div style={{ width: "250px", maxWidth: "90vw" }} className="mx-auto rounded lg:rounded-1-5 xl:rounded-2 border border-dark contrast-shadow-lg">
                       <div className="position-relative overflow-hidden rounded-2 rounded-lg-3 border border-2 border-white dark:border-gray-700">
@@ -109,27 +108,40 @@ export default function CareerHero() {
                             frameBorder="0"
                             allow="autoplay; fullscreen; picture-in-picture"
                             allowFullScreen
-                            loading="Lazy"
+                            loading="lazy"
                           ></iframe>
 
-                          <button
-                            onClick={toggleMute}
-                            style={{
-                              position: "absolute",
-                              top: "10px",
-                              right: "10px",
-                              zIndex: 10,
-                              background: "rgba(0, 0, 0, 0.6)",
-                              color: "#fff",
-                              border: "none",
-                              padding: "6px 10px",
-                              borderRadius: "4px",
-                              cursor: "pointer",
-                              fontSize: "12px",
-                            }}
-                          >
-                            {isMuted ? "Unmute" : "Mute"}
-                          </button>
+                          <div style={{ position: "absolute", top: "10px", right: "10px", zIndex: 10, display: "flex", gap: "6px" }}>
+                            <button
+                              onClick={toggleMute}
+                              style={{
+                                background: "rgba(0, 0, 0, 0.6)",
+                                color: "#fff",
+                                border: "none",
+                                padding: "6px 10px",
+                                borderRadius: "4px",
+                                cursor: "pointer",
+                                fontSize: "12px",
+                              }}
+                            >
+                              {isMuted ? "Unmute" : "Mute"}
+                            </button>
+
+                            <button
+                              onClick={togglePause}
+                              style={{
+                                background: "rgba(0, 0, 0, 0.6)",
+                                color: "#fff",
+                                border: "none",
+                                padding: "6px 10px",
+                                borderRadius: "4px",
+                                cursor: "pointer",
+                                fontSize: "12px",
+                              }}
+                            >
+                              {isPaused ? "Play" : "Pause"}
+                            </button>
+                          </div>
 
                         </div>
                       </div>

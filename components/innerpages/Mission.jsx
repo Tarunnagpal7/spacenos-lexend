@@ -1,48 +1,139 @@
-import React from "react";
-import Image from "next/image";
+"use client";
+import React, { useState, useRef, useEffect } from "react";
 import { AtomIcon, GlobeIcon, InspectionPanel, Rocket } from "lucide-react";
+import { useParallax } from "react-scroll-parallax";
+import Player from "@vimeo/player";
+
 export default function Mission() {
+  const [isMuted, setIsMuted] = useState(true);
+  const [isPaused, setIsPaused] = useState(false);
+  const iframeRef = useRef(null);
+  const playerRef = useRef(null);
+  const parallax = useParallax({ scale: [0.85, 1.1] });
+
+  useEffect(() => {
+    if (iframeRef.current) {
+      const player = new Player(iframeRef.current);
+      player.setVolume(0);
+      playerRef.current = player;
+
+      player.on("loaded", () => {
+        console.log("Mission video ready");
+      });
+    }
+
+    return () => {
+      if (playerRef.current) {
+        playerRef.current.destroy();
+      }
+    };
+  }, []);
+
+  const toggleMute = () => {
+    if (playerRef.current) {
+      if (isMuted) {
+        playerRef.current.setVolume(1);
+        setIsMuted(false);
+      } else {
+        playerRef.current.setVolume(0);
+        setIsMuted(true);
+      }
+    }
+  };
+
+  const togglePause = () => {
+    if (playerRef.current) {
+      if (isPaused) {
+        playerRef.current.play();
+        setIsPaused(false);
+      } else {
+        playerRef.current.pause();
+        setIsPaused(true);
+      }
+    }
+  };
+
   return (
     <div className="container py-5">
       <div className="row g-4">
-        {/* Mission Section */}
-
-
         <div className="row child-cols col-match justify-between g-4">
           <div className="col-12 sm:col-6">
-            <figure className="featured-image m-0 rounded ratio ratio-1x1 rounded-2 overflow-hidden">
-              <Image
-                className="media-cover image"
-                alt="Review quickly and confidently"
-                src="/assets/images/template/feature-image-01.jpg"
-                width="1200"
-                height="1200"
-              />
-            </figure>
-          </div>
-          <div className="col-12 sm:col-6">
-            <div className="panel">
-              <div className="panel vstack justify-center gap-4 h-100 sm:p-3 lg:p-4">
-                <div>
-                  <div className="panel vstack gap-2">
-                    <h3 className="h4 sm:h3 lg:h2 m-0 text-primary">
-                      Our Mission
-                    </h3>
-                    <p className="fs-6 lg:fs-5 opacity-70 dark:opacity-80">
-                      <strong>To empower every founder—regardless of geography, capital, or background—to launch and scale their vision with cutting-edge AI and remote teams.</strong>
-                      <br /><br />
-                      We don't just write code; we engineer dreams. From automating supply chains in Africa to designing AI-driven therapy bots in Europe, our projects span every continent—each powered by our belief that the next unicorn could emerge from anywhere.
+            <div className="uc-video-scene" ref={parallax.ref}>
+              <div className="panel mx-auto overflow-hidden" style={{ width: "250px", maxWidth: "90vw" }}>
+                <div className="position-relative overflow-hidden rounded-2 border border-2 border-white dark:border-gray-700">
+                  <div className="position-relative" style={{ paddingBottom: "177.78%" }}>
+                    <iframe
+                      ref={iframeRef}
+                      src="https://player.vimeo.com/video/1096805658?autoplay=1&muted=1&loop=1&background=1"
+                      className="position-absolute top-0 start-0 w-100 h-100"
+                      style={{ objectFit: "cover", border: "none" }}
+                      frameBorder="0"
+                      allow="autoplay; fullscreen; picture-in-picture"
+                      allowFullScreen
+                      loading="lazy"
+                    ></iframe>
 
-                    </p>
+                    <div style={{
+                      position: "absolute",
+                      top: "10px",
+                      right: "10px",
+                      zIndex: 10,
+                      display: "flex",
+                      gap: "6px",
+                      flexWrap: "wrap"
+                    }}>
+                      <button
+                        onClick={toggleMute}
+                        style={{
+                          background: "rgba(0, 0, 0, 0.6)",
+                          color: "#fff",
+                          border: "none",
+                          padding: "6px 10px",
+                          borderRadius: "4px",
+                          cursor: "pointer",
+                          fontSize: "12px",
+                        }}
+                      >
+                        {isMuted ? "Unmute" : "Mute"}
+                      </button>
+
+                      <button
+                        onClick={togglePause}
+                        style={{
+                          background: "rgba(0, 0, 0, 0.6)",
+                          color: "#fff",
+                          border: "none",
+                          padding: "6px 10px",
+                          borderRadius: "4px",
+                          cursor: "pointer",
+                          fontSize: "12px",
+                        }}
+                      >
+                        {isPaused ? "Play" : "Pause"}
+                      </button>
+                    </div>
+
                   </div>
                 </div>
               </div>
             </div>
           </div>
+
+          <div className="col-12 sm:col-6">
+            <div className="panel h-100">
+              <div className="panel vstack justify-center gap-4 h-100 sm:p-3 lg:p-4">
+                <div>
+                  <h3 className="fs-1 fw-bold text-primary  p-2">Our Mission</h3>
+                  <p className="fs-6 lg:fs-5 p-2 opacity-70 dark:opacity-80">
+                    <strong>To empower every founder—regardless of geography, capital, or background—to launch and scale their vision with cutting-edge AI and remote teams.</strong>
+                    <br /><br />
+                    We don't just write code; we engineer dreams. From automating supply chains in Africa to designing AI-driven therapy bots in Europe, our projects span every continent—each powered by our belief that the next unicorn could emerge from anywhere.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-
-
-
 
         {/* Pillars Section */}
         <div className="col-lg-6 rounded-2 p-4 p-md-5">

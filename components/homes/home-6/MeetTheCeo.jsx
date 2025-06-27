@@ -1,13 +1,15 @@
 "use client";
 
 import { useState, useEffect, useRef } from "react";
-import { useParallax } from "react-scroll-parallax";
 import Link from "next/link";
 import Player from "@vimeo/player";
 
 export default function MeetTheCeo() {
   const [isMuted, setIsMuted] = useState(true);
   const [isFloating, setIsFloating] = useState(false);
+  const [isPaused, setIsPaused] = useState(false);
+  const [floatingStopped, setFloatingStopped] = useState(false);
+
   const iframeRef = useRef(null);
   const playerRef = useRef(null);
   const sectionRef = useRef(null);
@@ -15,7 +17,9 @@ export default function MeetTheCeo() {
   useEffect(() => {
     if (iframeRef.current) {
       const player = new Player(iframeRef.current);
-      player.setVolume(0); // Start muted
+      player.setVolume(0); 
+      setIsMuted(true); // Always start muted
+      player.play(); 
       playerRef.current = player;
 
       player.on("loaded", () => {
@@ -32,18 +36,14 @@ export default function MeetTheCeo() {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (!sectionRef.current) return;
+      if (!sectionRef.current || floatingStopped) return;
 
       const sectionRect = sectionRef.current.getBoundingClientRect();
-      
-      // Float when the entire section has scrolled past the top of the viewport
-      // Add some buffer to prevent glitching
       const shouldFloat = sectionRect.bottom < -50;
 
       if (shouldFloat !== isFloating) {
         setIsFloating(shouldFloat);
-        
-        // Only auto-mute when stopping floating (not when starting to float)
+
         if (!shouldFloat && !isMuted && playerRef.current) {
           playerRef.current.setVolume(0);
           setIsMuted(true);
@@ -51,7 +51,6 @@ export default function MeetTheCeo() {
       }
     };
 
-    // Throttle scroll events to prevent excessive calls
     let ticking = false;
     const throttledHandleScroll = () => {
       if (!ticking) {
@@ -64,9 +63,9 @@ export default function MeetTheCeo() {
     };
 
     window.addEventListener("scroll", throttledHandleScroll, { passive: true });
-    handleScroll(); // Initial call
+    handleScroll();
     return () => window.removeEventListener("scroll", throttledHandleScroll);
-  }, [isFloating, isMuted]);
+  }, [isFloating, isMuted, floatingStopped]);
 
   const toggleMute = () => {
     if (playerRef.current) {
@@ -77,6 +76,29 @@ export default function MeetTheCeo() {
         playerRef.current.setVolume(0);
         setIsMuted(true);
       }
+    }
+  };
+
+  const togglePause = () => {
+    if (playerRef.current) {
+      if (isPaused) {
+        playerRef.current.play();
+        setIsPaused(false);
+      } else {
+        playerRef.current.pause();
+        setIsPaused(true);
+      }
+    }
+  };
+
+  const stopFloating = () => {
+    setFloatingStopped(true);
+    setIsFloating(false);
+
+    // Also mute video if unmuted
+    if (playerRef.current && !isMuted) {
+      playerRef.current.setVolume(0);
+      setIsMuted(true);
     }
   };
 
@@ -108,10 +130,9 @@ export default function MeetTheCeo() {
             >
               <div className="position-relative overflow-hidden rounded-2 rounded-lg-3 border border-2 border-white dark:border-gray-700">
                 <div className="position-relative" style={{ paddingBottom: "177.78%" }}>
-
                   <iframe
                     ref={iframeRef}
-                    src="https://player.vimeo.com/video/1095508409?autoplay=1&muted=1&loop=1&background=1"
+                    src="https://player.vimeo.com/video/1096805733?autoplay=1&muted=1&loop=1&background=1"
                     className="position-absolute top-0 start-0 w-100 h-100"
                     style={{ objectFit: "cover" }}
                     frameBorder="0"
@@ -120,25 +141,55 @@ export default function MeetTheCeo() {
                     loading="lazy"
                   ></iframe>
 
-                  {/* Mute/Unmute Button */}
-                  <button
-                    onClick={toggleMute}
-                    style={{
-                      position: "absolute",
-                      top: "10px",
-                      right: "10px",
-                      zIndex: 10,
-                      background: "rgba(0, 0, 0, 0.6)",
-                      color: "#fff",
-                      border: "none",
-                      padding: "6px 10px",
-                      borderRadius: "4px",
-                      cursor: "pointer",
-                      fontSize: "12px",
-                    }}
-                  >
-                    {isMuted ? "Unmute" : "Mute"}
-                  </button>
+                  {/* Buttons */}
+                  <div style={{ position: "absolute", top: "10px", right: "10px", zIndex: 10, display: "flex", gap: "6px" }}>
+                    <button
+                      onClick={toggleMute}
+                      style={{
+                        background: "rgba(0, 0, 0, 0.6)",
+                        color: "#fff",
+                        border: "none",
+                        padding: "6px 10px",
+                        borderRadius: "4px",
+                        cursor: "pointer",
+                        fontSize: "12px",
+                      }}
+                    >
+                      {isMuted ? "Unmute" : "Mute"}
+                    </button>
+
+                    <button
+                      onClick={togglePause}
+                      style={{
+                        background: "rgba(0, 0, 0, 0.6)",
+                        color: "#fff",
+                        border: "none",
+                        padding: "6px 10px",
+                        borderRadius: "4px",
+                        cursor: "pointer",
+                        fontSize: "12px",
+                      }}
+                    >
+                      {isPaused ? "Play" : "Pause"}
+                    </button>
+
+                    {isFloating && (
+                      <button
+                        onClick={stopFloating}
+                        style={{
+                          background: "rgba(255, 0, 0, 0.7)",
+                          color: "#fff",
+                          border: "none",
+                          padding: "6px 10px",
+                          borderRadius: "4px",
+                          cursor: "pointer",
+                          fontSize: "12px",
+                        }}
+                      >
+                        ✕
+                      </button>
+                    )}
+                  </div>
                 </div>
               </div>
             </div>
@@ -157,7 +208,7 @@ export default function MeetTheCeo() {
       <style jsx>{`
         .floating-video {
           position: fixed !important;
-          top: 70px;
+          top: 370px;
           right: 20px;
           z-index: 9999;
           width: 180px !important;

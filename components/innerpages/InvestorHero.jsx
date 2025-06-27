@@ -35,7 +35,7 @@ export default function InvestorHero() {
                   
                   <div className="position-relative mx-auto" style={{ maxWidth: '750px' }}>
                     <p className="fs-6 fs-md-5 fs-lg-4 fw-medium mb-2 mb-sm-3">
-                      SpaceNOS was founded by Mr. Venkatesh Devale in 2015 with just $100 and a vision to grow into an evergreen tree. Today, we proudly partner with major international companies, playing an indispensable role in their growth.
+                      Spacenos was founded by Mr. Venkatesh Devale in 2015 with just $100 and a vision to grow into an evergreen tree. Today, we proudly partner with major international companies, playing an indispensable role in their growth.
                     </p>
                     <div>
                       <p className="fs-7 fs-md-6 fw-medium mb-0">Venkatesh Devale</p>

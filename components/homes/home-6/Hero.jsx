@@ -51,11 +51,11 @@ export default function Hero() {
                     />
                   </div>
                   <div
-                    className="position-absolute z-2"
+                    className="position-absolute z-2 "
                     style={{ bottom: "0%", left: "10%" }}
                   >
                     <Image
-                      className="w-48px lg:w-80px"
+                      className="w-48px lg:w-80px "
                       alt="user-cursor"
                       data-anime="loop: true; translateX: [-80,80]; translateY: [-80,80]; easing: easeOutElastic(1, .8); direction: 'alternate'; duration: 5000; delay: 4000;"
                       src="/assets/images/template/user-cursor-3.svg"
@@ -90,17 +90,19 @@ export default function Hero() {
               <div>
                 <div className="panel">
                   <div
-                    className="dashboard-image mx-auto relative flex justify-center items-center w-full"
+                    className="dashboard-image mx-auto relative flex justify-center items-center w-full rounded lg:rounded-1-5 xl:rounded-2"
                     style={{
                       maxWidth: "650px",
                       width: "90%",
                       aspectRatio: "16/9",
+                      border: "2px solid white",
+                      boxShadow: "0 0 20px rgba(255, 255, 255, 0.7)",
                     }}
                     data-anime="translateY: [48, 0]; opacity: [0, 1]; easing: easeOutCubic; duration: 500; delay: anime.stagger(100, {start: 200});"
                   >
                     <video
                       src="/assets/images/apps/1.home-hero-banner.mp4"
-                      className="w-full h-full object-cover rounded-2"
+                      className="w-full h-full object-cover rounded-2 rounded-lg-3 border border-2 border-white"
                       muted
                       autoPlay
                       playsInline
@@ -108,6 +110,7 @@ export default function Hero() {
                     />
                   </div>
                 </div>
+
 
               </div>
             </div>

@@ -9,6 +9,8 @@ export default function VideoComponent() {
 
   const [isMuted, setIsMuted] = useState(true);
   const [isFloating, setIsFloating] = useState(false);
+  const [floatingStopped, setFloatingStopped] = useState(false);
+  const [isPaused, setIsPaused] = useState(false);
 
   useEffect(() => {
     if (iframeRef.current) {
@@ -24,7 +26,7 @@ export default function VideoComponent() {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (!sectionRef.current || !playerRef.current) return;
+      if (!sectionRef.current || !playerRef.current || floatingStopped) return;
 
       const sectionBottom = sectionRef.current.getBoundingClientRect().bottom;
       const scrollY = window.scrollY;
@@ -37,8 +39,6 @@ export default function VideoComponent() {
       } else {
         if (isFloating) {
           setIsFloating(false);
-
-          // If video is unmuted, mute it when floating stops
           if (!isMuted) {
             playerRef.current.setVolume(0);
             setIsMuted(true);
@@ -50,9 +50,7 @@ export default function VideoComponent() {
     window.addEventListener("scroll", handleScroll);
     handleScroll();
     return () => window.removeEventListener("scroll", handleScroll);
-  }, [isMuted, isFloating]);
-
-
+  }, [isMuted, isFloating, floatingStopped]);
 
   const toggleMute = () => {
     if (playerRef.current) {
@@ -63,6 +61,27 @@ export default function VideoComponent() {
         playerRef.current.setVolume(0);
         setIsMuted(true);
       }
+    }
+  };
+
+  const togglePause = () => {
+    if (playerRef.current) {
+      if (isPaused) {
+        playerRef.current.play();
+        setIsPaused(false);
+      } else {
+        playerRef.current.pause();
+        setIsPaused(true);
+      }
+    }
+  };
+
+  const stopFloating = () => {
+    setFloatingStopped(true);
+    setIsFloating(false);
+    if (playerRef.current && !isMuted) {
+      playerRef.current.setVolume(0);
+      setIsMuted(true);
     }
   };
 
@@ -81,14 +100,14 @@ export default function VideoComponent() {
           <div className="container d-flex justify-content-center">
             <div
               style={{ width: "250px", maxWidth: "90vw" }}
-              className={`mx-auto rounded lg:rounded-1-5 xl:rounded-2 border border-dark contrast-shadow-lg video-wrapper ${isFloating ? "floating-video" : ""
+              className={`mx-auto  mb-4 rounded lg:rounded-1-5 xl:rounded-2 border border-dark contrast-shadow-lg video-wrapper ${isFloating ? "floating-video" : ""
                 }`}
             >
               <div className="position-relative overflow-hidden rounded-2 rounded-lg-3 border border-2 border-white dark:border-gray-700">
                 <div className="position-relative" style={{ paddingBottom: "177.78%" }}>
                   <iframe
                     ref={iframeRef}
-                    src="https://player.vimeo.com/video/1095499997?autoplay=1&muted=1&loop=1&background=1"
+                    src="https://player.vimeo.com/video/1096805774?autoplay=1&muted=1&loop=1&background=1"
                     className="position-absolute top-0 start-0 w-100 h-100"
                     style={{ objectFit: "cover" }}
                     frameBorder="0"
@@ -97,24 +116,54 @@ export default function VideoComponent() {
                     loading="lazy"
                   ></iframe>
 
-                  <button
-                    onClick={toggleMute}
-                    style={{
-                      position: "absolute",
-                      top: "10px",
-                      right: "10px",
-                      zIndex: 10,
-                      background: "rgba(0, 0, 0, 0.6)",
-                      color: "#fff",
-                      border: "none",
-                      padding: "6px 10px",
-                      borderRadius: "4px",
-                      cursor: "pointer",
-                      fontSize: "12px",
-                    }}
-                  >
-                    {isMuted ? "Unmute" : "Mute"}
-                  </button>
+                  <div style={{ position: "absolute", top: "10px", right: "10px", zIndex: 10, display: "flex", gap: "6px" }}>
+                    <button
+                      onClick={toggleMute}
+                      style={{
+                        background: "rgba(0, 0, 0, 0.6)",
+                        color: "#fff",
+                        border: "none",
+                        padding: "6px 10px",
+                        borderRadius: "4px",
+                        cursor: "pointer",
+                        fontSize: "12px",
+                      }}
+                    >
+                      {isMuted ? "Unmute" : "Mute"}
+                    </button>
+
+                    <button
+                      onClick={togglePause}
+                      style={{
+                        background: "rgba(0, 0, 0, 0.6)",
+                        color: "#fff",
+                        border: "none",
+                        padding: "6px 10px",
+                        borderRadius: "4px",
+                        cursor: "pointer",
+                        fontSize: "12px",
+                      }}
+                    >
+                      {isPaused ? "Play" : "Pause"}
+                    </button>
+
+                    {isFloating && (
+                      <button
+                        onClick={stopFloating}
+                        style={{
+                          background: "rgba(255, 0, 0, 0.7)",
+                          color: "#fff",
+                          border: "none",
+                          padding: "6px 10px",
+                          borderRadius: "4px",
+                          cursor: "pointer",
+                          fontSize: "12px",
+                        }}
+                      >
+                        ✕
+                      </button>
+                    )}
+                  </div>
                 </div>
               </div>
             </div>
@@ -134,23 +183,22 @@ export default function VideoComponent() {
       </div>
 
       <style jsx>{`
-  .floating-video {
-    position: fixed !important;
-    top: 70px;
-    right: 20px;
-    z-index: 9999;
-    width: 180px !important;
-    max-width: 90vw;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-  transform: translateY(0);
-  transition: transform 0.4s ease, opacity 0.4s ease;
-  }
+        .floating-video {
+          position: fixed !important;
+          top: 370px;
+          right: 20px;
+          z-index: 9999;
+          width: 180px !important;
+          max-width: 90vw;
+          box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+          transform: translateY(0);
+          transition: transform 0.4s ease, opacity 0.4s ease;
+        }
 
-  .video-wrapper {
-    transition: all 0.4s ease;
-  }
-`}</style>
-
+        .video-wrapper {
+          transition: all 0.4s ease;
+        }
+      `}</style>
     </>
   );
 }
