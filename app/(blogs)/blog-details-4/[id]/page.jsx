@@ -1,33 +1,43 @@
+import { doc, getDoc } from "firebase/firestore";
+import { db } from "@/config/firebase";
 import Header5 from "@/components/headers/Header5";
 import Newsletter from "@/components/blog/Newsletter";
 import Footer5 from "@/components/footers/Footer5";
 import BlogDetails from "@/components/blog/BlogDetails";
-import { blogsPosts8 } from "@/data/blogs";
 
 export const metadata = {
-  title: " Read Blogs || Spacenos",
+  title: "Read Blogs || Spacenos",
   description:
     "Explore blogs and insights from Spacenos' expert authors on AI, startup growth, business automation, and global technology trends.",
-  keywords:
-    "Spacenos blogs, blog author, AI articles, startup insights, technology blogs, business growth, expert opinions",
 };
 
+export default async function BlogDetailsPage(props) {
+  const { id } = props.params;
 
+  const docRef = doc(db, "v5", process.env.NEXT_PUBLIC_DOC_ID, "blogs", id);
+  const docSnap = await getDoc(docRef);
 
-export default async function BlogDetailsPage1(props) {
-  const params = await props.params;
-  const id = params.id;
-  const blogItem = blogsPosts8[id]
+  if (!docSnap.exists()) {
+    return <div>Blog Not Found</div>;
+  }
+
+  const data = docSnap.data();
+
+  // Convert Firestore timestamp to string
+  const plainData = {
+    ...data,
+    id: docSnap.id,
+    timestamp: data.timestamp?.toDate().toString() || null,
+  };
+
   return (
-    <>
-      <div className="page-wrapper uni-body panel bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-200 overflow-x-hidden bp-xs bp-sm bp-md bp-lg bp-xl bp-xxl dom-ready">
-        <Header5 />
-        <div id="wrapper" className="wrap">
-          <BlogDetails blogItem={blogItem} />
-          <Newsletter />
-        </div>
-        <Footer5 />
+    <div className="page-wrapper uni-body panel bg-white text-gray-900 dark:bg-gray-900 overflow-x-hidden">
+      <Header5 />
+      <div id="wrapper" className="wrap">
+        <BlogDetails blogItem={plainData} />
+        <Newsletter />
       </div>
-    </>
+      <Footer5 />
+    </div>
   );
 }
