@@ -30,7 +30,7 @@ export default function Cta() {
                   Yugendhar, CEO of Spacenos
                  </h1>
               <a
-                href="https://themeforest.net/user/elite-themes24"
+                href="/meet-the-ceo"
                 className="btn btn-md btn-primary min-w-150px px-3 mt-4"
               >
                 <span>Request a Seat</span>

@@ -65,7 +65,7 @@ export default function PressHero() {
               <h2 className="h6 sm:h4 "> Latest news, press releases, and media assets for journalists, analysts, and partners.</h2>
                <div className="items-center ">
                 <button className="btn btn-primary">
-                    <Link href={'/page-contact'}>
+                    <Link href={'/contact'}>
                       Contact Our PR Team
                       <ArrowRight />
                     </Link>

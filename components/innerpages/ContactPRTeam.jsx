@@ -113,7 +113,7 @@ const ContactPRTeam = () => {
                 {/* Inquiry Button */}
                 <div className="text-center">
                   <Link
-                    href="/page-contact"
+                    href="/contact"
                     className="btn btn-primary btn-lg px-4 py-2"
                     data-anime="onview:-100; targets: >*; translateY: [48, 0]; opacity: [0, 1]; easing: spring(1, 80, 10, 0); duration: 450; delay: 600;"
                   >

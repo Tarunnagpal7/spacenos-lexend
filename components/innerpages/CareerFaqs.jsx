@@ -28,7 +28,7 @@ export default function CareerFaqs({faqData}) {
                     At Spacenos, we don't just offer jobs — we build futures that outlast AI automation.
                   </p>
                   <Link
-                    href={`/page-contact`}
+                    href={`/contact`}
                     className="btn btn-sm lg:btn-md btn-primary px-3 mt-2"
                   >
                     <span>Still have a question?</span>

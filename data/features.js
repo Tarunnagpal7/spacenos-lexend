@@ -855,18 +855,18 @@ export const features15 = [
     iconSrc: "/assets/images/common/icons/zap.svg",
     alt: "feature-icon",
     title: "Want to Build an Empire?",
-    slug: "/page-features"
+    slug: "/features"
   },
   {
     iconSrc: "/assets/images/common/icons/database.svg",
     alt: "feature-icon",
     title: " Have Great Contacts? Want to Monetize Them?",
-    slug: "/page-contact"
+    slug: "/contact"
   },
   {
     iconSrc: "/assets/images/common/icons/puzzle.svg",
     alt: "feature-icon",
     title: "No Capital, Just Hustle?",
-    slug: "/page-collaborate"
+    slug: "/collaborate"
   }, 
 ];

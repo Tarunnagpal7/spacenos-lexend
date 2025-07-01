@@ -76,7 +76,7 @@ export default function Cta() {
               <p className="fs-4 text-black">Whether you’re a founder seeking to skyrocket your startup, an investor eyeing the next big leap, or a dreamer ready to shape the future <b>—Spacenos welcomes you.</b>
                 </p>
               <Link
-                href={`/page-career`}
+                href={`/career`}
                 className="btn btn-md lg:btn-lg btn-primary text-white mt-1 xl:mt-2"
               >
                 Build With Us

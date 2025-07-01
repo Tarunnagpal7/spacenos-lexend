@@ -109,7 +109,7 @@ export default function CareerCta() {
               >
                 <div className="mb-2 lg:mb-3">
                   <a
-                    href="#"
+                    href="/career"
                     className="btn btn-md xl:btn-lg btn-secondary border px-3 lg:px-5 w-auto"
                   >
                     <span>Explore Careers</span>
