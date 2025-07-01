@@ -97,7 +97,7 @@ export default function NextFeatures() {
                 <Link href={"/investors"}>
                   <button className="btn btn-primary">Invest</button>
                 </Link>
-                <Link href={"/page-collaborate"}>
+                <Link href={"/collaborate"}>
                   <button className="btn btn-outline-primary">Partnership</button>
                 </Link>
               </div>
@@ -143,7 +143,7 @@ export default function NextFeatures() {
                                                                             Invest
                                                                         </button>
                                                                         </Link>
-                                                                        <Link href={'/page-collaborate'}>
+                                                                        <Link href={'/collaborate'}>
                                                                         <button className="btn btn-outline-primary">
                                                                             Partnership
                                                                         </button>
@@ -190,7 +190,7 @@ export default function NextFeatures() {
                                                                             Invest
                                                                         </button>
                                                                         </Link>
-                                                                        <Link href={'/page-collaborate'}>
+                                                                        <Link href={'/collaborate'}>
                                                                         <button className="btn btn-outline-primary">
                                                                             Partnership
                                                                         </button>
@@ -237,7 +237,7 @@ export default function NextFeatures() {
                                                                             Invest
                                                                         </button>
                                                                         </Link>
-                                                                        <Link href={'/page-collaborate'}>
+                                                                        <Link href={'/collaborate'}>
                                                                         <button className="btn btn-outline-primary">
                                                                             Partnership
                                                                         </button>
