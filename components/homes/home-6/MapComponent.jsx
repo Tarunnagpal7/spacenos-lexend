@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { MapContainer, TileLayer, Marker, Popup, useMap } from "react-leaflet";
+import { MapContainer, TileLayer, Marker, useMap } from "react-leaflet";
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
 
@@ -31,10 +31,7 @@ function ResetMapView() {
 }
 
 export default function MapComponent() {
-  const [activeLocation, setActiveLocation] = useState(null);
 
-  const tileUrl = "https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png";
-  const tileAttribution = '&copy; <a href="https://carto.com/">CARTO</a> & OpenStreetMap contributors';
 
   return (
     <MapContainer
@@ -49,24 +46,36 @@ export default function MapComponent() {
         boxShadow: "0 0 20px rgba(0,0,0,0.15)"
       }}
     >
-      <TileLayer url={tileUrl} attribution={tileAttribution} />
+      <TileLayer
+  url="https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}{r}.png"
+  attribution='&copy; <a href="https://carto.com/">CARTO</a> & OpenStreetMap contributors'
+/>
 
       {locations.map((loc) => (
-        <Marker
-          key={loc.id}
-          position={loc.position}
-          eventHandlers={{ click: () => setActiveLocation(loc) }}
-        >
-          <Popup>
-            <div className="text-sm leading-5">
-              <strong>{loc.name}</strong>
-              <br />
-              <span className={`font-semibold ${loc.type === "current" ? "text-green-600" : "text-orange-500"}`}>
-                {loc.type === "current" ? "Active Location" : "Coming Soon"}
-              </span>
-            </div>
-          </Popup>
-        </Marker>
+        <React.Fragment key={loc.id}>
+          
+          {/* Marker Pin */}
+          <Marker position={loc.position} />
+
+          {/* Static Label */}
+          <Marker 
+            position={[loc.position[0] + 5, loc.position[1]+ 5 ]} // slight offset for better visibility
+            icon={L.divIcon({
+              className: "custom-label",
+              html: `<div style="
+                color: black; 
+                padding: 4px 8px; 
+                border-radius: 4px;
+                font-size: 12px;
+                white-space: nowrap;
+                ">
+                ${loc.name} (${loc.type === "current" ? "Active" : "Coming Soon"})
+              </div>`
+            })}
+            interactive={false}
+          />
+
+        </React.Fragment>
       ))}
 
       <ResetMapView />

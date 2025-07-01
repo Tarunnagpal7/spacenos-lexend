@@ -39,12 +39,11 @@ export default function InvestJourney() {
             >
               <h2 className="h3 lg:h2 mb-4">Our Journey & Impact</h2>
               <p className="fs-5 xl:fs-4 text-dark dark:text-white text-opacity-70">
-                We grew from a seed to an evergreen tree laden with fruits in a very short period of time.
+                We grew from a seed to an evergreen tree laden with fruit in a remarkably short period of time.
               </p>
               <p className="fs-5 xl:fs-4 text-dark dark:text-white text-opacity-70">
-               worth and skills to many firms over the course of time in android development, system development, custom software development.
-               Our startup teams have projected themselves as experts over the course of time and are currently senior staff supervising and training the fresh joiners.
-
+                Over the years, our team has delivered value and demonstrated skill across multiple domains, including Android development, system development, and custom software solutions. Many of our early startup members have grown into seasoned professionals and now serve as senior staff, mentoring and training new joiners.
+                
               </p>
               <div className="panel mt-6">
                 <div className="row child-cols-6 lg:child-cols-4 justify-center g-3 col-match">

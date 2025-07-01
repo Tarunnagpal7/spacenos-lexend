@@ -13,10 +13,10 @@ export default function InvestorPdf() {
             >
               <h2 className="h4 sm:h3 m-0">Access Our Investor Brief.</h2>
               <p className="fs-6 sm:fs-5 lg:fs-4 text-dark dark:text-white text-opacity-70">
-                This document is designed to provide you with a clear understanding of how SpaceNOS is poised to revolutionize the industry.
+                See why Spacenos is more than a startup — it’s a movement poised to reshape the industry.
               </p>
               <Link
-                href={`/page-career`}
+                href={`#`}
                 className="btn btn-md rounded-default bg-white dark:bg-gray-700 dark:text-white border-gray-900 dark:border-white border-opacity-20 hover:border-opacity-40 shadow-xs mt-1"
               >
                 <span>Download Investor Pitch Deck</span>

@@ -124,48 +124,6 @@ export default function CeoHero() {
                         height={1020}
                       />
                     </div>
-                    <div
-                      className="hero-ten-01 position-absolute w-150px xl:w-250px d-none lg:d-block"
-                      data-anime="translateY: [24, 0]; opacity: [0, 1]; easing: easeOutCubic; duration: 750; delay: 750;"
-                      style={{ top: "20%" }}
-                    >
-                      <Image
-                        className="rounded-2 shadow-lg border"
-                        alt="hero-image"
-                        data-anime="onscroll: .hero-scroll-scene; onscroll-offset: -300; onscroll-trigger: 0; onscroll-duration: 700%; translateY: [-24, 180];"
-                        src="/assets/images/template/home-10-hero-02.png"
-                        width={845}
-                        height={963}
-                      />
-                    </div>
-                    <div
-                      className="hero-ten-02 position-absolute w-200px xl:w-300px d-none lg:d-block"
-                      data-anime="translateY: [24, 0]; opacity: [0, 1]; easing: easeOutCubic; duration: 750; delay: 750;"
-                      style={{ bottom: "20%" }}
-                    >
-                      <Image
-                        className="rounded-2 shadow-lg border"
-                        alt="hero-image"
-                        data-anime="onscroll: .hero-scroll-scene; onscroll-offset: -300; onscroll-trigger: 0; onscroll-duration: 700%; translateY: [100, 0];"
-                        src="/assets/images/template/home-10-hero-01.png"
-                        width={574}
-                        height={142}
-                      />
-                    </div>
-                    <div
-                      className="hero-ten-03 position-absolute w-150px d-none lg:d-block"
-                      data-anime="translateY: [24, 0]; opacity: [0, 1]; easing: easeOutCubic; duration: 750; delay: 750;"
-                      style={{ top: "10%" }}
-                    >
-                      <Image
-                        className="rounded-2 shadow-lg border"
-                        alt="hero-image"
-                        data-anime="onscroll: .hero-scroll-scene; onscroll-offset: -300; onscroll-trigger: 0; onscroll-duration: 700%; translateY: [-24, 48];"
-                        src="/assets/images/template/home-10-hero-03.png"
-                        width={656}
-                        height={818}
-                      />
-                    </div>
                   </div>
                 </div>
               </div>

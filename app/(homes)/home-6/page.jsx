@@ -58,11 +58,11 @@ export default function HomePage6() {
           <Hero />
           <VideoComponent />
           <Stats />
+          <NextFeatures />
           <Awards />
           <Features2 />
           <MeetTheCeo />
           <KeyFeatures />
-          <NextFeatures />
           <GlobalFootprint />
           <AwardsTestimonials />
           <LeadMagnets />

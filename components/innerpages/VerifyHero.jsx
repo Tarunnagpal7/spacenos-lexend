@@ -13,7 +13,7 @@ export default function VerifyForm() {
           >
             <div className="vstack items-center gap-2 lg:gap-4 mb-4 sm:mb-6 lg:mb-8 max-w-750px mx-auto text-center">
               <h1 className="h2 sm:h1 lg:display-6 xl:display-5 m-0">
-                Secure Document Verification
+                Secure Document Verification  
               </h1>
               <p className="fs-6 sm:fs-5 text-dark dark:text-white text-opacity-70">
                For enhanced trust and security, our document verification portal allows you to securely upload required documents and track their processing status.
@@ -25,7 +25,7 @@ export default function VerifyForm() {
                 className="vstack gap-2 p-3 sm:p-6 xl:p-8 rounded-2 border bg-white dark:bg-gray-900 border-secondary dark:border-gray-300 dark:border-opacity-20"
               >
                   <div>
-                    <label className="p-1 fw-bold">Upload Your Documents</label>
+                    <label className="p-1 fw-bold">Upload Your Documents  </label><span className="fw-thin text-gray">*only pdf</span>
                     <input
                       className="form-control h-48px w-full bg-white dark:border-white dark:bg-opacity-0 dark:border-opacity-15 dark:text-white"
                       type="file"

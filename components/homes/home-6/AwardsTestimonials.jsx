@@ -12,7 +12,7 @@ export default function AwardsTestimonials() {
         <div className="container xl:max-w-xl">
           <div className="section-inner panel vstack items-center gap-4 md:gap-6 lg:gap-8 max-w-100">
             <div className="panel vstack items-center gap-2 xl:gap-3 text-center">
-              <p className="h3 lg:h2 xl:h1 m-0 px-2 text-black">Voices of Success</p>
+              <p className="h3 lg:h2 xl:h1 m-0 px-2 text-black">Narratives of Accomplishment</p>
             </div>
 
             <div className="panel w-100">

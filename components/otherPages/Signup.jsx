@@ -34,7 +34,7 @@ export default function Signup() {
                         data-anime="targets: >*; translateY: [-24, 0]; opacity: [0, 1]; easing: easeInOutExpo; duration: 750; delay: anime.stagger(100, {start: 250});"
                       >
                         <p className="fs-5 xl:fs-4 fw-medium">
-                           "We started Spacenos with just ₹100 and a belief that great ideas shouldn't be held back by tech barriers. Today, we're helping founders build faster with AI."
+                           "We started Spacenos with just $100 and a belief that great ideas shouldn't be held back by tech barriers. Today, we're helping founders build faster with AI."
                         </p>
                         <div className="vstack gap-0">
                           <p className="fs-6 lg:fs-5 fw-medium">

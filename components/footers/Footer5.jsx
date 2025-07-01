@@ -36,13 +36,13 @@ export default function Footer5() {
                           />
                         </Link>
                         <p className="mt-2">
-                          We build obsessed. Not average.
+                          Driven by obsession. Defined by excellence.
                         </p>
 
                         {/* Badges Start */}
                         <div className="panel hstack flex-wrap gap-2 mt-3">
                           {badges.map((badge, index) => (
-                            <div key={index} className={`p-1 rounded ${badge.color}`}>
+                            <div key={index} className={`p-1 rounded `}>
                               <div className="badge-wrapper">
                                 <Image 
                                   src={badge.imgsrc} 

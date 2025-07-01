@@ -37,7 +37,7 @@ export const Stats = [
   },
   {
     id: 2,
-    value: "12",
+    value: "6",
     description: "Country Impacted",
   },
   {

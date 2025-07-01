@@ -13,7 +13,7 @@ export default function InvestorHero() {
           >
             <div className="text-center mb-4 mb-sm-6 mb-lg-8 mx-auto" style={{ maxWidth: '750px' }}>
               <h1 className="h2 sm:h1 lg:display-6 xl:display-5 m-0">
-                Invest in the Future: <br className="d-sm-none" /> Partner with SpaceNOS.
+                Invest in the Future: <br className="d-sm-none" /> Partner with Spacenos.
               </h1>
             </div>
 

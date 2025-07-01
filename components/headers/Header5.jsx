@@ -111,7 +111,7 @@ export default function Header5() {
               className={`text-decoration-none transition-colors ${
                 isActive 
                   ? "text-primary" 
-                  : "text-gray-900 dark:text-white hover:text-primary dark:hover:text-primary"
+                  : "text-black dark:text-white hover:!text-gray-800  "
               }`}
               href={item.href}
             >
@@ -151,7 +151,13 @@ export default function Header5() {
       visibility: visible;
       transform: translateY(0);
     }
-    
+     .header-six .uc-navbar-nav > li:hover > a {
+      color: inherit !important; /* No color change on hover */
+  }
+
+  .header-six .uc-navbar-nav > li > a[aria-expanded="true"] {
+      color: #6b7280 !important; /* Change color when dropdown opens */
+  }
     .navbar-dropdown::before {
       content: '';
       position: absolute;
@@ -176,10 +182,12 @@ export default function Header5() {
       font-size: 14px;
       transition: all 0.2s ease;
     }
-    
+    .uc-navbar-nav li a:hover {
+    color: #6b7280 !important;
+    }
     .navbar-dropdown li a:hover {
       background: #127158;
-      color: white;
+      color: #6b7280;
       transform: translateX(4px);
     }
     
@@ -237,7 +245,7 @@ export default function Header5() {
               <div className="uc-navbar min-h-64px lg:min-h-80px px-2 lg:px-0 text-gray-900 dark:text-white">
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', width: '100%' }}>
                   {/* Logo */}
-                  <div className="navbar-left">
+                  <div className="navbar-left ">
                     <div className="uc-logo">
                       <Link className="panel text-none" href="/">
                         <Image
@@ -266,7 +274,7 @@ export default function Header5() {
                   </div>
                   
                   {/* Login Button */}
-                  <div className="navbar-right">
+                  <div className=" navbar-right ">
                     <Link
                       className="btn btn-sm btn-primary text-white text-none d-none xl:d-inline-flex hover:bg-blue-600"
                       href="/sign-in"
@@ -313,9 +321,9 @@ export default function Header5() {
           <div className="uc-navbar-main" style={{ "--uc-nav-height": "80px" }}>
             <div className="container max-w-lg lg:max-w-950px xl:max-w-xl">
               <div className="uc-navbar min-h-64px lg:min-h-80px px-2 lg:px-0 text-gray-900 dark:text-white">
-                <div className="navbar-layout">
+                <div className="navbar-layout px-4 lg:px-8">
                   {/* Logo */}
-                  <div className="navbar-left">
+                  <div className="navbar-left ">
                     <div className="uc-logo">
                       <Link className="panel text-none" href="/">
                         <Image

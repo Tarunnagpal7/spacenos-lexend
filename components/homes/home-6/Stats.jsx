@@ -15,7 +15,7 @@ export default function Facts() {
               data-anime="onview: -200; targets: >*; translateY: [48, 0]; opacity: [0, 1]; easing: easeOutCubic; duration: 500; delay: anime.stagger(100, {start: 200});"
             >
               <h2 className="h4 md:h3 m-0"> 
-                Big Wins. Real Results.
+                Real Progress. Real Impact.
               </h2>
               <p className="fs-6 xl:fs-5 text-dark dark:text-white text-opacity-70">
                 What We’ve Achieved So Far

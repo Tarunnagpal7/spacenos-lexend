@@ -18,13 +18,13 @@ export default function Cta() {
               data-anime="onview:-100; targets: >*; translateY: [48, 0]; opacity: [0, 1]; easing: easeOutCubic; duration: 500; delay: anime.stagger(100, {start: 200});"
             >
               <h2 className="h2 xl:display-6">
-                A Letter from the Founder
+                Vision from the Founder
               </h2>
               <p className="fs-5 my-0">
-                 I started Spacenos because I was tired of seeing ideas die due to lack of money, mentorship, or courage. I come from humble beginnings, and today, our goal is to make sure no one with a dream is left behind. We’re here to back the underdogs, automate the impossible, and make legacy-building accessible to all.
+                I founded Spacenos to address a critical gap—the countless ideas that never come to life due to limited resources, guidance, or support. With a deep appreciation for perseverance and ambition, our mission is to empower individuals to turn their visions into reality. We focus on enabling innovation, simplifying complexity through automation, and making meaningful progress accessible to all.
                  </p>
                   <div className={`${greatVibes.className} dark:text-white`} style={{ fontSize: '36px', color: '#1A1A1A', textAlign: 'center', marginTop: '20px' }}>
-    - Yugendar Devale
+             - Yugendar Devale
   </div>
                  <h1 className="fs-6">
                   Yugendhar, CEO of Spacenos

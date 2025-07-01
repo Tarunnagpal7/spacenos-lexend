@@ -45,7 +45,7 @@ export const menuItems = [
       { href: "/resources", label: "Company Resources" },
       { href: "/blogs", label: "Blogs" },
       { href: "/tools", label: "Tools" },
-      { href: "/verify-doc", label: "verify Document" },
+      { href: "/verify-doc", label: "Verify Document" },
     ],
   },
   
@@ -92,7 +92,7 @@ export const navItems = [
       { href: "/resources", label: "Company Resources" },
       { href: "/blogs", label: "Blogs" },
       { href: "/tools", label: "Tools" },
-      { href: "/verify-doc", label: "verify Document" },
+      { href: "/verify-doc", label: "Verify Document" },
     ],
   },
   { href: "/career", label: "Career" },

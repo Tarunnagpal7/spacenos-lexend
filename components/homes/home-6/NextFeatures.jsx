@@ -257,6 +257,26 @@ export default function NextFeatures() {
                     </div>
                 </div>
             </div>
+            <style jsx>{`
+            .main-features-nav {
+                scrollbar-width: thin;
+                scrollbar-color: #12715B transparent; /* Primary color */
+            }
+
+            .main-features-nav::-webkit-scrollbar {
+                height: 6px;
+            }
+
+            .main-features-nav::-webkit-scrollbar-track {
+                background: transparent;
+            }
+
+            .main-features-nav::-webkit-scrollbar-thumb {
+                background: #12715B; /* Primary color */
+                border-radius: 4px;
+            }
+            `}</style>
+
         </div>
     );
 }
